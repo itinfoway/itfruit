@@ -8,7 +8,7 @@
 ?>
 <footer>
 	<div class="ftr">
-		<h1>HOW FIND US</h1>
+		<h1><?=$this->lang->line("fn_find_us"); ?></h1>
 		<div class="container">
 			<!--<img class="img-responsive f-pinapple" src="assert/fontend/img/pinapple.svg">-->
 			<div class="row ftr-row">
@@ -18,7 +18,7 @@
 							<img class="img-responsive" src="<?= base_url("assert/fontend/img/location.svg"); ?>">
 						</div>
 						<div class="add-text">
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+							<?=$this->lang->line("fn_find_us_address"); ?>
 						</div>
 					</div>
 					<div class="add-part">
@@ -26,7 +26,7 @@
 							<img class="img-responsive" src="<?= base_url("assert/fontend/img/mail-01.svg"); ?>">
 						</div>
 						<div class="add-text">
-							<p style="padding-top: 20px">example@gmail.com</p>
+							<p style="padding-top: 20px"><?=$this->lang->line("fn_find_us_email"); ?></p>
 						</div>
 					</div>
 				</div>
@@ -41,7 +41,7 @@
 							<img class="img-responsive" src="<?= base_url("assert/fontend/img/call-01.svg"); ?>">
 						</div>
 						<div class="add-text">
-							<p style="padding-top: 20px">+01 123456789</p>
+							<p style="padding-top: 20px"><?=$this->lang->line("fn_find_us_mno"); ?></p>
 						</div>
 					</div>
 					<div class="social">

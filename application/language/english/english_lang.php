@@ -182,6 +182,58 @@ $lang["alacarte_input_saveing_plac"] = 'Please Enter Amount';
 
 //include/header.php
 $lang["fn_about_us"] = 'ABOUT US';
+$lang["fn_learn"] = 'LEARN';
+$lang["fn_order_now"] = 'ORDER NOW';
+$lang["fn_faq"] = 'FAQ';
+$lang["fn_contact_us"] = 'CONTACT US';
+$lang["fn_blog"] = 'BLOG';
+
+//welcome/index.php
+$lang["fn_previous"] = 'Previous';
+$lang["fn_next"] = 'Next';
+$lang["fn_work"] = 'HOW IT`S WORK?';
+$lang["fn_work_line1"] = 'Get sliced credits or regular subscription';
+$lang["fn_work_line2"] = 'Choose from our 10 handcrafted curated fruit boxes, date and time';
+$lang["fn_work_line3"] = 'Our partners at work! We will craft out the best chosen fruit to you';
+$lang["fn_work_line4"] = 'Sit back and wait for your order!';
+
+$lang["fn_about"] = 'WHAT ARE WE ABOUT?';
+$lang["fn_fresh"] = 'FRESH';
+$lang["fn_fresh_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+$lang["fn_healthy"] = 'HEALTHY';
+$lang["fn_healthy_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+$lang["fn_eco"] = 'ECO';
+$lang["fn_eco_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+$lang["fn_what"] = 'WHAT';
+$lang["fn_are"] = 'ARE';
+$lang["fn_we"] = 'WE';
+$lang["fn_about1"] = 'ABOUT?';
+$lang["fn_tasty"] = 'TASTY';
+$lang["fn_tasty_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+$lang["fn_yummy"] = 'YUMMY';
+$lang["fn_yummy_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+$lang["fn_premium"] = 'PREMIUM';
+$lang["fn_premium_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+
+$lang["fn_partner"] = 'OUR PARTNER';
+
+$lang["fn_choose_us"] = 'WHY CHOOSE US';
+$lang["fn_choose_us_hd1"] = '100% FRESH ORGANIC FRUITS';
+$lang["fn_choose_us__hd1_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+$lang["fn_choose_us_hd2"] = 'FAST DELIVERY';
+$lang["fn_choose_us__hd2_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+$lang["fn_choose_us_hd3"] = 'RICH EXPERIENCE';
+$lang["fn_choose_us__hd3_line"] = 'Lorem Ipsum is simply dummy text of the printing and type setting industry.';
+
+$lang["fn_people"] = 'WHAT PEOPLE SAY';
+
+//include/footer.php
+$lang["fn_find_us"] = 'HOW FIND US';
+$lang["fn_find_us_address"] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
+$lang["fn_find_us_email"] = 'example@gmail.com';
+$lang["fn_find_us_mno"] = '+01 123456789';
+
+
 
 
 

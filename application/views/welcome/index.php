@@ -33,11 +33,11 @@
         </div>
         <a class="carousel-control-prev" href="#mainslider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only"><?=$this->lang->line("fn_previous"); ?>Previous</span>
         </a>
         <a class="carousel-control-next" href="#mainslider" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only"><?=$this->lang->line("fn_next"); ?>Next</span>
         </a>
     </div>
 </section>
@@ -46,30 +46,30 @@
         <div class="how-work-sec">
             <img class="fruits strawberry" src="<?= base_url("assert/fontend/img/strawberry.svg"); ?>">
             <img class="fruits grapes" src="<?= base_url("assert/fontend/img/grapes.svg"); ?>">
-            <h1>HOW IT'S WORK?</h1>
+            <h1><?=$this->lang->line("fn_work"); ?></h1>
             <div class="row">
                 <div class="col-sm-3">
                     <img class="home-icon" src="<?= base_url("assert/fontend/img/icon-b.png"); ?>">
                     <p>
-                        <b>Get sliced credits or regular subscription</b>
+                        <b><?=$this->lang->line("fn_work_line1"); ?></b>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <img class="home-icon" src="<?= base_url("assert/fontend/img/icon-y.png"); ?>">
                     <p>
-                        <b>Choose from our 10 handcrafted curated fruit boxes, date and time</b>
+                        <b><?=$this->lang->line("fn_work_line2"); ?></b>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <img class="home-icon" src="<?= base_url("assert/fontend/img/icon-r.png"); ?>">
                     <p>
-                        <b>Our partners at work! We will craft out the best chosen fruit to you</b>
+                        <b><?=$this->lang->line("fn_work_line3"); ?></b>
                     </p>
                 </div>
                 <div class="col-sm-3">
                     <img class="home-icon" src="<?= base_url("assert/fontend/img/icon-g.png"); ?>">
                     <p>
-                        <b>Sit back and wait for your order!</b>
+                        <b><?=$this->lang->line("fn_work_line4"); ?></b>
                     </p>
                 </div>
             </div>
@@ -81,20 +81,20 @@
         <div class="container my-container">
             <img class="fruits berry" src="<?= base_url("assert/fontend/img/berry.svg"); ?>">
             <img class="fruits avocado" src="<?= base_url("assert/fontend/img/avocado.svg"); ?>">
-            <h2>WHAT ARE WE ABOUT?</h2>
+            <h2><?=$this->lang->line("fn_about"); ?></h2>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="title-part">
-                        <h1><img class="abt-icon" src="<?= base_url("assert/fontend/img/about-icon-1.png"); ?>">FRESH</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                        <h1><img class="abt-icon" src="<?= base_url("assert/fontend/img/about-icon-1.png"); ?>"><?=$this->lang->line("fn_fresh"); ?></h1>
+                        <p><?=$this->lang->line("fn_fresh_line"); ?></p>
                     </div>
                     <div class="title-part">
-                        <h1><img class="abt-icon" src="<?= base_url("assert/fontend/img/about-icon-2.png"); ?>">HEALTHY</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                        <h1><img class="abt-icon" src="<?= base_url("assert/fontend/img/about-icon-2.png"); ?>"><?=$this->lang->line("fn_healthy"); ?></h1>
+                        <p><?=$this->lang->line("fn_healthy_line"); ?></p>
                     </div>
                     <div class="title-part">
-                        <h1><img class="abt-icon" src="<?= base_url("assert/fontend/img/about-icon-3.png"); ?>">ECO</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                        <h1><img class="abt-icon" src="<?= base_url("assert/fontend/img/about-icon-3.png"); ?>"><?=$this->lang->line("fn_eco"); ?></h1>
+                        <p><?=$this->lang->line("fn_eco_line"); ?></p>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -106,10 +106,10 @@
                             </li>
                             <li>
                                 <div class="what-text">
-                                    <h3>WHAT</h3>
-                                    <h3>ARE</h3>
-                                    <h3>WE</h3>
-                                    <h3>ABOUT?</h3>
+                                    <h3><?=$this->lang->line("fn_what"); ?></h3>
+                                    <h3><?=$this->lang->line("fn_are"); ?></h3>
+                                    <h3><?=$this->lang->line("fn_we"); ?></h3>
+                                    <h3><?=$this->lang->line("fn_about1"); ?></h3>
                                 </div>
                             </li>
                             <li>
@@ -120,16 +120,16 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="title-part title-part-v2">
-                        <h1><img class="mobile-icon" src="<?= base_url("assert/fontend/img/about-icon-4.png"); ?>">TASTY<img class="icon-v2" src="<?= base_url("assert/fontend/img/about-icon-4.png"); ?>"></h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                        <h1><img class="mobile-icon" src="<?= base_url("assert/fontend/img/about-icon-4.png"); ?>"><?=$this->lang->line("fn_tasty"); ?><img class="icon-v2" src="<?= base_url("assert/fontend/img/about-icon-4.png"); ?>"></h1>
+                        <p><?=$this->lang->line("fn_tasty_line"); ?></p>
                     </div>
                     <div class="title-part title-part-v2">
-                        <h1><img class="mobile-icon" src="<?= base_url("assert/fontend/img/about-icon-5.png"); ?>">YUMMY<img class="icon-v2" src="<?= base_url("assert/fontend/img/about-icon-5.png"); ?>"></h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                        <h1><img class="mobile-icon" src="<?= base_url("assert/fontend/img/about-icon-5.png"); ?>"><?=$this->lang->line("fn_yummy"); ?><img class="icon-v2" src="<?= base_url("assert/fontend/img/about-icon-5.png"); ?>"></h1>
+                        <p><?=$this->lang->line("fn_yummy_line"); ?></p>
                     </div>
                     <div class="title-part title-part-v2">
-                        <h1><img class="mobile-icon" src="<?= base_url("assert/fontend/img/about-icon-6.png"); ?>">PREMIUM<img class="icon-v2" src="<?= base_url("assert/fontend/img/about-icon-6.png"); ?>"></h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                        <h1><img class="mobile-icon" src="<?= base_url("assert/fontend/img/about-icon-6.png"); ?>"><?=$this->lang->line("fn_premium"); ?><img class="icon-v2" src="<?= base_url("assert/fontend/img/about-icon-6.png"); ?>"></h1>
+                        <p><?=$this->lang->line("fn_premium_line"); ?></p>
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@
     <section>
         <div class="container my-container">
             <div class="our-partner">
-                <h3>OUR PARTNER</h3>
+                <h3><?=$this->lang->line("fn_partner"); ?></h3>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="loop-carousel-partner owl-carousel owl-theme">
@@ -176,13 +176,13 @@
                     <img class="" src="<?= base_url("assert/fontend/img/girl-img.png"); ?>">
                 </div>
                 <div class="col-sm-6">
-                    <h1>WHY CHOOSE US</h1>
-                    <h2>100% FRESH ORGANIC FRUITS</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
-                    <h2>FAST DELIVERY</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
-                    <h2>RICH EXPERIENCE</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
+                    <h1><?=$this->lang->line("fn_choose_us"); ?></h1>
+                    <h2><?=$this->lang->line("fn_choose_us_hd1"); ?></h2>
+                    <p><?=$this->lang->line("fn_choose_us__hd1_line"); ?></p>
+                    <h2><?=$this->lang->line("fn_choose_us_hd2"); ?></h2>
+                    <p><?=$this->lang->line("fn_choose_us__hd2_line"); ?></p>
+                    <h2><?=$this->lang->line("fn_choose_us_hd3"); ?></h2>
+                    <p><?=$this->lang->line("fn_choose_us__hd3_line"); ?></p>
                 </div>
             </div>
         </div>
@@ -193,7 +193,7 @@
     <section>
         <div class="what-people-say">
             <div class="container my-container">
-                <h1>WHAT PEOPLE SAY</h1>
+                <h1><?=$this->lang->line("fn_people"); ?></h1>
                 <div class="loop-carousel-people owl-carousel owl-theme">
                     <?php
                     $count = 0;

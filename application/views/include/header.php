@@ -88,11 +88,11 @@
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
 						<a class="nav-item nav-link" href="<?= base_url("aboutus") ?>"><?=$this->lang->line("fn_about_us"); ?></a>
-						<a class="nav-item nav-link" href="<?= base_url("learn") ?>">LEARN</a>
-						<a class="nav-item nav-link" href="<?= base_url("ordernow") ?>">ORDER NOW</a>
-						<a class="nav-item nav-link" href="<?= base_url("faq") ?>">FAQ</a>
-						<a class="nav-item nav-link" href="<?= base_url("contactus") ?>">CONTACT US</a>
-						<a class="nav-item nav-link" href="<?= base_url("blog") ?>">BLOG</a>
+						<a class="nav-item nav-link" href="<?= base_url("learn") ?>"><?=$this->lang->line("fn_learn"); ?></a>
+						<a class="nav-item nav-link" href="<?= base_url("ordernow") ?>"><?=$this->lang->line("fn_order_now"); ?></a>
+						<a class="nav-item nav-link" href="<?= base_url("faq") ?>"><?=$this->lang->line("fn_faq"); ?></a>
+						<a class="nav-item nav-link" href="<?= base_url("contactus") ?>"><?=$this->lang->line("fn_contact_us"); ?></a>
+						<a class="nav-item nav-link" href="<?= base_url("blog") ?>"><?=$this->lang->line("fn_blog"); ?></a>
 					</div>
 				</div>
 			</div>
