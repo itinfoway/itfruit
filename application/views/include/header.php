@@ -87,7 +87,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
-						<a class="nav-item nav-link" href="<?= base_url("aboutus") ?>">ABOUT US</a>
+						<a class="nav-item nav-link" href="<?= base_url("aboutus") ?>"><?=$this->lang->line("fn_about_us"); ?></a>
 						<a class="nav-item nav-link" href="<?= base_url("learn") ?>">LEARN</a>
 						<a class="nav-item nav-link" href="<?= base_url("ordernow") ?>">ORDER NOW</a>
 						<a class="nav-item nav-link" href="<?= base_url("faq") ?>">FAQ</a>

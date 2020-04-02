@@ -180,4 +180,9 @@ $lang["alacarte_saving"] = 'Savings';
 $lang["alacarte_input_saveing_emsg"] = 'You have not given a min 5 chars';
 $lang["alacarte_input_saveing_plac"] = 'Please Enter Amount';
 
+//include/header.php
+$lang["fn_about_us"] = 'ABOUT US';
+
+
+
 
