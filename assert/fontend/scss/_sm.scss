@@ -1,0 +1,778 @@
+/**
+* Holds all the min-width 768px and max-width 991px media styles
+*
+*
+**/
+@media (min-width: 576px){
+	section .contact-part .social .img-part {
+		margin: 0 auto;
+		width: 50%;
+	}
+	section .saved-add {
+		padding: 40px 9px;
+	}
+	section{
+		.about{
+			position: relative;
+			.mobile-icon{
+
+				display: none;
+			}
+			.icon-v2{
+				padding: 0px 15px;
+				display: initial;
+			}
+			.watermelon{
+				position: absolute;
+				height: 150px;
+				display: block;
+				right: 0;
+				left: 0;
+				margin: auto;
+			}
+			.f-bag{
+				display: block;
+				height: auto;
+				width: 139px;
+				bottom: 0;
+				right: 0;
+				left: 20%;
+				position: absolute;
+			}
+			h2{
+				display: none;
+			}
+			.title-part{
+				text-align: left;
+				p{
+					font-size: 14px;
+				}
+			}
+			.title-part-v2{
+				text-align: right;
+			}
+			.about-text{
+				display: block;
+				height: 36%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				margin: auto;
+				ul{
+					display: flex;
+					padding-inline-start: 0px;
+					margin-bottom: 0px;
+				}
+				img{
+					height: 150px;
+				}
+				h3{
+					color: #E4572E;
+					text-align: center;
+					font-size: 25px;
+				}
+			}
+		}
+		.what-people-say{
+			h1{
+				text-align: center;
+			}
+			h5{
+				text-align: left;
+
+			}
+			p{
+				text-align: left;
+			}
+			img{
+				width: 124px; 
+			}
+			.part-two{	
+				h5{
+					text-align: right;
+
+				}
+				p{
+					text-align: right;
+				}
+				.img-block{
+					display: block;
+				}
+				.img-none{
+					display: none;
+				}
+			}
+		}
+		.why-choose-us{
+			h1{
+				font-size: 25px;
+				text-align: left;
+			}
+			h2{
+				text-align: left;
+				font-size: 19px;
+			}	
+			p{
+				text-align: left;
+				font-size: 15px;
+			}	
+			.img-part{
+				position: relative;
+				img{
+					position: absolute;
+					bottom: 0;
+					margin: 0 auto;
+					width: 268px;
+					right: 0;
+					left: 0;
+					height: auto;
+				}
+			}
+		}
+		.our-partner{
+			.p-frame{
+				width: 120px;
+				height: 120px;
+			}
+		}
+		.how-work-sec{
+			.home-icon {
+				margin: 0 auto;
+				height: 105px;
+				display: block;
+			}
+			h1 {
+				font-size: 48px;
+			}
+			p{
+				font-size: 13px;
+			}
+			.fruits{
+				left: 40px;
+				height: 100px;
+			}
+			.strawberry{
+				top: -150px;
+			}
+			.grapes{
+				left: 67px;
+				top: -87px;
+			}
+		}
+		.home-bg{
+			height: 292px;
+			.order-btn{
+				top: 106px;
+			}
+		}
+		.bill-pay{
+			.buttons{
+				button{
+					margin: 8px auto;
+					font-size: 11px;
+				}
+			}
+		}
+		.call{
+			p{
+				text-align: left;
+			}
+		}
+		.que-part{
+			padding: 15px 15px;
+			
+			.accordion {
+				p{
+					font-size: 18px;
+					padding: 7px 0px 0px 13px;
+				}
+			}
+			.panel{
+				padding: 0px 0px 0px 72px;
+				font-size: 16px;
+			}
+		}
+		.search-bar{
+			.search-part {
+				width: 92%;
+				.line{
+					height: 12px;
+				}
+			}
+		} 
+		.faq {
+			.faq-bg {
+				height: 272px;
+				.faq-text{
+					left: 21px;
+					h1 {
+						font-size: 22px;
+						line-height: 17px;
+					}
+					p{
+						line-height: 14px;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		.plan{
+			padding: 90px 49px;
+			.plans {
+				padding-top: 56px;
+			}
+			.plans-v2 {
+				padding-bottom: 72px;
+			}
+		}
+	}
+}
+@media (min-width: 768px){
+	.top-nav{
+		.dd-icon{
+			position: static;
+			margin-top: 24px;
+		}
+		.dd-text{
+			top: 79px;
+			right: 51px;
+		}
+	}
+	section{
+		.about{
+			.fruits {
+				height: 152px;
+			}
+			.berry {
+				top: -76px;
+			}
+			.avocado{
+				bottom: -76px;
+			}
+			.watermelon {
+				height: 180px;
+				top: -29px;
+			}
+			.f-bag {
+				width: 191px;
+				bottom: -35px;
+			}
+			h2{
+				display: none;
+			}
+			.about-text{
+				left: -14%;
+				height: 50%;
+				img {
+					height: 225px;
+				}
+				.what-text{
+					margin-top: 53px;
+				}
+			}
+			.title-part{
+				p{
+					font-size: 19px;
+				}
+			}
+		}
+		.what-people-say{
+			img {
+				width: 168px;
+			}
+			h1{
+				font-size: 35px;
+			}
+			h5{
+				font-size: 35px;
+			}
+			p{
+				font-size: 18px;
+			}
+		}
+		.why-choose-us {
+			.fruits {
+				height: 152px;
+			}
+			.berry {
+				top: -76px;
+			}
+			.avocado{
+				bottom: -76px;
+			}
+			h1{
+				font-size: 37px;
+			}	
+			h2{
+				font-size: 30px;
+			}
+			p{
+				font-size: 20px;
+			}
+			.img-part{
+				img{
+					width: 372px;
+				}
+			} 
+		}
+		.our-partner{
+			h3{
+				font-size: 45px;
+			}
+			.p-frame{
+				width: 165px;
+				height: 165px;
+			}
+		}
+		.how-work-sec{
+			h1 {
+				font-size: 48px;
+			}
+			p{
+				font-size: 20px;
+			}
+			.fruits{
+				left: 45px;
+				height: 140px;
+			}
+			.strawberry{
+				top: -180px;
+			}
+			.grapes{
+				top: -100px;
+				left: 90px;
+			}
+		}
+		.home-bg {
+			height: 430px;
+			.order-btn{
+				top: 153px;
+			}
+		}
+		.new-login{
+			h6{
+				.forgot {
+					margin-top: -30px;
+					padding-top: 0px;
+					float: right;
+				}
+			}
+		}
+		.new-signup{
+			padding: 76px 63px;
+			h1{
+				text-align: left;
+			}
+			.bill-pay .billing .check {
+				text-align: left;
+			}
+			.btn2 {
+				float: left;
+			}
+			p{
+				text-align: left;
+			}
+			.blog{
+				.carousel-inner{
+					.carousel-item{
+						img{
+							height: 337px;
+							width: 295px;
+						}
+					} 
+				} 
+			} 
+		}
+		.new-add{
+			.new-add-btns{
+				margin-top: 25px !important; 
+			}
+			.rdo-btn {
+				display: inline-flex;
+				margin: 0 auto;
+				width: 50%;
+				position: absolute;
+				left: -182px;
+				right: 0;
+			}
+		}
+		.contact-part{
+			.fruits{
+				height: 120px;
+			}
+			.strawberry{
+				top: 0px;
+				right: 0px;
+			}
+			.berry{
+				top: 0px;
+				left: 111px;
+				bottom: 0px;
+				right: 0px;
+				margin: auto;
+			}
+			.pinapple{
+				bottom: 0px;
+				left: 0px;
+			}
+			.banana{
+				bottom: 0px;
+				right: 0px;
+			}
+			.cartoon {
+				position: absolute;
+				bottom: 22px;
+				left: 48px;
+			}
+		}
+		.event-msg{
+			p {
+				padding: 0px 70px;
+			}
+			.form-part{
+				.send-form{
+					h3 {
+						font-size: 32px;
+					}
+				}
+			}  
+		}
+		.send-msg{			
+			h1{
+				font-size: 46px;
+			}
+			.form-part{
+				.fruits {
+					height: 94px;
+				}
+				.send-form{
+					.form{
+						width: 82%;
+					}
+				} 
+			}
+		}
+		.order-history{
+			.history{
+				padding: 62px 20px;
+				.box-img{
+					margin-top: -15px;
+				}
+				button{
+					width: 138px;
+					margin-left: -76px;
+				}
+				.text {
+					text-align: left;
+				}
+			}
+			.manage{
+				padding: 62px 74px;
+				button{
+					padding: 9px 37px;
+					width: auto;
+					margin-left: 0px;
+				}
+				.curr-btn{
+					margin: 0 auto;
+				}
+				.text{
+					text-align: center;
+					.credi-btn{
+						margin: 0 auto;
+						padding-top: 21px;
+						P{
+							color: #101F51;
+						}
+					}
+					h3 {
+						font-size: 22px;
+						margin: 13px 0px;
+						color: #FAA919;
+					}
+					h6{
+						color: #ffffff;
+					}
+					.week ul{
+						display: flex;
+						li .circ{
+							height: 38px;
+							width: 38px;
+						}
+					} 
+				}
+			} 
+		}
+		.saved-add{
+			margin: 60px 0px;
+			padding: 40px 37px;
+			h1{
+				font-size: 42px;
+			}
+			.fruits {
+				position: absolute;
+				height: 105px;
+			}
+			.watermelon{
+				top: -30px;
+			}
+			.grapes{
+				top: -30px;
+			}
+			.orange{
+				bottom: -30px;
+			}
+			.avocado{
+				bottom: -30px;
+			}
+			.add-part{
+				.text-part{
+					padding: 33px 58px;
+					.buttons{
+						button{
+							font-size: 16px;
+							padding: 6px 19px;
+						}
+					}
+					.location{
+						p{
+							font-size: 15px;
+						}
+					}
+				}
+			} 
+		}
+		.address{
+			.add-address{
+				.fruits {
+					height: 102px;
+				}
+				.pinapple {
+					left: 12px;
+				}
+				h1{
+					font-size: 27px;
+					font-size: 49px;
+					padding: 19px 0px;
+				}
+			}
+		}
+		.random-part{
+			h1{
+				font-size: 45px;
+			}
+			ul{
+				li{
+					font-size: 23px;
+				}
+			}
+		} 
+		.remark{
+			p{
+				text-align: left;
+				padding-left: 71px;
+			}
+		}
+		.bill-pay{
+			.billing{
+				h4{
+					font-size: 27px;
+				}
+				.buttons{
+					button{
+						font-size: 11px;
+					}
+				}
+			} 
+			.payment-part{
+				p{
+					font-size: 17px;
+				}
+				.comment{
+					p{
+						font-size: 14px;
+					}
+					textarea{
+						padding: 0px 38px;
+					}
+				} 
+			}
+		}
+		.faq {
+			.faq-bg {
+				height: 388px;
+				.faq-text{
+					left: 44px;
+					h1 {
+						font-size: 31px;
+						line-height: 27px;
+					}
+					p{
+						line-height: 19px;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+		.plan{
+			padding: 50px 82px;
+			.box{
+				h3 {
+					font-size: 20px;
+				}
+			}
+			.plan-v2{
+				.box{
+					h2 {
+						font-size: 12px;
+					}
+					button{
+						padding: 8px 21px;
+						font-size: 12px;
+					}
+				} 
+			} 
+		} 
+		.week{
+			width: 84%;
+			margin: 0 auto;
+			ul{
+				li{
+					.circ {
+						height: 59px;
+						width: 60px;
+					}
+					p{
+						font-size: 18px;
+					}
+				} 
+			} 
+		} 
+		.days{
+			padding-top: 30px;
+			.box{
+				height: 95px;
+				width: 100%;
+				h6{
+					font-size: 18px;
+				}
+			}
+			.box-3{
+				img{
+					top: -38px;
+				}
+			}
+		} 
+		.discription{
+			.col-md-10{
+				padding-right: 0px;
+			}
+			.col-md-2{
+				padding-left: 0px;
+			}
+			p {
+				text-align: left;
+				font-size: 13px;
+			}
+			img{
+				width: 100%;
+			}
+		}
+		.cart{ 
+			.cart-part{
+				padding: 107px 41px;
+				.watermelon {
+					top: 3px;
+				}
+				.banana{
+					bottom: 3px;
+				}
+				.cart-text{
+					p {
+						text-align: left;
+					}
+				} 
+				.cart-text-v2{
+					p{
+						text-align: right;
+					}
+				}
+				.ala{
+					height: 290px;
+					width: 290px;
+					margin: auto;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: -15px;
+					right: 0;
+					.ala-text1{
+						left: -118px;
+					}
+					.ala-text2{
+						right: -118px;
+					}
+				}
+			}
+		} 
+		.what-does-part{
+			h1{
+				font-size: 60px;
+			}
+			h3{
+				font-size: 30px;
+			}
+		} 
+		.steps{
+			.arrow{
+				position: relative;
+				img{
+					height: 21px;
+					display: block;
+					top: -26%;
+					right: 0;
+					margin: auto;
+					bottom: 0;
+					left: -17px;
+					position: absolute;
+				}
+			}
+			.row{
+				margin: 0px;
+			} 
+			.step {
+				height: 160px;
+				width: 160px;
+			}
+		}
+	}
+	.pro-img .bg-img {
+		height: 185px;
+	}
+	.pro{
+		height: 140px;
+		width: 140px;
+		top: 20px;
+		right: 8px;
+	}
+	.main-col ul li {
+		font-size: 13px;
+		padding-bottom: 46px;
+	}
+	.cart-table .col-height{
+		height: 429px !important;
+	}
+	.main-col ul {
+		padding: 43px 0px 0px 0px !important;
+	}
+	.cart-table .design img {
+		height: 430px;
+	}
+}
+
+
+
+
+

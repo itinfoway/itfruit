@@ -1,0 +1,589 @@
+/* #### Main css #### */
+
+@font-face {
+    font-family: 'Multicolore Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Multicolore Regular'), url('../fonts/multicolore/Multicolore.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dreamwalker Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dreamwalker Regular'), url('../fonts/dreamwalker/Dreamwalker.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dreamwalker Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dreamwalker Regular'), url('../fonts/dreamwalker/Dreamwalker.woff') format('woff');
+}
+
+body {
+    font-family: 'Multicolore Regular';
+}
+
+.my-container {
+    max-width: 100% !important;
+}
+
+.bg-light {
+    background-color: transparent !important;
+    background-image: url("../img/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 5.5rem;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #ffffff;
+}
+
+.top-nav {
+    padding-top: 10px;
+}
+
+.top-nav .logo {
+    height: 80px;
+}
+
+.top-nav .user img {
+    height: 80px;
+}
+
+.top-nav .user {
+    float: right;
+    display: flex;
+}
+
+.top-nav h1 {
+    font-size: 1.5rem;
+    padding-top: 32px;
+    color: #A8CF4B;
+}
+
+.profile {
+    padding: 76px 0px;
+    margin: 25px 0px;
+    background-image: url("../img/profile-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+}
+
+.profile .btn {
+    background-image: url("../img/button.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6px 31px;
+    background-position: 50% 50%;
+    color: #101F51;
+}
+
+.pro-img {
+    text-align: center;
+    position: relative;
+}
+
+.pro-img h2 {
+    margin-left: -20px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.pro {
+    position: absolute;
+    margin: 0 auto;
+    top: 27px;
+    left: 0;
+    right: 12px;
+    border-radius: 50%;
+    height: 260px;
+    width: 260px;
+}
+
+.profile .form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile img {
+    margin-top: -25px;
+}
+
+.profile .form input {
+    background: transparent;
+    color: #ffffff;
+}
+
+.profile .form-group {
+    margin-bottom: 0px;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.profile .form input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.profile .btn2 {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    padding: 4px 81px;
+}
+
+.ala-carte {
+    padding: 30px 0px;
+}
+
+.ala-carte .ala {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-image: url("../img/10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    background-position: center center;
+    font-family: 'Dreamwalker Regular';
+}
+
+.ala-carte .ala .ala-text {
+    position: absolute;
+    top: 63px;
+    left: 75px;
+}
+
+.ala-carte .ala .ala-text h1 {
+    font-size: 70px;
+}
+
+.ala-carte .ala .ala-text h2 {
+    font-size: 41px;
+    line-height: 19px;
+}
+
+.ala-carte .fruits {
+    width: 100%;
+    height: auto;
+    padding-top: 83px;
+}
+
+.what-dose {
+    padding: 30px 0px;
+}
+
+.what-dose h1 {
+    text-align: center;
+    font-size: 56px;
+    color: #A8CF4B;
+    margin-top: 30px;
+    margin-bottom: 66px;
+}
+
+.what-dose .red-part {
+    background-image: url("../img/13.png");
+}
+
+.what-dose .gold-part {
+    background-image: url("../img/12.png");
+}
+
+.what-dose .blue-part {
+    background-image: url("../img/14.png");
+}
+
+.what-dose .big-blue-part {
+    background-image: url("../img/15.png");
+    padding: 45px 60px !important;
+}
+
+.what-dose .big-red-part {
+    background-image: url("../img/11.png");
+    padding: 35px 60px !important;
+}
+
+.what-dose .text-part {
+    padding: 35px 28px;
+    color: #ffffff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+}
+
+.what-dose .text-part img {
+    height: 110px;
+    width: 110px;
+    top: -53px;
+    left: 39%;
+    position: absolute;
+}
+
+.what-dose .big img {
+    left: 45%;
+    top: -29px;
+}
+
+.what-dose .big-red-part img {
+    left: 45%;
+}
+
+.what-dose .pina img {
+    top: -65px;
+}
+
+.what-dose .text-part h4 {
+    font-size: 24px;
+    padding-top: 25px;
+}
+
+.what-dose .text-part p {
+    font-size: 15px;
+    padding: 0px 35px;
+}
+
+.what-dose .line {
+    margin-bottom: 10px !important;
+    height: 22px !important;
+    width: 85% !important;
+    position: static !important;
+}
+
+.table-part {
+    width: 100%;
+}
+
+.cart-table {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.main-col {
+    width: 137px;
+}
+
+.main-col ul {
+    padding: 70px 0px 0px 0px !important;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    list-style-type: none;
+}
+
+.main-col ul li {
+    padding-bottom: 81px;
+    font-size: 20px;
+}
+
+.cart-table .cart-col-1 {
+    height: 700px;
+    background-image: url("../img/1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-2 {
+    height: 700px;
+    background-image: url("../img/2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-3 {
+    height: 700px;
+    background-image: url("../img/3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-4 {
+    height: 700px;
+    background-image: url("../img/4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-5 {
+    height: 700px;
+    background-image: url("../img/5.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-6 {
+    height: 700px;
+    background-image: url("../img/6.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-7 {
+    height: 700px;
+    background-image: url("../img/7.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-8 {
+    height: 700px;
+    background-image: url("../img/8.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .cart-col-9 {
+    height: 700px;
+    background-image: url("../img/9.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.cart-table .design-col img {
+    height: 700px;
+}
+
+.cart-table .design-col {
+    width: 80px;
+}
+
+.ftr {
+    padding: 15px 0px 0px 0px;
+    background-image: url("../img/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+}
+
+.ftr h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #A8CF4B;
+}
+
+.ftr .map {
+    text-align: center;
+    border-radius: 50%;
+}
+
+.ftr .map-part {
+    text-align: center;
+}
+
+.ftr .f-pinapple {
+    top: -160px;
+    position: absolute;
+    height: 250px
+}
+
+.ftr .add-part {
+    display: flex;
+}
+
+.ftr .add-text {
+    color: #A8CF4B;
+    line-height: 31px;
+}
+
+.ftr .add-img img {
+    height: 76px;
+}
+
+.ftr .ftr-row {
+    padding-top: 71px;
+}
+
+.ftr .social {
+    padding: 20px 0px;
+    display: flex;
+}
+
+.ftr .social img {
+    height: 76px;
+}
+
+.ftr .ftr-fruits {
+    margin-top: -52px;
+}
+
+
+/* #### XS CSS #### */
+
+@media (max-width: 767px) {
+    .top-nav .logo {
+        height: 35px;
+    }
+    .top-nav h1 {
+        font-size: 13px;
+        padding-top: 17px;
+    }
+    .top-nav .user img {
+        height: 40px;
+    }
+    .profile .btn {
+        margin: 0 auto;
+        display: block;
+    }
+    .profile .form {
+        padding: 0px 11%;
+    }
+    .what-dose .big-blue-part {
+        padding: 61px 17px !important;
+    }
+    .ala-carte .fruits {
+        padding-top: 0px;
+    }
+    .padding-left-10 {
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    .padding-right-10 {
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+    .padding-0 {
+        padding: 0;
+    }
+    .ftr .social {
+        display: block;
+        text-align: center;
+    }
+    .ftr .add-part {
+        display: block;
+        text-align: center;
+    }
+    .ftr .add-text p {
+        padding-top: 0px !important;
+    }
+    .ftr .f-pinapple {
+        top: -56px;
+        height: 74px;
+    }
+    .ftr .ftr-row {
+        padding-top: 0px;
+    }
+    .ftr .map {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/* #### SM CSS #### */
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none !important;
+    }
+    .collapse:not(.show) {
+        display: block;
+    }
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .navbar-expand-lg {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+    }
+    .ala-carte .ala {
+        height: 190px;
+        width: 190px;
+    }
+    .ala-carte .ala .ala-text {
+        top: 37px;
+        left: 46px;
+    }
+    .ala-carte .fruits {
+        padding-top: 65px;
+    }
+    .ftr .map {
+        width: 200px;
+        height: 200px;
+    }
+    .ftr .ftr-fruits {
+        margin-top: -31px;
+    }
+}
+
+
+/* #### MD CSS #### */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 3.5rem;
+    }
+    .ala-carte .fruits {
+        padding-top: 40px;
+    }
+    .ala-carte .ala .ala-text {
+        top: 63px;
+        left: 75px;
+    }
+    .ala-carte .ala {
+        height: 250px;
+        width: 250px;
+    }
+    .ftr .map {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+/* #### LG CSS #### */
+
+@media (min-width:1200px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 5.5rem;
+    }
+    .ftr .ftr-fruits {
+        margin-top: -78px;
+    }
+}
+
+@media (min-width: 1255px) {}
+
+.form-error {
+    color: red;
+    font-size: 10px;
+}

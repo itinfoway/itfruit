@@ -1,0 +1,47 @@
+/**
+* Holds all the header styles
+*
+*
+**/
+header{
+
+}
+.top-nav{
+	position: relative;
+	.dd-text{
+		display: none;
+		background-image: url(../img/dd_bg.png);
+		background-size: 100% 100%;
+		position: absolute;
+		z-index: 50;
+		top: 100px;
+		right: 0px;
+		padding: 28px;
+		ul{
+			padding: 0px;
+			margin: 0px;
+			li{
+				text-align: center;
+				list-style-type: none;
+				color: #29335C;
+
+			}
+		}	
+	}
+	.dd-icon{
+		z-index: 5;
+		height: 35px !important;
+		width: 53px !important;
+		position: absolute;
+		right: 2%;
+		top: 60px;
+	}
+	.logo {
+		height: 80px;
+		float: left;
+	}
+}
+
+
+
+

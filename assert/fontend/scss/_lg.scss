@@ -1,0 +1,573 @@
+/**
+* Holds all the min-width 1200px styles
+*
+*
+**/
+@media(min-width: 1200px) {
+	section{
+		.about{
+			.title-part{
+				margin-bottom: 75px;
+			}
+			.about-text{
+				left: -4%;
+				img {
+					height: 268px;
+				}
+				.what-text {
+					margin-top: 60px;
+				}
+				h3 {
+					font-size: 31px;
+				}
+			}
+		} 
+		.what-people-say{
+			img {
+				width: 230px;
+			}
+			h1{
+				font-size: 45px;
+			}
+			h5{
+				font-size: 45px;
+			}
+			p{
+				font-size: 25px;
+			}
+		}
+		.why-choose-us{
+			h1 {
+				font-size: 53px;
+			}
+			h2{
+				font-size: 45px;
+			}
+			p{
+				font-size: 25px;
+			}
+			.img-part{
+				img {
+					width: 434px;
+				}
+			}
+		}
+		.our-partner{
+			.p-frame {
+				width: 260px;
+				height: 260px;
+			}
+		}
+		.how-work-sec{
+			.fruits{
+				height: 200px;
+			}
+		}
+		.home-bg {
+			height: 665px;
+			.order-btn{
+				top: 236px;
+			}
+		}
+		.new-signup {
+			padding: 76px 131px;
+			h1{
+				font-size: 69px;
+			}
+			.btn2 {
+				font-size: 25px;
+				padding: 11px 82px;
+				padding-top: 13px;
+			}
+		}
+		.new-add{
+			padding: 58px 37px !important;
+			.add-part{
+				padding: 20px 50px !important;  
+			}
+			iframe {
+				height: 450px;
+				width: 450px;
+			}
+			.bill-pay .billing .buttons button {
+				padding: 14px 0px;
+			}
+		}
+		.contact-part{
+			.cartoon {
+				position: absolute;
+				bottom: 22px;
+				left: 90px;
+			}
+		}
+		.event-msg{
+			p {
+				padding: 0px 103px;
+				font-size: 19px;
+			}
+		}
+		.send-msg{
+			.form-part{
+				.fruits {
+					height: 142px;
+				}
+				.orange {
+					bottom: -57px;
+				}
+				.watermelon{
+					top: -57px;
+				}
+			}
+		} 
+		.order-history{
+			.history{
+				padding: 62px 20px;
+				padding-left: 62px;
+				.text{
+					.list{
+						p {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			.manage{
+				padding: 62px 83px;
+			}
+		} 
+		.saved-add{
+			.berry{
+				height: 170px;
+			}
+			.add-part{
+				.text-part{
+					width: 83%;
+					padding: 54px 92px;
+					.location{
+						p {
+							font-size: 20px;
+						}
+					}
+					.buttons{
+						button {
+							font-size: 19px;
+							padding: 6px 30px;
+						}
+					}
+				}
+			}
+		}
+		.address{
+			.add-address{
+				.pinapple {
+					left: 54px;
+				}
+				.strawberry {
+					right: 18px;
+				}
+			}
+		}
+		.random-part{
+			ul{
+				li {
+					font-size: 27px;
+				}
+			}
+			.left-part {
+				padding-right: 90px;
+			}
+			.right-part {
+				padding-left: 90px;
+			}
+		}
+		.date-time{
+			.totel{
+				width: 183px;
+				p{
+					font-size: 13px;
+				}
+			}
+			.date-part{
+				width: 205px;
+				.time{
+					padding: 0px 12%;
+				}
+				p{
+					font-size: 13px;
+				}
+			}
+			.totel{
+				width: 190px;
+			}
+		} 
+		.bill-pay{
+			.billing{
+				padding: 69px 72px;
+				padding-bottom: 167px;
+				h1 {
+					font-size: 22px;
+				}
+				.buttons{
+					button{
+						padding: 11px 0px;
+						font-size: 16px;
+
+					}
+				} 
+				.check{
+					.text {
+						font-size: 17px;
+					}
+				}
+			}
+			.c-out{
+				button {
+					font-size: 25px;
+					padding: 28px 0px;
+				}
+			}
+			.payment-part{
+				padding-bottom: 80px;
+				.comment{
+					p {
+						font-size: 20px;
+					}
+				}
+			}  
+		}
+		.call{
+			p{
+				font-size: 27px;
+			}
+		}
+		.faq{
+			.faq-bg {
+				height: 700px;
+				.faq-text{
+					left: 80px;
+					h1 {
+						font-size: 55px;
+						line-height: 50px;
+					}
+				}
+			}
+		}
+		.plan {
+			padding: 58px 95px;
+		}
+		.week{
+			width: 72%;
+			ul{
+				li{
+					.circ {
+						height: 90px;
+						width: 90px;
+					}
+					p{
+						height: 30%;
+					}
+				} 
+			} 
+		}
+		.discription{
+			p {
+				font-size: 21px;
+			}
+			img{
+				height: 230px;
+				top: -39px;
+				position: absolute;
+			}
+		}
+		.steps{
+
+			.step {
+				height: 230px;
+				width: 230px;
+				.step-text{
+					h6{
+						font-size: 21px;
+					}
+				}
+			}
+		} 
+		.cart{
+			.cart-part{
+				padding: 105px 127px;
+				.watermelon {
+					top: 25px;
+				}
+				.banana{
+					bottom: 25px;
+				}
+				.cart-text{
+					p{
+						width: 198px;
+						font-size: 25px;
+					}
+				}
+				.ala {
+					height: 596px;
+					width: 596px;
+					left: 33px;
+					p {
+						font-size: 19px;
+					}
+					h1 {
+						font-size: 48px;
+					}
+					h3 {
+						font-size: 31px;
+					}
+					.ala-text1{
+						height: 18%;
+						left: -244px;
+					}
+					.ala-text2{
+						height: 18%;
+						right: -244px;
+					}
+				}
+			}
+		}		
+
+	}
+	.ala-part {
+		height: 505px;
+	}
+	.ala-carte .ala .ala-text {
+		width: 38%;
+		height: 46%;
+	}
+	.ala-carte .ala .ala-text h1 {
+		font-size: 126px;
+	}
+	.ala-carte .ala .ala-text h2 {
+		font-size: 70px;
+	}
+}
+
+
+@media (min-width: 1300px){
+	.top-nav .dd-text {
+		top: 79px;
+		right: 90px;
+	}
+	section{
+		.about {
+			padding: 110px 67px;
+			.f-bag {
+				width: 328px;
+			}
+		}
+		.what-people-say{
+			padding: 20px 68px;	 
+		}
+		.why-choose-us{
+			.img-part{
+				img {
+					width: 454px;
+				}
+			}
+		} 
+		.our-partner{
+			padding: 50px 120px;
+		}
+		.how-work-sec{
+			.fruits{
+				height: 200px;
+			}
+			.strawberry{
+				top: -300px;
+			}
+			.grapes{
+				top: -150px;
+				left: 130px;
+			}
+		}
+		.home-bg {
+			height: 765px;
+			.order-btn {
+				top: 270px;
+			}
+		}
+		.order-history .manage {
+			padding: 62px 118px;
+		}
+		.new-signup .blog .carousel-indicators {
+			width: 74%;
+		}
+		.new-signup{
+			padding: 119px 131px;
+			.blog .carousel-inner .carousel-item img {
+				height: 415px;
+				width: 415px;
+			}
+		}
+		.contact-part{
+			.cartoon {
+				position: absolute;
+				bottom: -22px;
+				left: 178px;
+				width: 584px;
+				height: 597px;
+			}
+		}
+		.event-msg{
+			p {
+				padding: 0px 130px;
+				font-size: 19px;
+			}
+		}
+		.saved-add{
+			.berry {
+				height: 229px;
+			}
+		}
+		.saved-add{
+			.add-part{
+				.text-part {
+					width: 78%;
+				}
+			}
+		} 
+		.address{
+			.add-address{
+				.pinapple {
+					left: 60px;
+				}
+				.strawberry {
+					right: 25px;
+				}
+			}
+		}
+		.date-time{
+			.date-part{
+				width: 228px;
+				.time{
+					padding: 0px 13%;
+				}
+			}
+			.totel{
+				width: 228px;
+			}
+		}
+		.plan {
+			padding: 58px 130px;
+		}
+		.week{
+			width: 60%;
+		}
+		.steps{
+			.arrow{
+				img{
+					height: 54px;
+					left: -41px;
+				}
+			}
+		}
+	}
+	section .cart .cart-part {
+		padding: 130px 191px;
+		.pinapple{
+			height: 200px;
+		}
+		.strawberry{
+			height: 200px;
+		}
+		.sitafal{
+			height: 200px;
+		}
+		.grapes{
+			height: 200px;
+		}
+	}
+}
+
+@media (min-width: 1400px){
+	.top-nav .dd-text {
+		top: 79px;
+		right: 149px;
+	}
+	section{
+		.about {
+			padding: 100px 119px;
+			.f-bag {
+				width: 228px;
+			}
+		}
+		.how-work-sec{
+			.fruits{
+				height: 225px;
+			}
+			.strawberry{
+				top: -400px;
+			}
+			.grapes{
+				top: -250px;
+				left: 130px;
+			}
+		}
+		.home-bg {
+			height: 865px;
+
+			.order-btn {
+				top: 316px;
+			}
+		}
+	}
+	section .new-signup .blog .carousel-indicators {
+		width: 70%;
+	}
+	section .contact-part .fruits {
+		height: 206px;
+	}
+	section	.saved-add .add-part .text-part {
+		width: 73%;
+	}
+	section .cart .cart-part .cart-text p {
+		width: 221px;
+	}
+	section .cart .cart-part {
+		padding: 130px 222px;
+	}
+	section .bill-pay .billing {
+		padding: 69px 96px;
+		padding-bottom: 198px;
+	}
+	section .bill-pay .payment-part{
+		padding-bottom: 80px;
+	}
+	section .bill-pay .c-out button {
+		font-size: 29px;
+		padding: 40px 0px;
+	}
+	section .order-history .history {
+		padding: 62px 20px;
+		padding-left: 89px;
+	}
+	section .order-history .manage {
+		padding: 62px 193px;
+		padding-left: 206px; 
+	}
+}
+@media (min-width: 1500px){
+	.top-nav .dd-text {
+		top: 79px;
+		right: 210px;
+	}
+	section{
+		.about {
+			padding: 100px 122px;
+		}
+	}
+}
+@media (min-width: 1600px){
+	.top-nav .dd-text {
+		top: 79px;
+		right: 257px;
+	}
+	section .about {
+		padding: 100px 206px;
+	}
+}

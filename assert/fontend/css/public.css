@@ -1,0 +1,3931 @@
+/**
+* Holds all the variables
+*
+**/
+
+
+/**
+* Holds all the header styles
+*
+*
+**/
+
+.top-nav {
+    position: relative;
+}
+
+.top-nav .dd-text {
+    display: none;
+    background-image: url(../img/dd_bg.png);
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 50;
+    top: 100px;
+    right: 0px;
+    padding: 28px;
+}
+
+.top-nav .dd-text ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-nav .dd-text ul li {
+    text-align: center;
+    list-style-type: none;
+    color: #29335C;
+}
+
+.top-nav .dd-icon {
+    z-index: 5;
+    height: 35px !important;
+    width: 53px !important;
+    position: absolute;
+    right: 2%;
+    top: 60px;
+}
+
+.top-nav .logo {
+    height: 80px;
+    float: left;
+}
+
+
+/**
+* Holds all the max-width 767 media styles
+*
+*
+**/
+
+section .about {
+    padding: 95px 0px;
+    position: relative;
+    background-image: url("../img/about-bg.png");
+    background-size: 100% 100%;
+}
+
+section .about .fruits {
+    position: absolute;
+    height: 100px;
+}
+
+section .about .abt-icon {
+    padding: 0px 15px;
+}
+
+section .about .mobile-icon {
+    padding: 0px 15px;
+    display: initial;
+}
+
+section .about .icon-v2 {
+    display: none;
+}
+
+section .about .berry {
+    top: -52px;
+    left: 0;
+}
+
+section .about .avocado {
+    bottom: -52px;
+    right: 0;
+}
+
+section .about .about-text {
+    display: none;
+}
+
+section .about .f-bag {
+    display: none;
+}
+
+section .about .watermelon {
+    display: none;
+}
+
+section .about h2 {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+
+section .about .title-part {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section .about .title-part h1 {
+    font-family: 'Dreamwalker Regular';
+    color: #ffffff;
+}
+
+section .about .title-part P {
+    font-family: auto;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+section .what-people-say {
+    padding: 20px 0px;
+}
+
+section .what-people-say h1 {
+    color: #29335C;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+section .what-people-say h5 {
+    margin-top: 10px;
+    color: #FAA919;
+    font-family: 'Dreamwalker Regular';
+    text-align: center;
+}
+
+section .what-people-say p {
+    color: #29335C;
+    text-align: center;
+    font-size: 15px;
+}
+
+section .what-people-say .part-two .img-block {
+    display: none;
+}
+
+section .what-people-say img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+section .why-choose-us {
+    position: relative;
+    background-image: url("../img/choose-bg.png");
+    background-size: 100% 100%;
+    color: #ffffff;
+}
+
+section .why-choose-us .fruits {
+    position: absolute;
+    height: 100px;
+}
+
+section .why-choose-us .berry {
+    top: -52px;
+    left: 0;
+}
+
+section .why-choose-us .avocado {
+    bottom: -52px;
+    right: 0;
+}
+
+section .why-choose-us h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0px 13px;
+}
+
+section .why-choose-us h2 {
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Dreamwalker Regular';
+}
+
+section .why-choose-us p {
+    text-align: center;
+    font-family: serif;
+    padding-left: 13px;
+}
+
+section .why-choose-us .img-part img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+section .our-partner {
+    padding: 50px 0px;
+}
+
+section .our-partner h3 {
+    margin-bottom: 20px;
+    color: #FAA919;
+    text-align: center;
+}
+
+section .our-partner .p-frame {
+    background-image: url("../img/p-frame.png");
+    background-size: 100% 100%;
+    width: 200px;
+    height: 200px;
+    margin: 5px auto;
+}
+
+section .our-partner .p-frame img {
+    width: 100%;
+    height: auto;
+}
+
+section .how-work-sec {
+    position: relative;
+}
+
+section .how-work-sec .fruits {
+    position: absolute;
+    top: 0px;
+    height: 70px;
+}
+
+section .how-work-sec .home-icon {
+    margin: 0 auto;
+    height: 177px;
+    display: block;
+}
+
+section .how-work-sec .strawberry {
+    top: -100px;
+}
+
+section .how-work-sec .grapes {
+    top: -55px;
+}
+
+section .how-work-sec h1 {
+    color: #E4572E;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+section .how-work-sec p {
+    font-family: 'Multicolore Regular';
+    font-size: 20px;
+    text-align: center;
+    padding: 6px 10px;
+}
+
+section .home-bg {
+    background-image: url("../img/home-bg.png");
+    background-size: 100% 100%;
+    height: 180px;
+    position: relative;
+}
+
+section .home-bg .order-btn {
+    position: absolute;
+    width: 35%;
+    top: 66px;
+    right: 46%;
+    margin: 0 auto;
+    left: 0;
+}
+
+section .new-add .payment-part input[type="radio"]+label,
+section .new-add .payment-part input[type="checkbox"]+label {
+    background-image: url("../img/redio-2.png") !important;
+}
+
+section .new-add .payment-part input[type="radio"]:checked+label,
+section .new-add .payment-part input[type="checkbox"]:checked+label {
+    background-image: url("../img/redio-3.png") !important;
+}
+
+section .new-add h1 {
+    color: #DB3812 !important;
+}
+
+section .new-add .profile .form input {
+    color: #DB3812 !important;
+}
+
+section .new-add .profile .form input::placeholder {
+    color: #DB3812 !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+section .new-add .profile .form input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #DB3812 !important;
+}
+
+section .new-add .profile .form input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #DB3812 !important;
+}
+
+section .new-add .payment-part {
+    background-image: none !important;
+    padding: 11px 0px !important;
+}
+
+section .new-add iframe {
+    margin: 0 auto;
+    display: block;
+    height: 250px;
+    width: 250px;
+}
+
+section .new-add .bill-pay .payment-part p {
+    font-size: 17px;
+}
+
+section .new-add .new-add-bg {
+    background-image: none !important;
+    padding: 11px 57px !important;
+}
+
+section .new-add .new-add-save-btn {
+    width: 170px !important;
+    font-size: 17px !important;
+    padding: 6px 0px !important;
+}
+
+section .contact-part {
+    position: relative;
+    padding: 99px 32px;
+    background-image: url("../img/cartoon-bg.png");
+    background-size: 100% 100%;
+}
+
+section .contact-part .fruits {
+    position: absolute;
+    height: 84px;
+}
+
+section .contact-part .strawberry {
+    top: 0px;
+    right: 0px;
+}
+
+section .contact-part .berry {
+    top: 0px;
+    left: 0px;
+}
+
+section .contact-part .pinapple {
+    bottom: 0px;
+    left: 0px;
+}
+
+section .contact-part .banana {
+    bottom: 0px;
+    right: 0px;
+}
+
+section .contact-part .cartoon {
+    width: 100%;
+    height: auto;
+}
+
+section .contact-part .icon-part {
+    margin: 20px 0px;
+}
+
+section .contact-part .icon-part h4 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+section .contact-part .icon-part p {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+}
+
+section .contact-part .social h4 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+section .contact-part .social .img-part {
+    display: flex;
+}
+
+section .contact-part .social .img-part img {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+section .contact-part .contact-icon {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+section .send-msg {
+    padding: 50px 0px;
+}
+
+section .send-msg h1 {
+    text-align: center;
+    color: #FAA919;
+    font-size: 25px;
+}
+
+section .send-msg .form-part {
+    position: relative;
+    background-image: url("../img/send-msg-bg.png");
+    background-size: 100% 100%;
+}
+
+section .send-msg .form-part-error {
+    position: relative;
+    background-image: url("../img/d4.png");
+    background-size: 100% 100%;
+}
+
+section .send-msg .form-part .fruits {
+    position: absolute;
+    height: 69px;
+}
+
+section .send-msg .form-part .orange {
+    bottom: -18px;
+    right: 0px;
+}
+
+section .send-msg .form-part .watermelon {
+    top: -18px;
+}
+
+section .send-msg .form-part .send-form {
+    padding: 50px 0px;
+    background-image: none;
+}
+
+section .send-msg .form-part .send-form p {
+    color: #ffffff;
+    margin-bottom: 0;
+    padding-left: 12px;
+}
+
+section .send-msg .form-part .send-form .form {
+    width: 100%;
+    max-width: none;
+}
+
+section .send-msg .form-part .send-form textarea {
+    padding: 15px 28px;
+    background-image: url("../img/textarea.png");
+    background-size: 100% 100%;
+    width: 100%;
+    background-color: transparent;
+    height: 150px;
+    border: none;
+    overflow: hidden;
+}
+
+section .send-msg .form-part .send-form textarea:focus {
+    outline: none;
+}
+.btn-primary{
+    background: transparent;
+    border: none;
+    display: block;
+    background-image: url("../img/event-btn.png");
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
+section .send-msg .form-part .send-form button {
+    background: transparent;
+    border: none;
+    display: block;
+    background-image: url("../img/send-btn.png");
+    background-size: 100% 100%;
+    color: #ffffff;
+    padding: 7px 54px;
+    font-size: 22px;
+    margin: 0 auto;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus,.btn-primary:focus, .btn-primary.focus {
+    box-shadow:0 0 0 0rem rgba(38, 143, 255, 0.5);
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle,.btn-primary:hover {
+    color: #fff;
+    background: transparent;
+    background-image: url("../img/send-btn.png");
+    background-size: 100% 100%;
+}
+section .event-msg h1 {
+    color: #101F51;
+}
+
+section .event-msg p {
+    padding: 0px 44px;
+}
+
+section .event-msg .form-part {
+    background-image: url("../img/event-bg.png");
+    padding: 92px 0px;
+}
+
+section .event-msg .form-part .send-form {
+    padding: 0px 0px;
+}
+
+section .event-msg .form-part .send-form h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #101F51;
+}
+
+section .event-msg .form-part .send-form button {
+    background-image: url("../img/event-btn.png");
+}
+
+section .load-more button {
+    background: transparent;
+    border: none;
+    display: block;
+    background-image: url("../img/load-more.png");
+    background-size: 100% 100%;
+    color: #101F51;
+    font-size: 22px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 16px 40px;
+}
+
+section .order-history .seprate {
+    height: 150px;
+    width: 100%;
+}
+
+section .order-history h1 {
+    padding: 50px 0px;
+    text-align: center;
+    font-family: 'Dreamwalker Regular';
+    color: #A8CF4B;
+}
+
+section .order-history .history {
+    margin-bottom: 50px;
+    background-image: url("../img/history-bg.png");
+    background-size: 100% 100%;
+    padding: 50px 20px;
+}
+
+section .order-history .history img {
+    width: 100%;
+    height: auto;
+}
+
+section .order-history .history button {
+    margin: 0 auto;
+    font-size: 19px;
+    width: 186px;
+    padding: 11px 0px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    display: block;
+    background-image: url("../img/bill-button.png");
+    background-size: 100% 100%;
+    color: #FAA919;
+}
+
+section .order-history .history .text {
+    text-align: center;
+}
+
+section .order-history .history .text h3 {
+    color: #FAA919;
+}
+
+section .order-history .history .text p {
+    color: #ffffff;
+    margin-bottom: 3px;
+}
+
+section .order-history .history .text p span {
+    color: #A8CF4B;
+}
+
+section .order-history .history .text .location {
+    display: block;
+    color: #ffffff;
+}
+
+section .order-history .history .text .location .loca {
+    height: 30px;
+    width: 26px;
+    margin-right: 10px;
+}
+
+section .order-history .history .text .location .icon {
+    margin-left: 10px;
+}
+
+section .order-history .history .text .location .dot {
+    height: 8px;
+    width: 8px;
+    margin-top: 0px;
+}
+
+section .order-history .history .text .location h6 {
+    color: #ffffff;
+    font-size: 13px;
+    display: initial;
+}
+
+section .order-history .history .text .list {
+    padding: 15px 0px;
+}
+
+section .order-history .history .text .list p {
+    color: #A8CF4B;
+}
+
+section .order-history .history .text .list .f-list p span {
+    font-family: 'Nunito', sans-serif;
+}
+
+section .order-history .manage {
+    padding: 149px 20px;
+}
+
+section .order-history .manage button {
+    padding: 7px 40px;
+    width: auto;
+    margin: 0 auto;
+}
+
+section .order-history .manage .curr-btn {
+    padding: 11px 47px;
+    width: auto;
+}
+
+section .order-history .manage .edit-btn button {
+    padding: 6px 57px;
+}
+
+section .order-history .manage .text .credi-btn {
+    padding: 19px 40px;
+    padding-bottom: 9px;
+}
+
+section .order-history .manage .text .credi-btn P {
+    margin-top: -8px;
+    color: #101F51;
+}
+
+section .order-history .manage .text .saved-btn p {
+    color: #101F51;
+}
+
+section .order-history .manage .text .saved-btn p span {
+    color: #FAA919;
+    font-size: 11px;
+}
+
+section .order-history .manage .text .saved-btn p .visa {
+    margin-left: 5px;
+    padding: 3px;
+    background-color: #101F51;
+    color: #ffffff;
+}
+
+section .order-history .manage .text h3 {
+    font-size: 22px;
+    margin: 13px 0px;
+    color: #FAA919;
+}
+
+section .order-history .manage .text h2 {
+    font-family: 'Dreamwalker Regular';
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 24px;
+}
+
+section .order-history .manage .text h6 {
+    color: #ffffff;
+}
+
+section .order-history .manage .text .cancel {
+    margin: 0 auto;
+}
+
+section .order-history .manage .text .week {
+    padding: 0px 0px;
+}
+
+section .order-history .manage .text .week ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+}
+
+section .order-history .manage .text .week ul li {
+    position: relative;
+    margin: 10px auto;
+}
+
+section .order-history .manage .text .week ul li P {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 27%;
+    color: inherit;
+    font-size: 11px;
+}
+
+section .order-history .manage .text .week ul li .circ {
+    height: 50px;
+    width: 50px;
+}
+
+section .order-history .manage .text .week ul li .mon {
+    background-image: url("../img/mon.png");
+    background-size: 100% 100%;
+    color: #9A2B39 !important;
+}
+
+section .order-history .manage .text .week ul li .tue {
+    background-image: url("../img/tue.png");
+    background-size: 100% 100%;
+    color: #D1222A;
+}
+
+section .order-history .manage .text .week ul li .wed {
+    background-image: url("../img/wed.png");
+    background-size: 100% 100%;
+    color: #F35F20;
+}
+
+section .order-history .manage .text .week ul li .thu {
+    background-image: url("../img/thu.png");
+    background-size: 100% 100%;
+    color: #F69420;
+}
+
+section .order-history .manage .text .week ul li .fri {
+    background-image: url("../img/fri.png");
+    background-size: 100% 100%;
+    color: #F9AE33;
+}
+
+section .order-history .manage .text .week ul li .sat {
+    color: #8FC44B;
+}
+
+section .order-history .manage .text .week ul li .sun {
+    color: #3CB14E;
+}
+
+section .saved-add {
+    background-image: url("../img/saved-add.png");
+    background-size: 100% 100%;
+    padding: 40px 0px;
+    position: relative;
+}
+
+section .saved-add .fruits {
+    position: absolute;
+    height: 80px;
+}
+
+section .saved-add .watermelon {
+    top: 0px;
+    left: 0px;
+}
+
+section .saved-add .grapes {
+    top: 0px;
+    right: 0px;
+}
+
+section .saved-add .orange {
+    bottom: 0px;
+    right: 0px;
+}
+
+section .saved-add .avocado {
+    bottom: 0px;
+    left: 0px;
+}
+
+section .saved-add .berry {
+    top: 35px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+}
+
+section .saved-add h1 {
+    font-family: 'Dreamwalker Regular';
+    font-size: 23px;
+    text-align: center;
+    padding: 16px 0px;
+    color: #ffffff;
+}
+
+section .saved-add .add-part {
+    position: relative;
+}
+
+section .saved-add .add-part .berry {
+    position: absolute;
+}
+
+section .saved-add .add-part .text-part {
+    background-image: url("../img/add-part.png");
+    background-size: 100% 100%;
+    padding: 33px 47px;
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+section .saved-add .add-part .text-part img {
+    height: 60px;
+}
+
+section .saved-add .add-part .text-part p {
+    padding: 25px 0px 0px 20px;
+    color: #ffffff;
+}
+
+section .saved-add .add-part .text-part .location {
+    padding: 10px 0px;
+}
+
+section .saved-add .add-part .text-part .location p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 13px;
+}
+
+section .saved-add .add-part .text-part .buttons {
+    width: 100%;
+}
+
+section .saved-add .add-part .text-part .buttons button {
+    background: transparent;
+    border: none;
+    display: block;
+    font-size: 14px;
+    padding: 4px 14px;
+    background-image: url("../img/bill-button.png");
+    background-size: 100% 100%;
+    color: #101F51;
+}
+
+section .saved-add .add-part .text-part .buttons .edit-btn {
+    float: left;
+}
+
+section .saved-add .add-part .text-part .buttons .remove-btn {
+    float: right;
+}
+
+section .address .add-address {
+    position: relative;
+}
+
+section .address .add-address .fruits {
+    position: absolute;
+    height: 50px;
+}
+
+section .address .add-address .pinapple {
+    top: -5px;
+    left: -7px;
+}
+
+section .address .add-address .strawberry {
+    top: -3px;
+    right: -5px;
+}
+
+section .address .add-address h1 {
+    text-align: center;
+    width: 80%;
+    background-image: url("../img/add-bg.png");
+    background-size: 100% 100%;
+    font-family: 'Dreamwalker Regular';
+    color: #ffffff;
+    font-size: 23px;
+    width: 98%;
+    margin: 15px 0px;
+    padding: 10px 0px;
+}
+
+section .random-part {
+    padding: 20px 0px;
+}
+
+section .random-part .countr {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 29px;
+    color: #A8CF4B;
+}
+
+section .random-part .countr img {
+    margin: 0px 5px;
+    height: 30px;
+    width: 30px;
+}
+
+section .random-part h1 {
+    color: #E4572E;
+    font-size: 27px;
+    text-align: center;
+}
+
+section .random-part img {
+    width: 100%;
+    height: auto;
+}
+
+section .random-part .text {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section .random-part .right-part {
+    padding-left: 20px;
+}
+
+section .random-part .left-part {
+    padding-right: 20px;
+}
+
+section .random-part ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+section .random-part ul li {
+    font-family: 'Dreamwalker Regular';
+    color: #A8CF4B;
+    text-align: center;
+    font-size: 19px;
+}
+
+section .remark {
+    padding: 20px 0px;
+}
+
+section .remark p {
+    font-family: 'Dreamwalker Regular';
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+section .remark textarea {
+    background-image: url("../img/remark-text.png");
+    background-size: 100% 100%;
+    width: 100%;
+    background-color: transparent;
+    height: 200px;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0px 25px;
+    overflow: hidden;
+    padding: 24px 49px;
+}
+
+section .remark textarea:focus {
+    outline: none;
+}
+
+section .remark span {
+    font-family: 'Multicolore Regular';
+}
+
+section .date-time .totel {
+    background-image: url("../img/total.png");
+    background-size: 100% 100%;
+    width: 228px;
+    padding: 37px 0px;
+    margin: 0 auto;
+}
+
+section .date-time .totel p {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    text-align: center;
+}
+
+section .date-time .date-part {
+    position: relative;
+    padding: 28px 0px;
+    width: 252px;
+    margin: 0 auto;
+    background-image: url("../img/date-time.png");
+    background-size: 100% 100%;
+}
+
+section .date-time .date-part .date-close {
+    position: absolute;
+    top: -11px;
+    right: -7px;
+}
+
+section .date-time .date-part p {
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+    text-align: center;
+}
+
+section .date-time .date-part img {
+    margin: 0 auto;
+    display: inherit;
+    margin-top: -4px;
+    margin-bottom: 10px;
+}
+
+section .date-time .date-part .time {
+    display: flex;
+    padding: 0px 20%;
+}
+
+section .date-time .date-part .time p {
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
+section .date-time .date-part .time img {
+    margin-top: 9px;
+}
+
+section .date-time .date-part .time .order {
+    background-image: url("../img/date-order.png");
+    background-size: 100% 100%;
+    height: 82px;
+    width: 90px;
+}
+
+section .date-time .date-part .time .order .text {
+    padding-top: 29px;
+}
+
+section .date-time .date-part .time .order p {
+    text-align: center;
+    color: #ffffff;
+    padding: 0px;
+    font-size: 13px;
+    margin: 0px;
+}
+
+section .date-time .first-date-part {
+    background-image: url("../img/first-date-time.png");
+    background-size: 100% 100%;
+}
+
+section .date-time .first-date-part .time .first-order {
+    background-image: url("../img/first-date-order.png");
+    background-size: 100% 100%;
+}
+
+section .bill-pay .col-1,
+section .bill-pay .col-2,
+section .bill-pay .col-3,
+section .bill-pay .col-4,
+section .bill-pay .col-5,
+section .bill-pay .col-6,
+section .bill-pay .col-7,
+section .bill-pay .col-8,
+section .bill-pay .col-9,
+section .bill-pay .col-10,
+section .bill-pay .col-11,
+section .bill-pay .col-12,
+section .bill-pay .col,
+section .bill-pay .col-auto,
+section .bill-pay .col-sm-1,
+section .bill-pay .col-sm-2,
+section .bill-pay .col-sm-3,
+section .bill-pay .col-sm-4,
+section .bill-pay .col-sm-5,
+section .bill-pay .col-sm-6,
+section .bill-pay .col-sm-7,
+section .bill-pay .col-sm-8,
+section .bill-pay .col-sm-9,
+section .bill-pay .col-sm-10,
+section .bill-pay .col-sm-11,
+section .bill-pay .col-sm-12,
+section .bill-pay .col-sm,
+section .bill-pay .col-sm-auto,
+section .bill-pay .col-md-1,
+section .bill-pay .col-md-2,
+section .bill-pay .col-md-3,
+section .bill-pay .col-md-4,
+section .bill-pay .col-md-5,
+section .bill-pay .col-md-6,
+section .bill-pay .col-md-7,
+section .bill-pay .col-md-8,
+section .bill-pay .col-md-9,
+section .bill-pay .col-md-10,
+section .bill-pay .col-md-11,
+section .bill-pay .col-md-12,
+section .bill-pay .col-md,
+section .bill-pay .col-md-auto,
+section .bill-pay .col-lg-1,
+section .bill-pay .col-lg-2,
+section .bill-pay .col-lg-3,
+section .bill-pay .col-lg-4,
+section .bill-pay .col-lg-5,
+section .bill-pay .col-lg-6,
+section .bill-pay .col-lg-7,
+section .bill-pay .col-lg-8,
+section .bill-pay .col-lg-9,
+section .bill-pay .col-lg-10,
+section .bill-pay .col-lg-11,
+section .bill-pay .col-lg-12,
+section .bill-pay .col-lg,
+section .bill-pay .col-lg-auto,
+section .bill-pay .col-xl-1,
+section .bill-pay .col-xl-2,
+section .bill-pay .col-xl-3,
+section .bill-pay .col-xl-4,
+section .bill-pay .col-xl-5,
+section .bill-pay .col-xl-6,
+section .bill-pay .col-xl-7,
+section .bill-pay .col-xl-8,
+section .bill-pay .col-xl-9,
+section .bill-pay .col-xl-10,
+section .bill-pay .col-xl-11,
+section .bill-pay .col-xl-12,
+section .bill-pay .col-xl,
+section .bill-pay .col-xl-auto {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+section .bill-pay .billing {
+    position: relative;
+    padding: 78px 50px;
+    background-image: url("../img/billing-bg.png");
+    background-size: 100% 100%;
+    padding-bottom: 134px;
+}
+
+section .bill-pay .billing .fruits {
+    position: absolute;
+    height: 99px;
+}
+
+section .bill-pay .billing .strawberry {
+    top: 0px;
+    left: 2px;
+}
+
+section .bill-pay .billing .sitafal {
+    bottom: 0px;
+    right: 2px;
+}
+
+section .bill-pay .billing .check {
+    text-align: center;
+}
+
+section .bill-pay .billing .check .text {
+    margin-top: 10px;
+}
+
+section .bill-pay .billing .check .text a {
+    color: #ffffff;
+}
+
+section .bill-pay .billing .check .text a:hover {
+    text-decoration: none;
+}
+
+section .bill-pay .billing .check label {
+    margin-bottom: 17px;
+}
+
+section .bill-pay .billing .check .checkboxcontainer input {
+    display: none;
+}
+
+section .bill-pay .billing .check .checkboxcontainer {
+    display: inline-block;
+    padding-left: 26px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+section .bill-pay .billing .check .checkboxcontainer .checkmark {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/checkbox.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+section .bill-pay .billing .check .checkboxcontainer input:indeterminate+.checkmark {
+    background-color: #1390e5;
+    border: 1px solid #1390e5;
+}
+
+section .bill-pay .billing .check .checkboxcontainer input:checked+.checkmark:after {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: #db3812;
+    /* border-left: 2px solid white; */
+    /* border-bottom: 2px solid white; */
+    top: 31%;
+    left: 31%;
+    /* transform: translate(-50%, -50%) rotate(-45deg); */
+}
+
+section .bill-pay .billing .check .checkboxcontainer input:checked:disabled+.checkmark {
+    border: 1px solid grey;
+    background-color: grey;
+}
+
+section .bill-pay .billing .check .checkboxcontainer input:disabled+.checkmark {
+    border: 1px solid grey;
+}
+
+section .bill-pay .billing .check .checkboxcontainer input:indeterminate+.checkmark:after {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 11px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+section .bill-pay .billing .buttons .col-1,
+section .bill-pay .billing .buttons .col-2,
+section .bill-pay .billing .buttons .col-3,
+section .bill-pay .billing .buttons .col-4,
+section .bill-pay .billing .buttons .col-5,
+section .bill-pay .billing .buttons .col-6,
+section .bill-pay .billing .buttons .col-7,
+section .bill-pay .billing .buttons .col-8,
+section .bill-pay .billing .buttons .col-9,
+section .bill-pay .billing .buttons .col-10,
+section .bill-pay .billing .buttons .col-11,
+section .bill-pay .billing .buttons .col-12,
+section .bill-pay .billing .buttons .col,
+section .bill-pay .billing .buttons .col-auto,
+section .bill-pay .billing .buttons .col-sm-1,
+section .bill-pay .billing .buttons .col-sm-2,
+section .bill-pay .billing .buttons .col-sm-3,
+section .bill-pay .billing .buttons .col-sm-4,
+section .bill-pay .billing .buttons .col-sm-5,
+section .bill-pay .billing .buttons .col-sm-6,
+section .bill-pay .billing .buttons .col-sm-7,
+section .bill-pay .billing .buttons .col-sm-8,
+section .bill-pay .billing .buttons .col-sm-9,
+section .bill-pay .billing .buttons .col-sm-10,
+section .bill-pay .billing .buttons .col-sm-11,
+section .bill-pay .billing .buttons .col-sm-12,
+section .bill-pay .billing .buttons .col-sm,
+section .bill-pay .billing .buttons .col-sm-auto,
+section .bill-pay .billing .buttons .col-md-1,
+section .bill-pay .billing .buttons .col-md-2,
+section .bill-pay .billing .buttons .col-md-3,
+section .bill-pay .billing .buttons .col-md-4,
+section .bill-pay .billing .buttons .col-md-5,
+section .bill-pay .billing .buttons .col-md-6,
+section .bill-pay .billing .buttons .col-md-7,
+section .bill-pay .billing .buttons .col-md-8,
+section .bill-pay .billing .buttons .col-md-9,
+section .bill-pay .billing .buttons .col-md-10,
+section .bill-pay .billing .buttons .col-md-11,
+section .bill-pay .billing .buttons .col-md-12,
+section .bill-pay .billing .buttons .col-md,
+section .bill-pay .billing .buttons .col-md-auto,
+section .bill-pay .billing .buttons .col-lg-1,
+section .bill-pay .billing .buttons .col-lg-2,
+section .bill-pay .billing .buttons .col-lg-3,
+section .bill-pay .billing .buttons .col-lg-4,
+section .bill-pay .billing .buttons .col-lg-5,
+section .bill-pay .billing .buttons .col-lg-6,
+section .bill-pay .billing .buttons .col-lg-7,
+section .bill-pay .billing .buttons .col-lg-8,
+section .bill-pay .billing .buttons .col-lg-9,
+section .bill-pay .billing .buttons .col-lg-10,
+section .bill-pay .billing .buttons .col-lg-11,
+section .bill-pay .billing .buttons .col-lg-12,
+section .bill-pay .billing .buttons .col-lg,
+section .bill-pay .billing .buttons .col-lg-auto,
+section .bill-pay .billing .buttons .col-xl-1,
+section .bill-pay .billing .buttons .col-xl-2,
+section .bill-pay .billing .buttons .col-xl-3,
+section .bill-pay .billing .buttons .col-xl-4,
+section .bill-pay .billing .buttons .col-xl-5,
+section .bill-pay .billing .buttons .col-xl-6,
+section .bill-pay .billing .buttons .col-xl-7,
+section .bill-pay .billing .buttons .col-xl-8,
+section .bill-pay .billing .buttons .col-xl-9,
+section .bill-pay .billing .buttons .col-xl-10,
+section .bill-pay .billing .buttons .col-xl-11,
+section .bill-pay .billing .buttons .col-xl-12,
+section .bill-pay .billing .buttons .col-xl,
+section .bill-pay .billing .buttons .col-xl-auto {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+section .bill-pay .billing .buttons .button {
+    background: transparent;
+    border: none;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 10px 0px;
+    text-align: center;
+    background-image: url("../img/bill-button.png");
+    background-size: 100% 100%;
+    color: #DB3812;
+}
+
+section .bill-pay .billing .buttons .button:focus {
+    outline: none;
+}
+
+section .bill-pay .billing .form-group {
+    margin-bottom: 0px;
+}
+
+section .bill-pay .billing .bill-form {
+    padding: 0px !important;
+}
+
+section .bill-pay .billing h4 {
+    margin-bottom: -0.5rem;
+    font-family: 'Multicolore Regular';
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+}
+
+section .bill-pay .billing .login {
+    margin-top: -15px;
+}
+
+section .bill-pay .billing h1 {
+    margin: 20px 0px;
+    font-size: 16px;
+    font-family: 'Dreamwalker Regular';
+}
+
+section .bill-pay .billing a {
+    color: #ffffff;
+}
+
+section .bill-pay .billing a:hover {
+    text-decoration: none;
+}
+
+section .bill-pay .billing .billing-form {
+    background-image: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+section .bill-pay .c-out {
+    text-align: center;
+}
+
+section .bill-pay .c-out button {
+    background: transparent;
+    background-image: url("../img/c-out.png");
+    background-size: 100% 100%;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    width: 89%;
+    padding: 13px 0px;
+}
+
+section .bill-pay .payment-part {
+    padding-bottom: 72px;
+    background-image: url("../img/pay-bg.png");
+    background-size: 100% 100%;
+    position: relative;
+    /* style your lables/button */
+}
+
+section .bill-pay .payment-part .fruits {
+    position: absolute;
+}
+
+section .bill-pay .payment-part .pinapple {
+    top: 0px;
+    right: 2px;
+}
+
+section .bill-pay .payment-part .orange {
+    bottom: 0px;
+    left: 2px;
+}
+
+section .bill-pay .payment-part h1 {
+    color: #ffffff;
+}
+
+section .bill-pay .payment-part p {
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+section .bill-pay .payment-part input[type="radio"],
+section .bill-pay .payment-part input[type="checkbox"] {
+    /* hide the inputs */
+    opacity: 0;
+}
+
+section .bill-pay .payment-part input[type="radio"]+label,
+section .bill-pay .payment-part input[type="checkbox"]+label {
+    /* keep pointer so that you get the little hand showing when you are on a button */
+    cursor: pointer;
+    /* the following are the styles */
+    height: 25px;
+    width: 25px;
+    background-image: url("../img/redio-1.png");
+    background-size: 100% 100%;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0);
+}
+
+section .bill-pay .payment-part input[type="radio"]:checked+label,
+section .bill-pay .payment-part input[type="checkbox"]:checked+label {
+    /* style for the checked/selected state */
+    background-image: url("../img/redio-2.png");
+    background-size: 100% 100%;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+section .bill-pay .payment-part .rdo-btn .rdo {
+    display: flex;
+}
+
+section .bill-pay .payment-part .comment {
+    margin-top: 25px;
+}
+
+section .bill-pay .payment-part .comment p {
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+section .bill-pay .payment-part .comment textarea {
+    background-image: url("../img/textarea.png");
+    background-size: 100% 100%;
+    width: 100%;
+    background-color: transparent;
+    height: 150px;
+    border: none;
+    font-size: 15px;
+    color: #101F51;
+    padding: 0px 25px;
+    overflow: hidden;
+}
+
+section .bill-pay .payment-part .comment textarea:focus {
+    outline: none;
+}
+
+section .call {
+    background-color: #A8CF4B;
+    padding: 20px 0px;
+}
+
+section .call p {
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Dreamwalker Regular';
+}
+
+section .que-part {
+    padding: 15px 15px;
+}
+
+section .que-part h4 {
+    text-align: center;
+    color: #FAA919;
+    font-family: 'Dreamwalker Regular';
+    font-size: 28px;
+}
+
+section .que-part .accordion {
+    color: #444;
+    cursor: pointer;
+    background: #ffffff;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    display: flex;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+section .que-part .accordion img {
+    height: 38px;
+    margin-right: 8px;
+}
+
+section .que-part .accordion #minus-icon {
+    display: none;
+}
+
+section .que-part .panel {
+    color: #29335C;
+    padding: 0px 0px 0px 50px;
+    display: none;
+    font-family: fantasy;
+    background-color: white;
+    overflow: hidden;
+}
+
+section .search-bar img {
+    height: 36px;
+}
+
+section .search-bar .search-part {
+    position: relative;
+}
+
+section .search-bar .search-part .line {
+    width: 100%;
+    position: absolute;
+    top: 28px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 7px;
+}
+
+section .search-bar input {
+    width: 100%;
+    border: none;
+    padding: 6px 8px;
+}
+
+section .search-bar input::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #000000;
+}
+
+section .search-bar input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+section .search-bar input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000000;
+}
+
+section .search-bar input:focus {
+    border: none;
+    outline: none;
+}
+
+section .search-bar .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+section .faq .faq-bg {
+    background-image: url("../img/faq-bg.png");
+    background-size: 100% 100%;
+    height: 162px;
+    position: relative;
+}
+
+section .faq .faq-bg .faq-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 5px;
+    bottom: 0;
+    margin: auto;
+    height: 0%;
+}
+
+section .faq .faq-bg .faq-text h1 {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 12px;
+}
+
+section .faq .faq-bg .faq-text p {
+    color: #BEABFF;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 9px;
+}
+
+section .check-out-btn {
+    margin: 15px 0px;
+    text-align: center;
+}
+
+section .check-out-btn img {
+    height: 61px;
+}
+
+section .check-out-btn button {
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 16px 41px;
+    text-align: center;
+    background-image: url("../img/check-out-btn.png");
+    background-size: 100% 100%;
+}
+
+section .plan {
+    background-image: url("../img/plan-bg.png");
+    background-size: 100% 100%;
+    padding: 118px 15px;
+}
+
+section .plan .plans {
+    padding-top: 130px;
+}
+
+section .plan .plans-v2 {
+    padding-bottom: 147px;
+}
+
+section .plan .box {
+    color: #ffffff;
+}
+
+section .plan .box h3 {
+    font-family: 'Dreamwalker Regular';
+    text-align: center;
+    font-size: 35px;
+    padding: 19px 0px;
+}
+
+section .plan .plan-1 {
+    background-image: url("../img/plan-1.png");
+    background-size: 100% 100%;
+    color: #F3A712;
+}
+
+section .plan .plan-2 {
+    background-image: url("../img/plan-2.png");
+    background-size: 100% 100%;
+}
+
+section .plan .plan-3 {
+    background-image: url("../img/plan-3.png");
+    background-size: 100% 100%;
+}
+
+section .plan .plan-4 {
+    background-image: url("../img/plan-4.png");
+    background-size: 100% 100%;
+}
+
+section .plan .plan-v2 .box {
+    padding: 35px 0px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section .plan .plan-v2 .box img {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section .plan .plan-v2 .box h2 {
+    font-family: 'Multicolore Regular';
+    color: #ffffff;
+    text-align: center;
+    font-size: 19px;
+}
+
+section .plan .plan-v2 .box button {
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    padding: 8px 40px;
+    text-align: center;
+    background-image: url("../img/add-btn.png");
+    background-size: 100% 100%;
+}
+
+section .plan .plan-v2 .plan-blue {
+    background-image: url("../img/plan-blue.png");
+    background-size: 100% 100%;
+}
+
+section .plan .plan-v2 .plan-red {
+    background-image: url("../img/plan-red.png");
+    background-size: 100% 100%;
+}
+
+section .plan .plan-v2 .plan-yellow {
+    background-image: url("../img/plan-yellow.png");
+    background-size: 100% 100%;
+}
+
+section .plan .plan-v2 .plan-green {
+    background-image: url("../img/plan-green.png");
+    background-size: 100% 100%;
+}
+
+section .week {
+    padding: 15px 0px;
+}
+
+section .week ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+section .week ul li {
+    position: relative;
+    margin: 0 auto;
+}
+
+section .week ul li P {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 45%;
+    font-size: 11px;
+}
+
+section .week ul li .circ {
+    height: 38px;
+    width: 38px;
+}
+
+section .week ul li .mon {
+    background-image: url("../img/mon.png");
+    background-size: 100% 100%;
+    color: #9A2B39;
+}
+
+section .week ul li .tue {
+    background-image: url("../img/tue.png");
+    background-size: 100% 100%;
+    color: #D1222A;
+}
+
+section .week ul li .wed {
+    background-image: url("../img/wed.png");
+    background-size: 100% 100%;
+    color: #F35F20;
+}
+
+section .week ul li .thu {
+    background-image: url("../img/thu.png");
+    background-size: 100% 100%;
+    color: #F69420;
+}
+
+section .week ul li .fri {
+    background-image: url("../img/fri.png");
+    background-size: 100% 100%;
+    color: #F9AE33;
+}
+
+section .week ul li .sat {
+    color: #8FC44B;
+}
+
+section .week ul li .sun {
+    color: #3CB14E;
+}
+
+section .days {
+    padding: 20px 0px;
+}
+
+section .days .box {
+    padding: 27px 0px;
+    height: 140px;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: #ffffff;
+    position: relative;
+    font-family: 'Dreamwalker Regular';
+}
+
+section .days .box h6 {
+    text-align: center;
+    font-size: 32px;
+}
+
+section .days .box img {
+    position: absolute;
+    top: -26px;
+    height: 63px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+section .days .box span {
+    font-family: 'Multicolore Regular';
+}
+
+section .days .box-1 {
+    background-image: url("../img/day-bg-1.png");
+    background-size: 100% 100%;
+}
+
+section .days .box-2 {
+    background-image: url("../img/day-bg-4.png");
+    background-size: 100% 100%;
+}
+
+section .days .box-3 {
+    background-image: url("../img/day-bg-3.png");
+    background-size: 100% 100%;
+}
+
+section .days .box-4 {
+    background-image: url("../img/day-bg-4.png");
+    background-size: 100% 100%;
+}
+
+section .discription {
+    background-color: #101F51;
+    padding: 15px 50px;
+}
+
+section .discription p {
+    text-align: center;
+    color: #ffffff;
+}
+
+section .discription img {
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+section .cart {
+    padding: 20px 0px;
+}
+
+section .cart h1 {
+    font-family: 'Multicolore Regular';
+    color: #E4572E;
+    text-align: center;
+}
+
+section .cart .cart-part {
+    padding: 50px 0px;
+    background-image: url("../img/cart-bg.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+section .cart .cart-part .fruits {
+    position: absolute;
+    height: 108px;
+}
+
+section .cart .cart-part .pinapple {
+    top: -57px;
+    left: -25px;
+}
+
+section .cart .cart-part .strawberry {
+    top: -42px;
+    right: -15px;
+}
+
+section .cart .cart-part .sitafal {
+    bottom: -20px;
+    left: -20px;
+}
+
+section .cart .cart-part .grapes {
+    bottom: -20px;
+    right: -15px;
+}
+
+section .cart .cart-part .watermelon {
+    top: -35px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+section .cart .cart-part .banana {
+    bottom: -35px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+section .cart .cart-part .cart-text {
+    color: #ffffff;
+}
+
+section .cart .cart-part .cart-text p {
+    font-family: 'Dreamwalker Regular';
+    text-align: center;
+    padding: 0px 40px;
+}
+
+section .cart .cart-part .ala {
+    background-image: url("../img/ala-bg.png");
+    background-size: 100% 100%;
+    margin: 0 auto;
+    height: 225px;
+    width: 225px;
+    text-align: center;
+}
+
+section .cart .cart-part .ala .ala-text1 {
+    position: absolute;
+    top: 0;
+    left: -86px;
+    right: 0;
+    height: 25%;
+    bottom: 0;
+    margin: auto;
+}
+
+section .cart .cart-part .ala .ala-text2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -86px;
+    height: 25%;
+    bottom: 0;
+    margin: auto;
+}
+
+section .cart .cart-part .ala P {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 8px;
+    padding: 0;
+    margin: 2px;
+}
+
+section .cart .cart-part .ala h1 {
+    font-size: 23px;
+    color: #ffffff;
+    font-family: 'Dreamwalker Regular';
+    padding: 0;
+    margin: 0;
+}
+
+section .cart .cart-part .ala h3 {
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Dreamwalker Regular';
+}
+
+section .what-does-part {
+    padding: 50px 0px;
+}
+
+section .what-does-part h1 {
+    font-family: 'Dreamwalker Regular';
+    text-align: center;
+    color: #101F51;
+    font-size: 30px;
+}
+
+section .what-does-part h3 {
+    font-family: 'Multicolore Regular';
+    text-align: center;
+    color: #E4572E;
+    font-size: 20px;
+}
+
+section .what-does-part .box-part {
+    padding: 20px 0px;
+}
+
+section .what-does-part .box-part .box h2 {
+    text-align: center;
+    font-family: 'Dreamwalker Regular';
+    color: #88B704;
+}
+
+section .what-does-part .box-part .box img {
+    width: 100%;
+    height: auto;
+}
+
+section .what-does-part .box-part .box .box-1 {
+    background-image: url(../img/box-bg-1.png);
+    background-size: 100% 100%;
+}
+
+section .what-does-part .box-part .box .box-2 {
+    background-image: url(../img/box-bg-2.png);
+    background-size: 100% 100%;
+}
+
+section .what-does-part .box-part .box .box-3 {
+    background-image: url(../img/box-bg-3.png);
+    background-size: 100% 100%;
+}
+
+section .steps {
+    padding: 20px 0px;
+}
+
+section .steps .row {
+    margin-right: 0px;
+}
+
+section .steps .arrow img {
+    display: none;
+}
+
+section .steps .step {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Multicolore Regular';
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 43px;
+}
+
+section .steps .step .step-text {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50%;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+}
+
+section .steps .step-1 {
+    background-image: url(../img/step-1.png);
+    background-size: 100% 100%;
+}
+
+section .steps .step-2 {
+    background-image: url(../img/step-2.png);
+    background-size: 100% 100%;
+}
+
+section .steps .step-3 {
+    background-image: url(../img/step-3.png);
+    background-size: 100% 100%;
+}
+
+section .steps .step-4 {
+    background-image: url(../img/step-4.png);
+    background-size: 100% 100%;
+}
+
+section .steps .step-4 .step-text {
+    height: 29%;
+}
+
+section .new-signup {
+    padding: 120px 0px;
+    /* The colour of the indicators */
+}
+
+section .new-signup .blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -56px;
+}
+
+section .new-signup .blog .carousel-indicators li {
+    border-radius: 50%;
+    width: 18px;
+    height: 0px;
+    opacity: 1;
+    background: #ffffff;
+}
+
+section .new-signup .carousel-indicators .active {
+    background: #FAA919 !important;
+}
+
+section .new-signup .blog .carousel-inner {
+    position: relative;
+    width: 77%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+section .new-signup .blog .carousel-inner .carousel-item img {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+section .new-signup .bill-pay .billing {
+    padding: 0px;
+    background-image: none;
+}
+
+section .new-signup .bill-pay .billing .check .text {
+    color: #FAA919;
+}
+
+section .new-signup .bill-pay .billing .check .checkboxcontainer input:checked+.checkmark:after {
+    background: #101F51;
+}
+
+section .new-signup p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+section .new-signup p a {
+    color: #FAA919;
+}
+
+section .new-signup h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Dreamwalker Regular';
+}
+
+section .new-signup .btn2 {
+    margin: 0px;
+}
+
+section .new-login {
+    background-image: url(../img/login-bg.png);
+    background-size: 100% 100%;
+}
+
+section .new-login .carousel-indicators .active {
+    background: #101F51 !important;
+}
+
+section .new-login .bill-pay .billing .check {
+    text-align: left;
+}
+
+section .new-login .btn2 {
+    color: #faa919;
+}
+
+section .new-login h6 {
+    padding-top: 10px;
+}
+
+section .new-login h6 .forgot {
+    font-size: 15px;
+    float: none;
+}
+
+section .new-login p a {
+    color: #101F51;
+}
+
+section .new-login .bill-pay .billing .check .text {
+    color: #ffffff;
+}
+
+section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.checkmark:after {
+    background: #faa919;
+}
+
+.profile .btn2 {
+    background-image: url(../img/button-save.png);
+    padding: 7px 82px;
+    padding-top: 11px;
+    background-size: 100% 100%;
+}
+
+.cart-table .design img {
+    height: 700px;
+}
+
+.table-part {
+    width: 98%;
+}
+
+.cart-table {
+    width: 100%;
+}
+
+.main-col {
+    width: 100%;
+    padding: 0px 7px;
+}
+
+.cart-table .col {
+    padding: 0px 5px;
+}
+
+@media (max-width: 767px) {
+    section .cart .cart-part .ala .ala-text2 {
+        left: 87px;
+        right: 0;
+    }
+    .top-nav .logo {
+        height: 38px;
+    }
+    .what-dose h1 {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+    .what-dose .text-part img {
+        left: 26%;
+    }
+    .what-dose .text-part {
+        margin-bottom: 31px;
+    }
+    .table-part {
+        overflow-x: scroll;
+        height: 378px;
+        margin: 0 auto;
+    }
+    .table-part::-webkit-scrollbar {
+        width: 20px;
+        padding-left: 10px;
+    }
+    /* Track */
+    .table-part::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+    /* Handle */
+    .table-part::-webkit-scrollbar-thumb {
+        background: red;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+    .table-part::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
+    .cart-table {
+        width: 568px;
+        margin: 0 auto;
+    }
+    .table-part {
+        width: 95%;
+    }
+    .pro {
+        height: 165px;
+        width: 165px;
+        top: 19px;
+        right: 8px;
+    }
+    .pro-img .bg-img {
+        height: 208px;
+        width: 208px;
+    }
+    .main-col ul li {
+        padding-bottom: 34px;
+        font-size: 10px;
+    }
+    .col-height {
+        height: 324px !important;
+    }
+    .main-col ul {
+        padding: 39px 0px 0px 0px !important;
+    }
+    .cart-table .design img {
+        height: 324px;
+    }
+}
+
+
+/**
+* Holds all the min-width 768px and max-width 991px media styles
+*
+*
+**/
+
+@media (min-width: 576px) {
+    section .contact-part .social .img-part {
+        margin: 0 auto;
+        width: 50%;
+    }
+    section .saved-add {
+        padding: 40px 9px;
+    }
+    section .about {
+        position: relative;
+    }
+    section .about .mobile-icon {
+        display: none;
+    }
+    section .about .icon-v2 {
+        padding: 0px 15px;
+        display: initial;
+    }
+    section .about .watermelon {
+        position: absolute;
+        height: 150px;
+        display: block;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    section .about .f-bag {
+        display: block;
+        height: auto;
+        width: 139px;
+        bottom: 0;
+        right: 0;
+        left: 20%;
+        position: absolute;
+    }
+    section .about h2 {
+        display: none;
+    }
+    section .about .title-part {
+        text-align: left;
+    }
+    section .about .title-part p {
+        font-size: 14px;
+    }
+    section .about .title-part-v2 {
+        text-align: right;
+    }
+    section .about .about-text {
+        display: block;
+        height: 36%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    section .about .about-text ul {
+        display: flex;
+        padding-inline-start: 0px;
+        margin-bottom: 0px;
+    }
+    section .about .about-text img {
+        height: 150px;
+    }
+    section .about .about-text h3 {
+        color: #E4572E;
+        text-align: center;
+        font-size: 25px;
+    }
+    section .what-people-say h1 {
+        text-align: center;
+    }
+    section .what-people-say h5 {
+        text-align: left;
+    }
+    section .what-people-say p {
+        text-align: left;
+    }
+    section .what-people-say img {
+        width: 124px;
+    }
+    section .what-people-say .part-two h5 {
+        text-align: right;
+    }
+    section .what-people-say .part-two p {
+        text-align: right;
+    }
+    section .what-people-say .part-two .img-block {
+        display: block;
+    }
+    section .what-people-say .part-two .img-none {
+        display: none;
+    }
+    section .why-choose-us h1 {
+        font-size: 25px;
+        text-align: left;
+    }
+    section .why-choose-us h2 {
+        text-align: left;
+        font-size: 19px;
+    }
+    section .why-choose-us p {
+        text-align: left;
+        font-size: 15px;
+    }
+    section .why-choose-us .img-part {
+        position: relative;
+    }
+    section .why-choose-us .img-part img {
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        width: 268px;
+        right: 0;
+        left: 0;
+        height: auto;
+    }
+    section .our-partner .p-frame {
+        width: 120px;
+        height: 120px;
+    }
+    section .how-work-sec .home-icon {
+        margin: 0 auto;
+        height: 105px;
+        display: block;
+    }
+    section .how-work-sec h1 {
+        font-size: 48px;
+    }
+    section .how-work-sec p {
+        font-size: 13px;
+    }
+    section .how-work-sec .fruits {
+        left: 40px;
+        height: 100px;
+    }
+    section .how-work-sec .strawberry {
+        top: -150px;
+    }
+    section .how-work-sec .grapes {
+        left: 67px;
+        top: -87px;
+    }
+    section .home-bg {
+        height: 292px;
+    }
+    section .home-bg .order-btn {
+        top: 106px;
+    }
+    section .bill-pay .buttons button {
+        margin: 8px auto;
+        font-size: 11px;
+    }
+    section .call p {
+        text-align: left;
+    }
+    section .que-part {
+        padding: 15px 15px;
+    }
+    section .que-part .accordion p {
+        font-size: 18px;
+        padding: 7px 0px 0px 13px;
+    }
+    section .que-part .panel {
+        padding: 0px 0px 0px 72px;
+        font-size: 16px;
+    }
+    section .search-bar .search-part {
+        width: 92%;
+    }
+    section .search-bar .search-part .line {
+        height: 12px;
+    }
+    section .faq .faq-bg {
+        height: 272px;
+    }
+    section .faq .faq-bg .faq-text {
+        left: 21px;
+    }
+    section .faq .faq-bg .faq-text h1 {
+        font-size: 22px;
+        line-height: 17px;
+    }
+    section .faq .faq-bg .faq-text p {
+        line-height: 14px;
+        font-size: 16px;
+    }
+    section .plan {
+        padding: 90px 49px;
+    }
+    section .plan .plans {
+        padding-top: 56px;
+    }
+    section .plan .plans-v2 {
+        padding-bottom: 72px;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-nav .dd-icon {
+        position: static;
+        margin-top: 24px;
+    }
+    .top-nav .dd-text {
+        top: 79px;
+        right: 51px;
+    }
+    section .about .fruits {
+        height: 152px;
+    }
+    section .about .berry {
+        top: -76px;
+    }
+    section .about .avocado {
+        bottom: -76px;
+    }
+    section .about .watermelon {
+        height: 180px;
+        top: -29px;
+    }
+    section .about .f-bag {
+        width: 191px;
+        bottom: -35px;
+    }
+    section .about h2 {
+        display: none;
+    }
+    section .about .about-text {
+        left: -14%;
+        height: 50%;
+    }
+    section .about .about-text img {
+        height: 225px;
+    }
+    section .about .about-text .what-text {
+        margin-top: 53px;
+    }
+    section .about .title-part p {
+        font-size: 19px;
+    }
+    section .what-people-say img {
+        width: 168px;
+    }
+    section .what-people-say h1 {
+        font-size: 35px;
+    }
+    section .what-people-say h5 {
+        font-size: 35px;
+    }
+    section .what-people-say p {
+        font-size: 18px;
+    }
+    section .why-choose-us .fruits {
+        height: 152px;
+    }
+    section .why-choose-us .berry {
+        top: -76px;
+    }
+    section .why-choose-us .avocado {
+        bottom: -76px;
+    }
+    section .why-choose-us h1 {
+        font-size: 37px;
+    }
+    section .why-choose-us h2 {
+        font-size: 30px;
+    }
+    section .why-choose-us p {
+        font-size: 20px;
+    }
+    section .why-choose-us .img-part img {
+        width: 372px;
+    }
+    section .our-partner h3 {
+        font-size: 45px;
+    }
+    section .our-partner .p-frame {
+        width: 165px;
+        height: 165px;
+    }
+    section .how-work-sec h1 {
+        font-size: 48px;
+    }
+    section .how-work-sec p {
+        font-size: 20px;
+    }
+    section .how-work-sec .fruits {
+        left: 45px;
+        height: 140px;
+    }
+    section .how-work-sec .strawberry {
+        top: -180px;
+    }
+    section .how-work-sec .grapes {
+        top: -100px;
+        left: 90px;
+    }
+    section .home-bg {
+        height: 430px;
+    }
+    section .home-bg .order-btn {
+        top: 153px;
+    }
+    section .new-login h6 .forgot {
+        margin-top: -30px;
+        padding-top: 0px;
+        float: right;
+    }
+    section .new-signup {
+        padding: 76px 63px;
+    }
+    section .new-signup h1 {
+        text-align: left;
+    }
+    section .new-signup .bill-pay .billing .check {
+        text-align: left;
+    }
+    section .new-signup .btn2 {
+        float: left;
+    }
+    section .new-signup p {
+        text-align: left;
+    }
+    section .new-signup .blog .carousel-inner .carousel-item img {
+        height: 337px;
+        width: 295px;
+    }
+    section .new-add .new-add-btns {
+        margin-top: 25px !important;
+    }
+    section .new-add .rdo-btn {
+        display: inline-flex;
+        margin: 0 auto;
+        width: 50%;
+        position: absolute;
+        left: -182px;
+        right: 0;
+    }
+    section .contact-part .fruits {
+        height: 120px;
+    }
+    section .contact-part .strawberry {
+        top: 0px;
+        right: 0px;
+    }
+    section .contact-part .berry {
+        top: 0px;
+        left: 111px;
+        bottom: 0px;
+        right: 0px;
+        margin: auto;
+    }
+    section .contact-part .pinapple {
+        bottom: 0px;
+        left: 0px;
+    }
+    section .contact-part .banana {
+        bottom: 0px;
+        right: 0px;
+    }
+    section .contact-part .cartoon {
+        position: absolute;
+        bottom: 22px;
+        left: 48px;
+    }
+    section .event-msg p {
+        padding: 0px 70px;
+    }
+    section .event-msg .form-part .send-form h3 {
+        font-size: 32px;
+    }
+    section .send-msg h1 {
+        font-size: 46px;
+    }
+    section .send-msg .form-part .fruits {
+        height: 94px;
+    }
+    section .send-msg .form-part .send-form .form {
+        width: 82%;
+    }
+    section .order-history .history {
+        padding: 62px 20px;
+    }
+    section .order-history .history .box-img {
+        margin-top: -15px;
+    }
+    section .order-history .history button {
+        width: 138px;
+        margin-left: -76px;
+    }
+    section .order-history .history .text {
+        text-align: left;
+    }
+    section .order-history .manage {
+        padding: 62px 74px;
+    }
+    section .order-history .manage button {
+        padding: 9px 37px;
+        width: auto;
+        margin-left: 0px;
+    }
+    section .order-history .manage .curr-btn {
+        margin: 0 auto;
+    }
+    section .order-history .manage .text {
+        text-align: center;
+    }
+    section .order-history .manage .text .credi-btn {
+        margin: 0 auto;
+        padding-top: 21px;
+    }
+    section .order-history .manage .text .credi-btn P {
+        color: #101F51;
+    }
+    section .order-history .manage .text h3 {
+        font-size: 22px;
+        margin: 13px 0px;
+        color: #FAA919;
+    }
+    section .order-history .manage .text h6 {
+        color: #ffffff;
+    }
+    section .order-history .manage .text .week ul {
+        display: flex;
+    }
+    section .order-history .manage .text .week ul li .circ {
+        height: 38px;
+        width: 38px;
+    }
+    section .saved-add {
+        margin: 60px 0px;
+        padding: 40px 37px;
+    }
+    section .saved-add h1 {
+        font-size: 42px;
+    }
+    section .saved-add .fruits {
+        position: absolute;
+        height: 105px;
+    }
+    section .saved-add .watermelon {
+        top: -30px;
+    }
+    section .saved-add .grapes {
+        top: -30px;
+    }
+    section .saved-add .orange {
+        bottom: -30px;
+    }
+    section .saved-add .avocado {
+        bottom: -30px;
+    }
+    section .saved-add .add-part .text-part {
+        padding: 33px 58px;
+    }
+    section .saved-add .add-part .text-part .buttons button {
+        font-size: 16px;
+        padding: 6px 19px;
+    }
+    section .saved-add .add-part .text-part .location p {
+        font-size: 15px;
+    }
+    section .address .add-address .fruits {
+        height: 102px;
+    }
+    section .address .add-address .pinapple {
+        left: 12px;
+    }
+    section .address .add-address h1 {
+        font-size: 27px;
+        font-size: 49px;
+        padding: 19px 0px;
+    }
+    section .random-part h1 {
+        font-size: 45px;
+    }
+    section .random-part ul li {
+        font-size: 23px;
+    }
+    section .remark p {
+        text-align: left;
+        padding-left: 71px;
+    }
+    section .bill-pay .billing h4 {
+        font-size: 27px;
+    }
+    section .bill-pay .billing .buttons button {
+        font-size: 11px;
+    }
+    section .bill-pay .payment-part p {
+        font-size: 17px;
+    }
+    section .bill-pay .payment-part .comment p {
+        font-size: 14px;
+    }
+    section .bill-pay .payment-part .comment textarea {
+        padding: 0px 38px;
+    }
+    section .faq .faq-bg {
+        height: 388px;
+    }
+    section .faq .faq-bg .faq-text {
+        left: 44px;
+    }
+    section .faq .faq-bg .faq-text h1 {
+        font-size: 31px;
+        line-height: 27px;
+    }
+    section .faq .faq-bg .faq-text p {
+        line-height: 19px;
+        font-size: 20px;
+    }
+    section .plan {
+        padding: 50px 82px;
+    }
+    section .plan .box h3 {
+        font-size: 20px;
+    }
+    section .plan .plan-v2 .box h2 {
+        font-size: 12px;
+    }
+    section .plan .plan-v2 .box button {
+        padding: 8px 21px;
+        font-size: 12px;
+    }
+    section .week {
+        width: 84%;
+        margin: 0 auto;
+    }
+    section .week ul li .circ {
+        height: 59px;
+        width: 60px;
+    }
+    section .week ul li p {
+        font-size: 18px;
+    }
+    section .days {
+        padding-top: 30px;
+    }
+    section .days .box {
+        height: 95px;
+        width: 100%;
+    }
+    section .days .box h6 {
+        font-size: 18px;
+    }
+    section .days .box-3 img {
+        top: -38px;
+    }
+    section .discription .col-md-10 {
+        padding-right: 0px;
+    }
+    section .discription .col-md-2 {
+        padding-left: 0px;
+    }
+    section .discription p {
+        text-align: left;
+        font-size: 13px;
+    }
+    section .discription img {
+        width: 100%;
+    }
+    section .cart .cart-part {
+        padding: 107px 41px;
+    }
+    section .cart .cart-part .watermelon {
+        top: 3px;
+    }
+    section .cart .cart-part .banana {
+        bottom: 3px;
+    }
+    section .cart .cart-part .cart-text p {
+        text-align: left;
+    }
+    section .cart .cart-part .cart-text-v2 p {
+        text-align: right;
+    }
+    section .cart .cart-part .ala {
+        height: 290px;
+        width: 290px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -15px;
+        right: 0;
+    }
+    section .cart .cart-part .ala .ala-text1 {
+        left: -118px;
+    }
+    section .cart .cart-part .ala .ala-text2 {
+        right: -118px;
+    }
+    section .what-does-part h1 {
+        font-size: 60px;
+    }
+    section .what-does-part h3 {
+        font-size: 30px;
+    }
+    section .steps .arrow {
+        position: relative;
+    }
+    section .steps .arrow img {
+        height: 21px;
+        display: block;
+        top: -26%;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+        left: -17px;
+        position: absolute;
+    }
+    section .steps .row {
+        margin: 0px;
+    }
+    section .steps .step {
+        height: 160px;
+        width: 160px;
+    }
+    .pro-img .bg-img {
+        height: 185px;
+    }
+    .pro {
+        height: 140px;
+        width: 140px;
+        top: 20px;
+        right: 8px;
+    }
+    .main-col ul li {
+        font-size: 13px;
+        padding-bottom: 46px;
+    }
+    .cart-table .col-height {
+        height: 429px !important;
+    }
+    .main-col ul {
+        padding: 43px 0px 0px 0px !important;
+    }
+    .cart-table .design img {
+        height: 430px;
+    }
+}
+
+
+/**
+* Holds all the min-width 992px styles
+*
+*
+**/
+
+@media (min-width: 992px) {
+    .top-nav .dd-text ul li {
+        font-size: 23px;
+    }
+    section .how-work-sec .home-icon {
+        margin: 0 auto;
+        height: 177px !important;
+        display: block;
+    }
+    section .bill-pay .payment-part input[type="radio"]+label,
+    section .bill-pay .payment-part input[type="checkbox"]+label {
+        height: 36px;
+        width: 40px;
+    }
+    section .about .f-bag {
+        width: 251px;
+    }
+    section .about .watermelon {
+        height: 250px;
+    }
+    section .about .title-part h1 {
+        font-size: 52px;
+    }
+    section .about .title-part p {
+        font-size: 24px;
+    }
+    section .about .about-text {
+        left: -10%;
+    }
+    section .about .about-text img {
+        height: 255px;
+    }
+    section .what-people-say img {
+        width: 206px;
+    }
+    section .what-people-say p {
+        font-size: 20px;
+    }
+    section .why-choose-us {
+        padding: 10px 0px 0px 0px;
+    }
+    section .why-choose-us h1 {
+        font-size: 45px;
+    }
+    section .why-choose-us h2 {
+        font-size: 36px;
+    }
+    section .our-partner .p-frame {
+        width: 200px;
+        height: 200px;
+    }
+    section .how-work-sec h1 {
+        font-size: 70px;
+    }
+    section .how-work-sec P {
+        font-size: 24px;
+    }
+    section .how-work-sec .fruits {
+        left: 45px;
+        height: 170px;
+    }
+    section .how-work-sec .strawberry {
+        top: -250px;
+    }
+    section .how-work-sec .grapes {
+        top: -150px;
+        left: 110px;
+    }
+    section .home-bg {
+        height: 580px;
+    }
+    section .home-bg .order-btn {
+        top: 207px;
+    }
+    section .new-signup {
+        padding: 76px 90px;
+    }
+    section .new-signup .blog .carousel-inner .carousel-item img {
+        height: 365px;
+        width: 342px;
+    }
+    section .new-add .new-add-btns {
+        margin-top: 53px !important;
+    }
+    section .new-add iframe {
+        height: 350px;
+        width: 350px;
+    }
+    section .new-add .new-add-bg {
+        padding: 11px 19px !important;
+    }
+    section .new-add .bill-pay .payment-part p {
+        margin-top: 5px;
+    }
+    section .contact-part .fruits {
+        height: 150px;
+    }
+    section .contact-part .berry {
+        left: 291px;
+    }
+    section .send-msg .form-part .fruits {
+        height: 116px;
+    }
+    section .send-msg .form-part .orange {
+        bottom: -40px;
+    }
+    section .send-msg .form-part .watermelon {
+        top: -40px;
+    }
+    section .order-history .history .box-img {
+        margin-top: -23px;
+        margin-left: 29px;
+    }
+    section .order-history .history button {
+        width: 168px;
+        margin-left: -84px;
+    }
+    section .order-history .history .text .list p {
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    section .order-history .history .text .list .f-list {
+        float: left;
+    }
+    section .order-history .manage button {
+        padding: 9px 37px;
+        width: auto;
+        margin-left: 0px;
+    }
+    section .que-part h4 {
+        font-size: 43px;
+    }
+    section .search-bar img {
+        height: 42px;
+    }
+    section .search-bar input {
+        font-size: 19px;
+    }
+    section .saved-add .fruits {
+        height: 119px;
+    }
+    section .saved-add .add-part .text-part {
+        padding: 33px 65px;
+    }
+    section .saved-add .add-part .text-part p {
+        padding: 17px 0px 0px 20px;
+        font-size: 21px;
+    }
+    section .saved-add .add-part .text-part .location p {
+        font-size: 17px;
+    }
+    section .address .add-address .pinapple {
+        top: -27px;
+        left: 18px;
+    }
+    section .address .add-address .strawberry {
+        top: -25px;
+        right: -5px;
+    }
+    section .address .add-address .fruits {
+        height: 146px;
+    }
+    section .address .add-address h1 {
+        width: 92%;
+        margin: 0 auto;
+        margin: 60px 0px;
+    }
+    section .random-part .left-part {
+        padding-right: 60px;
+    }
+    section .random-part .right-part {
+        padding-left: 60px;
+    }
+    section .remark p {
+        font-size: 21px;
+        padding-left: 114px;
+    }
+    section .remark ul li {
+        font-size: 25px;
+    }
+    section .bill-pay .billing {
+        padding: 52px 72px;
+        padding-bottom: 125px;
+    }
+    section .bill-pay .billing .fruits {
+        position: absolute;
+        height: 132px;
+    }
+    section .bill-pay .billing .buttons button {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+    section .bill-pay .billing .check {
+        text-align: left;
+    }
+    section .bill-pay .c-out button {
+        font-size: 25px;
+    }
+    section .bill-pay .payment-part {
+        padding-bottom: 77px;
+    }
+    section .bill-pay .payment-part p {
+        font-size: 21px;
+    }
+    section .bill-pay .payment-part .comment textarea {
+        height: 190px;
+    }
+    section .call p {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    section .que-part {
+        padding: 5px 60px;
+    }
+    section .que-part .accordion p {
+        font-size: 20px;
+        padding: 7px 0px 0px 13px;
+    }
+    section .que-part .panel {
+        padding: 0px 0px 0px 72px;
+        font-size: 19px;
+    }
+    section .search-bar {
+        padding: 5px 60px;
+    }
+    section .search-bar .search-part {
+        width: 96%;
+    }
+    section .search-bar .search-part .line {
+        height: 14px;
+    }
+    section .faq .faq-bg {
+        height: 500px;
+    }
+    section .faq .faq-bg .faq-text h1 {
+        font-size: 44px;
+        line-height: 40px;
+    }
+    section .check-out-btn img {
+        height: 77px;
+    }
+    section .check-out-btn button {
+        font-size: 23px;
+    }
+    section .plan .box h3 {
+        font-size: 37px;
+    }
+    section .plan .plan-v2 .box h2 {
+        font-size: 18px;
+    }
+    section .plan .plan-v2 .box button {
+        font-size: 17px;
+    }
+    section .days .box {
+        height: 123px;
+    }
+    section .days .box h6 {
+        font-size: 27px;
+    }
+    section .days .box img {
+        height: 75px;
+        top: -35px;
+    }
+    section .days .box-3 img {
+        top: -45px;
+    }
+    section .discription {
+        padding: 15px 40px;
+    }
+    section .discription p {
+        font-size: 15px;
+    }
+    section .discription img {
+        height: 117px;
+    }
+    section .cart .cart-part {
+        padding: 80px 103px;
+    }
+    section .cart .cart-part .pinapple {
+        height: 150px;
+    }
+    section .cart .cart-part .strawberry {
+        height: 150px;
+    }
+    section .cart .cart-part .sitafal {
+        height: 150px;
+    }
+    section .cart .cart-part .grapes {
+        height: 150px;
+    }
+    section .cart .cart-part .watermelon {
+        top: 50px;
+    }
+    section .cart .cart-part .banana {
+        bottom: 50px;
+    }
+    section .cart .cart-part .cart-text p {
+        width: 183px;
+        font-size: 20px;
+        padding: 10px 5px;
+    }
+    section .cart .cart-part .ala {
+        height: 350px;
+        width: 350px;
+        left: 18px;
+    }
+    section .cart .cart-part .ala .ala-text2 {
+        right: -135px;
+    }
+    section .cart .cart-part .ala .ala-text1 {
+        left: -140px;
+    }
+    section .cart .cart-part .ala p {
+        font-size: 11px;
+    }
+    section .cart .cart-part .ala h1 {
+        font-size: 33px;
+    }
+    section .cart .cart-part .ala h3 {
+        font-size: 20px;
+    }
+    section .what-does-part h1 {
+        font-size: 73px;
+    }
+    section .what-does-part h3 {
+        font-size: 35px;
+    }
+    section .steps .arrow img {
+        height: 36px;
+        left: -28px;
+        top: -18%;
+    }
+    section .steps .step {
+        height: 200px;
+        width: 200px;
+    }
+    .cart-table .design img {
+        height: 700px;
+    }
+    .table-part {
+        width: 98%;
+    }
+    .cart-table {
+        width: 100%;
+    }
+    .main-col {
+        width: 100%;
+        padding: 0px 7px;
+    }
+    .cart-table .col {
+        padding: 0px 5px;
+    }
+    .main-col ul li {
+        padding-bottom: 81px;
+        font-size: 20px;
+    }
+    .main-col ul {
+        padding: 70px 0px 0px 0px !important;
+    }
+    .cart-table .col-height {
+        height: 700px !important;
+    }
+    .ala-carte .ala {
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+    }
+    .ala-part {
+        height: 390px;
+    }
+    .ala-carte .fruits {
+        padding: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .ala-carte .ala .ala-text {
+        width: 42%;
+        height: 45%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .ala-carte .ala .ala-text h1 {
+        font-size: 100px;
+    }
+    .ala-carte .ala .ala-text h2 {
+        font-size: 57px;
+    }
+}
+
+
+/**
+* Holds all the min-width 1200px styles
+*
+*
+**/
+
+@media (min-width: 1200px) {
+    section .about .title-part {
+        margin-bottom: 75px;
+    }
+    section .about .about-text {
+        left: -4%;
+    }
+    section .about .about-text img {
+        height: 268px;
+    }
+    section .about .about-text .what-text {
+        margin-top: 60px;
+    }
+    section .about .about-text h3 {
+        font-size: 31px;
+    }
+    section .what-people-say img {
+        width: 230px;
+    }
+    section .what-people-say h1 {
+        font-size: 45px;
+    }
+    section .what-people-say h5 {
+        font-size: 45px;
+    }
+    section .what-people-say p {
+        font-size: 25px;
+    }
+    section .why-choose-us h1 {
+        font-size: 53px;
+    }
+    section .why-choose-us h2 {
+        font-size: 45px;
+    }
+    section .why-choose-us p {
+        font-size: 25px;
+    }
+    section .why-choose-us .img-part img {
+        width: 434px;
+    }
+    section .our-partner .p-frame {
+        width: 260px;
+        height: 260px;
+    }
+    section .how-work-sec .fruits {
+        height: 200px;
+    }
+    section .home-bg {
+        height: 665px;
+    }
+    section .home-bg .order-btn {
+        top: 236px;
+    }
+    section .new-signup {
+        padding: 76px 131px;
+    }
+    section .new-signup h1 {
+        font-size: 69px;
+    }
+    section .new-signup .btn2 {
+        font-size: 25px;
+        padding: 11px 82px;
+        padding-top: 13px;
+    }
+    section .new-add {
+        padding: 58px 37px !important;
+    }
+    section .new-add .add-part {
+        padding: 20px 50px !important;
+    }
+    section .new-add iframe {
+        height: 450px;
+        width: 450px;
+    }
+    section .new-add .bill-pay .billing .buttons button {
+        padding: 14px 0px;
+    }
+    section .contact-part .cartoon {
+        position: absolute;
+        bottom: 22px;
+        left: 90px;
+    }
+    section .event-msg p {
+        padding: 0px 103px;
+        font-size: 19px;
+    }
+    section .send-msg .form-part .fruits {
+        height: 142px;
+    }
+    section .send-msg .form-part .orange {
+        bottom: -57px;
+    }
+    section .send-msg .form-part .watermelon {
+        top: -57px;
+    }
+    section .order-history .history {
+        padding: 62px 20px;
+        padding-left: 62px;
+    }
+    section .order-history .history .text .list p {
+        font-size: 18px;
+    }
+    section .order-history .manage {
+        padding: 62px 83px;
+    }
+    section .saved-add .berry {
+        height: 170px;
+    }
+    section .saved-add .add-part .text-part {
+        width: 83%;
+        padding: 54px 92px;
+    }
+    section .saved-add .add-part .text-part .location p {
+        font-size: 20px;
+    }
+    section .saved-add .add-part .text-part .buttons button {
+        font-size: 19px;
+        padding: 6px 30px;
+    }
+    section .address .add-address .pinapple {
+        left: 54px;
+    }
+    section .address .add-address .strawberry {
+        right: 18px;
+    }
+    section .random-part ul li {
+        font-size: 27px;
+    }
+    section .random-part .left-part {
+        padding-right: 90px;
+    }
+    section .random-part .right-part {
+        padding-left: 90px;
+    }
+    section .date-time .totel {
+        width: 183px;
+    }
+    section .date-time .totel p {
+        font-size: 13px;
+    }
+    section .date-time .date-part {
+        width: 205px;
+    }
+    section .date-time .date-part .time {
+        padding: 0px 12%;
+    }
+    section .date-time .date-part p {
+        font-size: 13px;
+    }
+    section .date-time .totel {
+        width: 190px;
+    }
+    section .bill-pay .billing {
+        padding: 69px 72px;
+        padding-bottom: 167px;
+    }
+    section .bill-pay .billing h1 {
+        font-size: 22px;
+    }
+    section .bill-pay .billing .buttons button {
+        padding: 11px 0px;
+        font-size: 16px;
+    }
+    section .bill-pay .billing .check .text {
+        font-size: 17px;
+    }
+    section .bill-pay .c-out button {
+        font-size: 25px;
+        padding: 28px 0px;
+    }
+    section .bill-pay .payment-part {
+        padding-bottom: 80px;
+    }
+    section .bill-pay .payment-part .comment p {
+        font-size: 20px;
+    }
+    section .call p {
+        font-size: 27px;
+    }
+    section .faq .faq-bg {
+        height: 700px;
+    }
+    section .faq .faq-bg .faq-text {
+        left: 80px;
+    }
+    section .faq .faq-bg .faq-text h1 {
+        font-size: 55px;
+        line-height: 50px;
+    }
+    section .plan {
+        padding: 58px 95px;
+    }
+    section .week {
+        width: 72%;
+    }
+    section .week ul li .circ {
+        height: 90px;
+        width: 90px;
+    }
+    section .week ul li p {
+        height: 30%;
+    }
+    section .discription p {
+        font-size: 21px;
+    }
+    section .discription img {
+        height: 230px;
+        top: -39px;
+        position: absolute;
+    }
+    section .steps .step {
+        height: 230px;
+        width: 230px;
+    }
+    section .steps .step .step-text h6 {
+        font-size: 21px;
+    }
+    section .cart .cart-part {
+        padding: 105px 127px;
+    }
+    section .cart .cart-part .watermelon {
+        top: 25px;
+    }
+    section .cart .cart-part .banana {
+        bottom: 25px;
+    }
+    section .cart .cart-part .cart-text p {
+        width: 198px;
+        font-size: 25px;
+    }
+    section .cart .cart-part .ala {
+        height: 596px;
+        width: 596px;
+        left: 33px;
+    }
+    section .cart .cart-part .ala p {
+        font-size: 19px;
+    }
+    section .cart .cart-part .ala h1 {
+        font-size: 48px;
+    }
+    section .cart .cart-part .ala h3 {
+        font-size: 31px;
+    }
+    section .cart .cart-part .ala .ala-text1 {
+        height: 18%;
+        left: -244px;
+    }
+    section .cart .cart-part .ala .ala-text2 {
+        height: 18%;
+        right: -244px;
+    }
+    .ala-part {
+        height: 505px;
+    }
+    .ala-carte .ala .ala-text {
+        width: 38%;
+        height: 46%;
+    }
+    .ala-carte .ala .ala-text h1 {
+        font-size: 126px;
+    }
+    .ala-carte .ala .ala-text h2 {
+        font-size: 70px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .top-nav .dd-text {
+        top: 79px;
+        right: 90px;
+    }
+    section .about {
+        padding: 110px 67px;
+    }
+    section .about .f-bag {
+        width: 328px;
+    }
+    section .what-people-say {
+        padding: 20px 68px;
+    }
+    section .why-choose-us .img-part img {
+        width: 454px;
+    }
+    section .our-partner {
+        padding: 50px 120px;
+    }
+    section .how-work-sec .fruits {
+        height: 200px;
+    }
+    section .how-work-sec .strawberry {
+        top: -300px;
+    }
+    section .how-work-sec .grapes {
+        top: -150px;
+        left: 130px;
+    }
+    section .home-bg {
+        height: 765px;
+    }
+    section .home-bg .order-btn {
+        top: 270px;
+    }
+    section .order-history .manage {
+        padding: 62px 118px;
+    }
+    section .new-signup .blog .carousel-indicators {
+        width: 74%;
+    }
+    section .new-signup {
+        padding: 119px 131px;
+    }
+    section .new-signup .blog .carousel-inner .carousel-item img {
+        height: 415px;
+        width: 415px;
+    }
+    section .contact-part .cartoon {
+        position: absolute;
+        bottom: -22px;
+        left: 178px;
+        width: 584px;
+        height: 597px;
+    }
+    section .event-msg p {
+        padding: 0px 130px;
+        font-size: 19px;
+    }
+    section .saved-add .berry {
+        height: 229px;
+    }
+    section .saved-add .add-part .text-part {
+        width: 78%;
+    }
+    section .address .add-address .pinapple {
+        left: 60px;
+    }
+    section .address .add-address .strawberry {
+        right: 25px;
+    }
+    section .date-time .date-part {
+        width: 228px;
+    }
+    section .date-time .date-part .time {
+        padding: 0px 13%;
+    }
+    section .date-time .totel {
+        width: 228px;
+    }
+    section .plan {
+        padding: 58px 130px;
+    }
+    section .week {
+        width: 60%;
+    }
+    section .steps .arrow img {
+        height: 54px;
+        left: -41px;
+    }
+    section .cart .cart-part {
+        padding: 130px 191px;
+    }
+    section .cart .cart-part .pinapple {
+        height: 200px;
+    }
+    section .cart .cart-part .strawberry {
+        height: 200px;
+    }
+    section .cart .cart-part .sitafal {
+        height: 200px;
+    }
+    section .cart .cart-part .grapes {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .top-nav .dd-text {
+        top: 79px;
+        right: 149px;
+    }
+    section .about {
+        padding: 100px 119px;
+    }
+    section .about .f-bag {
+        width: 228px;
+    }
+    section .how-work-sec .fruits {
+        height: 225px;
+    }
+    section .how-work-sec .strawberry {
+        top: -400px;
+    }
+    section .how-work-sec .grapes {
+        top: -250px;
+        left: 130px;
+    }
+    section .home-bg {
+        height: 865px;
+    }
+    section .home-bg .order-btn {
+        top: 316px;
+    }
+    section .new-signup .blog .carousel-indicators {
+        width: 70%;
+    }
+    section .contact-part .fruits {
+        height: 206px;
+    }
+    section .saved-add .add-part .text-part {
+        width: 73%;
+    }
+    section .cart .cart-part .cart-text p {
+        width: 221px;
+    }
+    section .cart .cart-part {
+        padding: 130px 222px;
+    }
+    section .bill-pay .billing {
+        padding: 69px 96px;
+        padding-bottom: 198px;
+    }
+    section .bill-pay .payment-part {
+        padding-bottom: 80px;
+    }
+    section .bill-pay .c-out button {
+        font-size: 29px;
+        padding: 40px 0px;
+    }
+    section .order-history .history {
+        padding: 62px 20px;
+        padding-left: 89px;
+    }
+    section .order-history .manage {
+        padding: 62px 193px;
+        padding-left: 206px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .top-nav .dd-text {
+        top: 79px;
+        right: 210px;
+    }
+    section .about {
+        padding: 100px 122px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .top-nav .dd-text {
+        top: 79px;
+        right: 257px;
+    }
+    section .about {
+        padding: 100px 206px;
+    }
+}
+
+
+/**
+* Holds all the footer styles
+*
+*
+**/
+
+.ftr {
+    background-size: inherit;
+    padding: 30px 0px 0px 0px;
+}
+
+.menu-link {
+    text-align: center;
+    list-style-type: none;
+    color: #29335C;
+}
+
+.menu-link:hover {
+    text-align: center;
+    list-style-type: none;
+    color: #fff;
+}
+
+.btn2:hover {
+    padding: 13px 85px;
+}
+.form-group img{
+    margin-top: 0px !important
+}
+.form-control{
+    border: 3px solid transparent !important;
+    border-image: url(../img/line.png) 30 stretch !important;
+    border-image-width: 0px 0px 3px !important;
+    margin: 5px 0; 
+}
+.has-error{
+    line-height:0.8;
+    margin-bottom: 5px !important;
+}
+.modal-content {
+    background-color: transparent;  
+    border: 0;  
+    background-image: url(../img/box-bg-3.png);
+    background-position: center;
+    background-size: 100% 100%;
+}
+.modal-header,
+.modal-footer {
+    border: 0
+}
+.modal-header .close {
+    padding: 0;
+    margin: -2rem -2rem -1rem auto;
+    opacity: 0.8;
+}
+.close:not(:disabled):not(.disabled):hover, .close:not(:disabled):not(.disabled):focus {
+    opacity: 1.75;
+}
+button:focus {
+    outline: 0px dotted;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}

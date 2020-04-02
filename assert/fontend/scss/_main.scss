@@ -1,0 +1,1871 @@
+/**
+* Holds all the max-width 767 media styles
+*
+*
+**/
+section{
+	.about{
+		padding: 95px 0px;  
+		position: relative;
+		background-image: url("../img/about-bg.png"); 
+			background-size: 100% 100%;
+			.fruits {
+				position: absolute;
+				height: 100px;
+			}
+			.abt-icon{
+				padding: 0px 15px;
+			}
+			.mobile-icon{
+				padding: 0px 15px;
+				display: initial;
+			}
+			.icon-v2{
+				display: none;
+			}
+			.berry{
+				top: -52px;
+				left: 0;
+			}
+			.avocado{
+				bottom: -52px;
+				right: 0;
+			}
+			.about-text{
+				display: none;
+			}
+			.f-bag{
+				display: none;
+			}
+			.watermelon{
+				display: none;
+			}
+			h2{
+				color: #ffffff;
+				font-size: 30px;
+				text-align: center;
+			}
+			.title-part{
+				text-align: center;
+				margin-bottom: 25px;
+				h1{
+					font-family: 'Dreamwalker Regular';
+					color: #ffffff;
+				}
+				P{
+					font-family: auto;
+					font-size: 21px;
+					color: #ffffff;
+				}
+			}
+		}
+		.what-people-say{
+			padding: 20px 0px; 
+			h1{
+				color: #29335C;
+				text-align: center;
+				font-size: 25px;
+				margin-bottom: 20px;
+			}
+			h5{
+				margin-top: 10px;
+				color: #FAA919;
+				font-family: 'Dreamwalker Regular';
+				text-align: center;
+			}
+			p{
+				color: #29335C;
+				text-align: center;
+				font-size: 15px;
+			}
+			.part-two{	
+				.img-block{
+					display: none;
+				}
+			}
+			img{
+				display: block;
+				width: 200px;
+				height: auto;
+				margin: 0 auto; 
+			}
+		}
+		.why-choose-us{
+			position: relative;
+			background-image: url("../img/choose-bg.png"); 
+				background-size: 100% 100%;
+				color: #ffffff;
+				.fruits {
+					position: absolute;
+					height: 100px;
+				}
+				.berry{
+					top: -52px;
+					left: 0;
+				}
+				.avocado{
+					bottom: -52px;
+					right: 0;
+				}
+				h1{
+					font-size: 30px;
+					text-align: center;
+					padding: 15px 0px 13px;
+				}
+				h2{
+					padding-top: 15px;
+					font-size: 30px;
+					text-align: center;
+					font-family: 'Dreamwalker Regular';
+				}	
+				p{
+					text-align: center;
+					font-family: serif;
+					padding-left: 13px;
+				}
+				.img-part{
+					img{
+						margin: 0 auto;
+						width: 100%;
+						height: auto;
+					}
+				}
+			}
+			.our-partner{
+				padding: 50px 0px;
+				h3{
+					margin-bottom: 20px;
+					color: #FAA919;
+					text-align: center;
+				}
+				.p-frame{
+					background-image: url("../img/p-frame.png"); 
+						background-size: 100% 100%;
+						width: 200px;
+						height: 200px;
+						margin: 5px auto;
+						img{
+							width: 100%;
+							height: auto;
+						}
+					}
+				}
+				.how-work-sec{
+					position: relative;
+					.fruits{
+						position: absolute;
+						top: 0px;
+						height: 70px;
+					}
+					.home-icon{
+						margin: 0 auto;
+						height: 177px;
+						display: block;
+					}
+					.strawberry{
+						top: -100px;
+					}
+					.grapes{
+						top: -55px;
+					}
+					h1{
+						color: #E4572E;
+						text-align: center;
+						font-size: 30px;
+						margin-bottom: 35px;
+					}
+					p{
+						font-family: 'Multicolore Regular';
+						font-size: 20px;
+						text-align: center;
+						padding: 6px 10px;
+					}
+				}
+				.home-bg{
+					background-image: url("../img/home-bg.png"); 
+						background-size: 100% 100%;
+						height: 180px;
+						position: relative;
+						.order-btn{
+							position: absolute;
+							width: 35%;
+							top: 66px;
+							right: 46%;
+							margin: 0 auto;
+							left: 0;
+						}
+					}
+					.new-add{
+						.payment-part{
+							input[type="radio"] + label, 
+							input[type="checkbox"] + label {
+								background-image: url("../img/redio-2.png") !important;
+							}
+
+							input[type="radio"]:checked + label,
+							input[type="checkbox"]:checked + label{
+								background-image: url("../img/redio-3.png") !important;
+							}
+						}
+						h1{
+							color: #DB3812 !important;
+						}
+						.profile .form input{
+							color: #DB3812 !important;
+						}
+						.profile .form input::placeholder {
+							color: #DB3812 !important;
+							opacity: 1; /* Firefox */
+						}
+
+						.profile .form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+							color: #DB3812 !important;
+						}
+
+						.profile .form input::-ms-input-placeholder { /* Microsoft Edge */
+							color: #DB3812 !important;
+						}
+						.payment-part{
+							background-image: none !important;
+							padding: 11px 0px !important;
+						}
+						iframe{
+							margin: 0 auto;
+							display: block;
+							height: 250px;
+							width: 250px;
+						}
+						.bill-pay .payment-part p {
+							font-size: 17px;
+						}
+						.new-add-bg{
+							background-image: none !important;
+							padding: 11px 57px !important;
+						}
+						.new-add-save-btn{
+							width: 170px !important;
+							font-size: 17px !important;
+							padding: 6px 0px !important;
+						}
+					}
+					.contact-part{
+						position: relative;
+						.fruits{
+							position: absolute;
+							height: 84px;
+						}
+						.strawberry{
+							top: 0px;
+							right: 0px;
+						}
+						.berry{
+							top: 0px;
+							left: 0px;
+						}
+						.pinapple{
+							bottom: 0px;
+							left: 0px;
+						}
+						.banana{
+							bottom: 0px;
+							right: 0px;
+						}
+						padding: 99px 32px;
+						background-image: url("../img/cartoon-bg.png");	
+						background-size: 100% 100%;
+						.cartoon{
+							width: 100%;
+							height: auto;
+						}
+						.icon-part{
+							margin: 20px 0px;
+							h4{
+								color: #ffffff;
+								text-align: center;
+								font-size: 18px
+							}
+							p{
+								color: #ffffff;
+								font-size: 15px;
+								text-align: center;
+							}
+						}
+						.social{
+							h4{
+								color: #ffffff;
+								text-align: center;
+								font-size: 18px
+							}
+							.img-part{
+								display: flex;
+								img{
+									height: 100px;
+									width: 100px;
+									margin: 0 auto;  
+								}
+							}
+						}
+						.contact-icon{
+							height: 150px;
+							width: 150px;
+							display: block;
+							margin: 0 auto;  
+						}
+					}
+					.send-msg{
+						padding: 50px 0px;
+						h1{
+							text-align: center;
+							color: #FAA919;
+							font-size: 25px;
+						}
+						.form-part{
+							position: relative;
+							background-image: url("../img/send-msg-bg.png");	
+								background-size: 100% 100%;
+								.fruits{
+									position: absolute;
+									height: 69px;
+								}
+								.orange{
+									bottom: -18px;
+									right: 0px;
+								}
+								.watermelon{
+									top: -18px;
+								}
+								.send-form{
+									padding: 50px 0px;
+									background-image: none;
+									p{
+										color: #ffffff;
+										margin-bottom: 0;
+										padding-left: 12px;
+									}
+									.form{
+										width: 100%;
+										max-width: none;
+									}
+									textarea{
+										padding: 15px 28px;
+										background-image: url("../img/textarea.png");	
+											background-size: 100% 100%;
+											width: 100%;
+											background-color:transparent; 
+											height: 150px;
+											border:none;
+											overflow: hidden;
+										}
+										textarea:focus{
+											outline: none; 
+										}
+										button{
+											background: transparent;
+											border: none;
+											display: block;
+											background-image: url("../img/send-btn.png");	
+												background-size: 100% 100%;
+												color: #ffffff;
+												padding: 7px 54px;
+												font-size: 22px;
+												margin: 0 auto;
+											}
+										}
+									}
+								}
+								.event-msg{
+									h1{
+										color: #101F51;
+									}
+									p{
+										padding: 0px 44px;
+									}
+									.form-part{
+										background-image: url("../img/event-bg.png");
+											padding: 92px 0px;
+											.send-form{
+												padding: 0px 0px;
+												h3{
+													text-align: center;
+													font-size: 20px;
+													color: #101F51;
+												}
+												button{
+													background-image: url("../img/event-btn.png");	
+												}
+											}
+
+										}
+									}
+									.load-more{
+										button{
+											background: transparent;
+											border: none;
+											display: block;
+											background-image: url("../img/load-more.png");	
+												background-size: 100% 100%;
+												color: #101F51;
+												font-size: 22px;
+												margin: 0 auto;
+												margin-bottom: 20px;
+												padding: 16px 40px;
+											}
+										}
+										.order-history{
+											.seprate{
+												height: 150px;
+												width: 100%;
+											}
+											h1{
+												padding: 50px 0px;
+												text-align: center;
+												font-family: 'Dreamwalker Regular';
+												color: #A8CF4B;
+											}
+											.history{
+												margin-bottom: 50px;
+												background-image: url("../img/history-bg.png");	
+													background-size: 100% 100%;
+													padding: 50px 20px;
+													img{
+														width: 100%;
+														height: auto;
+													}
+													button{
+														margin: 0 auto;
+														font-size: 19px;
+														width: 186px;
+														padding: 11px 0px;
+														margin-bottom: 15px;
+														background: transparent;
+														border: none;
+														display: block;
+														background-image: url("../img/bill-button.png");	
+															background-size: 100% 100%;
+															color: #FAA919;
+														}
+														.text{
+															text-align: center;
+															h3{
+																color: #FAA919;
+															}
+															p{
+																color: #ffffff;
+																margin-bottom: 3px;
+																span{
+																	color: #A8CF4B;
+																} 
+															}
+															.location{
+																display: block;
+																color: #ffffff;
+																.loca{
+																	height: 30px;
+																	width: 26px;
+																	margin-right: 10px;
+																}
+																.icon{
+																	margin-left: 10px;
+																}
+																.dot{
+																	height: 8px;
+																	width: 8px;
+																	margin-top: 0px;
+																}
+																h6{
+																	color: #ffffff;
+																	font-size: 13px;
+																	display: initial;
+																}
+															}
+															.list{
+																padding: 15px 0px;
+																p{
+																	color: #A8CF4B;
+																}
+																.f-list{
+																	p{
+																		span{
+																			font-family: 'Nunito', sans-serif;
+																		}
+																	}
+																}
+															}
+														}
+													}
+													.manage{
+														padding: 149px 20px;
+														button{
+															padding: 7px 40px;
+															width: auto;
+															margin: 0 auto;
+														}
+														.curr-btn{
+															padding: 11px 47px;
+															width: auto;
+														}
+														.edit-btn{
+															button{
+																padding: 6px 57px;
+															}
+														}
+														.text{
+
+															.credi-btn{
+																padding: 19px 40px;
+																padding-bottom: 9px;
+																P{
+																	margin-top: -8px;
+																	color: #101F51;
+																}
+															}
+															.saved-btn{
+																p{
+																	color: #101F51;
+																	span{
+																		color: #FAA919;
+																		font-size: 11px;
+																	}
+																	.visa{
+																		margin-left: 5px;
+																		padding: 3px;
+																		background-color: #101F51;
+																		color: #ffffff;
+																	}
+																}
+															}
+															h3 {
+																font-size: 22px;
+																margin: 13px 0px;
+																color: #FAA919;
+															}
+															h2{
+																font-family: 'Dreamwalker Regular';
+																color: #ffffff;
+																padding: 10px 0px;
+																font-size: 24px;
+
+															}
+															h6{
+																color: #ffffff;
+															}
+															.cancel{
+																margin: 0 auto;
+															}
+															.week{
+																padding: 0px 0px;
+																ul{
+																	list-style-type: none;
+																	text-align: center;
+																	padding: 0px;
+																	margin: 0px;
+																	display: grid; 
+																	li{
+																		position: relative;
+																		margin: 10px auto;
+																		P{
+																			position: absolute;
+																			top: 0;
+																			right: 0;
+																			left: 0;
+																			bottom: 0;
+																			margin: auto;
+																			height: 27%;
+																			color: inherit;
+																			font-size: 11px;
+																		}
+																		.circ{
+																			height: 50px;
+																			width: 50px;
+																		}
+																		.mon{
+																			background-image: url("../img/mon.png"); 
+																				background-size: 100% 100%;
+																				color: #9A2B39 !important;
+																			}
+																			.tue{
+																				background-image: url("../img/tue.png"); 
+																					background-size: 100% 100%;
+																					color: #D1222A;
+																				}
+																				.wed{
+																					background-image: url("../img/wed.png"); 
+																						background-size: 100% 100%;
+																						color: #F35F20;
+																					}
+																					.thu{
+																						background-image: url("../img/thu.png"); 
+																							background-size: 100% 100%;
+																							color: #F69420;
+																						}
+																						.fri{
+																							background-image: url("../img/fri.png"); 
+																								background-size: 100% 100%;
+																								color: #F9AE33;
+																							}
+																							.sat{
+																								color: #8FC44B;
+																							}
+																							.sun{
+																								color: #3CB14E;
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																	.saved-add{
+																		background-image: url("../img/saved-add.png");	
+																			background-size: 100% 100%;
+																			padding: 40px 0px;
+																			position: relative;
+																			.fruits{
+																				position: absolute;
+																				height: 80px;
+																			}
+																			.watermelon{
+																				top: 0px;
+																				left: 0px;
+																			}
+																			.grapes{
+																				top: 0px;
+																				right: 0px;
+																			}
+																			.orange{
+																				bottom: 0px;
+																				right: 0px;
+																			}
+																			.avocado{
+																				bottom: 0px;
+																				left: 0px;
+																			}
+																			.berry{
+																				top: 35px;
+																				bottom: 0px;
+																				right: 0px;
+																				left: 0px;
+																				margin: auto;
+																			}
+																			h1{
+																				font-family: 'Dreamwalker Regular';
+																				font-size: 23px;
+																				text-align: center;
+																				padding: 16px 0px;
+																				color: #ffffff;
+																			}
+																			.add-part{
+																				position: relative;
+																				.berry{
+																					position: absolute;
+																				}
+																				.text-part{
+																					background-image: url("../img/add-part.png");	
+																						background-size: 100% 100%;
+																						padding: 33px 47px;
+																						width: 88%;
+																						margin: 0 auto;
+																						margin-bottom: 35px;
+																						img{
+																							height: 60px;
+																						}
+																						p{
+																							padding: 25px 0px 0px 20px;
+																							color: #ffffff;
+																						}
+																						.location{
+																							padding: 10px 0px;
+																							p{
+																								padding: 0px;
+																								margin: 0px;
+																								font-size: 13px;
+																							}
+																						}
+																						.buttons{
+																							width: 100%;	
+																							button{
+																								background: transparent;
+																								border: none;
+																								display: block;
+																								font-size: 14px;
+																								padding: 4px 14px;
+																								background-image: url("../img/bill-button.png");	
+																									background-size: 100% 100%;
+																									color: #101F51;
+																								}
+																								.edit-btn{
+																									float: left;
+																								}
+																								.remove-btn{
+																									float: right;
+																								}
+																							}
+																						}
+																					}
+
+																				}
+																				.address{
+																					.add-address{
+																						position: relative;
+																						.fruits{
+																							position: absolute;
+																							height: 50px;
+																						} 
+																						.pinapple{
+																							top: -5px;
+																							left: -7px;
+																						}
+																						.strawberry{
+																							top: -3px;
+																							right: -5px;
+																						}
+																						h1{
+																							text-align: center;
+																							width: 80%;
+																							background-image: url("../img/add-bg.png");	
+																								background-size: 100% 100%;
+																								font-family: 'Dreamwalker Regular';
+																								color: #ffffff;
+																								font-size: 23px;
+																								width: 98%;
+																								margin: 15px 0px;
+																								padding: 10px 0px;
+																							}
+																						}
+																					}
+																					.random-part{
+																						padding: 20px 0px;
+																						.countr{
+																							text-align: center;
+																							margin: 0 auto;
+																							font-size: 29px;
+																							color: #A8CF4B;
+																							img{
+																								margin: 0px 5px;
+																								height: 30px;
+																								width: 30px;
+																							}
+																						}
+																						h1{
+																							color: #E4572E;
+																							font-size: 27px;
+																							text-align: center;
+																						}
+																						img{
+																							width: 100%;
+																							height: auto;
+																						}
+																						.text{
+																							display: inline-block;
+																							text-align: center;
+																							margin: 0 auto;
+																						}
+																						.right-part{
+																							padding-left: 20px;
+																						}
+																						.left-part{
+																							padding-right: 20px;
+																						}
+																						ul{
+																							margin: 0;
+																							padding: 0; 
+																							list-style-type: none;
+																							li{
+																								font-family: 'Dreamwalker Regular';
+																								color: #A8CF4B;
+																								text-align: center;
+																								font-size: 19px;
+																							}
+																						}
+																					}
+																					.remark{
+																						padding: 20px 0px;
+																						p{
+																							font-family: 'Dreamwalker Regular';
+																							padding: 0px;
+																							margin: 0px;
+																							text-align: center; 
+																						}
+																						textarea{
+																							background-image: url("../img/remark-text.png");	
+																								background-size: 100% 100%;
+																								width: 100%;
+																								background-color:transparent; 
+																								height: 200px;
+																								border:none;
+																								font-size: 15px;
+																								color: #ffffff;
+																								padding: 0px 25px;
+																								overflow: hidden;
+																								padding: 24px 49px;
+																							}
+																							textarea:focus{
+																								outline: none;
+																							}
+																							span{
+																								font-family: 'Multicolore Regular';
+																							}
+																						}
+																						.date-time{
+																							.totel{
+																								background-image: url("../img/total.png"); 
+																									background-size: 100% 100%;
+																									width: 228px;
+																									padding: 37px 0px;
+																									margin: 0 auto;
+																									p{
+																										font-size: 14px;
+																										margin: 0px;
+																										padding: 0px;
+																										color: #ffffff;
+																										text-align: center;
+																									}
+																								}
+																								.date-part{
+																									position: relative;
+																									padding: 28px 0px;
+																									width: 252px;
+																									margin: 0 auto;
+																									background-image: url("../img/date-time.png"); 
+																										background-size: 100% 100%;
+																										.date-close{
+																											position: absolute;
+																											top: -11px;
+																											right: -7px;
+																										}
+																										p{
+																											padding: 0px;
+																											margin: 0px;
+																											color: #ffffff;
+																											text-align: center;
+																										}
+																										img{
+																											margin: 0 auto;
+																											display: inherit;
+																											margin-top: -4px;
+																											margin-bottom: 10px;
+																										}
+																										.time{
+																											display: flex;
+																											padding: 0px 20%;
+																											p{
+																												color: #ffffff;
+																												margin: 0px;
+																												padding: 0px;
+																												text-align: center;
+																												font-size: 12px;
+																											}
+																											img{
+																												margin-top: 9px;
+																											}
+																											.order{
+																												background-image: url("../img/date-order.png"); 
+																													background-size: 100% 100%;
+																													height: 82px;
+																													width: 90px;
+																													.text{
+																														padding-top: 29px;
+																													}
+																													p{
+																														text-align: center;
+																														color: #ffffff;
+																														padding: 0px;
+																														font-size: 13px;
+																														margin: 0px;
+																													}
+																												}
+																											}
+																										}
+																										.first-date-part{
+																											background-image: url("../img/first-date-time.png"); 
+																												background-size: 100% 100%;
+																												.time{
+																													.first-order{
+																														background-image: url("../img/first-date-order.png"); 
+																															background-size: 100% 100%;
+																														}
+																													}
+																												}
+																											}
+																											.bill-pay{
+																												.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto{
+																													padding-left: 0px;
+																													padding-right: 0px;
+																												}
+																												.billing{
+																													position: relative;
+																													padding: 78px 50px;
+																													background-image: url("../img/billing-bg.png"); 
+																														background-size: 100% 100%;
+																														padding-bottom: 134px;
+																														.fruits{
+																															position: absolute;
+																															height: 99px;
+																														}
+																														.strawberry{
+																															top: 0px;
+																															left: 2px;
+																														}
+																														.sitafal{
+																															bottom: 0px;
+																															right: 2px;
+																														}
+																														.check{
+																															text-align: center;
+																															.text{
+																																margin-top: 10px;
+																																a{
+																																	color: #ffffff;
+																																}
+																																a:hover{
+																																	text-decoration: none;
+																																}
+																															}
+																															label{
+																																margin-bottom: 17px;
+																															}
+																															.checkboxcontainer input {
+																																display: none;
+																															}
+
+																															.checkboxcontainer {
+																																display: inline-block;
+																																padding-left: 26px;
+																																position: relative;
+																																cursor: pointer;
+																																user-select: none;
+																															}
+
+																															.checkboxcontainer .checkmark {
+																																display: inline-block;
+																																width: 25px;
+																																height: 25px;
+																																background-image: url("../img/checkbox.png");	
+																																	background-size: 100% 100%;
+																																	position: absolute;
+																																	left: 0;
+																																	top: 0;
+																																}
+
+																																.checkboxcontainer input:checked + .checkmark {
+
+																																}
+
+																																.checkboxcontainer input:indeterminate + .checkmark {
+																																	background-color: #1390e5;
+																																	border: 1px solid #1390e5;
+																																}
+
+																																.checkboxcontainer input:checked + .checkmark:after {
+																																	content: "";
+																																	position: absolute;
+																																	height: 11px;
+																																	width: 11px;
+																																	background: #db3812;
+																																	/* border-left: 2px solid white; */
+																																	/* border-bottom: 2px solid white; */
+																																	top: 31%;
+																																	left: 31%;
+																																	/* transform: translate(-50%, -50%) rotate(-45deg); */
+																																}
+																																.checkboxcontainer input:checked:disabled + .checkmark {
+																																	border: 1px solid grey;
+																																	background-color: grey;
+																																}
+
+																																.checkboxcontainer input:disabled + .checkmark {
+																																	border: 1px solid grey;
+																																}
+
+																																.checkboxcontainer input:indeterminate + .checkmark:after {
+																																	content: "";
+																																	position: absolute;
+																																	height: 0px;
+																																	width: 11px;
+																																	border-left: 2px solid white;
+																																	border-bottom: 2px solid white;
+																																	top: 50%;
+																																	left: 50%;
+																																	transform: translate(-50%, -50%) rotate(180deg);
+																																}
+																															}
+																															.buttons{
+																																.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto{
+																																	padding-right: 0px !important;
+																																	padding-left: 0px !important;
+																																}
+																																button{
+																																	background: transparent;
+																																	border: none;
+																																	display: block;
+																																	width: 95%;
+																																	margin: 0 auto;
+																																	font-size: 14px;
+																																	padding: 5px 0px;
+																																	background-image: url("../img/bill-button.png");	
+																																		background-size: 100% 100%;
+																																		color: #DB3812;
+																																	}
+																																	button:focus{
+																																		outline: none;
+																																	}
+																																}	
+																																.form-group{
+																																	margin-bottom: 0px;
+																																}
+																																.bill-form{
+																																	padding: 0px !important;
+																																}
+																																h4{
+																																	margin-bottom: -0.5rem;
+																																	font-family: 'Multicolore Regular';
+																																	color: #ffffff;
+																																	font-size: 19px;
+																																	text-align: center;
+																																}
+																																.login{
+																																	margin-top: -15px;
+																																}
+																																h1{
+																																	margin: 20px 0px;
+																																	font-size: 16px;
+																																	font-family: 'Dreamwalker Regular';
+																																}
+																																a{
+																																	color: #ffffff;
+																																}
+																																a:hover{
+																																	text-decoration: none;
+																																}
+																																.billing-form{
+																																	background-image: none;
+																																	padding: 0px;
+																																	margin: 0px;
+																																}
+																															}
+																															.c-out{
+																																text-align: center;
+																																button{
+																																	background: transparent;
+																																	background-image: url("../img/c-out.png"); 
+																																		background-size: 100% 100%;
+																																		text-align: center;
+																																		color: #ffffff;
+																																		border: none;
+																																		width: 89%;
+																																		padding: 13px 0px;
+																																	}
+																																}
+																																.payment-part{
+																																	padding-bottom: 72px;
+																																	background-image: url("../img/pay-bg.png"); 
+																																		background-size: 100% 100%;
+																																		position: relative;
+																																		.fruits{
+																																			position: absolute;
+																																		}
+																																		.pinapple{
+																																			top: 0px;
+																																			right: 2px;
+																																		}
+																																		.orange{
+																																			bottom: 0px;
+																																			left: 2px;
+																																		}
+																																		h1{
+																																			color: #ffffff;
+																																		}
+																																		p{
+																																			color: #ffffff;
+																																			font-size: 14px;
+																																			padding-left: 7px;
+																																		}
+																																		input[type="radio"], 
+																																		input[type="checkbox"] {
+																																			/* hide the inputs */
+																																			opacity: 0;
+																																		}
+
+																																		/* style your lables/button */
+																																		input[type="radio"] + label, 
+																																		input[type="checkbox"] + label {
+																																			/* keep pointer so that you get the little hand showing when you are on a button */
+																																			cursor: pointer;
+																																			/* the following are the styles */
+																																			height: 25px;
+																																			width: 25px;
+																																			background-image: url("../img/redio-1.png");	
+																																				background-size: 100% 100%;
+																																				text-shadow: 1px 1px 0 rgba(0,0,0,0);
+																																			}
+
+																																			input[type="radio"]:checked + label,
+																																			input[type="checkbox"]:checked + label{
+																																				/* style for the checked/selected state */
+																																				background-image: url("../img/redio-2.png");	
+																																					background-size: 100% 100%;
+																																					text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+																																						color: white;
+																																					}
+																																					.rdo-btn{
+																																						.rdo{
+																																							display: flex;
+																																						}
+																																					}
+																																					.comment{
+																																						margin-top: 25px;
+																																						p{
+																																							font-size: 10px;
+																																							color: #ffffff;
+																																							margin-bottom: 0px;
+																																						}
+																																						textarea{
+																																							background-image: url("../img/textarea.png");	
+																																								background-size: 100% 100%;
+																																								width: 100%;
+																																								background-color:transparent; 
+																																								height: 150px;
+																																								border:none;
+																																								font-size: 15px;
+																																								color: #101F51;
+																																								padding: 0px 25px;
+																																								overflow: hidden;
+																																							}
+																																							textarea:focus{
+																																								outline: none; 
+																																							}
+																																						}
+																																					}
+																																				}
+																																				.call{
+																																					background-color: #A8CF4B;
+																																					padding: 20px 0px;
+																																					p{
+																																						color: #ffffff;
+																																						margin-bottom: 10px;
+																																						text-align: center;
+																																						font-family: 'Dreamwalker Regular';
+																																					}
+																																				}
+																																				.que-part{
+																																					padding: 15px 15px;
+																																					h4{
+																																						text-align: center;
+																																						color: #FAA919;
+																																						font-family: 'Dreamwalker Regular';
+																																						font-size: 28px;
+																																					} 
+																																					.accordion {
+																																						color: #444;
+																																						cursor: pointer;
+																																						background: #ffffff;
+																																						width: 100%;
+																																						border: none;
+																																						text-align: left;
+																																						outline: none;
+																																						display: flex;
+																																						font-size: 15px;
+																																						transition: 0.4s;
+																																						img{
+																																							height: 38px;
+																																							margin-right: 8px;
+																																						}
+																																						#minus-icon{
+																																							display: none;
+																																						}
+																																					}
+
+																																					.active, .accordion:hover {
+
+																																					}
+
+																																					.panel {
+																																						color: #29335C;
+																																						padding: 0px 0px 0px 50px;
+																																						display: none;
+																																						font-family: fantasy;
+																																						background-color: white;
+																																						overflow: hidden;
+																																					}
+
+																																				}
+																																				.search-bar{
+																																					img{
+																																						height: 36px;
+																																					}
+																																					.search-part{
+																																						position: relative;
+																																						.line{
+																																							width: 100%;
+																																							position: absolute;
+																																							top: 28px;
+																																							bottom: 0px;
+																																							left: 0;
+																																							right: 0;
+																																							height: 7px;
+																																						}
+																																					}
+																																					input{
+																																						width: 100%;
+																																						border: none;
+																																						padding: 6px 8px;
+																																					}
+																																					input::placeholder { /* Firefox, Chrome, Opera */ 
+																																						color: #000000; 
+																																					} 
+
+																																					input:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+																																						color: #000000; 
+																																					} 
+
+																																					input::-ms-input-placeholder { /* Microsoft Edge */ 
+																																						color: #000000; 
+																																					} 
+																																					input:focus{
+																																						border: none;
+																																						outline: none;
+																																					}
+																																					.row{
+																																						margin-right: 0px; 
+																																						margin-left: 0px;
+																																					}
+																																				}
+																																				.faq{
+																																					.faq-bg{
+																																						background-image: url("../img/faq-bg.png"); 
+																																							background-size: 100% 100%;	
+																																							height: 162px;
+																																							position: relative;
+																																							.faq-text{
+																																								position: absolute;
+																																								top: 0;
+																																								right: 0;
+																																								left: 5px;
+																																								bottom: 0;
+																																								margin: auto;
+																																								height: 0%;
+																																								h1{
+																																									color: #ffffff;
+																																									font-size: 15px;
+																																									line-height: 12px;
+																																								}
+																																								p{
+																																									color: #BEABFF;
+																																									font-size: 13px;
+																																									margin: 0px;
+																																									padding: 0px;
+																																									line-height: 9px;
+																																								}
+																																							}
+																																						}
+																																					}
+																																					.check-out-btn{
+																																						margin: 15px 0px; 
+																																						text-align: center;
+																																						img{
+																																							height: 61px;
+																																						}
+																																						button{
+																																							margin: 0 auto;
+																																							background: transparent;
+																																							border: none;
+																																							color: #ffffff;
+																																							font-size: 15px;
+																																							padding: 16px 41px;
+																																							text-align: center;
+																																							background-image: url("../img/check-out-btn.png"); 
+																																								background-size: 100% 100%;
+																																							}
+																																						}
+																																						.plan{
+																																							background-image: url("../img/plan-bg.png"); 
+																																								background-size: 100% 100%;
+																																								padding: 118px 15px;
+																																								.plans{
+																																									padding-top: 130px;
+																																								}
+																																								.plans-v2 {
+																																									padding-bottom: 147px;
+																																								}
+																																								.box{
+																																									color: #ffffff;
+																																									h3{
+																																										font-family: 'Dreamwalker Regular';
+																																										text-align: center;
+																																										font-size: 35px;
+																																										padding: 19px 0px;
+																																									}
+																																								}
+																																								.plan-1{
+																																									background-image: url("../img/plan-1.png"); 
+																																										background-size: 100% 100%;
+																																										color: #F3A712;
+																																									}
+																																									.plan-2{
+																																										background-image: url("../img/plan-2.png"); 
+																																											background-size: 100% 100%;
+																																										}
+																																										.plan-3{
+																																											background-image: url("../img/plan-3.png"); 
+																																												background-size: 100% 100%;
+																																											}
+																																											.plan-4{
+																																												background-image: url("../img/plan-4.png"); 
+																																													background-size: 100% 100%;
+																																												}
+																																												.plan-v2{
+																																													.box{
+																																														padding: 35px 0px;
+																																														margin-top: 30px;
+																																														text-align: center;
+																																														img{
+																																															position: absolute;
+																																															top: -100px;
+																																															right: 0;
+																																															height: 80px;
+																																															left: 0;
+																																															bottom: 0;
+																																															margin: auto;
+																																														}
+																																														h2{
+																																															font-family: 'Multicolore Regular';
+																																															color: #ffffff;
+																																															text-align: center;
+																																															font-size: 19px;
+																																														}
+																																														button{
+																																															margin: 0 auto;
+																																															background: transparent;
+																																															border: none;
+																																															padding: 8px 40px;
+																																															text-align: center;
+																																															background-image: url("../img/add-btn.png"); 
+																																																background-size: 100% 100%;
+																																															}
+																																														}
+																																														.plan-blue{
+																																															background-image: url("../img/plan-blue.png"); 
+																																																background-size: 100% 100%;
+																																															}
+																																															.plan-red{
+																																																background-image: url("../img/plan-red.png"); 
+																																																	background-size: 100% 100%;
+																																																}
+																																																.plan-yellow{
+																																																	background-image: url("../img/plan-yellow.png"); 
+																																																		background-size: 100% 100%;
+																																																	}
+																																																	.plan-green{
+																																																		background-image: url("../img/plan-green.png"); 
+																																																			background-size: 100% 100%;
+																																																		}
+																																																	}
+																																																}
+																																																.week{
+																																																	padding: 15px 0px;
+																																																	ul{
+																																																		list-style-type: none;
+																																																		text-align: center;
+																																																		padding: 0px;
+																																																		margin: 0px;
+																																																		display: flex; 
+																																																		li{
+																																																			position: relative;
+																																																			margin: 0 auto;
+																																																			P{
+																																																				position: absolute;
+																																																				top: 0;
+																																																				right: 0;
+																																																				left: 0;
+																																																				bottom: 0;
+																																																				margin: auto;
+																																																				height: 45%;
+																																																				font-size: 11px;
+																																																			}
+																																																			.circ{
+																																																				height: 38px;
+																																																				width: 38px;
+																																																			}
+																																																			.mon{
+																																																				background-image: url("../img/mon.png"); 
+																																																					background-size: 100% 100%;
+																																																					color: #9A2B39;
+																																																				}
+																																																				.tue{
+																																																					background-image: url("../img/tue.png"); 
+																																																						background-size: 100% 100%;
+																																																						color: #D1222A;
+																																																					}
+																																																					.wed{
+																																																						background-image: url("../img/wed.png"); 
+																																																							background-size: 100% 100%;
+																																																							color: #F35F20;
+																																																						}
+																																																						.thu{
+																																																							background-image: url("../img/thu.png"); 
+																																																								background-size: 100% 100%;
+																																																								color: #F69420;
+																																																							}
+																																																							.fri{
+																																																								background-image: url("../img/fri.png"); 
+																																																									background-size: 100% 100%;
+																																																									color: #F9AE33;
+																																																								}
+																																																								.sat{
+																																																									color: #8FC44B;
+																																																								}
+																																																								.sun{
+																																																									color: #3CB14E;
+																																																								}
+																																																							}
+																																																						}
+																																																					}
+																																																					.days{
+																																																						padding: 20px 0px; 
+																																																						.box{
+																																																							padding: 27px 0px;
+																																																							height: 140px;
+																																																							width: 240px;
+																																																							margin: 0 auto;
+																																																							margin-top: 25px;
+																																																							color: #ffffff;
+																																																							position: relative;
+																																																							font-family: 'Dreamwalker Regular';
+																																																							h6{
+																																																								text-align: center;
+																																																								font-size: 32px;
+																																																							}
+																																																							img{
+																																																								position: absolute;
+																																																								top: -26px;
+																																																								height: 63px;
+																																																								right: 0;
+																																																								left: 0;
+																																																								margin: 0 auto;
+																																																							}
+																																																							span{
+																																																								font-family: 'Multicolore Regular';
+																																																							}
+																																																						}
+																																																						.box-1{
+																																																							background-image: url("../img/day-bg-1.png"); 
+																																																								background-size: 100% 100%;
+																																																							}
+																																																							.box-2{
+																																																								background-image: url("../img/day-bg-4.png"); 
+																																																									background-size: 100% 100%;	
+																																																								}
+																																																								.box-3{
+																																																									background-image: url("../img/day-bg-3.png"); 
+																																																										background-size: 100% 100%;
+																																																									}
+																																																									.box-4{
+																																																										background-image: url("../img/day-bg-4.png"); 
+																																																											background-size: 100% 100%;
+																																																										}
+																																																									}
+																																																									.discription{
+																																																										background-color: #101F51;
+																																																										padding: 15px 50px;
+																																																										p{
+																																																											text-align: center;
+																																																											color: #ffffff;
+																																																										}
+																																																										img{
+																																																											height: 150px;
+																																																											margin: 0 auto;
+																																																											display: block;
+																																																										}
+																																																									}
+																																																									.cart{
+																																																										padding: 20px 0px;
+																																																										h1{
+																																																											font-family: 'Multicolore Regular';
+																																																											color: #E4572E;
+																																																											text-align: center; 
+																																																										}
+																																																										.cart-part{
+																																																											padding: 50px 0px;	 
+																																																											background-image: url("../img/cart-bg.png"); 
+																																																												background-size: 100% 100%;
+																																																												position: relative;
+																																																												.fruits{
+																																																													position: absolute;
+																																																													height: 108px;
+																																																												}
+																																																												.pinapple{
+																																																													top: -57px;
+																																																													left: -25px;
+																																																												}
+																																																												.strawberry{
+																																																													top: -42px;
+																																																													right: -15px;
+																																																												}
+																																																												.sitafal{
+																																																													bottom: -20px;
+																																																													left: -20px;
+																																																												}
+																																																												.grapes{
+																																																													bottom: -20px;
+																																																													right: -15px;
+																																																												}
+																																																												.watermelon{
+																																																													top: -35px;
+																																																													right: 0;
+																																																													left: 0;
+																																																													margin: 0 auto;
+																																																												}
+																																																												.banana{
+																																																													bottom: -35px;
+																																																													right: 0;
+																																																													left: 0;
+																																																													margin: 0 auto;
+																																																												}
+																																																												.cart-text{
+																																																													color: #ffffff;
+																																																													p{
+																																																														font-family: 'Dreamwalker Regular';
+																																																														text-align: center;
+																																																														padding: 0px 40px;
+																																																													}
+																																																												}
+																																																												.ala{
+																																																													background-image: url("../img/ala-bg.png"); 
+																																																														background-size: 100% 100%;
+																																																														margin: 0 auto;
+																																																														height: 225px;
+																																																														width: 225px;
+																																																														text-align: center;
+																																																														.ala-text1 {
+																																																															position: absolute;
+																																																															top: 0;
+																																																															left: -86px;
+																																																															right: 0;
+																																																															height: 25%;
+																																																															bottom: 0;
+																																																															margin: auto;
+																																																														}
+																																																														.ala-text2 {
+																																																															position: absolute;
+																																																															top: 0;
+																																																															left: 0;
+																																																															right: -86px;
+																																																															height: 25%;
+																																																															bottom: 0;
+																																																															margin: auto;
+																																																														}
+																																																														P{
+																																																															font-family: sans-serif;
+																																																															color: #ffffff;
+																																																															font-size: 8px;
+																																																															padding: 0;
+																																																															margin: 2px;
+																																																														}
+																																																														h1{
+																																																															font-size: 23px;
+																																																															color: #ffffff;
+																																																															font-family: 'Dreamwalker Regular';
+																																																															padding: 0;
+																																																															margin: 0;
+																																																														}
+																																																														h3{
+																																																															font-size: 15px;
+																																																															color: #ffffff;
+																																																															font-family: 'Dreamwalker Regular';
+																																																														}
+																																																													}
+																																																												}
+																																																											}
+																																																											.what-does-part{
+																																																												padding: 50px 0px;
+																																																												h1{
+																																																													font-family: 'Dreamwalker Regular';
+																																																													text-align: center;
+																																																													color: #101F51;
+																																																													font-size: 30px;
+																																																												}
+																																																												h3{
+																																																													font-family: 'Multicolore Regular';
+																																																													text-align: center;
+																																																													color: #E4572E;
+																																																													font-size: 20px;
+																																																												}
+																																																												.box-part{
+																																																													padding: 20px 0px; 
+																																																													.box{
+																																																														h2{
+																																																															text-align: center;
+																																																															font-family: 'Dreamwalker Regular';
+																																																															color: #88B704;
+																																																														}
+																																																														img{
+																																																															width: 100%;
+																																																															height: auto;
+																																																														}
+																																																														.box-1{
+																																																															background-image: url(../img/box-bg-1.png);
+																																																																background-size: 100% 100%;
+																																																															}
+																																																															.box-2{
+																																																																background-image: url(../img/box-bg-2.png);
+																																																																	background-size: 100% 100%;
+																																																																}
+																																																																.box-3{
+																																																																	background-image: url(../img/box-bg-3.png);
+																																																																		background-size: 100% 100%;
+																																																																	}
+																																																																}
+																																																															}
+																																																														}
+																																																														.steps{
+																																																															padding: 20px 0px;
+																																																															.row{
+																																																																margin-right: 0px;
+																																																															}
+																																																															.arrow{
+																																																																img{
+																																																																	display: none;
+																																																																}
+																																																															}
+																																																															.step{
+																																																																text-align: center;
+																																																																color: #ffffff;
+																																																																font-family: 'Multicolore Regular';
+																																																																height: 200px;
+																																																																width: 200px;
+																																																																margin: 0 auto;
+																																																																position: relative;
+																																																																margin-bottom: 43px;
+																																																																.step-text{
+																																																																	position: absolute;
+																																																																	right: 0;
+																																																																	top: 0;
+																																																																	height: 50%;
+																																																																	margin: auto;
+																																																																	bottom: 0;
+																																																																	left: 0;
+																																																																}
+
+																																																															}
+																																																															.step-1{
+																																																																background-image: url(../img/step-1.png);
+																																																																	background-size: 100% 100%;
+																																																																}
+																																																																.step-2{
+																																																																	background-image: url(../img/step-2.png);
+																																																																		background-size: 100% 100%;	
+																																																																	}
+																																																																	.step-3{
+																																																																		background-image: url(../img/step-3.png);
+																																																																			background-size: 100% 100%;
+																																																																		}
+																																																																		.step-4{
+																																																																			background-image: url(../img/step-4.png);
+																																																																				background-size: 100% 100%;
+																																																																				.step-text{
+																																																																					height: 29%;
+																																																																				}
+																																																																			}
+																																																																		}
+																																																																		.new-signup{
+																																																																			padding: 120px 0px;
+																																																																			.blog .carousel-indicators {
+																																																																				left: 0;
+																																																																				top: auto;
+																																																																				bottom: -56px;
+																																																																			}
+
+																																																																			/* The colour of the indicators */
+																																																																			.blog .carousel-indicators li {
+																																																																				border-radius: 50%;
+																																																																				width: 18px;
+																																																																				height: 0px;
+																																																																				opacity: 1;
+																																																																				background: #ffffff;
+																																																																			}
+																																																																			.carousel-indicators .active {
+																																																																				background: #FAA919 !important;
+																																																																			}
+																																																																			.blog{
+																																																																				.carousel-inner{
+																																																																					position: relative;
+																																																																					width: 77%;
+																																																																					margin: 0 auto;
+																																																																					overflow: hidden;
+																																																																					.carousel-item{
+																																																																						img{
+																																																																							margin: 0 auto;
+																																																																							height: auto;
+																																																																							width: 100%;
+																																																																						}
+																																																																					}
+																																																																				}
+																																																																			}
+
+
+																																																																			.bill-pay .billing{
+																																																																				padding: 0px; 
+																																																																				background-image: none;
+																																																																				.check{
+																																																																					.text{
+																																																																						color: #FAA919;
+																																																																					}
+																																																																					.checkboxcontainer input:checked + .checkmark:after{
+																																																																						background: #101F51;
+																																																																					}
+																																																																				}
+																																																																			}
+																																																																			p{
+																																																																				color: #ffffff;
+																																																																				text-align: center;
+																																																																				font-size: 18px;
+																																																																				a{
+																																																																					color: #FAA919;
+																																																																				}
+																																																																			}
+																																																																			h1{
+																																																																				text-align: center;
+																																																																				color: #ffffff;
+																																																																				font-family: 'Dreamwalker Regular';
+																																																																			}
+																																																																			.btn2{
+																																																																				margin: 0px;
+																																																																			} 
+																																																																		}
+																																																																		.new-login{
+																																																																			background-image: url(../img/login-bg.png);
+																																																																				background-size: 100% 100%;
+																																																																				.carousel-indicators .active {
+																																																																					background: #101F51 !important;
+																																																																				}
+																																																																				.bill-pay .billing .check {
+																																																																					text-align: left;
+																																																																				}
+																																																																				.btn2{
+																																																																					color: #faa919;
+																																																																				} 
+																																																																				h6{
+																																																																					padding-top: 10px;
+																																																																					.forgot{
+																																																																						font-size: 15px;
+																																																																						float: none;
+																																																																					}
+																																																																				}
+																																																																				p{
+																																																																					a{
+																																																																						color: #101F51;
+																																																																					}
+																																																																				}
+																																																																				.bill-pay .billing{
+																																																																					.check{
+																																																																						.text{
+																																																																							color: #ffffff;
+																																																																						}
+																																																																						.checkboxcontainer input:checked + .checkmark:after{
+																																																																							background: #faa919;
+																																																																						}
+																																																																					}
+																																																																				}
+																																																																			}
+																																																																		}
+																																																																		.profile .btn2{
+																																																																			background-image: url(../img/button-save.png);
+																																																																				padding: 7px 82px;
+																																																																				padding-top: 11px;
+																																																																				background-size: 100% 100%;
+																																																																			}
+																																																																			.cart-table .design img{
+																																																																				height: 700px;
+																																																																			}
+																																																																			.table-part {
+																																																																				width: 98%;
+																																																																			}
+																																																																			.cart-table {
+																																																																				width: 100%;
+																																																																			}
+																																																																			.main-col {
+																																																																				width: 100%;
+																																																																				padding: 0px 7px;
+																																																																			}
+																																																																			.cart-table .col{
+																																																																				padding: 0px 5px;
+																																																																			}
+																																																																			@media (max-width: 767px) {
+																																																																				section .cart .cart-part .ala .ala-text2 {
+																																																																					left: 87px;
+																																																																					right: 0;
+																																																																				}
+																																																																				.top-nav .logo {
+																																																																					height: 38px;
+																																																																				}
+																																																																				.what-dose h1 {
+																																																																					margin-top: 0px;
+																																																																					font-size: 25px;
+																																																																				}
+																																																																				.what-dose .text-part img{
+																																																																					left: 26%
+																																																																				}
+																																																																				.what-dose .text-part {
+																																																																					margin-bottom: 31px;
+																																																																				}
+																																																																				.table-part {
+																																																																					overflow-x: scroll;
+																																																																					height: 378px;
+																																																																					margin: 0 auto;
+																																																																				}
+																																																																				.table-part::-webkit-scrollbar {
+																																																																					width: 20px;
+																																																																					padding-left: 10px;
+																																																																				}
+
+																																																																				/* Track */
+																																																																				.table-part::-webkit-scrollbar-track {
+																																																																					box-shadow: inset 0 0 5px grey; 
+																																																																					border-radius: 10px;
+																																																																				}
+
+																																																																				/* Handle */
+																																																																				.table-part::-webkit-scrollbar-thumb {
+																																																																					background: red; 
+																																																																					border-radius: 10px;
+																																																																				}
+
+																																																																				/* Handle on hover */
+																																																																				.table-part::-webkit-scrollbar-thumb:hover {
+																																																																					background: #b30000; 
+																																																																				}
+
+																																																																				.cart-table {
+																																																																					width: 568px;
+																																																																					margin: 0 auto;
+																																																																				}
+																																																																				.table-part {
+																																																																					width: 95%;
+																																																																				}
+																																																																				.pro {
+																																																																					height: 165px;
+																																																																					width: 165px;
+																																																																					top: 19px;
+																																																																					right: 8px;
+																																																																				}
+																																																																				.pro-img .bg-img{
+																																																																					height: 208px;
+																																																																					width: 208px;
+																																																																				}
+																																																																				.main-col ul li {
+																																																																					padding-bottom: 34px;
+																																																																					font-size: 10px;
+																																																																				}
+																																																																				.col-height{
+																																																																					height: 324px !important;
+																																																																				}
+																																																																				.main-col ul {
+																																																																					padding: 39px 0px 0px 0px !important;
+																																																																				}
+																																																																				.cart-table .design img {
+																																																																					height: 324px;
+																																																																				}
+																																																																			}
+
+																																																																			@media (max-width: 449px) {
+																																																																			}

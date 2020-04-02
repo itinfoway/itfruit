@@ -1,0 +1,498 @@
+/**
+* Holds all the min-width 992px styles
+*
+*
+**/
+
+@media (min-width: 992px){
+	.top-nav .dd-text ul li {
+		font-size: 23px;
+	}
+	section .how-work-sec .home-icon {
+		margin: 0 auto;
+		height: 177px !important;
+		display: block;
+	}
+	section .bill-pay .payment-part input[type="radio"] + label, section .bill-pay .payment-part input[type="checkbox"] + label {
+		height: 36px;
+		width: 40px;
+	}
+	section{
+		.about{
+			.f-bag {
+				width: 251px;
+			}
+			.watermelon {
+				height: 250px;
+			}
+			.title-part{
+				h1 {
+					font-size: 52px;
+				}
+				p {
+					font-size: 24px;
+				}
+			}
+			.about-text {
+				left: -10%;
+				img {
+					height: 255px;
+				}
+			}
+		}
+		.what-people-say{
+			img {
+				width: 206px;
+			}
+			p{
+				font-size: 20px;
+			}
+		}
+		.why-choose-us{
+			padding: 10px 0px 0px 0px;
+			h1 {
+				font-size: 45px;
+			}
+			h2 {
+				font-size: 36px;
+			}
+		}
+		.our-partner{
+			.p-frame {
+				width: 200px;
+				height: 200px;
+			}
+		}
+		.how-work-sec{
+			h1 {
+				font-size: 70px;
+			}
+			P{
+				font-size: 24px;
+			}
+			.fruits{
+				left: 45px;
+				height: 170px;
+			}
+			.strawberry{
+				top: -250px;
+			}
+			.grapes{
+				top: -150px;
+				left: 110px;
+			}
+		} 
+		.home-bg {
+			height: 580px;
+			.order-btn{
+				top: 207px;
+			}
+		}
+		.new-signup{
+			padding: 76px 90px;
+			.blog{
+				.carousel-inner{
+					.carousel-item{
+						img{
+							height: 365px;
+							width: 342px;
+						}
+					} 
+				} 
+			} 
+		}
+		.new-add{
+			.new-add-btns {
+				margin-top: 53px !important;
+			}
+			iframe {
+				height: 350px;
+				width: 350px;
+			}
+			.new-add-bg {
+				padding: 11px 19px !important;
+			}
+			.bill-pay .payment-part p {
+				margin-top: 5px;
+			}
+		}
+		.contact-part{
+			.fruits{
+				height: 150px;
+			}
+			.berry{
+				left: 291px;
+			}
+		} 	
+		.send-msg{
+			.form-part{
+				.fruits {
+					height: 116px;
+				}
+				.orange {
+					bottom: -40px;
+				}
+				.watermelon{
+					top: -40px;
+				}
+			}
+		} 
+		.order-history{
+			.history{
+				.box-img {
+					margin-top: -23px;
+					margin-left: 29px;
+				}
+				button{
+					width: 168px;
+					margin-left: -84px;
+				}
+				.text{
+					.list{
+						p{
+							font-size: 15px;
+							text-align: center;
+							padding: 0px 0px;
+						}
+						.f-list{
+							float: left;
+						}
+					}
+				} 
+			}
+			.manage{
+				button {
+					padding: 9px 37px;
+					width: auto;
+					margin-left: 0px;
+				}
+			}
+		} 
+		.que-part{
+			h4{
+				font-size: 43px;
+			}
+		}
+		.search-bar{
+			img {
+				height: 42px;
+
+			}
+			input {
+				font-size: 19px;
+			}
+		}
+		.saved-add{
+			.fruits {
+				height: 119px;
+			}
+			.add-part{
+				.text-part{
+					padding: 33px 65px;
+					p {
+						padding: 17px 0px 0px 20px;
+						font-size: 21px;
+					}
+					.location{
+						p {
+							font-size: 17px;
+						}
+					} 
+				}
+			}
+		}
+		.address{
+			.add-address{
+				.pinapple{
+					top: -27px;
+					left: 18px;
+				}
+				.strawberry{
+					top: -25px;
+					right: -5px;
+				}
+				.fruits {
+					height: 146px;
+				}
+				h1{
+					width: 92%;
+					margin: 0 auto;
+					margin: 60px 0px;
+				}
+			}
+		}
+		.random-part{
+			.left-part {
+				padding-right: 60px;
+			}
+			.right-part {
+				padding-left: 60px;
+			}
+		}
+		.remark{
+			p{
+				font-size: 21px;
+				padding-left: 114px;
+			}
+			ul{
+				li {
+					font-size: 25px;
+				}
+			} 
+		}
+		.bill-pay{
+			.billing {
+				padding: 52px 72px;
+				padding-bottom: 125px;
+				.fruits {
+					position: absolute;
+					height: 132px;
+				}
+				.buttons{
+					button{
+						font-size: 13px;
+						margin-bottom: 18px;
+					}
+				}
+				.check{
+					text-align: left;
+				}
+			}
+			.c-out{
+				button{
+					font-size: 25px;
+				}
+			}
+			.payment-part{
+				padding-bottom: 77px;
+				p{
+					font-size: 21px;
+				}
+				.comment{
+					textarea{
+						height: 190px;
+					}
+				}
+			}
+		}
+		.call{
+			p{
+				font-size: 22px;
+				margin-bottom: 0px;
+			}
+		}
+		.que-part{
+			padding: 5px 60px;
+			.accordion {
+				p{
+					font-size: 20px;
+					padding: 7px 0px 0px 13px;
+				}
+			}
+			.panel{
+				padding: 0px 0px 0px 72px;
+				font-size: 19px;
+			}
+		}
+		.search-bar{
+			padding: 5px 60px;
+			.search-part {
+				width: 96%;
+				.line {
+					height: 14px;
+				}
+			}
+		}
+		.faq{
+			.faq-bg {
+				height: 500px;
+				.faq-text{
+					h1 {
+						font-size: 44px;
+						line-height: 40px;
+					}
+				}
+			}
+		}
+		.check-out-btn{
+			img{
+				height: 77px;
+			}
+			button{
+				font-size: 23px;
+			}
+		}  
+		.plan{
+			.box{
+				h3 {
+					font-size: 37px;
+				}
+			}
+			.plan-v2{
+				.box{
+					h2 {
+						font-size: 18px;
+					}
+					button{
+						font-size: 17px;
+					}
+				}
+			}
+		}
+		.days{
+			.box{
+				height: 123px;
+				h6 {
+					font-size: 27px;
+				}
+				img{
+					height: 75px;
+					top: -35px;
+				}
+			}
+			.box-3{
+				img{
+					top: -45px;
+				}
+			}
+		}  
+		.discription{
+			padding: 15px 40px; 
+			p {
+				font-size: 15px;
+			}
+			img{
+				height: 117px;
+			}
+		}
+		.cart{
+			.cart-part{
+				padding: 80px 103px;
+				.pinapple{
+					height: 150px;
+				}
+				.strawberry{
+					height: 150px;
+				}
+				.sitafal{
+					height: 150px;
+				}
+				.grapes{
+					height: 150px;
+				}
+				.watermelon {
+					top: 50px;
+				}
+				.banana{
+					bottom: 50px;
+				}
+				.cart-text{
+					p{
+						width: 183px;
+						font-size: 20px;
+						padding: 10px 5px;
+					}
+				}
+				.ala{
+					height: 350px;
+					width: 350px;
+					left: 18px;
+					.ala-text2 {
+						right: -135px;
+					}
+					.ala-text1 {
+						left: -140px;
+					}
+					p{
+						font-size: 11px;
+					}
+					h1{
+						font-size: 33px;
+					}
+					h3{
+						font-size: 20px;
+					}
+				}
+			} 
+		}
+		.what-does-part{
+			h1{
+				font-size: 73px;
+			}
+			h3{
+				font-size: 35px;
+			}
+		} 
+		.steps{
+			.arrow{
+				img{
+					height: 36px;
+					left: -28px;
+					top: -18%;
+				}
+			}
+			.step {
+				height: 200px;
+				width: 200px;
+			}
+		} 
+	}
+	.cart-table .design img {
+		height: 700px;
+	}
+	.table-part {
+		width: 98%;
+	}
+	.cart-table {
+		width: 100%;
+	}
+	.main-col {
+		width: 100%;
+		padding: 0px 7px;
+	}
+	.cart-table .col{
+		padding: 0px 5px;
+	}
+	.main-col ul li {
+		padding-bottom: 81px;
+		font-size: 20px;
+	}
+	.main-col ul {
+		padding: 70px 0px 0px 0px !important;
+	}
+	.cart-table .col-height{
+		height: 700px !important;
+	}
+	.ala-carte .ala {
+		height: 100%;
+		width: 100%;
+		background-size: 100%;
+	}
+	.ala-part {
+		height: 390px;
+	}
+	.ala-carte .fruits {
+		padding: 0;
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.ala-carte .ala .ala-text {
+		width: 42%;
+		height: 45%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.ala-carte .ala .ala-text h1 {
+		font-size: 100px;
+	}
+	.ala-carte .ala .ala-text h2 {
+		font-size: 57px;
+	}
+}
