@@ -98,3 +98,4 @@ defined('PEOPLE')      or define('PEOPLE', "people"); // highest automatically-a
 defined('ALACARTE')      or define('ALACARTE', "alacarte"); // highest automatically-assigned error code
 defined('PRODUCTS')      or define('PRODUCTS', "products"); // highest automatically-assigned error code
 defined('WAITING_TIME')      or define('WAITING_TIME', "60"); // highest automatically-assigned error code
+defined('PRODUCTS_NAME')      or define('PRODUCTS_NAME', "products"); // highest automatically-assigned error

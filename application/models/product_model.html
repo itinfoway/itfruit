@@ -7,21 +7,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
  * https://itinfoway.com
  * @author Admin
  */
-class Product_model extends CI_Model {
-	
-	
+class Fruit_model extends CI_Model
+{
 
-    public function fruit($where = array())
+    public function vitamin($where = array())
     {
         $this->db->trans_start();
         $this->db->where_in($where);
         $this->db->select("name");
         $query = $this->db->get(FRUIT_NAME);
         $this->db->trans_complete();
-        return $dataF = $query->result();
+        return $dataV = $query->result();
     }
-	
-	
     public function view($where = null, $select = "*")
     {
         $this->db->trans_start();
@@ -37,8 +34,8 @@ class Product_model extends CI_Model {
             $count = 0;
             while ($data) {
 
-                $fruit = $this->fruit(json_decode($data[$count]->fruit_ids));
-                $data[$count]->fruit = $fruit;
+                $vitamin = $this->vitamin(json_decode($data[$count]->vitamin_ids));
+                $data[$count]->vitamin = $vitamin;
                 $count++;
                 if (!isset($data[$count])) {
                     break;
@@ -91,5 +88,4 @@ class Product_model extends CI_Model {
         $this->db->trans_complete();
         return $data;
     }
-
 }

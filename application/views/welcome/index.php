@@ -33,11 +33,11 @@
         </div>
         <a class="carousel-control-prev" href="#mainslider" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"><?=$this->lang->line("fn_previous"); ?>Previous</span>
+            <span class="sr-only"><?=$this->lang->line("fn_previous"); ?></span>
         </a>
         <a class="carousel-control-next" href="#mainslider" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"><?=$this->lang->line("fn_next"); ?>Next</span>
+            <span class="sr-only"><?=$this->lang->line("fn_next"); ?></span>
         </a>
     </div>
 </section>

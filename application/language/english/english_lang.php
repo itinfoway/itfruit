@@ -61,6 +61,20 @@ $lang["error_login"] = 'your email and password is wrong';
 $lang["success_signup"] = 'successfuly signup';
 $lang["error_signup"] = 'Oops, something went wrong!';
 
+//product/products
+$lang["ala_carte_head"] = 'Ala Carte';
+$lang["sub_head"] = 'Subscription';
+$lang["products_type"] = 'Type';
+$lang["products_img"] = 'Image';
+$lang["products_name"] = 'Name';
+$lang["products_name_plac"] = ' Enter Name';
+$lang["fruit_hed"] = 'Fruit Products';
+$lang["ala_crate_select_fruit_plac"] = 'Select Fruit';
+$lang["products_credit"] = 'Credit';
+$lang["products_credit_plac"] = 'Enter Credit';
+$lang["products_price"] = 'Price';
+$lang["products_price_plac"] = 'Enter price';
+
 
 // Users Form
 $lang["user_head"] = 'Users';
@@ -244,7 +258,11 @@ $lang["fn_find_us_address"] = 'Lorem Ipsum is simply dummy text of the printing 
 $lang["fn_find_us_email"] = 'example@gmail.com';
 $lang["fn_find_us_mno"] = '+01 123456789';
 
-
+//faq/index.php
+$lang["fn_frequently"] = 'Frequently';
+$lang["fn_asked"] = 'Asked Questions';
+$lang["fn_need"] = 'NEED HELP?';
+$lang["fn_ques"] = 'frequently asked questions';
 
 
 

@@ -10,9 +10,9 @@
     <div class="faq">
         <div class="faq-bg">
             <div class="faq-text">
-                <h1>Frequently</h1>
-                <h1>Asked Questions</h1>
-                <p>NEED HELP?</p>
+                <h1><?=$this->lang->line("fn_frequently"); ?></h1>
+                <h1><?=$this->lang->line("fn_asked"); ?></h1>
+                <p><?=$this->lang->line("fn_need"); ?></p>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
 </section>
 <section>
     <div class="que-part">
-        <h4>frequently asked questions</h4>
+        <h4><?=$this->lang->line("fn_ques"); ?>frequently asked questions</h4>
         <?php
         if (!empty($data)) {
             foreach ($data as $f) {
