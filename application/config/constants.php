@@ -96,4 +96,5 @@ defined('SLIDER')      or define('SLIDER', "slider"); // highest automatically-a
 defined('PARTNER')      or define('PARTNER', "partner"); // highest automatically-assigned error code
 defined('PEOPLE')      or define('PEOPLE', "people"); // highest automatically-assigned error code
 defined('ALACARTE')      or define('ALACARTE', "alacarte"); // highest automatically-assigned error code
+defined('PRODUCTS')      or define('PRODUCTS', "products"); // highest automatically-assigned error code
 defined('WAITING_TIME')      or define('WAITING_TIME', "60"); // highest automatically-assigned error code

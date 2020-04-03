@@ -12,7 +12,7 @@ class Alacarte extends Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model("Alacarte_model");
+        $this->load->model("alacarte_model");
     }
 
     public function index() {
@@ -22,7 +22,7 @@ class Alacarte extends Controller {
     public function add() {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             $capArray = $this->input->post();
-            $data = $this->Alacarte_model->add($capArray);
+            $data = $this->alacarte_model->add($capArray);
             
             if (!empty($data)) {
                 redirect("admin/setting/alacarte/add");
@@ -36,20 +36,20 @@ class Alacarte extends Controller {
     public function edit($id) {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             $capArray = $this->input->post();
-            $data = $this->Alacarte_model->edit($capArray, $id);
+            $data = $this->alacarte_model->edit($capArray, $id);
             if (!empty($data)) {
                 redirect("admin/setting/alacarte/index");
             } else {
                 redirect("admin/setting/alacarte/index");
             }
         } else {
-            $data = $this->Alacarte_model->view($id);
+            $data = $this->alacarte_model->view($id);
         }
         $this->display("add", $data[0]);
     }
 
     public function delete($id) {
-        $data = $this->Alacarte_model->delete($id);
+        $data = $this->alacarte_model->delete($id);
         if (!empty($data)) {
             redirect("admin/setting/alacarte/index");
         } else {
@@ -61,11 +61,11 @@ class Alacarte extends Controller {
     {
         if (is_null($name)) {
             $select = !empty($this->input->get("select")) ? $this->input->get("select") : "*";
-            $data["alacarte"]["data"] = $this->Alacarte_model->view(null, $select);
+            $data["alacarte"]["data"] = $this->alacarte_model->view(null, $select);
         } else {
             $name = base64_decode(urldecode($name));
             $old = $this->input->get("name");
-            $data["alacarte"] = $this->Alacarte_model->findname($name, base64_decode(urldecode($old)));
+            $data["alacarte"] = $this->alacarte_model->findname($name, base64_decode(urldecode($old)));
         }
         if ($data["alacarte"] == 0) {
             $data["alacarte"] = FALSE;
