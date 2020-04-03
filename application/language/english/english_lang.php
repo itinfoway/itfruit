@@ -181,6 +181,17 @@ $lang["alacarte_input_saveing_emsg"] = 'You have not given a min 5 chars';
 $lang["alacarte_input_saveing_plac"] = 'Please Enter Amount';
 
 //include/header.php
+$lang["fn_welcome"] = 'WELCOME';
+$lang["fn_manage_add"] = 'MANAGE ADDRESS';
+$lang["fn_sub"] = 'SUBSCRIPTION';
+$lang["fn_manage_order"] = 'MANAGE ORDER';
+$lang["fn_com_order"] = 'COMPLATE ORDER';
+$lang["fn_payment"] = 'PAYMENTS';
+$lang["fn_fav"] = 'FAVOURITES';
+$lang["fn_logout"] = 'LOGOUT';
+$lang["fn_login"] = 'Login';
+$lang["fn_sign"] = 'Sign Up';
+$lang["fn_sub"] = 'SUBSCRIPTION';
 $lang["fn_about_us"] = 'ABOUT US';
 $lang["fn_learn"] = 'LEARN';
 $lang["fn_order_now"] = 'ORDER NOW';

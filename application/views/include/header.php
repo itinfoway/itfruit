@@ -44,7 +44,7 @@
 				if ($this->session->has_userdata("user_login")) {
 				?>
 					<div>
-						<h1> WELCOME <?= ($this->session->has_userdata("user_login")) ? $this->session->userdata("user")->username : ""; ?> </h1>
+						<h1><?=$this->lang->line("fn_welcome"); ?> <?= ($this->session->has_userdata("user_login")) ? $this->session->userdata("user")->username : ""; ?> </h1>
 					</div>
 					
 				
@@ -53,13 +53,13 @@
 					<img class="img-responsive dd-icon" src="<?= base_url("assert/fontend/img/dd_icon.png") ?>">
 					<div class="dd-text">
 						<ul>
-							<li><a class="menu-link" href="<?= base_url("address"); ?>">MANAGE ADDRESS</a></li>
-							<li><a class="menu-link" href="<?= base_url("subscription"); ?>">SUBSCRIPTION</a></li>
-							<li><a class="menu-link" href="<?= base_url("orderhistory"); ?>">MANAGE ORDER</a></li>
-							<li><a class="menu-link" href="<?= base_url("orderhistory"); ?>">COMPLATE ORDER</a></li>
-							<li><a class="menu-link" href="<?= base_url("payments"); ?>">PAYMENTS</a></li>
-							<li><a class="menu-link" href="<?= base_url("favourites"); ?>">FAVOURITES</a></li>
-							<li><a class="menu-link" href="<?= base_url("logout"); ?>">LOGOUT</a></li>
+							<li><a class="menu-link" href="<?= base_url("address"); ?>"><?=$this->lang->line("fn_manage_add"); ?></a></li>
+							<li><a class="menu-link" href="<?= base_url("subscription"); ?>"><?=$this->lang->line("fn_sub"); ?></a></li>
+							<li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?=$this->lang->line("fn_manage_order"); ?></a></li>
+							<li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?=$this->lang->line("fn_com_order"); ?></a></li>
+							<li><a class="menu-link" href="<?= base_url("payments"); ?>"><?=$this->lang->line("fn_payment"); ?></a></li>
+							<li><a class="menu-link" href="<?= base_url("favourites"); ?>"><?=$this->lang->line("fn_fav"); ?></a></li>
+							<li><a class="menu-link" href="<?= base_url("logout"); ?>"><?=$this->lang->line("fn_logout"); ?></a></li>
 						</ul>
 					</div>
 				<?php
@@ -68,8 +68,8 @@
 					<img class="img-responsive dd-icon" src="<?= base_url("assert/fontend/img/dd_icon.png") ?>">
 					<div class="dd-text">
 						<ul>
-							<li><a class="menu-link" href="<?= base_url("login"); ?>">Login</a></li>
-							<li><a class="menu-link" href="<?= base_url("signup"); ?>">Sign Up</a></li>
+							<li><a class="menu-link" href="<?= base_url("login"); ?>"><?=$this->lang->line("fn_login"); ?></a></li>
+							<li><a class="menu-link" href="<?= base_url("signup"); ?>"><?=$this->lang->line("fn_sign"); ?></a></li>
 						</ul>
 					</div>
 				<?php
