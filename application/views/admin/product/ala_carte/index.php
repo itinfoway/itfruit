@@ -52,7 +52,7 @@
                         if(data==1){
                             view +='ala_carte';
                         }else{
-                           view += 'sub';
+                           view += 'subscription';
                         }
                                                 
                         return view;
@@ -72,7 +72,7 @@
                         for(var i=0;i<data.length;i++){
                             view[i]=data[i].name;
                         }
-                        return view.join(", ");;
+                        return view.join(",");;
                     }
                 },
 				{"data": "min_credit"},

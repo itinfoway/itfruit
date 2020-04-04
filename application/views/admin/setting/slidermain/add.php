@@ -11,7 +11,6 @@ $fromName = [
     'class' => 'form-control',
     "data-validation" => "length",
     "data-validation-length" => "3-25",
-    "data-validation-error-msg" => $this->lang->line("Slidermain_input_name_emsg"),
     'id' => "name",
     "placeholder" => $this->lang->line("Slidermain_input_name_plac"),
     'value' => isset($data->name) ? $data->name : "",
@@ -22,7 +21,6 @@ $fromLink = [
     'class' => 'form-control',
     "data-validation" => "length,url",
     "data-validation-length" => "3-25",
-    "data-validation-error-msg" => $this->lang->line("Slidermain_input_link_emsg"),
     'id' => "link",
     "placeholder" => $this->lang->line("Slidermain_input_link_plac"),
     'value' => isset($data->link) ? $data->link : "",
@@ -95,8 +93,99 @@ $fromLink = [
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <script>
     $.validate({
-        modules: 'file',
+        modules: 'file,security',
     });
+</script>
+
+
+
+<script>
+     
+
+    
+    var Demo = (function() {
+        function demoUpload() {
+            var $uploadCrop;
+
+            function popupResult(result) {
+                var html;
+                if (result.html) {
+                    html = result.html;
+                }
+                if (result.src) {
+                    console.log(result.src);
+                    $("#input_image").val(result.src);
+                }
+
+                setTimeout(function() {
+                    $('.sweet-alert').css('margin', function() {
+                        var top = -1 * ($(this).height() / 2),
+                            left = -1 * ($(this).width() / 2);
+                        return top + 'px 0 0 ' + left + 'px';
+                    });
+                }, 1);
+                $('form').submit();
+            }
+
+            function readFile(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('.upload-demo').addClass('ready');
+                        $uploadCrop.croppie('bind', {
+                            url: e.target.result,
+                        }).then(function() {});
+
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+
+                } else {
+                    swal("Sorry - you're browser doesn't support the FileReader API");
+                }
+            }
+
+            $uploadCrop = $('#upload-demo').croppie({
+                viewport: {
+                    width: 100,
+                    height: 100,
+                    type: 'square'
+                },
+                boundary: {
+                    width: 110,
+                    height: 110
+                },
+                enableOrientation: true,
+                enableExif: true,
+                enforceBoundary: false
+            });
+            <?= isset($img) ? "\$uploadCrop.croppie('bind', '" . base_url("assertslidermain/" . $img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/slidermain/user_demo.png") . "');"; ?>
+            $('#upload').on('change', function() {
+                readFile(this);
+
+            });
+            $('.upload-result').on('click', function(ev) {
+                $uploadCrop.croppie('result', {
+                    type: 'canvas',
+                    size: 'viewport'
+                }).then(function(resp) {
+                    popupResult({
+                        src: resp
+                    });
+                });
+            });
+        }
+
+        function init() {
+            demoUpload();
+        }
+
+        return {
+            init: init
+        };
+    })();
+    Demo.init();
 </script>
 
 <script>

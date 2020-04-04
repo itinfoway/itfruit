@@ -10,7 +10,6 @@ $fromVname = [
     'class' => 'form-control',
     "data-validation"=>"length",
     "data-validation-length"=>"5-50",
-    "data-validation-error-msg"=>$this->lang->line("Vitamin_input_vname_emsg"),
     'id' => "name",
     "placeholder" => $this->lang->line("Vitamin_input_vname_plac"),
     'value' => isset($name) ? $name : "",

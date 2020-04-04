@@ -16,7 +16,7 @@ class Partner_model extends CI_Model
         if (!is_null($where)) {
             $this->db->where($where);
         }
-        $query = $this->db->get(PRODUCTS);
+        $query = $this->db->get(PARTNER);
         return  $query->num_rows();
     }
     public function view($where = null, $select = "*")
@@ -27,7 +27,7 @@ class Partner_model extends CI_Model
         }
         $this->db->select($select);
         $this->db->order_by("id", "asc");
-        $query = $this->db->get(PRODUCTS);
+        $query = $this->db->get(PARTNER);
         $this->db->trans_complete();
         return $query->result();
     }
@@ -35,7 +35,7 @@ class Partner_model extends CI_Model
     public function add($array)
     {
         $this->db->trans_start();
-        $this->db->insert(PRODUCTS, $array);
+        $this->db->insert(PARTNER, $array);
         $data = $this->db->insert_id();
         $this->db->trans_complete();
         return $data;
@@ -44,7 +44,7 @@ class Partner_model extends CI_Model
     {
         $this->db->trans_start();
         $this->db->where('id', $id);
-        $data = $this->db->delete(PRODUCTS);
+        $data = $this->db->delete(PARTNER);
         $this->db->trans_complete();
         return $data;
     }
@@ -54,7 +54,7 @@ class Partner_model extends CI_Model
         $this->db->trans_start();
         $this->db->set($array);
         $this->db->where('id', $id);
-        $data = $this->db->update(PRODUCTS);
+        $data = $this->db->update(PARTNER);
         $this->db->trans_complete();
         return $data;
     }

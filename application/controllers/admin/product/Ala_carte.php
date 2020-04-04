@@ -19,6 +19,7 @@ class Ala_carte extends Controller {
 
     public function index() {
         $this->display('index');
+        
     }
 	public function add()
     {

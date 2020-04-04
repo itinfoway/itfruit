@@ -34,36 +34,29 @@
         </div>
     </div>
 </div>
+
 <script src="<?= base_url("assert/admin/plugins/datatable/jquery.dataTables.min.js") ?>"></script>
 <script src="<?= base_url("assert/admin/plugins/datatable/dataTables.bootstrap4.min.js") ?>"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         var table = $('#partner_table').DataTable({
             ajax: "<?= base_url("admin/setting/Partner/json") ?>",
             responsive: true,
-            "order": [
-                [0, 'desc']
-            ],
-            columns: [{
-                    "data": "id"
-                },
+			"order": [[ 0, 'desc' ]],
+            columns: [
+                {"data": "id"},                
                 {
                     "data": "img",
                     render: function(data) {
-                        var view = '<img src="<?=base_url("assert/partner/")?>'+data+'" class="img-thumbnail rounded-circle" width="50px">';
+                        var view = '<img src="<?=base_url("assert/Partner/")?>'+data+'" class="img-thumbnail rounded-circle" width="50px">';
                         return view;
                     }
                 },
-                {
-                    "data": "name"
-                },
-                {
-                    "data": "link"
-                },
                 
-                {
-                    "data": "id",
-                    render: function(data, type, row) {
+                {"data": "name"},
+                {"data": "link"},
+                {"data": "id",
+                    render: function (data, type, row) {
                         var view = '<a href="<?= base_url("admin/setting/Partner/edit/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a> ';
                         view += '<a href="<?= base_url("admin/setting/Partner/delete/") ?>' + data + '" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a> ';
                         return view;
@@ -71,13 +64,10 @@
                 }
             ]
         });
-        table.on('order.dt search.dt', function() {
-            table.column(0, {
-                search: 'applied',
-                order: 'applied'
-            }).nodes().each(function(cell, i) {
-                cell.innerHTML = i + 1;
-            });
-        }).draw();
+		table.on( 'order.dt search.dt', function () {
+			table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+				cell.innerHTML = i+1;
+			} );
+		} ).draw();
     });
 </script>
