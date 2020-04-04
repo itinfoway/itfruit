@@ -14,7 +14,7 @@ $fromName = [
     "data-validation-error-msg" => $this->lang->line("fruit_input_name_emsg"),
     'id' => "qus",
     "placeholder" => $this->lang->line("fruit_input_name_plac"),
-    'value' => isset($name) ? $name : "",
+    'value' => isset($data->name) ? $data->name : "",
 ];
 ?>
 <script src="<?= base_url("assert/admin/croppie/croppie.js") ?>"></script>
@@ -38,7 +38,7 @@ $fromName = [
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("fruit_vitamin_hed") ?></label>
-                    <?= form_multiselect("vitamin_ids", $vitamin, isset($data->vitamin_ids) ? json_decode($data->vitamin_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("fruit_select_vitamin_plac")]); ?>
+                    <?= form_multiselect("vitamin_ids[]", $vitamin, isset($data->vitamin_ids) ? json_decode($data->vitamin_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("fruit_select_vitamin_plac")]); ?>
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("fruit_img_hed") ?></label>
@@ -56,9 +56,9 @@ $fromName = [
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <?= isset($img) ? '<img src="' . base_url("assert/fruit/" . $img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
+                        <?= isset($data->img) ? '<img src="' . base_url("assert/fruit/" . $data->img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
                         <div class="d-none">
-                            <?= isset($img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
+                            <?= isset($data->img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
                         </div>
                     </div>
                      <input type="hidden" name="input_image" id="input_image">
@@ -142,7 +142,7 @@ $fromName = [
                 enableExif: true,
                 enforceBoundary: false
             });
-            <?= isset($img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/fruit/" . $img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/fruit/user_demo.png") . "');"; ?>
+            <?= isset($data->img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/fruit/" . $data->img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/fruit/user_demo.png") . "');"; ?>
             $('#upload').on('change', function() {
                 readFile(this);
 

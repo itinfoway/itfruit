@@ -54,11 +54,8 @@
                 {"data": "name"},
                 {"data": "vitamin",
                     render: function (data, type, row) {
-                        var view=[];
-                        for(var i=0;i<data.length;i++){
-                            view[i]=data[i].name;
-                        }
-                        return view.join(", ");;
+                        
+                        return data.join(", ");;
                     }
                 },
                 

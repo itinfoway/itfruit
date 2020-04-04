@@ -13,8 +13,7 @@ class Fruit_model extends CI_Model
     public function vitamin($where = array())
     {
         $this->db->trans_start();
-        $this->db->where_in($where);
-        $this->db->select("name");
+        $this->db->select("name,id");
         $query = $this->db->get(VITAMIN_NAME);
         $this->db->trans_complete();
         return $dataV = $query->result();
@@ -30,12 +29,19 @@ class Fruit_model extends CI_Model
         $query = $this->db->get(FRUIT_NAME);
         $this->db->trans_complete();
         $data = $query->result();
+        $vitamin = $this->vitamin();
+        $vit=array();
+        foreach($vitamin as $d){
+            $vit[$d->id]=$d->name;
+        }
         if (!empty($data)) {
             $count = 0;
             while ($data) {
-
-                $vitamin = $this->vitamin(json_decode($data[$count]->vitamin_ids));
-                $data[$count]->vitamin = $vitamin;
+                $vitarray=array();
+                foreach(json_decode($data[$count]->vitamin_ids) as $id){
+                    $vitarray[]=$vit[$id];
+                }
+                $data[$count]->vitamin = $vitarray;
                 $count++;
                 if (!isset($data[$count])) {
                     break;
