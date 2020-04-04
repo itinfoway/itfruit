@@ -7,7 +7,7 @@
 $fromType = [
     'type' => 'hidden',
     "name" => "type",
-
+];
 $fromName = [
     'type' => 'text',
     "name" => "name",
