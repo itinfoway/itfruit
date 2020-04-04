@@ -1,32 +1,13 @@
 <?php
-
 /**
  * Description of index
  * https://itinfoway.com
  * @author Admin
  */
- 
- $fromType = [
+$fromType = [
     'type' => 'hidden',
     "name" => "type",
-    'class' => 'form-control',
-    "data-validation" => "length",	
-    "data-validation-length" => "2-255",
-    'id' => "name",
-    "placeholder" => $this->lang->line("ala_carte_name_plac"),
     'value' => "1",
-	'readonly' => "readonly",
-];
-
-$fromType2 = [
-    'type' => 'text',
-    "name" => "",
-    'class' => 'form-control',
-    "data-validation" => "length",	
-    "data-validation-length" => "2-25",
-    'id' => "name",
-    'value' => "ala carte",
-	'readonly' => "readonly",
 ];
 
 $fromName = [
@@ -64,18 +45,27 @@ $fromCredit = [
             </div>
             <!-- /.card-header -->
             <?= form_open_multipart(); ?>
+            <?= form_input($fromType); ?>
             <div class="card-body">
+
                 <div class="form-group">
-                    <label><?= $this->lang->line("products_type") ?></label>
-                    <?= form_input($fromType); ?>
-					<?= form_input($fromType2); ?>
+                    <label><?= $this->lang->line("products_name") ?></label>
+                    <?= form_input($fromName); ?>
                 </div>
-               
+                <div class="form-group">
+                    <label><?= $this->lang->line("fruit_hed") ?></label>
+                    <?= form_multiselect("fruit_ids", $fruit, isset($data->fruit_ids) ? json_decode($data->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("ala_crate_select_fruit_plac")]); ?>
+                </div>
+
+                <div class="form-group">
+                    <label><?= $this->lang->line("products_credit") ?></label>
+                    <?= form_input($fromCredit); ?>
+                </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("products_img") ?></label>
                     <div class="input-group">
                         <div class="custom-file">
-                            <?= form_upload("img", null, ['class' => 'custom-file-input',  "data-validation" => "mime size", "data-validation-allowing" => "jpg, png", "data-validation-max-size" => "500kb", "accept" => "image/x-png,image/jpg,image/jpeg", "id" => "upload"]); ?>
+                            <?= form_upload("img", null, ['class' => 'custom-file-input', "data-validation" => "mime size", "data-validation-allowing" => "jpg, png", "data-validation-max-size" => "500kb", "accept" => "image/x-png,image/jpg,image/jpeg", "id" => "upload"]); ?>
                             <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                         </div>
                     </div>
@@ -92,22 +82,10 @@ $fromCredit = [
                             <?= isset($img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
                         </div>
                     </div>
-                     <input type="hidden" name="input_image" id="input_image">
-                </div>
-				<div class="form-group">
-                    <label><?= $this->lang->line("products_name") ?></label>
-                    <?= form_input($fromName); ?>
-                </div>
-				<div class="form-group">
-                    <label><?= $this->lang->line("fruit_hed") ?></label>
-                    <?= form_multiselect("fruit_ids", $fruit, isset($data->fruit_ids) ? json_decode($data->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("ala_crate_select_fruit_plac")]); ?>
-                </div>
-				
-				<div class="form-group">
-                    <label><?= $this->lang->line("products_credit") ?></label>
-                    <?= form_input($fromCredit); ?>
+                    <input type="hidden" name="input_image" id="input_image">
                 </div>
             </div>
+
             <div class="card-footer">
                 <button type="submit" class="upload-result btn btn-info" id="submit"><?= $this->lang->line("btn_save") ?></button>
                 <button type="reset" class="btn btn-default float-right"><?= $this->lang->line("btn_reset") ?></button>
@@ -126,10 +104,10 @@ $fromCredit = [
 </script>
 
 <script>
-     
 
-    
-    var Demo = (function() {
+
+
+    var Demo = (function () {
         function demoUpload() {
             var $uploadCrop;
 
@@ -143,10 +121,10 @@ $fromCredit = [
                     $("#input_image").val(result.src);
                 }
 
-                setTimeout(function() {
-                    $('.sweet-alert').css('margin', function() {
+                setTimeout(function () {
+                    $('.sweet-alert').css('margin', function () {
                         var top = -1 * ($(this).height() / 2),
-                            left = -1 * ($(this).width() / 2);
+                                left = -1 * ($(this).width() / 2);
                         return top + 'px 0 0 ' + left + 'px';
                     });
                 }, 1);
@@ -157,11 +135,12 @@ $fromCredit = [
                 if (input.files && input.files[0]) {
                     var reader = new FileReader();
 
-                    reader.onload = function(e) {
+                    reader.onload = function (e) {
                         $('.upload-demo').addClass('ready');
                         $uploadCrop.croppie('bind', {
                             url: e.target.result,
-                        }).then(function() {});
+                        }).then(function () {
+                        });
 
                     };
 
@@ -186,16 +165,16 @@ $fromCredit = [
                 enableExif: true,
                 enforceBoundary: false
             });
-            <?= isset($img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/" . $img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/user_demo.png") . "');"; ?>
-            $('#upload').on('change', function() {
+<?= isset($img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/" . $img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/user_demo.png") . "');"; ?>
+            $('#upload').on('change', function () {
                 readFile(this);
 
             });
-            $('.upload-result').on('click', function(ev) {
+            $('.upload-result').on('click', function (ev) {
                 $uploadCrop.croppie('result', {
                     type: 'canvas',
                     size: 'viewport'
-                }).then(function(resp) {
+                }).then(function (resp) {
                     popupResult({
                         src: resp
                     });

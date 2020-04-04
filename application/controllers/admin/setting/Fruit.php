@@ -26,8 +26,6 @@ class Fruit extends Controller
     public function add()
     {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
-            $array["name"] = $this->input->post("name");
-            $array["vitamin_ids"] = json_encode($this->input->post("vitamin_ids"));
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
                 $image_parts = explode(";base64,", $this->input->post("input_image"));
                 $image_type_aux = explode("image/", $image_parts[0]);
@@ -43,6 +41,7 @@ class Fruit extends Controller
                 unset($array["input_image"]);
                 $array["img"] = "user_demo.png";
             }
+            $array["vitamin_ids"] = json_encode($this->input->post("vitamin_ids"));
             $data = $this->fruit_model->add($array);
             if (!empty($data)) {
                 redirect("admin/setting/fruit/add");
@@ -64,6 +63,7 @@ class Fruit extends Controller
         $data = $this->fruit_model->view($id);
 
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
                 $image_parts = explode(";base64,", $this->input->post("input_image"));
                 $image_type_aux = explode("image/", $image_parts[0]);
@@ -90,6 +90,8 @@ class Fruit extends Controller
                 }
                 unset($array["delete"]);
             }
+            $array["vitamin_ids"] = json_encode($this->input->post("vitamin_ids"));
+            
             $data = $this->fruit_model->edit($array, $id);
             if (!empty($data)) {
                 redirect("admin/setting/fruit/add");
@@ -98,11 +100,13 @@ class Fruit extends Controller
             }
         }
         $vitamin = $this->vitamin_model->view();
-
+       
+        $da=array();
+        $da["data"]=$data[0]; 
         foreach ($vitamin as $v) {
-            $data["vitamin"][$v->id] = $v->name;
+            $da["vitamin"][$v->id] = $v->name;
         }
-        $this->display("add", $data);
+        $this->display("add", $da);
     }
 
     public function delete($id)
