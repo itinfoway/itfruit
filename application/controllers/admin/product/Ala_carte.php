@@ -24,8 +24,6 @@ class Ala_carte extends Controller {
 	public function add()
     {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
-            $array["name"] = $this->input->post("name");
-            $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
                 $image_parts = explode(";base64,", $this->input->post("input_image"));
                 $image_type_aux = explode("image/", $image_parts[0]);
@@ -41,6 +39,7 @@ class Ala_carte extends Controller {
                 unset($array["input_image"]);
                 $array["img"] = "user_demo.png";
             }
+            $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             $data = $this->product_model->add($array);
             if (!empty($data)) {
                 redirect("admin/product/ala_carte/add");
@@ -55,13 +54,13 @@ class Ala_carte extends Controller {
         }
         $this->display('add', $data);
     }
-
-
+    
     public function edit($id)
     {
         $data = $this->product_model->view($id);
 
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
                 $image_parts = explode(";base64,", $this->input->post("input_image"));
                 $image_type_aux = explode("image/", $image_parts[0]);
@@ -88,6 +87,7 @@ class Ala_carte extends Controller {
                 }
                 unset($array["delete"]);
             }
+            $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));            
             $data = $this->product_model->edit($array, $id);
             if (!empty($data)) {
                 redirect("admin/product/ala_carte/add");
@@ -96,11 +96,13 @@ class Ala_carte extends Controller {
             }
         }
         $fruit = $this->fruit_model->view();
-
+       
+        $da=array();
+        $da["data"]=$data[0]; 
         foreach ($fruit as $f) {
-            $data["fruit"][$f->id] = $f->name;
+            $da["fruit"][$f->id] = $f->name;
         }
-        $this->display("add", $data);
+        $this->display("add", $da);
     }
 
     public function delete($id)

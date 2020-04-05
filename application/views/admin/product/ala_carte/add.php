@@ -16,6 +16,7 @@ $fromName = [
     'class' => 'form-control',
     "data-validation" => "length",
     "data-validation-length" => "2-25",
+	"placeholder" => $this->lang->line("products_name_plac"),
     'id' => "name",
     'value' => isset($name) ? $name : "",
 ];
@@ -54,7 +55,7 @@ $fromCredit = [
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("fruit_hed") ?></label>
-                    <?= form_multiselect("fruit_ids", $fruit, isset($data->fruit_ids) ? json_decode($data->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("ala_crate_select_fruit_plac")]); ?>
+                    <?= form_multiselect("fruit_ids[]", $fruit, isset($data->fruit_ids) ? json_decode($data->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("products_select_fruit_plac")]); ?>
                 </div>
 
                 <div class="form-group">
