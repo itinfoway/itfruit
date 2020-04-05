@@ -33,7 +33,7 @@
 </section>
 <section>
     <div class="que-part">
-        <h4><?=$this->lang->line("fn_ques"); ?>frequently asked questions</h4>
+        <h4><?=$this->lang->line("fn_ques"); ?></h4>
         <?php
         if (!empty($data)) {
             foreach ($data as $f) {
