@@ -76,7 +76,7 @@
                                 <div class="order">
                                     <div class="text">
                                         <p>order</p>
-                                        <p>1</p>
+                                        <p>2</p>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                 <div class="order">
                                     <div class="text">
                                         <p>order</p>
-                                        <p>1</p>
+                                        <p>3</p>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                                 <div class="order">
                                     <div class="text">
                                         <p>order</p>
-                                        <p>1</p>
+                                        <p>4</p>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                                 <div class="order">
                                     <div class="text">
                                         <p>order</p>
-                                        <p>1</p>
+                                        <p>5</p>
                                     </div>
                                 </div>
                             </div>
@@ -222,10 +222,10 @@
         $(this).addClass("first-date-part");
         $(this).find(".order").addClass("first-order");
     });
-    $("#savedate").click(function(){
-         var inputDate = $("#orderbox").attr("data-link-field");
-        console.log(inputDate,$("#orderbox").val()); 
-        $("#"+inputDate).val($("#orderbox").val());
+    $("#savedate").click(function () {
+        var inputDate = $("#orderbox").attr("data-link-field");
+        console.log(inputDate, $("#orderbox").val());
+        $("#" + inputDate).val($("#orderbox").val());
     });
 </script>
 <section>
@@ -234,6 +234,7 @@
             <h1>RANDOM A BOX FOR ME!</h1>
             <div class="row">
                 <div class="col-sm-6">
+                    <center><h2>title</h2></center>
                     <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
                     <center>
                         <div class="text">
@@ -256,9 +257,9 @@
                         </div>
                     </center>
                     <div class="countr">
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        0
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                        <span>0</span>
+                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -284,67 +285,9 @@
                         </div>
                     </center>
                     <div class="countr">
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        0
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        0
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        0
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                        <span>0</span>
+                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                     </div>
                 </div>
             </div>
@@ -372,9 +315,9 @@
                         </div>
                     </center>
                     <div class="countr">
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        0
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                        <span>0</span>
+                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                     </div>
                 </div>
                 <div class="col-sm-6">
@@ -400,12 +343,82 @@
                         </div>
                     </center>
                     <div class="countr">
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        0
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                        <span>0</span>
+                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
+                    <center>
+                        <div class="text">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <ul class="left-part">
+                                        <li>blueberries</li>
+                                        <li>raspberries</li>
+                                        <li>strawberries</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul class="right-part">
+                                        <li>natural walnuts</li>
+                                        <li>watermelon</li>
+                                        <li>dark chocolate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                    <div class="countr">
+                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                        <span>0</span>
+                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
+                    <center>
+                        <div class="text">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <ul class="left-part">
+                                        <li>blueberries</li>
+                                        <li>raspberries</li>
+                                        <li>strawberries</li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul class="right-part">
+                                        <li>natural walnuts</li>
+                                        <li>watermelon</li>
+                                        <li>dark chocolate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                    <div class="countr">
+                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                        <span>0</span>
+                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<script>
+    $(document).on("click", ".plus", function () {
+        var plus = parseInt($(this).parent(".countr").find("span").text());
+        $(this).parent(".countr").find("span").text(plus + 1);
+    });
+    $(document).on("click", ".minus", function () {
+        var minus = parseInt($(this).parent(".countr").find("span").text());
+        if (minus != 0) {
+            $(this).parent(".countr").find("span").text(minus - 1);
+        }
+    });
+</script>

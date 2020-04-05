@@ -44,7 +44,7 @@
 				if ($this->session->has_userdata("user_login")) {
 				?>
 					<div>
-						<h1><?=$this->lang->line("fn_welcome"); ?> <?= ($this->session->has_userdata("user_login")) ? $this->session->userdata("user")->username : ""; ?> </h1>
+                                            <a href="<?=base_url("profile")?>"><h1><?=$this->lang->line("fn_welcome"); ?> <?= ($this->session->has_userdata("user_login")) ? $this->session->userdata("user")->username : ""; ?> </h1></a>
 					</div>
 					
 				
