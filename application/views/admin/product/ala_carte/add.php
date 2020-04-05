@@ -154,13 +154,13 @@ $fromCredit = [
 
             $uploadCrop = $('#upload-demo').croppie({
                 viewport: {
-                    width: 100,
-                    height: 100,
+                    width: 540,
+                    height: 367,
                     type: 'square'
                 },
                 boundary: {
-                    width: 110,
-                    height: 110
+                    width: 640,
+                    height: 436
                 },
                 enableOrientation: true,
                 enableExif: true,
