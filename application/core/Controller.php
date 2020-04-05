@@ -2,17 +2,14 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Controller extends CI_Controller
-{
+class Controller extends CI_Controller {
 
-    public function __construct()
-    {
+    public function __construct() {
         parent::__construct();
         $this->ch_login();
     }
 
-    public function ch_login()
-    {
+    public function ch_login() {
         $directory = $this->router->directory;
         $class = $this->router->class;
         $method = $this->router->method;
@@ -38,8 +35,7 @@ class Controller extends CI_Controller
         }
     }
 
-    public function display($view, $data = array())
-    {
+    public function display($view, $data = array()) {
         $directory = $this->router->directory;
         $class = $this->router->class;
         $method = $this->router->method;
@@ -63,11 +59,11 @@ class Controller extends CI_Controller
             $this->load->view("include/footer");
         }
     }
-    public function maileSend($subject = 'This is a test', $message = "test", $to = "parth.p.ajudiya@gmail.com", $attach = null)
-    {
-        $this->load->library('email');
 
-
+    public function maileSend($subject = 'This is a test', $message = "test", $to = "parth.p.ajudiya@gmail.com", $attach = null) {
+        $this->load->model("local_setting_model");
+        $config=$this->local_setting_model->view("smtp_user,smtp_pass,smtp_port");
+        $this->load->library('email',["smtp_user"=>$config[0]->smtp_user,"smtp_pass"=>$config[0]->smtp_pass,"smtp_port"=>$config[0]->smtp_port]);
 
         // Get full html:
         $body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -88,7 +84,6 @@ class Controller extends CI_Controller
 </html>';
         // Also, for getting full html you may use the following internal method:
         //$body = $this->email->full_html($subject, $message);
-
         // Attaching the logo first.
         $file_logo = FCPATH . '/assert/fontend/img/logo.png';  // Change the path accordingly.
         // The last additional parameter is set to true in order
@@ -99,12 +94,13 @@ class Controller extends CI_Controller
 
 
         $result = $this->email
-            ->from('no-reply@sliced.tk')
-            // ->reply_to('parth.p.ajudiya@gmail.com')    // Optional, an account where a human being reads.
-            ->to($to)
-            ->subject($subject)
-            ->message($body)
-            ->send();
+                ->from('no-reply@sliced.tk')
+                // ->reply_to('parth.p.ajudiya@gmail.com')    // Optional, an account where a human being reads.
+                ->to($to)
+                ->subject($subject)
+                ->message($body)
+                ->send();
         return $result;
     }
+
 }
