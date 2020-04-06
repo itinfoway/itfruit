@@ -18,7 +18,7 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body">
-                <table id="people_table" class="table table-striped table-bordered" style="width:100%">
+                <table id="order_loading" class="table table-striped table-bordered" style="width:100%">
                     <thead>
                         <tr>
                             <th></th>
@@ -38,22 +38,42 @@
 <script src="<?= base_url("assert/admin/plugins/datatable/dataTables.bootstrap4.min.js") ?>"></script>
 <script>
     $(document).ready(function () {
-        var table = $('#people_table').DataTable({
+        var table = $('#order_loading').DataTable({
             ajax: "<?= base_url("admin/setting/order_loading/json") ?>",
             responsive: true,
 			"order": [[ 0, 'desc' ]],
             columns: [{
                     "data": "id"
                 },
-                {
-                    "data": "img",
-                    render: function(data) {
-                        var view = '<img src="<?=base_url("assert/people/")?>'+data+'" class="img-thumbnail rounded-circle" width="50px">';
+                {"data": "week_day",
+                    render: function (data) {
+                        var view="" ;
+                        if(data==1){
+                            view +='Monday';
+                        }else if(data==2){
+                            view += 'Tuesday';
+                        }
+                        else if(data==3){
+                            view += 'Wednesday';
+                        }
+                        else if(data==4){
+                            view += 'Thursday';
+                        }
+                        else if(data==5){
+                            view += 'Friday';
+                        }
+                        else if(data==6){
+                            view += 'Saturday';
+                        }
+
+                        else{
+                           view += 'Sunday';
+                        }                    
                         return view;
-                    }
-                },
-                {"data": "name"},
-                {"data": "comment"},
+                    }},
+                
+                {"data": "ala_carte_loading"},
+                {"data": "subscription_loading"},
                 {"data": "id",
                     render: function (data, type, row) {
                         var view = '<a href="<?= base_url("admin/setting/order_loading/edit/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a> ';
