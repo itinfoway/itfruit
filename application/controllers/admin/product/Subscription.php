@@ -130,7 +130,7 @@ class Subscription extends Controller {
         return $this->output
             ->set_content_type('application/json')
             ->set_status_header(200) // Return status
-            ->set_output(json_encode($data["products_select_fruit_plac"]));
+            ->set_output(json_encode($data["products"]));
     }
 
 
