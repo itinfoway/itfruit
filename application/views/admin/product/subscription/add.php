@@ -26,7 +26,7 @@ $fromPrice = [
     "data-validation" => "length,number",
     "data-validation-length" => "2-12",
     'id' => "price",
-    "placeholder" => $this->lang->line("ala_carte_price_plac"),
+    "placeholder" => $this->lang->line("products_price_plac"),
     'value' => isset($price) ? $price : "",
 ];
 ?>

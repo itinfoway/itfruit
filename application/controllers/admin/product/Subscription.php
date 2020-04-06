@@ -14,7 +14,7 @@ class Subscription extends Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model("product_model");
-		 $this->load->model("fruit_model");
+		$this->load->model("fruit_model");
     }
 
     public function index() {
@@ -23,8 +23,6 @@ class Subscription extends Controller {
 	public function add()
     {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
-            $array["name"] = $this->input->post("name");
-            $array["products_ids"] = json_encode($this->input->post("products_ids"));
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
                 $image_parts = explode(";base64,", $this->input->post("input_image"));
                 $image_type_aux = explode("image/", $image_parts[0]);
@@ -40,6 +38,7 @@ class Subscription extends Controller {
                 unset($array["input_image"]);
                 $array["img"] = "user_demo.png";
             }
+            $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             $data = $this->product_model->add($array);
             if (!empty($data)) {
                 redirect("admin/product/subscription/add");
@@ -54,6 +53,7 @@ class Subscription extends Controller {
         }
         $this->display('add', $data);
     }
+    
 
 
     public function edit($id)
@@ -112,7 +112,7 @@ class Subscription extends Controller {
         }
     }
 
-    public function json($name = null)
+  public function json($name = null)
     {
         if (is_null($name)) {
             $select = !empty($this->input->get("select")) ? $this->input->get("select") : "*";
