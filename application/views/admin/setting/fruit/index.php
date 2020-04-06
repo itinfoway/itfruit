@@ -55,7 +55,7 @@
                 {"data": "vitamin",
                     render: function (data, type, row) {
                         
-                        return data.join(", ");;
+                        return data.join(", ");
                     }
                 },
                 

@@ -22,12 +22,11 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th><?=$this->lang->line("products_type") ?></th>
-							<th><?=$this->lang->line("products_img") ?></th>
-							<th><?=$this->lang->line("products_name") ?></th>
-							<th><?=$this->lang->line("fruit_hed") ?></th>
-                            <th><?=$this->lang->line("products_credit") ?></th>
-                            <th><?=$this->lang->line("action") ?></th>
+                            <th><?= $this->lang->line("products_img") ?></th>
+                            <th><?= $this->lang->line("products_name") ?></th>
+                            <th><?= $this->lang->line("fruit_hed") ?></th>
+                            <th><?= $this->lang->line("products_credit") ?></th>
+                            <th><?= $this->lang->line("action") ?></th>
                         </tr>
                     </thead>
                 </table>
@@ -43,40 +42,23 @@
         var table = $('#subscription_table').DataTable({
             ajax: "<?= base_url("admin/product/subscription/json") ?>",
             responsive: true,
-			"order": [[ 0, 'desc' ]],
+            "order": [[0, 'desc']],
             columns: [
                 {"data": "id"},
-				{"data": "type",
-				render: function (data) {
-                        var view="" ;
-                        if(data==2){
-                            view +='subscription';
-                        }else{
-                           view += 'Ala_create';
-                        }
-                                                
-                        return view;
-                    }},
-				
                 {
                     "data": "img",
-                    render: function(data) {
-                        var view = '<img src="<?=base_url("assert/products/subscription/")?>'+data+'" class="img-thumbnail rounded-circle" width="50px">';
+                    render: function (data) {
+                        var view = '<img src="<?= base_url("assert/products/subscription/") ?>' + data + '" class="img-thumbnail" width="50px">';
                         return view;
                     }
                 },
                 {"data": "name"},
                 {"data": "fruit",
-                    render: function (data, type, row) {
-                        var view=[];
-                        for(var i=0;i<data.length;i++){
-                            view[i]=data[i].name;
-                        }
-                        return view.join(", ");;
+                    render: function (data) {
+                        return data.join(", ");
                     }
                 },
-				{"data": "price"},
-                
+                {"data": "price"},
                 {"data": "id",
                     render: function (data, type, row) {
                         var view = '<a href="<?= base_url("admin/product/subscription/edit/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a> ';
@@ -86,11 +68,11 @@
                 }
             ]
         });
-		table.on( 'order.dt search.dt', function () {
-			table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-				cell.innerHTML = i+1;
-			} );
-		} ).draw();
+        table.on('order.dt search.dt', function () {
+            table.column(0, {search: 'applied', order: 'applied'}).nodes().each(function (cell, i) {
+                cell.innerHTML = i + 1;
+            });
+        }).draw();
     });
 </script>
 

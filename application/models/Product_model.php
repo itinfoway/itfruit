@@ -23,7 +23,7 @@ class Product_model extends CI_Model {
     {
         $this->db->trans_start();
         if (!is_null($where)) {
-            $this->db->where("id", $where);
+            $this->db->where($where);
         }
         $this->db->select($select);
         $this->db->order_by("id", "asc");
@@ -40,7 +40,7 @@ class Product_model extends CI_Model {
             while ($data) {
                 $fitarray=array();
                 foreach(json_decode($data[$count]->fruit_ids) as $id){
-                    $fitarray=$fit[$id];
+                    $fitarray[]=$fit[$id];
                 }
                 $data[$count]->fruit = $fitarray;
                 $count++;

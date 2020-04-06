@@ -58,7 +58,7 @@ class Subscription extends Controller {
 
     public function edit($id)
     {
-        $data = $this->product_model->view($id);
+        $data = $this->product_model->view(["id"=>$id]);
 
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
@@ -116,7 +116,7 @@ class Subscription extends Controller {
     {
         if (is_null($name)) {
             $select = !empty($this->input->get("select")) ? $this->input->get("select") : "*";
-            $data["products"]["data"] = $this->product_model->view(null, $select);
+            $data["products"]["data"] = $this->product_model->view(["type"=>2], $select);
         } else {
             $name = base64_decode(urldecode($name));
             $old = $this->input->get("name");
