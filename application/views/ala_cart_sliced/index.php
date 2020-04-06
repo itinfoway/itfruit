@@ -234,7 +234,7 @@
             <h1>RANDOM A BOX FOR ME!</h1>
             <div class="row">
                 <div class="col-sm-6">
-                    <center><h2>title</h2></center>
+                    <center><h2 class="carte-title">title</h2></center>
                     <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
                     <center>
                         <div class="text">

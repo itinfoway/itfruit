@@ -3929,3 +3929,7 @@ button:focus {
     outline: 0px dotted;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
+.carte-title{
+    color: #29335c;
+    margin-bottom: -1.5rem;
+}
