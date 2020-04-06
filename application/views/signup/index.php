@@ -3,7 +3,7 @@
 		<div class="profile new-signup">
 			<div class="row">
 				<div class="col-sm-6">
-					<h1>SIGN UP</h1>
+					<h1><?=$this->lang->line("fn_sign"); ?></h1>
 					<div class="form">
 						<?= form_open() ?>
 						<div class="row">
@@ -51,13 +51,13 @@
 										<input type="checkbox" name="pri_pol" value="1">
 										<span class="checkmark"></span>
 									</label>
-									<span class="text">I HAVE READ AND AGREE TO THE <a href="#">PRIVACY POLICY</a></span>
+									<span class="text"><?=$this->lang->line("fn_line"); ?> <a href="#"><?=$this->lang->line("fn_policy"); ?></a></span>
 								</div>
 							</div>
 						</div>
-						<center><button class="btn btn2"> SIGN UP </button></center>
+						<center><button class="btn btn2"> <?=$this->lang->line("fn_sign"); ?></button></center>
 						<div class="clearfix"></div>
-						<p>already have account ? <span><a href="#">login here</a></span></p>
+						<p><?=$this->lang->line("fn_account"); ?><span><a href="#"><?=$this->lang->line("fn_here"); ?></a></span></p>
 						<?= form_close() ?>
 					</div>
 				</div>

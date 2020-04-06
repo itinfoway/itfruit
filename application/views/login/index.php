@@ -3,7 +3,7 @@
 		<div class="profile new-signup new-login">
 			<div class="row">
 				<div class="col-sm-6">
-					<h1>LOGIN</h1>
+					<h1><?=$this->lang->line("fn_login"); ?></h1>
 					<div class="form">
 						<?= form_open() ?>
 						<div class="row">
@@ -27,16 +27,16 @@
 										<input type="checkbox">
 										<span class="checkmark"></span>
 									</label>
-									<span class="text">remember me</span>
-									<h6><a href="#" class="forgot"> forgot password?</a>
+									<span class="text"><?=$this->lang->line("fn_remember"); ?></span>
+									<h6><a href="#" class="forgot"> <?=$this->lang->line("fn_forgot"); ?></a>
 										<h6>
 											<div class="clearfix"></div>
 								</div>
 							</div>
 						</div>
-						<center><button type="submit" class="btn btn2"> LOGIN </button></center>
+						<center><button type="submit" class="btn btn2"><?=$this->lang->line("fn_login"); ?> </button></center>
 						<div class="clearfix"></div>
-						<p>Don't have an account ? <span><a href="<?=base_url("signup") ?>">create an account</a></span></p>
+						<p><?=$this->lang->line("fn_don`t"); ?> <span><a href="<?=base_url("signup") ?>"><?=$this->lang->line("fn_crate"); ?></a></span></p>
 						<?= form_close() ?>
 					</div>
 				</div>

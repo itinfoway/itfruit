@@ -25,7 +25,7 @@
                             <th><?= $this->lang->line("products_img") ?></th>
                             <th><?= $this->lang->line("products_name") ?></th>
                             <th><?= $this->lang->line("fruit_hed") ?></th>
-                            <th><?= $this->lang->line("products_credit") ?></th>
+                            <th><?= $this->lang->line("products_price") ?></th>
                             <th><?= $this->lang->line("action") ?></th>
                         </tr>
                     </thead>

@@ -66,6 +66,14 @@ $lang["products_credit_plac"] = 'Enter Credit';
 $lang["products_price"] = 'Price';
 $lang["products_price_plac"] = 'Enter price';
 
+//product/products
+$lang["order_loading"] = 'Order Loading';
+$lang["order_loading_weekday"] = 'week_day';
+$lang["ala_carte_head"] = 'Ala Carte';
+$lang["ala_carte_plac"] = 'Select Ala carte';
+$lang["sub_head"] = 'Subscription';
+$lang["sub_plac"] = 'Select Subscription';
+
 
 // Users Form
 $lang["user_head"] = 'Users';
@@ -229,6 +237,18 @@ $lang["fn_asked"] = 'Asked Questions';
 $lang["fn_need"] = 'NEED HELP?';
 $lang["fn_ques"] = 'frequently asked questions';
 
+//login/index.php
+$lang["fn_login"] = 'LOGIN';
+$lang["fn_forgot"] = 'forgot password?';
+$lang["fn_don`t"] = 'Don`t have an account ?';
+$lang["fn_crate"] = 'create an account';
+$lang["fn_remember"] = 'remember me';
 
+//signup/index.php
+$lang["fn_sign"] = 'SIGN UP';
+$lang["fn_account"] = 'already have account ? ';
+$lang["fn_here"] = 'login here';
+$lang["fn_line"] = 'I HAVE READ AND AGREE TO THE';
+$lang["fn_policy"] = 'PRIVACY POLICY';
 
 
