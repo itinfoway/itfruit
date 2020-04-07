@@ -3971,25 +3971,34 @@ button:focus {
 .lds-ellipsis div {
     position: absolute;
     top: 33px;
-    width: 13px;
-    height: 13px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background: red;
+    
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
+
 .lds-ellipsis div:nth-child(1) {
+    background-image: url(../img/berry-load.png);
+    background-size:100% 100%;
     left: 8px;
     animation: lds-ellipsis1 0.6s infinite;
 }
 .lds-ellipsis div:nth-child(2) {
+    background-image: url(../img/banana-load.png);
+    background-size:100% 100%;
     left: 8px;
     animation: lds-ellipsis2 0.6s infinite;
 }
 .lds-ellipsis div:nth-child(3) {
+    background-image: url(../img/strawberry-load.png);
+    background-size:100% 100%;
     left: 32px;
     animation: lds-ellipsis2 0.6s infinite;
 }
 .lds-ellipsis div:nth-child(4) {
+    background-image: url(../img/banana-load.png);
+    background-size:100% 100%;
     left: 56px;
     animation: lds-ellipsis3 0.6s infinite;
 }
@@ -4016,4 +4025,30 @@ button:focus {
     100% {
         transform: translate(24px, 0);
     }
+}
+.map-right{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 1;
+    height: 100%;
+}
+.map-left{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    height: 100%;
+}
+.map-top{
+    position: absolute;
+    top: -8px;
+    z-index: 1;
+    width: 100%;
+}
+.map-bottom{
+    position: absolute;
+    bottom: -8px;
+    z-index: 1;
+    width: 100%;
 }

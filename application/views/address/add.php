@@ -10,6 +10,10 @@
             <div class="add-part">
                 <div class="row">
                     <div class="col-sm-6">
+                        <img src="<?=  base_url()?>assert/fontend/img/b1.png" class="map-right">
+                        <img src="<?=  base_url()?>assert/fontend/img/b2.png" class="map-left">
+                        <img src="<?=  base_url()?>assert/fontend/img/b3.png" class="map-top">
+                        <img src="<?=  base_url()?>assert/fontend/img/b4.png" class="map-bottom">
                         <div style="height:100%;width:100%" id="map"></div>
                     </div>
                     <div class="col-sm-6">

@@ -18,4 +18,13 @@ class Ala_cart_sliced extends Controller {
         $this->display('index');
     }
 
+    public function gettime() {
+       $date=$this->input->post("date");
+       $day=date("N",strtotime($date)); 
+       return $this->output
+                        ->set_content_type('application/json')
+                        ->set_status_header(200) // Return status
+                        ->set_output(json_encode($data["address"]));
+    }
+
 }
