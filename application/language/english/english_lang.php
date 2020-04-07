@@ -66,15 +66,15 @@ $lang["products_credit_plac"] = 'Enter Credit';
 $lang["products_price"] = 'Price';
 $lang["products_price_plac"] = 'Enter price';
 
-//admin/setting/order-loading
-$lang["order_loading_name"] = 'Name';
-$lang["order_loading_name_plac"] = 'Slot Name';
+//order loading
 $lang["order_loading"] = 'Order Loading';
-$lang["order_loading_weekday"] = 'Days of the Week';
+$lang["order_loading_weekday"] = 'week_day';
+$lang["order_loading_name"] = 'Name';
+$lang["order_loading_name_plac"] = 'Enter Name';
 $lang["ala_carte_head"] = 'Ala Carte';
-$lang["ala_carte_plac"] = 'how many order loading in this slot';
+$lang["ala_carte_plac"] = 'Select Ala carte';
 $lang["sub_head"] = 'Subscription';
-$lang["sub_plac"] = 'how many order loading in this slot';
+$lang["sub_plac"] = 'Select Subscription';
 
 
 // Users Form
@@ -254,3 +254,23 @@ $lang["fn_line"] = 'I HAVE READ AND AGREE TO THE';
 $lang["fn_policy"] = 'PRIVACY POLICY';
 
 
+//admin/include/header.php
+$lang["fn_home"] = 'Home';
+$lang["fn_con"] = 'Contact';
+$lang["fn_sliced"] = 'Sliced';
+$lang["fn_dash"] = 'Dashboard';
+$lang["fn_users"] = 'Users';
+$lang["fn_view"] = 'View';
+$lang["fn_add"] = 'Add';
+$lang["fn_cons"] = 'Contacts';
+$lang["fn_pro"] = 'Products';
+$lang["fn_sub"] = 'Subscription';
+$lang["fn_ala"] = 'Ala Carte';
+$lang["fn_setting"] = 'Setting';
+$lang["fn_faq"] = 'FAQ';
+$lang["fn_vitamin"] = 'Vitamin';
+$lang["fn_fruit"] = 'Fruit';
+$lang["fn_partner"] = 'Partner';
+$lang["fn_what"] = 'What people say';
+$lang["fn_sliders"] = 'Sliders';
+$lang["fn_day"] = ' Day of loading';

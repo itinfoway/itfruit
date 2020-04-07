@@ -44,10 +44,10 @@
                         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="index3.html" class="nav-link">Home</a>
+                        <a href="index3.html" class="nav-link"><?=$this->lang->line("fn_home") ?></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#" class="nav-link"><?=$this->lang->line("fn_con") ?></a>
                     </li>
                 </ul>
 
@@ -68,7 +68,7 @@
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
                 <!-- Brand Logo -->
                 <a href="index3.html" class="brand-link">
-                    <span class="brand-text font-weight-light">Sliced</span>
+                    <span class="brand-text font-weight-light"><?=$this->lang->line("fn_sliced") ?></span>
                 </a>
 
                 <!-- Sidebar -->
@@ -92,7 +92,7 @@
                                 <a href="<?= base_url("admin/"); ?>" class="nav-link">
                                     <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>
-                                        Dashboard
+                                        <?=$this->lang->line("fn_dash") ?>
                                     </p>
                                 </a>
                             </li>
@@ -100,7 +100,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>
-                                        Users
+                                        <?=$this->lang->line("fn_users") ?>
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
@@ -108,13 +108,13 @@
                                     <li class="nav-item">
                                         <a href="<?= base_url("admin/users"); ?>" class="nav-link">
                                             <i class="far fa-eye nav-icon"></i>
-                                            <p>View</p>
+                                            <p><?=$this->lang->line("fn_view") ?></p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="<?= base_url("admin/users/add"); ?>" class="nav-link">
                                             <i class="far fa-save nav-icon"></i>
-                                            <p>Add</p>
+                                            <p><?=$this->lang->line("fn_add") ?></p>
                                         </a>
                                     </li>
                                 </ul>
@@ -131,7 +131,7 @@
                             <li class="nav-item">
                                 <a href="<?= base_url("admin/contacts"); ?>" class="nav-link">
                                     <i class="fas fa-address-book nav-icon"></i>
-                                    <p>Contacts</p>
+                                    <p><?=$this->lang->line("fn_cons") ?></p>
                                 </a>
                             </li>
                             <!-- <li class="nav-item">
@@ -146,7 +146,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas  fa-cart-plus"></i>
                                     <p>
-                                        Products
+                                        <?=$this->lang->line("fn_pro") ?>
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
@@ -155,7 +155,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-luggage-cart nav-icon"></i>
                                             <p>
-                                                Subscription
+                                                <?=$this->lang->line("fn_sub") ?>
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -163,13 +163,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/product/subscription"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/product/subscription/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -178,7 +178,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-shopping-cart nav-icon"></i>
                                             <p>
-                                                Ala Carte
+                                               <?=$this->lang->line("fn_ala") ?> 
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -186,13 +186,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/product/ala-carte"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/product/ala-carte/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -203,7 +203,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas fa-cogs"></i>
                                     <p>
-                                        Setting
+                                        <?=$this->lang->line("fn_setting") ?>
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
@@ -212,7 +212,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="far fa-comments nav-icon"></i>
                                             <p>
-                                                FAQ
+                                                <?=$this->lang->line("fn_faq") ?>
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -220,13 +220,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/faq"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/faq/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -237,7 +237,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-capsules nav-icon"></i>
                                             <p>
-                                                Vitamin
+                                                <?=$this->lang->line("fn_vitamin") ?>
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -245,13 +245,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/vitamin"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/vitamin/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -262,7 +262,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-apple-alt nav-icon"></i>
                                             <p>
-                                                Fruit
+                                                <?=$this->lang->line("fn_fruit") ?>
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -270,13 +270,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/fruit"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/fruit/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -287,7 +287,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-handshake nav-icon"></i>
                                             <p>
-                                                Partner
+                                                <?=$this->lang->line("fn_partner") ?>
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -295,13 +295,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/partner"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/partner/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -312,7 +312,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-person-booth nav-icon"></i>
                                             <p>
-                                                What people say
+                                                <?=$this->lang->line("fn_what") ?>
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -320,13 +320,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/people"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/people/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -337,7 +337,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-sliders-h nav-icon"></i>
                                             <p>
-                                                Sliders
+                                               <?=$this->lang->line("fn_sliders") ?> 
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -345,13 +345,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/slidermain"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/slidermain/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -362,7 +362,7 @@
                                         <a href="#" class="nav-link">
                                             <i class="fas fa-calendar-day nav-icon"></i>
                                             <p>
-                                                Day of loading
+                                               <?=$this->lang->line("fn_day") ?>
                                                 <i class="right fas fa-angle-left"></i>
                                             </p>
                                         </a>
@@ -370,13 +370,13 @@
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/order-loading"); ?>" class="nav-link">
                                                     <i class="far fa-eye nav-icon"></i>
-                                                    <p>View</p>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
                                                 </a>
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/order-loading/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
-                                                    <p>Add</p>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
                                                 </a>
                                             </li>
                                         </ul>
