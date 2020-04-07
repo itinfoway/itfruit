@@ -22,10 +22,11 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th><?=$this->lang->line("order_loading_weekday") ?></th>
-                            <th><?=$this->lang->line("ala_carte_head") ?></th>
-                            <th><?=$this->lang->line("sub_head") ?></th>
-                            <th><?=$this->lang->line("action") ?></th>
+                            <th><?= $this->lang->line("order_loading_name") ?></th>
+                            <th><?= $this->lang->line("order_loading_weekday") ?></th>
+                            <th><?= $this->lang->line("ala_carte_head") ?></th>
+                            <th><?= $this->lang->line("sub_head") ?></th>
+                            <th><?= $this->lang->line("action") ?></th>
                         </tr>
                     </thead>
                 </table>
@@ -41,51 +42,52 @@
         var table = $('#order_loading').DataTable({
             ajax: "<?= base_url("admin/setting/order_loading/json") ?>",
             responsive: true,
-			"order": [[ 0, 'desc' ]],
+            "order": [[0, 'desc']],
             columns: [{
                     "data": "id"
                 },
+                {"data": "name"},
                 {"data": "week_day",
                     render: function (data) {
-                        var view="" ;
-                        if(data==1){
-                            view +='Monday';
-                        }else if(data==2){
+                        var view = "";
+                        if (data == 1) {
+                            view += 'Monday';
+                        } else if (data == 2) {
                             view += 'Tuesday';
                         }
-                        else if(data==3){
+                        else if (data == 3) {
                             view += 'Wednesday';
                         }
-                        else if(data==4){
+                        else if (data == 4) {
                             view += 'Thursday';
                         }
-                        else if(data==5){
+                        else if (data == 5) {
                             view += 'Friday';
                         }
-                        else if(data==6){
+                        else if (data == 6) {
                             view += 'Saturday';
                         }
 
-                        else{
-                           view += 'Sunday';
-                        }                    
+                        else {
+                            view += 'Sunday';
+                        }
                         return view;
                     }},
-                
                 {"data": "ala_carte_loading"},
                 {"data": "subscription_loading"},
                 {"data": "id",
                     render: function (data, type, row) {
                         var view = '<a href="<?= base_url("admin/setting/order-loading/edit/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a> ';
+                        view += '<a href="<?= base_url("admin/setting/order-loading/delete/") ?>' + data + '" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a> ';
                         return view;
                     }
                 }
             ]
         });
-		table.on( 'order.dt search.dt', function () {
-			table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
-				cell.innerHTML = i+1;
-			} );
-		} ).draw();
+        table.on('order.dt search.dt', function () {
+            table.column(0, {search: 'applied', order: 'applied'}).nodes().each(function (cell, i) {
+                cell.innerHTML = i + 1;
+            });
+        }).draw();
     });
 </script>

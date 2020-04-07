@@ -192,9 +192,15 @@
             </div>
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
-                    <label>Select Date And Time</label>
+                    <label>Select Date</label>
                     <input class="form-control form_datetime" data-date-format="dd MM yyyy"  size="16" type="text" value="" data-link-field="orderbox" readonly>
                     <input  type="hidden" id="orderbox" name="orderbox" >
+                </div>
+                <div class="form-group col-8 offset-2">
+                    <label>Select Time</label>
+                    <select class="form-control" id="gettime">
+
+                    </select>
                 </div>
             </div>
             <div class="modal-footer">
@@ -389,6 +395,7 @@
 </section>
 <script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
+
     $('.form_datetime').datetimepicker({
         daysOfWeekDisabled: "6,0",
         weekStart: 1,
@@ -397,6 +404,24 @@
         todayHighlight: 1,
         startView: 2,
         minView: 2,
+    });
+    $(document).on("change", ".form_datetime", function () {
+        var date = $("#orderbox").val();
+        
+        $.ajax({
+            url: "<?= base_url("ala-cart-sliced/gettime") ?>",
+            type: 'Post',
+            data: {
+                <?= $this->security->get_csrf_token_name(); ?>:getCookie('<?= $this->security->get_csrf_token_name(); ?>'),
+                date: date       
+            },
+            dataType: "json",
+            async: false,
+            success: function (respText) {
+                
+            }
+        });
+
     });
     $(document).on("click", ".date-part", function () {
         $(".date-part").removeClass("first-date-part");

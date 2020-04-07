@@ -66,13 +66,15 @@ $lang["products_credit_plac"] = 'Enter Credit';
 $lang["products_price"] = 'Price';
 $lang["products_price_plac"] = 'Enter price';
 
-//product/products
+//admin/setting/order-loading
+$lang["order_loading_name"] = 'Name';
+$lang["order_loading_name_plac"] = 'Slot Name';
 $lang["order_loading"] = 'Order Loading';
-$lang["order_loading_weekday"] = 'week_day';
+$lang["order_loading_weekday"] = 'Days of the Week';
 $lang["ala_carte_head"] = 'Ala Carte';
-$lang["ala_carte_plac"] = 'Select Ala carte';
+$lang["ala_carte_plac"] = 'how many order loading in this slot';
 $lang["sub_head"] = 'Subscription';
-$lang["sub_plac"] = 'Select Subscription';
+$lang["sub_plac"] = 'how many order loading in this slot';
 
 
 // Users Form
