@@ -54,7 +54,7 @@
 									<span class="text"><?=$this->lang->line("fn_line"); ?> <a href="#"><?=$this->lang->line("fn_policy"); ?></a></span>
 								</div>
 							</div>
-						</div>
+						</div>	
 						<center><button class="btn btn2"> <?=$this->lang->line("fn_sign"); ?></button></center>
 						<div class="clearfix"></div>
 						<p><?=$this->lang->line("fn_account"); ?><span><a href="#"><?=$this->lang->line("fn_here"); ?></a></span></p>
