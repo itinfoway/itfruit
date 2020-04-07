@@ -193,7 +193,7 @@
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
                     <label>Select Date And Time</label>
-                    <input class="form-control form_datetime" data-date-format="dd MM yyyy - HH:ii p" size="16" type="text" value="" data-link-field="orderbox" readonly>
+                    <input class="form-control form_datetime" data-date-format="dd MM yyyy"  size="16" type="text" value="" data-link-field="orderbox" readonly>
                     <input  type="hidden" id="orderbox" name="orderbox" >
                 </div>
             </div>
@@ -203,31 +203,8 @@
         </div>
     </div>
 </div>
-<script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
-<script>
-    $('.form_datetime').datetimepicker({
-        weekStart: 1,
-        todayBtn: 1,
-        autoclose: 1,
-        todayHighlight: 1,
-        startView: 2,
-        forceParse: 0,
-        showMeridian: 1
-    });
-    $(document).on("click", ".date-part", function () {
-        $(".date-part").removeClass("first-date-part");
-        $(".date-part").find(".order").removeClass("first-order");
-        var inputDate = $(this).data("date");
-        $("#orderbox").attr("data-link-field", inputDate);
-        $(this).addClass("first-date-part");
-        $(this).find(".order").addClass("first-order");
-    });
-    $("#savedate").click(function () {
-        var inputDate = $("#orderbox").attr("data-link-field");
-        console.log(inputDate, $("#orderbox").val());
-        $("#" + inputDate).val($("#orderbox").val());
-    });
-</script>
+
+
 <section>
     <div class="random-part">
         <div class="container">
@@ -410,7 +387,30 @@
         </div>
     </div>
 </section>
+<script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
+    $('.form_datetime').datetimepicker({
+        daysOfWeekDisabled: "6,0",
+        weekStart: 1,
+        todayBtn: 1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+    });
+    $(document).on("click", ".date-part", function () {
+        $(".date-part").removeClass("first-date-part");
+        $(".date-part").find(".order").removeClass("first-order");
+        var inputDate = $(this).data("date");
+        $("#orderbox").attr("data-link-field", inputDate);
+        $(this).addClass("first-date-part");
+        $(this).find(".order").addClass("first-order");
+    });
+    $("#savedate").click(function () {
+        var inputDate = $("#orderbox").attr("data-link-field");
+        console.log(inputDate, $("#orderbox").val());
+        $("#" + inputDate).val($("#orderbox").val());
+    });
     $(document).on("click", ".plus", function () {
         var plus = parseInt($(this).parent(".countr").find("span").text());
         $(this).parent(".countr").find("span").text(plus + 1);

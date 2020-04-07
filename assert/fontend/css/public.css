@@ -3933,3 +3933,14 @@ button:focus {
     color: #29335c;
     margin-bottom: -1.5rem;
 }
+.datetimepicker table tr td.today{
+    background-image: url(../img/today-bg.png) !important;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.datetimepicker table tr td.active{
+    background-image: url(../img/date-bg.png) !important;
+    background-position: center;
+    background-size: 100% 100%;
+}
