@@ -35,7 +35,7 @@ $fromSubscription = [
             <div class="card-header">
                 <h3 class="card-title"><?=$this->lang->line("order_loading")?></h3>
                 <div class="card-tools">
-                    <a href="<?=  base_url("admin/setting/order_loading/")?>" class="btn btn-info btn-sm"><?=$this->lang->line("btn_list") ?></a>
+                    <a href="<?=  base_url("admin/setting/order-loading/")?>" class="btn btn-info btn-sm"><?=$this->lang->line("btn_list") ?></a>
                 </div>
             </div>
             <!-- /.card-header -->
@@ -43,7 +43,7 @@ $fromSubscription = [
             <div class="card-body">
             	<div class="form-group">
                     <label><?=$this->lang->line("order_loading_weekday") ?></label>
-                     <?=  form_dropdown("week_day",["1"=>"Monday","2"=>"Tuesday","3"=>"Wednesday","4"=>"Thursday","5"=>"Friday","6"=>"Saturday","7"=>"Sunday"], isset($week_day) ? $week_day : null, [ "id" => "type",'readonly'=>'true',"class" => "form-control"]); ?>
+                     <?=  form_dropdown("week_day",["1"=>"Monday","2"=>"Tuesday","3"=>"Wednesday","4"=>"Thursday","5"=>"Friday","6"=>"Saturday","7"=>"Sunday"], isset($week_day) ? $week_day : null, [ "id" => "type","disabled"=>"disabled","class" => "form-control"]); ?>
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("ala_carte_head") ?></label>

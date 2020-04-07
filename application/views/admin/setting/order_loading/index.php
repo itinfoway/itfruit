@@ -13,7 +13,7 @@
             <div class="card-header">
                 <h3 class="card-title"><?= $this->lang->line("order_loading") ?></h3>
                 <div class="card-tools">
-                    <a href="<?= base_url("admin/setting/order_loading/add") ?>" class="btn btn-success btn-sm"><?= $this->lang->line("btn_add") ?></a>
+                    <a href="<?= base_url("admin/setting/order-loading/add") ?>" class="btn btn-success btn-sm"><?= $this->lang->line("btn_add") ?></a>
                 </div>
             </div>
             <!-- /.card-header -->
@@ -76,8 +76,7 @@
                 {"data": "subscription_loading"},
                 {"data": "id",
                     render: function (data, type, row) {
-                        var view = '<a href="<?= base_url("admin/setting/order_loading/edit/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a> ';
-                        view += '<a href="<?= base_url("admin/setting/order_loading/delete/") ?>' + data + '" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a> ';
+                        var view = '<a href="<?= base_url("admin/setting/order-loading/edit/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a> ';
                         return view;
                     }
                 }

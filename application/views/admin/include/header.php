@@ -119,29 +119,29 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item has-treeview">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fas fa-address-book"></i>
-                                    <p>
-                                        Contacts
-                                        <i class="right fas fa-angle-left"></i>
-                                    </p>
+                            <!--                            <li class="nav-item has-treeview">
+                                                            <a href="#" class="nav-link">
+                                                                <i class="nav-icon fas fa-address-book"></i>
+                                                                <p>
+                                                                    Contacts
+                                                                    <i class="right fas fa-angle-left"></i>
+                                                                </p>
+                                                            </a>
+                                                            <ul class="nav nav-treeview" style="display: none;">-->
+                            <li class="nav-item">
+                                <a href="<?= base_url("admin/contacts"); ?>" class="nav-link">
+                                    <i class="fas fa-address-book nav-icon"></i>
+                                    <p>Contacts</p>
                                 </a>
-                                <ul class="nav nav-treeview" style="display: none;">
-                                    <li class="nav-item">
-                                        <a href="<?= base_url("admin/contacts"); ?>" class="nav-link">
-                                            <i class="far fa-eye nav-icon"></i>
-                                            <p>View</p>
-                                        </a>
-                                    </li>
-                                    <!-- <li class="nav-item">
-                                      <a href="<?= base_url("admin/contacts/add"); ?>" class="nav-link">
-                                <i class="far fa-save nav-icon"></i>
-                                <p>Add</p>
-                              </a>
-                            </li> -->
-                                </ul>
                             </li>
+                            <!-- <li class="nav-item">
+                              <a href="<?= base_url("admin/contacts/add"); ?>" class="nav-link">
+                        <i class="far fa-save nav-icon"></i>
+                        <p>Add</p>
+                      </a>
+                    </li>
+                        </ul>
+                    </li> -->
                             <li class="nav-item has-treeview">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas  fa-cart-plus"></i>
@@ -350,6 +350,31 @@
                                             </li>
                                             <li class="nav-item">
                                                 <a href="<?= base_url("admin/setting/slidermain/add"); ?>" class="nav-link">
+                                                    <i class="far fa-save nav-icon"></i>
+                                                    <p>Add</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item has-treeview">
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-calendar-day nav-icon"></i>
+                                            <p>
+                                                Day of loading
+                                                <i class="right fas fa-angle-left"></i>
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="<?= base_url("admin/setting/order-loading"); ?>" class="nav-link">
+                                                    <i class="far fa-eye nav-icon"></i>
+                                                    <p>View</p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="<?= base_url("admin/setting/order-loading/add"); ?>" class="nav-link">
                                                     <i class="far fa-save nav-icon"></i>
                                                     <p>Add</p>
                                                 </a>
