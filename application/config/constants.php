@@ -83,6 +83,9 @@ defined('EXIT_USER_INPUT')     or define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       or define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      or define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      or define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+defined('GOOGLE_MAP_KEY')      or define('GOOGLE_MAP_KEY', "AIzaSyC7jmfunuDsGczmSZbyffDLrQr7DgeDMjs"); // highest automatically-assigned error code
+
 defined('ADMIN_NAME')      or define('ADMIN_NAME', "admin"); // highest automatically-assigned error code
 defined('FAQ_NAME')      or define('FAQ_NAME', "faq"); // highest automatically-assigned error code
 defined('VITAMIN_NAME')      or define('VITAMIN_NAME', "vitamin"); // highest automatically-assigned error code

@@ -92,4 +92,4 @@
 </section>
 <?= form_close() ?>
 <script src="<?=  base_url("assert/fontend/js/address.js")?>"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7jmfunuDsGczmSZbyffDLrQr7DgeDMjs&amp;ver=2.1.6&libraries=places&callback=initAutocomplete" async defer></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=<?=GOOGLE_MAP_KEY?>&amp;ver=2.1.6&libraries=places&callback=initAutocomplete" async defer></script>
