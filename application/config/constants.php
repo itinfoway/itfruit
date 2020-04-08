@@ -101,3 +101,4 @@ defined('WAITING_TIME')      or define('WAITING_TIME', "60"); // highest automat
 defined('PRODUCTS_NAME')      or define('PRODUCTS_NAME', "products"); // highest automatically-assigned error
 defined('ORDER_LOADING')      or define('ORDER_LOADING', "order_loading"); // highest automatically-assigned error
 defined('LOCAL_SETTING')      or define('LOCAL_SETTING', "local_setting"); // highest automatically-assigned error
+defined('TODAY_ORDER')      or define('TODAY_ORDER', "today_order"); // highest automatically-assigned error

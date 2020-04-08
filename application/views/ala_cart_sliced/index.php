@@ -33,19 +33,20 @@
     <div class="container my-container">
         <div class="date-time">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" >
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox1">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/pinapple.svg"></center>
-                    <div class="date-part first-date-part" data-toggle="modal" data-target="#dateAndTime1" data-date="orderbox1">
+                    <div class="date-part" data-toggle="modal" data-target="#dateAndTime1" data-date="1">
                         <img class="date-close" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
                         <div class="time">
                             <div>
                                 <spna class="input-group-addon">
                                     <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/date.png">
-                                </spna><p>15 jan</p>
-                                <p>2019</p>
+                                </spna>
+                                <p class="order-date"></p>
+                                <p class="order-year"></p>
                             </div>
                             <div>
-                                <div class="order first-order">
+                                <div class="order">
                                     <div class="text">
                                         <p>order</p>
                                         <p>1</p>
@@ -54,14 +55,14 @@
                             </div>
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/time.png">
-                                <p>2 PM</p>
+                                <p class="order-time"></p>
                             </div>
                         </div>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/line.png" width="45%" height="3px">
-                        <p>BERRIES SUMMER 1</p>
-                        <p>TROPICAL THUNDAR </p>
+                        <div id="items">
+                        </div>
                     </div>
-                    <input  type="hidden" id="orderbox1" name="orderbox1" >
+                    <input  type="hidden"  name="orderbox1" class="input-date">
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
@@ -193,7 +194,7 @@
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
                     <label>Select Date</label>
-                    <input class="form-control form_datetime" data-date-format="dd MM yyyy"  size="16" type="text" value="" data-link-field="orderbox" readonly>
+                    <input class="form-control form_datetime" data-date-format="dd M yyyy"  size="16" type="text" value="" data-link-field="orderbox" readonly>
                     <input  type="hidden" id="orderbox" name="orderbox" >
                 </div>
                 <div class="form-group col-8 offset-2">
@@ -215,187 +216,76 @@
     <div class="random-part">
         <div class="container">
             <h1>RANDOM A BOX FOR ME!</h1>
-            <div class="row">
-                <div class="col-sm-6 mb-5">
-                    <center><h2 class="carte-title">title</h2></center>
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        <span>0</span>
-                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
+            <?php
+            if (!empty($products)) {
+                $row = 0;
+                foreach ($products as $product) {
+                    if ($row == 0) {
+                        echo'<div class="row">';
+                    }
+                    $row++;
+                    ?>
+                    <div class="col-sm-6 mb-5">
+                        <center><h2 class="carte-title"><?= $product->name ?></h2></center>
+                        <img class="img-responsive" src="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
+                        <center>
+                            <div class="text">
+                                <div class="row">
+                                    <?php
+                                    $fruit = $product->fruit;
+                                    $count = count($fruit);
+                                    $count_d = round($count / 2);
+                                    ?>
+                                    <div class="col-xs-6">
+                                        <ul class="left-part">
+                                            <?php
+                                            for ($cou = 0; $cou < $count_d; $cou++) {
+                                                ?>
+                                                <li><?= $fruit[$cou] ?></li>
+                                                <?php
+                                            }
+                                            ?>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-xs-6">
+                                        <ul class="right-part">
+                                            <?php
+                                            for ($cou = $count_d; $cou < $count; $cou++) {
+                                                ?>
+                                                <li><?= $fruit[$cou] ?></li>
+                                                <?php
+                                            }
+                                            ?>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                        </center>
+                        <div class="countr">
+                            <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                            <span>0</span>
+                            <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                         </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        <span>0</span>
-                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        <span>0</span>
-                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        <span>0</span>
-                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        <span>0</span>
-                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/box.png">
-                    <center>
-                        <div class="text">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <ul class="left-part">
-                                        <li>blueberries</li>
-                                        <li>raspberries</li>
-                                        <li>strawberries</li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <ul class="right-part">
-                                        <li>natural walnuts</li>
-                                        <li>watermelon</li>
-                                        <li>dark chocolate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </center>
-                    <div class="countr">
-                        <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                        <span>0</span>
-                        <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                    </div>
-                </div>
-            </div>
+                    <?php
+                    if ($row == 2) {
+                        echo'</div>';
+                        $row = 0;
+                    }
+                }
+                if (count($products) % 2 != 0) {
+                    echo'</div>';
+                }
+            }
+            ?>          
         </div>
     </div>
 </section>
 <script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
-
+    var min_item = {};
+    var all_item = {};
     $('.form_datetime').datetimepicker({
         daysOfWeekDisabled: "6,0",
         weekStart: 1,
@@ -407,18 +297,21 @@
     });
     $(document).on("change", ".form_datetime", function () {
         var date = $("#orderbox").val();
-        
+
         $.ajax({
             url: "<?= base_url("ala-cart-sliced/gettime") ?>",
             type: 'Post',
             data: {
-                <?= $this->security->get_csrf_token_name(); ?>:getCookie('<?= $this->security->get_csrf_token_name(); ?>'),
-                date: date       
+<?= $this->security->get_csrf_token_name(); ?>: getCookie('<?= $this->security->get_csrf_token_name(); ?>'),
+                date: date
             },
             dataType: "json",
             async: false,
             success: function (respText) {
-                
+                $("#gettime").html("");
+                for (id in respText.time) {
+                    $("#gettime").append("<option value='" + id + "' data-item='" + respText.time[id].min_item + "'>" + respText.time[id].time + "</option>")
+                }
             }
         });
 
@@ -433,17 +326,35 @@
     });
     $("#savedate").click(function () {
         var inputDate = $("#orderbox").attr("data-link-field");
-        console.log(inputDate, $("#orderbox").val());
-        $("#" + inputDate).val($("#orderbox").val());
+        var date = $(".form_datetime").val();
+        date = date.split(" ");
+        $("#orderbox" + inputDate).find(".order-date").text(date[0] + " " + date[1]);
+        $("#orderbox" + inputDate).find(".order-year").text(date[2]);
+        var time = $("#gettime").find("option:selected").text();
+        var item = $("#gettime").find("option:selected").attr("data-item");
+        var id=$("#gettime").val();
+        $(".first-date-part").attr("data-itme-value",id);
+        min_item[id] = parseInt(item);
+        all_item[id] = parseInt(0);
+        $("#orderbox" + inputDate).find(".order-time").text(time);
+        $("#orderbox" + inputDate).find(".input-date").val($("#orderbox").val());
     });
     $(document).on("click", ".plus", function () {
-        var plus = parseInt($(this).parent(".countr").find("span").text());
-        $(this).parent(".countr").find("span").text(plus + 1);
+        var inputDate = $(".first-date-part").attr("data-itme-value");
+        if (all_item[inputDate] < min_item[inputDate]) {
+            var plus = parseInt($(this).parent(".countr").find("span").text());
+            $(this).parent(".countr").find("span").text(plus + 1);
+            all_item[inputDate]++;
+        }
     });
     $(document).on("click", ".minus", function () {
+         var inputDate = $(".first-date-part").attr("data-itme-value");
         var minus = parseInt($(this).parent(".countr").find("span").text());
         if (minus != 0) {
             $(this).parent(".countr").find("span").text(minus - 1);
+        }
+        if (all_item[inputDate]!=0){
+            all_item[inputDate]--;
         }
     });
 </script>

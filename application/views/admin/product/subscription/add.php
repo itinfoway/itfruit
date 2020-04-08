@@ -7,6 +7,7 @@
 $fromType = [
     'type' => 'hidden',
     "name" => "type",
+    "value" => "2",
 ];
 $fromName = [
     'type' => 'text',
@@ -16,7 +17,7 @@ $fromName = [
     "data-validation-length" => "2-25",
     'id' => "name",
     "placeholder" => $this->lang->line("products_name_plac"),
-    'value' => isset($name) ? $name : "",
+    'value' => isset($product->name) ? $product->name : "",
 ];
 
 $fromPrice = [
@@ -24,10 +25,11 @@ $fromPrice = [
     "name" => "price",
     'class' => 'form-control',
     "data-validation" => "length,number",
-    "data-validation-length" => "2-12",
+    "data-validation-length" => "1-5",
+    "data-validation-allowing" => "float",
     'id' => "price",
     "placeholder" => $this->lang->line("products_price_plac"),
-    'value' => isset($price) ? $price : "",
+    'value' => isset($product->price) ? $product->price : "",
 ];
 ?>
 <script src="<?= base_url("assert/admin/croppie/croppie.js") ?>"></script>
@@ -44,7 +46,7 @@ $fromPrice = [
             </div>
             <!-- /.card-header -->
             <?= form_open_multipart(); ?>
-           <?= form_input($fromType); ?>
+            <?= form_input($fromType); ?>
             <div class="card-body">
                 <div class="form-group">
                     <label><?= $this->lang->line("products_name") ?></label>
@@ -52,7 +54,7 @@ $fromPrice = [
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("fruit_hed") ?></label>
-                    <?= form_multiselect("fruit_ids", $fruit, isset($data->fruit_ids) ? json_decode($data->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("products_select_fruit_plac")]); ?>
+                    <?= form_multiselect("fruit_ids[]", $fruit, isset($product->fruit_ids) ? json_decode($product->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("products_select_fruit_plac")]); ?>
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("products_price") ?></label>
@@ -74,9 +76,9 @@ $fromPrice = [
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <?= isset($img) ? '<img src="' . base_url("assert/products/subscription/" . $img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
+                        <?= isset($product->img) ? '<img src="' . base_url("assert/products/subscription/" . $product->img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
                         <div class="d-none">
-                            <?= isset($img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
+                            <?= isset($product->img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
                         </div>
                     </div>
                     <input type="hidden" name="input_image" id="input_image">
@@ -161,7 +163,7 @@ $fromPrice = [
                 enableExif: true,
                 enforceBoundary: false
             });
-<?= isset($img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/products/subscription/" . $img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/products/subscription/user_demo.png") . "');"; ?>
+<?= isset($product->img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/products/subscription/" . $product->img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/products/subscription/user_demo.png") . "');"; ?>
             $('#upload').on('change', function () {
                 readFile(this);
 

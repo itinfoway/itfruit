@@ -20,8 +20,8 @@ class ala_carte extends Controller {
     public function index() {
         $this->display("index");
     }
-    public function add()
-    {
+
+    public function add() {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
                 $image_parts = explode(";base64,", $this->input->post("input_image"));
@@ -30,7 +30,7 @@ class ala_carte extends Controller {
                 $image_base64 = base64_decode($image_parts[1]);
                 $file = uniqid() . '.png';
                 file_put_contents("./assert/products/ala_carte/" . $file, $image_base64);
-                $array =  $this->input->post();
+                $array = $this->input->post();
                 unset($array["input_image"]);
                 $array["img"] = $file;
             } else {
@@ -53,12 +53,9 @@ class ala_carte extends Controller {
         }
         $this->display('add', $data);
     }
-    
 
-
-    public function edit($id)
-    {
-        $data = $this->product_model->view(["id"=>$id]);
+    public function edit($id) {
+        $data = $this->product_model->view(["id" => $id]);
 
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             if (isset($_FILES['img']['name']) && !empty($_FILES['img']['name'])) {
@@ -75,7 +72,7 @@ class ala_carte extends Controller {
                 unset($array["input_image"]);
                 $array["img"] = $file;
             } else {
-                $array =  $this->input->post();
+                $array = $this->input->post();
                 unset($array["input_image"]);
             }
             if (isset($array["delete"])) {
@@ -87,6 +84,7 @@ class ala_carte extends Controller {
                 }
                 unset($array["delete"]);
             }
+            $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             $data = $this->product_model->edit($array, $id);
             if (!empty($data)) {
                 redirect("admin/product/ala_carte/add");
@@ -95,15 +93,14 @@ class ala_carte extends Controller {
             }
         }
         $fruit = $this->fruit_model->view();
-
+        $data["product"] = $data[0];
         foreach ($fruit as $f) {
             $data["fruit"][$f->id] = $f->name;
         }
         $this->display("add", $data);
     }
 
-    public function delete($id)
-    {
+    public function delete($id) {
         $data = $this->product_model->delete($id);
         if (!empty($data)) {
             redirect("admin/product/ala_carte/index");
@@ -112,11 +109,10 @@ class ala_carte extends Controller {
         }
     }
 
-  public function json($name = null)
-    {
+    public function json($name = null) {
         if (is_null($name)) {
             $select = !empty($this->input->get("select")) ? $this->input->get("select") : "*";
-            $data["products"]["data"] = $this->product_model->view(["type"=>2], $select);
+            $data["products"]["data"] = $this->product_model->view(["type" => 1], $select);
         } else {
             $name = base64_decode(urldecode($name));
             $old = $this->input->get("name");
@@ -128,10 +124,9 @@ class ala_carte extends Controller {
             $data["products"] = TRUE;
         }
         return $this->output
-            ->set_content_type('application/json')
-            ->set_status_header(200) // Return status
-            ->set_output(json_encode($data["products"]));
+                        ->set_content_type('application/json')
+                        ->set_status_header(200) // Return status
+                        ->set_output(json_encode($data["products"]));
     }
-
 
 }

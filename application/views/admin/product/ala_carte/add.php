@@ -15,10 +15,10 @@ $fromName = [
     "name" => "name",
     'class' => 'form-control',
     "data-validation" => "length",
-    "data-validation-length" => "2-25",
-	"placeholder" => $this->lang->line("products_name_plac"),
+    "data-validation-length" => "1-5",
+    "placeholder" => $this->lang->line("products_name_plac"),
     'id' => "name",
-    'value' => isset($name) ? $name : "",
+    'value' => isset($product->name) ? $product->name : "",
 ];
 
 $fromCredit = [
@@ -29,7 +29,7 @@ $fromCredit = [
     "data-validation-length" => "2-12",
     'id' => "min_credit",
     "placeholder" => $this->lang->line("products_credit_plac"),
-    'value' => isset($min_credit) ? $min_credit : "",
+    'value' => isset($product->min_credit) ? $product->min_credit : "",
 ];
 ?>
 <script src="<?= base_url("assert/admin/croppie/croppie.js") ?>"></script>
@@ -55,7 +55,7 @@ $fromCredit = [
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("fruit_hed") ?></label>
-                    <?= form_multiselect("fruit_ids", $fruit, isset($data->fruit_ids) ? json_decode($data->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("products_select_fruit_plac")]); ?>
+                    <?= form_multiselect("fruit_ids[]", $fruit, isset($product->fruit_ids) ? json_decode($product->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("products_select_fruit_plac")]); ?>
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("products_credit") ?></label>
@@ -77,9 +77,9 @@ $fromCredit = [
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <?= isset($img) ? '<img src="' . base_url("assert/products/ala_carte/" . $img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
+                        <?= isset($product->img) ? '<img src="' . base_url("assert/products/ala_carte/" . $product->img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
                         <div class="d-none">
-                            <?= isset($img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
+                            <?= isset($product->img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
                         </div>
                     </div>
                     <input type="hidden" name="input_image" id="input_image">
@@ -165,7 +165,7 @@ $fromCredit = [
                 enableExif: true,
                 enforceBoundary: false
             });
-<?= isset($img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/" . $img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/user_demo.png") . "');"; ?>
+<?= isset($product->img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/" . $product->img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/products/ala_carte/user_demo.png") . "');"; ?>
             $('#upload').on('change', function () {
                 readFile(this);
 
