@@ -27,6 +27,10 @@
         <link rel="stylesheet" href="<?= base_url("assert/fontend/css/style.css") ?>" type="text/css" />
         <link rel="stylesheet" href="<?= base_url("assert/fontend/css/public.css") ?>" type="text/css" />
         <script type="text/javascript" src="<?= base_url("assert/fontend/jquery/jquery-3.3.1.js"); ?>"></script>
+        <link rel="stylesheet" href="<?= base_url(); ?>assert/fontend/toastr/toastr.min.css">
+        <!-- Toastr -->
+        <script src="<?= base_url(); ?>assert/fontend/toastr/toastr.min.js"></script>
+
         <!-- stylesheet ends -->
     </head>
 
@@ -45,7 +49,18 @@
                     <img class="img-responsive logo" src="<?= base_url("assert/fontend/img/logo.png") ?>">
                 </a>
                 <div class="user">
-                    <img class="img-responsive" src="<?= base_url("assert/fontend/img/wallet-01.svg") ?>">
+                    <div class="wallet carte-notification">
+                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/wallet-01.svg") ?>">
+                        <div class="notification">
+                            2000
+                        </div>
+                    </div>
+                    <div class="carte-notification">
+                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/carte.svg") ?>">
+                        <div class="notification" id="cart-notification">
+                            25
+                        </div>
+                    </div>
                     <?php
                     if ($this->session->has_userdata("user_login")) {
                         ?>

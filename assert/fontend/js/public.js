@@ -23,25 +23,19 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie() {
-    var user = getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-        user = prompt("Please enter your name:", "");
-        if (user != "" && user != null) {
-            setCookie("username", user, 365);
-        }
-    }
-}
- $("#sliced-loading").show();
+$("#sliced-loading").show();
 $(document).ajaxStart(function () {
     $("#sliced-loading").show();
 });
 $(document).ajaxStop(function () {
     $("#sliced-loading").hide();
 });
+$("#cart-notification").hide();
 $(window).load(function () {
     $("#sliced-loading").hide();
-    
+    if (getCookie("crt") != "")
+    {
+        $("#cart-notification").show();
+        $("#cart-notification").text(getCookie("crt"));
+    }
 });

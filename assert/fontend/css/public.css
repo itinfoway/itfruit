@@ -2272,8 +2272,18 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 .cart-table .col {
     padding: 0px 5px;
 }
+.date-close {
+    position: absolute;
+    top: 22%;
+    z-index: 1;
+    right: -23px;
+}
 
 @media (max-width: 767px) {
+    
+    .date-close {
+        right: 21px;
+    }
     section .cart .cart-part .ala .ala-text2 {
         left: 87px;
         right: 0;
@@ -2354,6 +2364,9 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 **/
 
 @media (min-width: 576px) {
+    .date-close {
+        right: 19px;
+    }
     section .contact-part .social .img-part {
         margin: 0 auto;
         width: 50%;
@@ -2553,6 +2566,9 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 }
 
 @media (min-width: 768px) {
+    .date-close {
+        right: -5px;
+    }
     .top-nav .dd-icon {
         position: static;
         margin-top: 24px;
@@ -3005,6 +3021,9 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 **/
 
 @media (min-width: 992px) {
+    .date-close {
+        right: 62px;
+    }
     .top-nav .dd-text ul li {
         font-size: 23px;
     }
@@ -3409,6 +3428,9 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 **/
 
 @media (min-width: 1200px) {
+    .date-close {
+        right:-21px;
+    }
     section .about .title-part {
         margin-bottom: 75px;
     }
@@ -3543,13 +3565,14 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
         padding-left: 90px;
     }
     section .date-time .totel {
-        width: 183px;
+        width: 100%;
     }
     section .date-time .totel p {
         font-size: 13px;
     }
     section .date-time .date-part {
         width: 205px;
+        min-height: 188px;
     }
     section .date-time .date-part .time {
         padding: 0px 12%;
@@ -3558,7 +3581,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
         font-size: 13px;
     }
     section .date-time .totel {
-        width: 190px;
+        width: 100%;
     }
     section .bill-pay .billing {
         padding: 69px 72px;
@@ -3676,6 +3699,9 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 }
 
 @media (min-width: 1300px) {
+    .date-close {
+        right:-27px;
+    }
     .top-nav .dd-text {
         top: 79px;
         right: 90px;
@@ -3749,12 +3775,13 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     }
     section .date-time .date-part {
         width: 228px;
+        min-height: 188px;
     }
     section .date-time .date-part .time {
         padding: 0px 13%;
     }
     section .date-time .totel {
-        width: 228px;
+        width: 100%;
     }
     section .plan {
         padding: 58px 130px;
@@ -3784,6 +3811,9 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 }
 
 @media (min-width: 1400px) {
+    .date-close {
+        right:-30px;
+    }
     .top-nav .dd-text {
         top: 79px;
         right: 149px;
@@ -3974,7 +4004,7 @@ button:focus {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
+
     animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
@@ -4051,4 +4081,15 @@ button:focus {
     bottom: -8px;
     z-index: 1;
     width: 100%;
+}
+.product-credit{
+    color: #29335c;
+    margin-top: -1.5rem
+}
+.credit{
+    color: #29335c;
+}
+.pointer {cursor: pointer;}
+.carte-notification {
+    position: relative;
 }

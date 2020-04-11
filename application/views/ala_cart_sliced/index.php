@@ -30,13 +30,13 @@
     </div>
 </section>
 <section>
-    <div class="container my-container">
+    <div class="container-fluid">
         <div class="date-time">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox1">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/pinapple.svg"></center>
-                    <div class="date-part" data-toggle="modal" data-target="#dateAndTime1" data-date="1">
-                        <img class="date-close" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <img class="date-close pointer" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <div class="date-part pointer" data-toggle="modal" data-target="#dateAndTime1" data-date="1" data-itme-value="">
                         <div class="time">
                             <div>
                                 <spna class="input-group-addon">
@@ -59,19 +59,21 @@
                             </div>
                         </div>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/line.png" width="45%" height="3px">
-                        <div id="items">
+                        <div class="data-items">
                         </div>
                     </div>
-                    <input  type="hidden"  name="orderbox1" class="input-date">
+                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
                 </div>
 
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox2">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/grapes.svg"></center>
-                    <div class="date-part" data-toggle="modal" data-target="#dateAndTime1" data-date="orderbox2">
-                        <img class="date-close" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <img class="date-close pointer" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <div class="date-part pointer" data-toggle="modal" data-target="#dateAndTime1" data-date="2" data-itme-value="">
                         <div class="time">
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/date.png">
+                                <p class="order-date"></p>
+                                <p class="order-year"></p>
                             </div>
                             <div>
                                 <div class="order">
@@ -83,21 +85,24 @@
                             </div>
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/time.png">
+                                <p class="order-time"></p>
                             </div>
                         </div>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/line.png" width="45%" height="3px">
-                        <p>BERRIES SUMMER 1</p>
-                        <p>TROPICAL THUNDAR </p>
+                        <div class="data-items">
+                        </div>
                     </div>
-                    <input  type="hidden" id="orderbox2" name="orderbox2" >
+                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox3">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/berry.svg"></center>
-                    <div class="date-part" data-toggle="modal" data-target="#dateAndTime1" data-date="orderbox3">
-                        <img class="date-close" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <img class="date-close pointer" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <div class="date-part pointer" data-toggle="modal" data-target="#dateAndTime1" data-date="3" data-itme-value="">
                         <div class="time">
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/date.png">
+                                <p class="order-date"></p>
+                                <p class="order-year"></p>
                             </div>
                             <div>
                                 <div class="order">
@@ -109,21 +114,24 @@
                             </div>
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/time.png">
+                                <p class="order-time"></p>
                             </div>
                         </div>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/line.png" width="45%" height="3px">
-                        <p>BERRIES SUMMER 1</p>
-                        <p>TROPICAL THUNDAR </p>
+                        <div class="data-items">
+                        </div>
                     </div>
-                    <input  type="hidden" id="orderbox3" name="orderbox3" >
+                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
                 </div>
-                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox4">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/orange.svg"></center>
-                    <div class="date-part" data-toggle="modal" data-target="#dateAndTime1" data-date="orderbox4">
-                        <img class="date-close" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <img class="date-close pointer" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <div class="date-part pointer" data-toggle="modal" data-target="#dateAndTime1" data-date="4" data-itme-value="">
                         <div class="time">
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/date.png">
+                                <p class="order-date"></p>
+                                <p class="order-year"></p>
                             </div>
                             <div>
                                 <div class="order">
@@ -135,21 +143,24 @@
                             </div>
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/time.png">
+                                <p class="order-time"></p>
                             </div>
                         </div>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/line.png" width="45%" height="3px">
-                        <p>BERRIES SUMMER 1</p>
-                        <p>TROPICAL THUNDAR </p>
+                        <div class="data-items">
+                        </div>
                     </div>
-                    <input  type="hidden" id="orderbox4" name="orderbox4" >
+                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox5">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/sitafal.svg"></center>
-                    <div class="date-part" data-toggle="modal" data-target="#dateAndTime1" data-date="orderbox5">
-                        <img class="date-close" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <img class="date-close pointer" src="<?= base_url(); ?>assert/fontend/img/date-close.png">
+                    <div class="date-part pointer" data-toggle="modal" data-target="#dateAndTime1" data-date="5" data-itme-value="">
                         <div class="time">
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/date.png">
+                                <p class="order-date"></p>
+                                <p class="order-year"></p>
                             </div>
                             <div>
                                 <div class="order">
@@ -161,18 +172,19 @@
                             </div>
                             <div>
                                 <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/time.png">
+                                <p class="order-time"></p>
                             </div>
                         </div>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/line.png" width="45%" height="3px">
-                        <p>BERRIES SUMMER 1</p>
-                        <p>TROPICAL THUNDAR </p>
+                        <div class="data-items">
+                        </div>
                     </div>
-                    <input  type="hidden" id="orderbox5" name="orderbox5" >
+                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/banana.svg"></center>
                     <div class="totel">
-                        <p>total: 200 credit</p>
+                        <p>total: <span id="creditTotal">0</span> credit</p>
                     </div>
                     <div class="totel">
                         <p>checkout</p>
@@ -194,13 +206,12 @@
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
                     <label>Select Date</label>
-                    <input class="form-control form_datetime" data-date-format="dd M yyyy"  size="16" type="text" value="" data-link-field="orderbox" readonly>
+                    <input class="form-control form_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="orderbox" readonly>
                     <input  type="hidden" id="orderbox" name="orderbox" >
                 </div>
-                <div class="form-group col-8 offset-2">
+                <div class="form-group col-8 offset-2" style="display:none">
                     <label>Select Time</label>
                     <select class="form-control" id="gettime">
-
                     </select>
                 </div>
             </div>
@@ -225,12 +236,13 @@
                     }
                     $row++;
                     ?>
-                    <div class="col-sm-6 mb-5">
+                    <div class="col-sm-6 mb-5 products" typeof="schema:Product">
                         <center><h2 class="carte-title"><?= $product->name ?></h2></center>
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
+                        <img class="img-responsive" src="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img; ?>" title="<?= $product->name ?>"  rel="schema:image" resource="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
                         <center>
+                            <center><h2 class="product-credit"><span><?= $product->min_credit ?></span> CREDIT</h2></center>
                             <div class="text">
-                                <div class="row">
+                                <div class="row" property="schema:description" content="<?= implode(",", $product->fruit); ?>">
                                     <?php
                                     $fruit = $product->fruit;
                                     $count = count($fruit);
@@ -262,10 +274,10 @@
                                 </div>
                             </div>
                         </center>
-                        <div class="countr">
-                            <img class="img-responsive minus" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
+                        <div class="countr" data-value="<?= urlencode(base64_encode($product->id)) ?>"  property="schema:name" content="<?= $product->name ?>" data-credit="<?= $product->min_credit ?>">
+                            <img class="img-responsive minus pointer" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
                             <span>0</span>
-                            <img class="img-responsive plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                            <img class="img-responsive plus pointer" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                         </div>
                     </div>
                     <?php
@@ -284,21 +296,20 @@
 </section>
 <script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
-    var min_item = {};
-    var all_item = {};
+    var error_order_carte_not_set="<?= $this->lang->line("fn_error_order_carte_not_set");?>";
     $('.form_datetime').datetimepicker({
         daysOfWeekDisabled: "6,0",
         weekStart: 1,
         todayBtn: 1,
         autoclose: 1,
+        startDate: '<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>',
         todayHighlight: 1,
         startView: 2,
         minView: 2,
     });
-    $(document).on("change", ".form_datetime", function () {
+    function getTime() {
         var date = $("#orderbox").val();
-
-        $.ajax({
+        return $.ajax({
             url: "<?= base_url("ala-cart-sliced/gettime") ?>",
             type: 'Post',
             data: {
@@ -312,49 +323,10 @@
                 for (id in respText.time) {
                     $("#gettime").append("<option value='" + id + "' data-item='" + respText.time[id].min_item + "'>" + respText.time[id].time + "</option>")
                 }
+                $("#gettime").parent("div").show();
             }
         });
+    }
 
-    });
-    $(document).on("click", ".date-part", function () {
-        $(".date-part").removeClass("first-date-part");
-        $(".date-part").find(".order").removeClass("first-order");
-        var inputDate = $(this).data("date");
-        $("#orderbox").attr("data-link-field", inputDate);
-        $(this).addClass("first-date-part");
-        $(this).find(".order").addClass("first-order");
-    });
-    $("#savedate").click(function () {
-        var inputDate = $("#orderbox").attr("data-link-field");
-        var date = $(".form_datetime").val();
-        date = date.split(" ");
-        $("#orderbox" + inputDate).find(".order-date").text(date[0] + " " + date[1]);
-        $("#orderbox" + inputDate).find(".order-year").text(date[2]);
-        var time = $("#gettime").find("option:selected").text();
-        var item = $("#gettime").find("option:selected").attr("data-item");
-        var id=$("#gettime").val();
-        $(".first-date-part").attr("data-itme-value",id);
-        min_item[id] = parseInt(item);
-        all_item[id] = parseInt(0);
-        $("#orderbox" + inputDate).find(".order-time").text(time);
-        $("#orderbox" + inputDate).find(".input-date").val($("#orderbox").val());
-    });
-    $(document).on("click", ".plus", function () {
-        var inputDate = $(".first-date-part").attr("data-itme-value");
-        if (all_item[inputDate] < min_item[inputDate]) {
-            var plus = parseInt($(this).parent(".countr").find("span").text());
-            $(this).parent(".countr").find("span").text(plus + 1);
-            all_item[inputDate]++;
-        }
-    });
-    $(document).on("click", ".minus", function () {
-         var inputDate = $(".first-date-part").attr("data-itme-value");
-        var minus = parseInt($(this).parent(".countr").find("span").text());
-        if (minus != 0) {
-            $(this).parent(".countr").find("span").text(minus - 1);
-        }
-        if (all_item[inputDate]!=0){
-            all_item[inputDate]--;
-        }
-    });
 </script>
+<script src="<?= base_url() ?>assert/fontend/js/ala-carte.js"></script>

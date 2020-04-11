@@ -13,6 +13,7 @@ $lang["btn_reset"] = 'Cancel';
 $lang["action"] = 'Action';
 $lang["sr_no"] = 'Sr.No.';
 $lang["status"] = 'Status';
+$lang["fn_error_order_carte_not_set"] = 'Firs set of order carte thin add product';
 
 //Faq
 $lang["faq_head"] = 'FAQ';

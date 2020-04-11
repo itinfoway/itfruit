@@ -63,9 +63,6 @@
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 
-<link rel="stylesheet" href="<?= base_url(); ?>assert/fontend/toastr/toastr.min.css">
-<!-- Toastr -->
-<script src="<?= base_url(); ?>assert/fontend/toastr/toastr.min.js"></script>
 
 <?php
 if ($this->session->has_userdata("success")) {
