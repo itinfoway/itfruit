@@ -55,22 +55,26 @@
                             2000
                         </div>
                     </div>
-                    <div class="carte-notification">
-                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/carte.svg") ?>">
-                        <div class="notification" id="cart-notification">
-                            25
+                    <a href="<?= base_url("ala-cart-sliced") ?>">
+                        <div class="carte-notification">
+                            <img class="img-responsive" src="<?= base_url("assert/fontend/img/carte.svg") ?>">
+                            <div class="notification" id="cart-notification">
+                                25
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <?php
                     if ($this->session->has_userdata("user_login")) {
                         ?>
-                        <div>
-                            <a href="<?= base_url("profile") ?>"><h1><?= $this->lang->line("fn_welcome"); ?> <?= ($this->session->has_userdata("user_login")) ? $this->session->userdata("user")->username : ""; ?> </h1></a>
+                        <div class="btn-group">    
+                            <img class="img-responsive" src="<?= base_url("assert/fontend/img/user-01.svg") ?>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <h6 class="dropdown-header"><?= ($this->session->has_userdata("user_login")) ? $this->session->userdata("user")->username : ""; ?></h6>
+                                <a class="dropdown-item" href="<?= base_url("profile") ?>"><?= $this->lang->line("fn_profile"); ?></a>
+                                <a class="dropdown-item" href="<?= base_url("profile") ?>"><?= $this->lang->line("fn_chnage_password"); ?></a>
+                                <a class="dropdown-item" href="<?= base_url("logout"); ?>"><?= $this->lang->line("fn_logout"); ?></a>
+                            </div>
                         </div>
-
-
-                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/user-01.svg") ?>">
-
                         <img class="img-responsive dd-icon" src="<?= base_url("assert/fontend/img/dd_icon.png") ?>">
                         <div class="dd-text">
                             <ul>
@@ -80,7 +84,6 @@
                                 <li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?= $this->lang->line("fn_com_order"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("payments"); ?>"><?= $this->lang->line("fn_payment"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("favourites"); ?>"><?= $this->lang->line("fn_fav"); ?></a></li>
-                                <li><a class="menu-link" href="<?= base_url("logout"); ?>"><?= $this->lang->line("fn_logout"); ?></a></li>
                             </ul>
                         </div>
                         <?php

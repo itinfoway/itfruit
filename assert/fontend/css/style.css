@@ -606,3 +606,20 @@ body {
 .dd-icon {
     margin-left: 13px;
 }
+.dropdown-menu {
+    background-color: transparent;
+    background-image: url(../img/dd_bg.png);
+    background-size: 100% 100%;
+    border:0;
+}
+.dropdown-header {
+    color: #fff;
+    text-align: center;
+}
+.dropdown-item{
+    color: #29335C;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: transparent;
+    color:#fff;
+}

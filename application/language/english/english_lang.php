@@ -171,6 +171,8 @@ $lang["alacarte_saving"] = 'Savings';
 $lang["alacarte_input_saveing_plac"] = 'Please Enter Amount';
 
 //include/header.php
+$lang["fn_profile"] = 'profile';
+$lang["fn_chnage_password"] = 'chnage password';
 $lang["fn_welcome"] = 'WELCOME';
 $lang["fn_manage_add"] = 'MANAGE ADDRESS';
 $lang["fn_sub"] = 'SUBSCRIPTION';
