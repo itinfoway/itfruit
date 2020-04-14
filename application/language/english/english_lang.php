@@ -282,6 +282,7 @@ $lang["fn_other"] = 'other';
 
 $lang["fn_price"] = 'price';
 $lang["fn_error_credit_debit"] = 'credit point getting or equal debit point';
+$lang["fn_error_today_order_stock"] = 'this day outoff order select ather date';
 
 //admin/include/header.php
 $lang["fn_home"] = 'Home';

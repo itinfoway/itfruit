@@ -186,9 +186,9 @@
                     <div class="totel">
                         <p>total: <span id="creditTotal">0</span> credit</p>
                     </div>
-                    <a href="<?=base_url("ala-cart-sliced/checkout");?>" id="checkoutBtn" class="btn disabled" style="display: block;">
+                    <a href="<?= base_url("ala-cart-sliced/checkout"); ?>" id="checkoutBtn" class="btn disabled" style="display: block;">
                         <div class="totel">
-                        <p>checkout</p>
+                            <p>checkout</p>
                         </div>
                     </a>
                 </div>
@@ -298,7 +298,7 @@
 </section>
 <script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
-    var error_order_carte_not_set="<?= $this->lang->line("fn_error_order_carte_not_set");?>";
+    var error_order_carte_not_set = "<?= $this->lang->line("fn_error_order_carte_not_set"); ?>";
     $('.form_datetime').datetimepicker({
         daysOfWeekDisabled: "6,0",
         weekStart: 1,
@@ -322,10 +322,15 @@
             async: false,
             success: function (respText) {
                 $("#gettime").html("");
-                for (id in respText.time) {
-                    $("#gettime").append("<option value='" + id + "' data-item='" + respText.time[id].min_item + "'>" + respText.time[id].time + "</option>")
+                if (Object.keys(respText).length > 0) {
+                    for (id in respText.time) {
+                        $("#gettime").append("<option value='" + id + "' data-item='" + respText.time[id].min_item + "'>" + respText.time[id].time + "</option>")
+                    }
+                    $("#gettime").parent("div").show();
+                } else {
+                    toastr.error('<?= $this->lang->line("fn_error_today_order_stock") ?>');
+                    $("#gettime").parent("div").hide();
                 }
-                $("#gettime").parent("div").show();
             }
         });
     }

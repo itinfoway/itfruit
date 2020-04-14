@@ -121,7 +121,9 @@ class Ala_cart_sliced extends Controller {
         $date = date("Y-m-d", strtotime($date));
         $time = $this->order_loading_model->viewwhere(["week_day" => $day]);
         $today = $this->today_order_model->viewwhere(["delivered_on_date" => $date]);
+        $data=array();
         foreach ($time as $t) {
+            
             if (!empty($today)) {
                 foreach ($today as $d) {
                     if ($t->ala_carte_loading > $d->total_item_sum && $t->id == $d->order_loading_id) {
