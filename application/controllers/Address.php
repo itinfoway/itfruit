@@ -27,11 +27,21 @@ class Address extends Controller {
             $data = $this->address_model->add($capArray);
 
             if (!empty($data)) {
-                $this->session->set_userdata("success","address added successfully");
-                redirect("address");
+                $this->session->set_userdata("success", "address added successfully");
+                if ($this->session->has_userdata("previous_url")) {
+                    redirect($this->session->userdata('previous_url'));
+                    $this->session->unset_userdata('previous_url');
+                } else {
+                    redirect("address");
+                }
             } else {
-                $this->session->set_userdata("error","address not added try again");
-                redirect("address");
+                $this->session->set_userdata("error", "address not added try again");
+                if ($this->session->has_userdata("previous_url")) {
+                    redirect($this->session->userdata('previous_url'));
+                    $this->session->unset_userdata('previous_url');
+                } else {
+                    redirect("address");
+                }
             }
         }
 

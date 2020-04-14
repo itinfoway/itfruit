@@ -29,7 +29,8 @@ class Controller extends CI_Controller {
                 if ($class == "login") {
                     redirect("welcome");
                 }
-            } else if ($class == "profile" || $class == "profile") {
+            } else if ($class == "profile" || $class == "wallet" || ($class=="ala_cart_sliced" && $method=="checkout")) {
+                $this->session->set_userdata('previous_url', current_url());
                 redirect("login");
             }
         }
@@ -48,7 +49,12 @@ class Controller extends CI_Controller {
         if ($dir_c[0] == "admin") {
             $this->load->view("admin/include/header");
         } else {
-            $this->load->view("include/header");
+            $hed=array();
+            if ($this->session->has_userdata("user_login")) {
+                $this->load->model("ledger_model");
+                $hed["wallet"] = $this->ledger_model->view_where(["user_id" => $this->session->userdata("user")->id],"sum(credit) as cr");
+            }
+            $this->load->view("include/header",$hed);
         }
         //view
         $this->load->view(strtolower($directory . "$class/" . $view), $data);
@@ -62,8 +68,8 @@ class Controller extends CI_Controller {
 
     public function maileSend($subject = 'This is a test', $message = "test", $to = "parth.p.ajudiya@gmail.com", $attach = null) {
         $this->load->model("local_setting_model");
-        $config=$this->local_setting_model->view("smtp_user,smtp_pass,smtp_port");
-        $this->load->library('email',["smtp_user"=>$config[0]->smtp_user,"smtp_pass"=>$config[0]->smtp_pass,"smtp_port"=>$config[0]->smtp_port]);
+        $config = $this->local_setting_model->view("smtp_user,smtp_pass,smtp_port");
+        $this->load->library('email', ["smtp_user" => $config[0]->smtp_user, "smtp_pass" => $config[0]->smtp_pass, "smtp_port" => $config[0]->smtp_port]);
 
         // Get full html:
         $body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

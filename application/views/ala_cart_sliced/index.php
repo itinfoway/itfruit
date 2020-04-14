@@ -186,9 +186,11 @@
                     <div class="totel">
                         <p>total: <span id="creditTotal">0</span> credit</p>
                     </div>
-                    <div class="totel">
+                    <a href="<?=base_url("ala-cart-sliced/checkout");?>" id="checkoutBtn" class="btn disabled" style="display: block;">
+                        <div class="totel">
                         <p>checkout</p>
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

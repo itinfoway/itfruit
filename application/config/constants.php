@@ -95,8 +95,11 @@ defined('FRUIT_NAME')      or define('FRUIT_NAME', "fruit"); // highest automati
 defined('ADDRESS')      or define('ADDRESS', "address"); // highest automatically-assigned error code
 defined('SLIDERMAIN')      or define('SLIDERMAIN', "slidermain"); // highest automatically-assigned error 
 defined('SLIDER')      or define('SLIDER', "slider"); // highest automatically-assigned error 
+defined('LEDGER')      or define('LEDGER', "ledger"); // highest automatically-assigned error 
 // code
 defined('PARTNER')      or define('PARTNER', "partner"); // highest automatically-assigned error code
+defined('ORDER_DETAILS')      or define('ORDER_DETAILS', "order_details"); // highest automatically-assigned error code
+defined('ORDER_ITEM')      or define('ORDER_ITEM', "order_item"); // highest automatically-assigned error code
 defined('PEOPLE')      or define('PEOPLE', "people"); // highest automatically-assigned error code
 defined('ALACARTE')      or define('ALACARTE', "alacarte"); // highest automatically-assigned error code
 defined('PRODUCTS')      or define('PRODUCTS', "products"); // highest automatically-assigned error code

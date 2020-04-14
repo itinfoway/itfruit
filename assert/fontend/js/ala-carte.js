@@ -98,11 +98,13 @@ function orderItem() {
 }
 function credit() {
     var alltotal = 0
+    var allic = 0;
     for (i in products) {
         var id = $(".date-time").find('div[data-itme-value="' + i + '"]').parent("div").attr("id");
         var total = 0;
         for (j in products[i]["p"]) {
-            total = total + products[i]["p"][j]["ic"] * products[i]["p"][j]["c"];
+            total = total + (products[i]["p"][j]["ic"] * products[i]["p"][j]["c"]);
+            allic = allic + products[i]["p"][j]["ic"];
         }
         if (total != 0) {
             $("#" + id).find(".credit").find("span").text(total);
@@ -110,7 +112,14 @@ function credit() {
             $("#" + id).find(".credit").show();
         }
     }
+    if (alltotal > 0) {
+        $(".date-time").find("#checkoutBtn").removeClass("btn disabled");
+    } else {
+        $(".date-time").find("#checkoutBtn").addClass("btn disabled");
+    }
     $(".date-time").find("#creditTotal").text(alltotal);
+    $("#debitTotal").text(alltotal);
+    setCookie("crt", (allic != 0) ? allic : "");
     if (getCookie("crt") != "")
     {
         $("#cart-notification").show();

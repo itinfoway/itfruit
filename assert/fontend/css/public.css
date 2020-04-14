@@ -795,32 +795,32 @@ section .saved-add {
     position: relative;
 }
 
-section .saved-add .fruits {
+.fruits {
     position: absolute;
     height: 80px;
 }
 
-section .saved-add .watermelon {
+.watermelon {
     top: 0px;
     left: 0px;
 }
 
-section .saved-add .grapes {
+.grapes {
     top: 0px;
     right: 0px;
 }
 
-section .saved-add .orange {
+.orange {
     bottom: 0px;
     right: 0px;
 }
 
-section .saved-add .avocado {
+.avocado {
     bottom: 0px;
     left: 0px;
 }
 
-section .saved-add .berry {
+.berry {
     top: 35px;
     bottom: 0px;
     right: 0px;
@@ -828,7 +828,7 @@ section .saved-add .berry {
     margin: auto;
 }
 
-section .saved-add h1 {
+h1 {
     font-family: 'Dreamwalker Regular';
     font-size: 23px;
     text-align: center;
@@ -836,15 +836,15 @@ section .saved-add h1 {
     color: #ffffff;
 }
 
-section .saved-add .add-part {
+.add-part {
     position: relative;
 }
 
-section .saved-add .add-part .berry {
+.add-part .berry {
     position: absolute;
 }
 
-section .saved-add .add-part .text-part {
+.add-part .text-part {
     background-image: url("../img/add-part.png");
     background-size: 100% 100%;
     padding: 33px 47px;
@@ -853,30 +853,30 @@ section .saved-add .add-part .text-part {
     margin-bottom: 35px;
 }
 
-section .saved-add .add-part .text-part img {
+.add-part .text-part img {
     height: 60px;
 }
 
-section .saved-add .add-part .text-part p {
+.add-part .text-part p {
     padding: 25px 0px 0px 20px;
     color: #ffffff;
 }
 
-section .saved-add .add-part .text-part .location {
+.add-part .text-part .location {
     padding: 10px 0px;
 }
 
-section .saved-add .add-part .text-part .location p {
+.add-part .text-part .location p {
     padding: 0px;
     margin: 0px;
     font-size: 13px;
 }
 
-section .saved-add .add-part .text-part .buttons {
+.add-part .text-part .buttons {
     width: 100%;
 }
 
-section .saved-add .add-part .text-part .buttons button {
+.add-part .text-part .buttons button {
     background: transparent;
     border: none;
     display: block;
@@ -887,11 +887,11 @@ section .saved-add .add-part .text-part .buttons button {
     color: #101F51;
 }
 
-section .saved-add .add-part .text-part .buttons .edit-btn {
+.add-part .text-part .buttons .edit-btn {
     float: left;
 }
 
-section .saved-add .add-part .text-part .buttons .remove-btn {
+.add-part .text-part .buttons .remove-btn {
     float: right;
 }
 
@@ -914,7 +914,7 @@ section .address .add-address .strawberry {
     right: -5px;
 }
 
-section .address .add-address h1 {
+.add-address h1 {
     text-align: center;
     width: 80%;
     background-image: url("../img/add-bg.png");
@@ -1002,9 +1002,8 @@ section .remark textarea {
     border: none;
     font-size: 15px;
     color: #ffffff;
-    padding: 0px 25px;
     overflow: hidden;
-    padding: 24px 49px;
+    padding: 24px 8rem;
 }
 
 section .remark textarea:focus {
@@ -1514,7 +1513,7 @@ section .bill-pay .payment-part .comment textarea {
     border: none;
     font-size: 15px;
     color: #101F51;
-    padding: 0px 25px;
+    padding: 1rem 2rem;
     overflow: hidden;
 }
 
@@ -2280,7 +2279,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
 }
 
 @media (max-width: 767px) {
-    
+
     .date-close {
         right: 21px;
     }
@@ -2371,7 +2370,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
         margin: 0 auto;
         width: 50%;
     }
-    section .saved-add {
+    section .saved-add{
         padding: 40px 9px;
     }
     section .about {
@@ -2799,37 +2798,37 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
         height: 38px;
         width: 38px;
     }
-    section .saved-add {
+    section .saved-add{
         margin: 60px 0px;
         padding: 40px 37px;
     }
-    section .saved-add h1 {
+    h1 {
         font-size: 42px;
     }
-    section .saved-add .fruits {
+    .fruits {
         position: absolute;
         height: 105px;
     }
-    section .saved-add .watermelon {
+    .watermelon {
         top: -30px;
     }
-    section .saved-add .grapes {
+    .grapes {
         top: -30px;
     }
-    section .saved-add .orange {
+    .orange {
         bottom: -30px;
     }
-    section .saved-add .avocado {
+    .avocado {
         bottom: -30px;
     }
-    section .saved-add .add-part .text-part {
+    .add-part .text-part {
         padding: 33px 58px;
     }
-    section .saved-add .add-part .text-part .buttons button {
+    .add-part .text-part .buttons button {
         font-size: 16px;
-        padding: 6px 19px;
+        padding: 6px 19px !important;
     }
-    section .saved-add .add-part .text-part .location p {
+    .add-part .text-part .location p {
         font-size: 15px;
     }
     section .address .add-address .fruits {
@@ -2866,7 +2865,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
         font-size: 14px;
     }
     section .bill-pay .payment-part .comment textarea {
-        padding: 0px 38px;
+        padding: 1rem 3rem;
     }
     section .faq .faq-bg {
         height: 388px;
@@ -3162,17 +3161,17 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     section .search-bar input {
         font-size: 19px;
     }
-    section .saved-add .fruits {
+    .fruits {
         height: 119px;
     }
-    section .saved-add .add-part .text-part {
+    .add-part .text-part {
         padding: 33px 65px;
     }
-    section .saved-add .add-part .text-part p {
+    .add-part .text-part p {
         padding: 17px 0px 0px 20px;
         font-size: 21px;
     }
-    section .saved-add .add-part .text-part .location p {
+    .add-part .text-part .location p {
         font-size: 17px;
     }
     section .address .add-address .pinapple {
@@ -3535,19 +3534,19 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     section .order-history .manage {
         padding: 62px 83px;
     }
-    section .saved-add .berry {
+    .berry {
         height: 170px;
     }
-    section .saved-add .add-part .text-part {
+    .add-part .text-part {
         width: 83%;
         padding: 54px 92px;
     }
-    section .saved-add .add-part .text-part .location p {
+    .add-part .text-part .location p {
         font-size: 20px;
     }
-    section .saved-add .add-part .text-part .buttons button {
+    .add-part .text-part .buttons button {
         font-size: 19px;
-        padding: 6px 30px;
+        padding: 6px 30px !important;
     }
     section .address .add-address .pinapple {
         left: 54px;
@@ -3761,10 +3760,10 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
         padding: 0px 130px;
         font-size: 19px;
     }
-    section .saved-add .berry {
+    .berry {
         height: 229px;
     }
-    section .saved-add .add-part .text-part {
+    .add-part .text-part {
         width: 78%;
     }
     section .address .add-address .pinapple {
@@ -3846,7 +3845,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     section .contact-part .fruits {
         height: 206px;
     }
-    section .saved-add .add-part .text-part {
+    .add-part .text-part {
         width: 73%;
     }
     section .cart .cart-part .cart-text p {
@@ -4092,4 +4091,58 @@ button:focus {
 .pointer {cursor: pointer;}
 .carte-notification {
     position: relative;
+}
+.form-control-pay,
+.form-control-pay:focus{
+    background: transparent;
+    border: 0 !important;
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 10px 19px;
+    background-image: url(../img/bill-input.png);
+    background-size: 100% 100%;
+    color: #DB3812;
+    margin: 5px 0;
+
+}
+.modal-footer {
+    padding:  0 3rem 3rem 3rem;
+}
+.cart-table .btn{
+    color: #ffffff;
+}
+.pay-carte-lab {
+    display: block;
+    position: absolute;
+    top: 0.8rem;
+    background: #101f51;
+    right: 4rem;
+    font-size: 10px;
+    padding: 0.2rem;
+    color: #fff;
+}
+.table-wallet{
+    background: #101f51;
+    color: #fff;
+}
+.table-wallet th{
+    color: #faa919;
+}
+.btn-default {
+    background: transparent;
+    border: none;
+    display: block;
+    background-image: url(../img/add-btn.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    color: #101f51 !important;
+}
+.btn-default.active,.btn-default:focus,.btn-default:active,.btn-default:hover{
+    background-image: url(../img/add-btn-a.png);
+}
+.add-part .select{
+    position: absolute;
+    right: 7rem
 }

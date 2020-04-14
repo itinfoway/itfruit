@@ -180,6 +180,7 @@ $lang["fn_manage_order"] = 'MANAGE ORDER';
 $lang["fn_com_order"] = 'COMPLATE ORDER';
 $lang["fn_payment"] = 'PAYMENTS';
 $lang["fn_fav"] = 'FAVOURITES';
+$lang["fn_add_credit"] = 'add credit';
 $lang["fn_logout"] = 'LOGOUT';
 $lang["fn_login"] = 'Login';
 $lang["fn_sign"] = 'Sign Up';
@@ -256,6 +257,31 @@ $lang["fn_here"] = 'login here';
 $lang["fn_line"] = 'I HAVE READ AND AGREE TO THE';
 $lang["fn_policy"] = 'PRIVACY POLICY';
 
+
+//wallet/index.php
+
+$lang["fn_wallet_history"] = 'Wallet History';
+$lang["fn_tranction_id"] = 'tranction id';
+$lang["fn_description"] = 'description';
+$lang["fn_tranction_type"] = 'tranction type';
+$lang["fn_date_time"] = 'date time';
+$lang["fn_amount"] = 'amount';
+$lang["fn_wallet"] = 'wallet';
+$lang["fn_sgd"] = 'SGD';
+$lang["fn_debit"] = 'debit';
+$lang["fn_credit"] = 'credit';
+$lang["fn_points"] = 'points';
+
+//address/index
+
+$lang["fn_home"] = 'home';
+$lang["fn_work"] = 'work';
+$lang["fn_other"] = 'other';
+
+//ala-cart-sliced/checkout
+
+$lang["fn_price"] = 'price';
+$lang["fn_error_credit_debit"] = 'credit point getting or equal debit point';
 
 //admin/include/header.php
 $lang["fn_home"] = 'Home';

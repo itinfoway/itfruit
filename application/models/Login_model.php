@@ -50,7 +50,7 @@ class Login_model extends CI_Model
             $this->db->or_where("mobile", $whare["username"]);
             $this->db->having("password", $whare["password"]);
         }
-        $this->db->select("username,img,id,password");
+        $this->db->select("username,fname,lname,email,img,id,password");
         $query = $this->db->get(USERS);
         $this->db->trans_complete();
         if ($query->num_rows() > 0) {

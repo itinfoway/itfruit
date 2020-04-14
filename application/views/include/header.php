@@ -16,6 +16,24 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="author" content="" />
+        <!--fev-->
+        <link rel="apple-touch-icon" sizes="57x57" href="<?= base_url() ?>assert/fontend/fev/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="<?= base_url() ?>assert/fontend/fev/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="<?= base_url() ?>assert/fontend/fev/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url() ?>assert/fontend/fev/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="<?= base_url() ?>assert/fontend/fev/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="<?= base_url() ?>assert/fontend/fev/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="<?= base_url() ?>assert/fontend/fev/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="<?= base_url() ?>assert/fontend/fev/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url() ?>assert/fontend/fev/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="<?= base_url() ?>assert/fontend/fev/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url() ?>assert/fontend/fev/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="<?= base_url() ?>assert/fontend/fev/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url() ?>assert/fontend/fev/favicon-16x16.png">
+        <link rel="manifest" href="<?= base_url() ?>assert/fontend/fev/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="<?= base_url() ?>assert/fontend/fev/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <!-- meta ends -->
         <!-- title begins -->
         <title></title>
@@ -49,17 +67,33 @@
                     <img class="img-responsive logo" src="<?= base_url("assert/fontend/img/logo.png") ?>">
                 </a>
                 <div class="user">
-                    <div class="wallet carte-notification">
-                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/wallet-01.svg") ?>">
-                        <div class="notification">
-                            2000
-                        </div>
-                    </div>
+                    <?php
+                    if ($this->session->has_userdata("user_login")) {
+                        if (!empty($wallet)) {
+                            ?>
+                            <a href="<?= base_url("wallet") ?>">
+                                <div class="wallet carte-notification">
+                                    <img class="img-responsive" src="<?= base_url("assert/fontend/img/wallet-01.svg") ?>">
+                                    <?php
+                                    if ($wallet[0]->cr > 0) {
+                                        ?>
+                                        <div class="notification">
+                                            <?= $wallet[0]->cr ?>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                            </a>
+                            <?php
+                        }
+                    }
+                    ?>
                     <a href="<?= base_url("ala-cart-sliced") ?>">
                         <div class="carte-notification">
                             <img class="img-responsive" src="<?= base_url("assert/fontend/img/carte.svg") ?>">
                             <div class="notification" id="cart-notification">
-                                25
+                                0
                             </div>
                         </div>
                     </a>
@@ -83,7 +117,7 @@
                                 <li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?= $this->lang->line("fn_manage_order"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?= $this->lang->line("fn_com_order"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("payments"); ?>"><?= $this->lang->line("fn_payment"); ?></a></li>
-                                <li><a class="menu-link" href="<?= base_url("favourites"); ?>"><?= $this->lang->line("fn_fav"); ?></a></li>
+                                <li><a class="menu-link" href="<?= base_url("wallet/add-to-cart"); ?>"><?= $this->lang->line("fn_add_credit"); ?></a></li>
                             </ul>
                         </div>
                         <?php
