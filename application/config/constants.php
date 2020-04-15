@@ -96,6 +96,8 @@ defined('ADDRESS')      or define('ADDRESS', "address"); // highest automaticall
 defined('SLIDERMAIN')      or define('SLIDERMAIN', "slidermain"); // highest automatically-assigned error 
 defined('SLIDER')      or define('SLIDER', "slider"); // highest automatically-assigned error 
 defined('LEDGER')      or define('LEDGER', "ledger"); // highest automatically-assigned error 
+defined('BLOGS')      or define('BLOGS', "blog"); // highest automatically-assigned error 
+defined('BLOGS_CATEGORY')      or define('BLOGS_CATEGORY', "blog_category"); // highest automatically-assigned error 
 // code
 defined('PARTNER')      or define('PARTNER', "partner"); // highest automatically-assigned error code
 defined('ORDER_DETAILS')      or define('ORDER_DETAILS', "order_details"); // highest automatically-assigned error code
