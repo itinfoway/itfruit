@@ -25,17 +25,20 @@ $("#savedate").click(function () {
     var inputDate = $("#orderbox").attr("data-link-field");
     var date = $(".form_datetime").val();
     date = date.split(" ");
-    $("#orderbox" + inputDate).find(".order-date").text(date[0] + " " + date[1]);
-    $("#orderbox" + inputDate).find(".order-year").text(date[2]);
+
     var time = $("#gettime").find("option:selected").text();
     var item = $("#gettime").find("option:selected").attr("data-item");
     var id = $("#gettime").val();
-    id = date[0] + "_" + date[1] + "_" + date[2] + "_" + id;
-    $(".first-date-part").attr("data-itme-value", id);
-    min_item[id] = parseInt(item);
-    all_item[id] = parseInt(0);
-    products[id] = {};
-    $("#orderbox" + inputDate).find(".order-time").text(time);
+    if (time!=""){
+        $("#orderbox" + inputDate).find(".order-date").text(date[0] + " " + date[1]);
+        $("#orderbox" + inputDate).find(".order-year").text(date[2]);
+        id = date[0] + "_" + date[1] + "_" + date[2] + "_" + id;
+        $(".first-date-part").attr("data-itme-value", id);
+        min_item[id] = parseInt(item);
+        all_item[id] = parseInt(0);
+        products[id] = {};
+        $("#orderbox" + inputDate).find(".order-time").text(time);
+    }
 });
 function setOrder() {
     var count = 1;

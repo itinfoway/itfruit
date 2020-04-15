@@ -410,10 +410,15 @@
             async: false,
             success: function (respText) {
                 $("#gettime").html("");
-                for (id in respText.time) {
-                    $("#gettime").append("<option value='" + id + "' data-item='" + respText.time[id].min_item + "'>" + respText.time[id].time + "</option>")
+                if (Object.keys(respText).length > 0) {
+                    for (id in respText.time) {
+                        $("#gettime").append("<option value='" + id + "' data-item='" + respText.time[id].min_item + "'>" + respText.time[id].time + "</option>")
+                    }
+                    $("#gettime").parent("div").show();
+                } else {
+                    toastr.error('<?= $this->lang->line("fn_error_today_order_stock") ?>');
+                    $("#gettime").parent("div").hide();
                 }
-                $("#gettime").parent("div").show();
             }
         });
     }
