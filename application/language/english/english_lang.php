@@ -170,6 +170,23 @@ $lang["alacarte_input_saveing_plac"] = 'Please Enter Amount';
 $lang["alacarte_saving"] = 'Savings';
 $lang["alacarte_input_saveing_plac"] = 'Please Enter Amount';
 
+//blogs/category
+$lang["category_head"] = 'Category';
+$lang["category_name_hed"] = 'Name';
+$lang["category_input_name_plac"] = 'Enter Category';
+
+//blogs/blog
+$lang["blog_head"] = 'blog';
+$lang["blog_cat_hed"] = 'Category';
+$lang["blog_cat_plac"] = 'Please select category';
+$lang["blog_title_hed"] = 'Title';
+$lang["blog_input_title_plac"] = 'Enter Title';
+$lang["blog_img"] = 'Image';
+$lang["blog_des_hed"] = 'Description';
+$lang["blog_input_des_plac"] = 'Enter Description';
+$lang["blog_date_hed"] = 'Date';
+$lang["blog_input_date_plac"] = 'Enter  Date';
+
 //include/header.php
 $lang["fn_profile"] = 'profile';
 $lang["fn_chnage_password"] = 'chnage password';
