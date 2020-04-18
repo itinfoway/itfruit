@@ -9,7 +9,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class Blogs_model extends CI_Model {
 
-    public function view($where = null, $select = "*") {
+    public function view_where($where = null, $select = "a.*,b.name")
+    {
+        $this->db->trans_start();
+        if (!is_null($where)) {
+            $this->db->where($where);
+        }
+        $this->db->select($select);
+        $this->db->join(BLOGS_CATEGORY . " as b", "b.id = a.blog_category_id");
+        $this->db->order_by("a.id", "asc");
+        $query = $this->db->get(BLOGS . " as a");
+        $this->db->trans_complete();
+        $data = $query->result();
+
+        return $data;
+    }
+
+    public function view($where = null, $select = "a.*,b.name")
+    {
+        $this->db->trans_start();
+        if (!is_null($where)) {
+            $this->db->where("a.id", $where);
+        }
+        $this->db->select($select);
+        $this->db->join(BLOGS_CATEGORY . " as b", "b.id = a.blog_category_id");
+        $this->db->order_by("id", "asc");
+        $query = $this->db->get(BLOGS . " as a");
+        $this->db->trans_complete();
+        $data = $query->result();
+        return $data;
+    }
+
+
+
+    /*public function view($where = null, $select = "*") {
         $this->db->trans_start();
         if (!is_null($where)) {
             $this->db->where("id", $where);
@@ -19,7 +52,7 @@ class Blogs_model extends CI_Model {
         $query = $this->db->get(BLOGS);
         $this->db->trans_complete();
         return $query->result();
-    }
+    }*/
 
     public function add($array) {
         $this->db->trans_start();
