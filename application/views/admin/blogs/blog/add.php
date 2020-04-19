@@ -1,11 +1,9 @@
 <?php
-
 /**
  * Description of index
  * https://itinfoway.com
  * @author Admin
  */
-
 $fromTitle = [
     'type' => 'text',
     "name" => "title",
@@ -17,16 +15,11 @@ $fromTitle = [
     'value' => isset($blogs->title) ? $blogs->title : "",
 ];
 $fromDescription = [
-    'type' => 'text',
-    "name" => "description",
-    'class' => 'form-control',
-    "data-validation" => "length",
-    "data-validation-length" => "2-35",
     'id' => "description",
     "placeholder" => $this->lang->line("blog_input_des_plac"),
-    'value' => isset($blogs->description) ? $blogs->description : "",
 ];
 ?>
+<link rel="stylesheet" href="<?= base_url("assert/admin/") ?>plugins/summernote/summernote-bs4.css">
 <script src="<?= base_url("assert/admin/croppie/croppie.js") ?>"></script>
 <link rel="Stylesheet" type="text/css" href="<?= base_url("assert/admin/croppie/croppie.css") ?>" />
 <div class="row">
@@ -44,18 +37,18 @@ $fromDescription = [
             <div class="card-body">
                 <div class="form-group">
                     <label><?= $this->lang->line("blog_cat_hed") ?></label>
-                    <?= form_dropdown("blog_category_id", $blog, isset($data->blog_category_id) ?$data->blog_category_id : null, ["class" => "select2",  "style" => "width: 100%;", "data-placeholder" => $this->lang->line("blog_cat_plac")]); ?>
+                    <?= form_dropdown("blog_category_id", $blog, isset($data->blog_category_id) ? $data->blog_category_id : null, ["class" => "select2", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("blog_cat_plac")]); ?>
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("blog_title_hed") ?></label>
                     <?= form_input($fromTitle); ?>
                 </div>
-                
+
                 <div class="form-group">
                     <label><?= $this->lang->line("blog_img") ?></label>
                     <div class="input-group">
                         <div class="custom-file">
-                            <?= form_upload("img", null, ['class' => 'custom-file-input',  "data-validation" => "mime size", "data-validation-allowing" => "jpg, png", "data-validation-max-size" => "500kb", "accept" => "image/x-png,image/jpg,image/jpeg", "id" => "upload"]); ?>
+                            <?= form_upload("img", null, ['class' => 'custom-file-input', "data-validation" => "mime size", "data-validation-allowing" => "jpg, png", "data-validation-max-size" => "500kb", "accept" => "image/x-png,image/jpg,image/jpeg", "id" => "upload"]); ?>
                             <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                         </div>
                     </div>
@@ -72,13 +65,13 @@ $fromDescription = [
                             <?= isset($data->img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
                         </div>
                     </div>
-                     <input type="hidden" name="input_image" id="input_image">
+                    <input type="hidden" name="input_image" id="input_image">
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("blog_des_hed") ?></label>
-                    <?= form_input($fromDescription); ?>
+                    <?= form_textarea("description",isset($blogs->description) ? $blogs->description : "",$fromDescription); ?>
                 </div>
-            
+
             </div>
             <div class="card-footer">
                 <button type="submit" class="upload-result btn btn-info" id="submit"><?= $this->lang->line("btn_save") ?></button>
@@ -98,10 +91,10 @@ $fromDescription = [
 </script>
 
 <script>
-     
 
-    
-    var Demo = (function() {
+
+
+    var Demo = (function () {
         function demoUpload() {
             var $uploadCrop;
 
@@ -115,10 +108,10 @@ $fromDescription = [
                     $("#input_image").val(result.src);
                 }
 
-                setTimeout(function() {
-                    $('.sweet-alert').css('margin', function() {
+                setTimeout(function () {
+                    $('.sweet-alert').css('margin', function () {
                         var top = -1 * ($(this).height() / 2),
-                            left = -1 * ($(this).width() / 2);
+                                left = -1 * ($(this).width() / 2);
                         return top + 'px 0 0 ' + left + 'px';
                     });
                 }, 1);
@@ -129,11 +122,12 @@ $fromDescription = [
                 if (input.files && input.files[0]) {
                     var reader = new FileReader();
 
-                    reader.onload = function(e) {
+                    reader.onload = function (e) {
                         $('.upload-demo').addClass('ready');
                         $uploadCrop.croppie('bind', {
                             url: e.target.result,
-                        }).then(function() {});
+                        }).then(function () {
+                        });
 
                     };
 
@@ -146,28 +140,28 @@ $fromDescription = [
 
             $uploadCrop = $('#upload-demo').croppie({
                 viewport: {
-                    width: 100,
-                    height: 100,
+                    width: 200,
+                    height: 200,
                     type: 'square'
                 },
                 boundary: {
-                    width: 110,
-                    height: 110
+                    width: 210,
+                    height: 210
                 },
                 enableOrientation: true,
                 enableExif: true,
                 enforceBoundary: false
             });
-            <?= isset($data->img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/blog/" . $data->img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/blog/user_demo.png") . "');"; ?>
-            $('#upload').on('change', function() {
+<?= isset($data->img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/blog/" . $data->img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/blog/user_demo.png") . "');"; ?>
+            $('#upload').on('change', function () {
                 readFile(this);
 
             });
-            $('.upload-result').on('click', function(ev) {
+            $('.upload-result').on('click', function (ev) {
                 $uploadCrop.croppie('result', {
                     type: 'canvas',
                     size: 'viewport'
-                }).then(function(resp) {
+                }).then(function (resp) {
                     popupResult({
                         src: resp
                     });
@@ -184,4 +178,10 @@ $fromDescription = [
         };
     })();
     Demo.init();
+</script>
+<script src="<?= base_url("assert/admin/"); ?>plugins/summernote/summernote-bs4.min.js"></script>
+<script>
+    $(function () {
+        $('textarea').summernote()
+    })
 </script>

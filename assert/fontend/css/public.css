@@ -513,7 +513,6 @@ section .send-msg .form-part .send-form button {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle,.btn-primary:hover {
     color: #fff;
     background: transparent;
-    background-image: url("../img/send-btn.png");
     background-size: 100% 100%;
 }
 section .event-msg h1 {
@@ -4145,4 +4144,30 @@ button:focus {
 .add-part .select{
     position: absolute;
     right: 7rem
+}
+.h1-bg{
+    background-image: url(../img/add-btn-a.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn-primary {
+    background: transparent;
+    border: none;
+    display: block;
+    background-image: url(../img/add-primary.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    color: #ffffff !important;
+}
+.btn-primary.active,.btn-primary:focus,.btn-primary:active,.btn-primary:hover{
+    background-image: url(../img/add-denger.png) !important;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0.5rem;
+    font-family: 'Dreamwalker Regular';
+}
+.learn-bg{
+    background: url(../img/learn.png);
+    background-size: 100% 100%;
+    background-position: center;
 }
