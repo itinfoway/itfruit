@@ -145,7 +145,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" href="<?= base_url("aboutus") ?>"><?= $this->lang->line("fn_about_us"); ?></a>
+                            <a class="nav-item nav-link" href="<?= base_url("about-us") ?>"><?= $this->lang->line("fn_about_us"); ?></a>
                             <a class="nav-item nav-link" href="<?= base_url("learn") ?>"><?= $this->lang->line("fn_learn"); ?></a>
                             <a class="nav-item nav-link" href="<?= base_url("ordernow") ?>"><?= $this->lang->line("fn_order_now"); ?></a>
                             <a class="nav-item nav-link" href="<?= base_url("faq") ?>"><?= $this->lang->line("fn_faq"); ?></a>

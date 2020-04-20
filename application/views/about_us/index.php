@@ -101,7 +101,7 @@
                         </div>
                         <div class="col-md-12 m-5">
                             <?php
-                            foreach ($this->lang->line("fn_our_story_line") as $t) {
+                            foreach ($this->lang->line("fn_trust_our_fruit_line") as $t) {
                                 ?>
                                 <p class="text-center text-green"><?= $t ?></p>
                                 <?php
