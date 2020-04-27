@@ -242,7 +242,7 @@
                         <center><h2 class="carte-title"><?= $product->name ?></h2></center>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img; ?>" title="<?= $product->name ?>"  rel="schema:image" resource="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
                         <center>
-                            <center><h2 class="product-credit"><span><?= $product->min_credit ?></span> CREDIT</h2></center>
+                            <b class="product-credit"><span><?= $product->min_credit ?></span> CREDIT</b><br>
                             <div class="text">
                                 <div class="row" property="schema:description" content="<?= implode(",", $product->fruit); ?>">
                                     <?php

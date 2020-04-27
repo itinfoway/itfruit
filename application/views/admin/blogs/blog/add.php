@@ -14,6 +14,12 @@ $fromTitle = [
     "placeholder" => $this->lang->line("blog_input_title_plac"),
     'value' => isset($blogs->title) ? $blogs->title : "",
 ];
+$fromShortDescription = [
+    'id' => "short_description",
+    'class' => 'form-control',
+    "rows" => 3,
+    "placeholder" => $this->lang->line("blog_short_description_plac"),
+];
 $fromDescription = [
     'id' => "description",
     "placeholder" => $this->lang->line("blog_input_des_plac"),
@@ -54,13 +60,13 @@ $fromDescription = [
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8" style="padding-bottom: 39px;">
+                    <div class="col-lg-10" id="sliderdis" style="display: none">
                         <div class="upload-demo-wrap">
-                            <div id="upload-demo"></div>
+                            <div id="upload-demo"><img id="img" class="img-thumbnail img-responsive w-100"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <?= isset($data->img) ? '<img src="' . base_url("assert/blog/" . $data->img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
+                    <div class="col-lg-2">
+                        <?= isset($data->img) ? '<img src="' . base_url("assert/slidermain/" . $data->img) . '" class="img-thumbnail img-responsive" style="width:100px">' : ""; ?>
                         <div class="d-none">
                             <?= isset($data->img) ? "<input type='checkbox' name='delete' value='1'> Delete" : "" ?>
                         </div>
@@ -68,8 +74,12 @@ $fromDescription = [
                     <input type="hidden" name="input_image" id="input_image">
                 </div>
                 <div class="form-group">
+                    <label><?= $this->lang->line("blog_short_description") ?></label>
+                    <?= form_textarea("short_description", isset($blogs->short_description) ? $blogs->short_description : "", $fromShortDescription); ?>
+                </div>
+                <div class="form-group">
                     <label><?= $this->lang->line("blog_des_hed") ?></label>
-                    <?= form_textarea("description",isset($blogs->description) ? $blogs->description : "",$fromDescription); ?>
+                    <?= form_textarea("description", isset($blogs->description) ? $blogs->description : "", $fromDescription); ?>
                 </div>
 
             </div>
@@ -89,99 +99,24 @@ $fromDescription = [
         modules: 'security,file',
     });
 </script>
-
 <script>
-
-
-
-    var Demo = (function () {
-        function demoUpload() {
-            var $uploadCrop;
-
-            function popupResult(result) {
-                var html;
-                if (result.html) {
-                    html = result.html;
-                }
-                if (result.src) {
-                    console.log(result.src);
-                    $("#input_image").val(result.src);
-                }
-
-                setTimeout(function () {
-                    $('.sweet-alert').css('margin', function () {
-                        var top = -1 * ($(this).height() / 2),
-                                left = -1 * ($(this).width() / 2);
-                        return top + 'px 0 0 ' + left + 'px';
-                    });
-                }, 1);
-                $('form').submit();
-            }
-
-            function readFile(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-
-                    reader.onload = function (e) {
-                        $('.upload-demo').addClass('ready');
-                        $uploadCrop.croppie('bind', {
-                            url: e.target.result,
-                        }).then(function () {
-                        });
-
-                    };
-
-                    reader.readAsDataURL(input.files[0]);
-
-                } else {
-                    swal("Sorry - you're browser doesn't support the FileReader API");
-                }
-            }
-
-            $uploadCrop = $('#upload-demo').croppie({
-                viewport: {
-                    width: 200,
-                    height: 200,
-                    type: 'square'
-                },
-                boundary: {
-                    width: 210,
-                    height: 210
-                },
-                enableOrientation: true,
-                enableExif: true,
-                enforceBoundary: false
+    function readFile() {
+        if (this.files && this.files[0]) {
+            var FR = new FileReader();
+            FR.addEventListener("load", function (e) {
+                document.getElementById("img").src = e.target.result;
+                document.getElementById("input_image").value = e.target.result;
             });
-<?= isset($data->img) ? "\$uploadCrop.croppie('bind', '" . base_url("assert/blog/" . $data->img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/blog/user_demo.png") . "');"; ?>
-            $('#upload').on('change', function () {
-                readFile(this);
 
-            });
-            $('.upload-result').on('click', function (ev) {
-                $uploadCrop.croppie('result', {
-                    type: 'canvas',
-                    size: 'viewport'
-                }).then(function (resp) {
-                    popupResult({
-                        src: resp
-                    });
-                });
-            });
+            FR.readAsDataURL(this.files[0]);
         }
-
-        function init() {
-            demoUpload();
-        }
-
-        return {
-            init: init
-        };
-    })();
-    Demo.init();
+        $("#sliderdis").show();
+    }
+    document.getElementById("upload").addEventListener("change", readFile);
 </script>
 <script src="<?= base_url("assert/admin/"); ?>plugins/summernote/summernote-bs4.min.js"></script>
 <script>
     $(function () {
-        $('textarea').summernote()
+        $('#description').summernote()
     })
 </script>

@@ -1,31 +1,21 @@
 <?php
+
 defined('BASEPATH') or exit('No direct script access allowed');
 require_once APPPATH . "core/Controller.php";
+
 /**
  * Description of Ordernow
  * https://itinfoway.com
  * @author Admin
  */
-class Ordernow extends Controller
-{
+class Ordernow extends Controller {
 
-    public function __construct()
-    {
+    public function __construct() {
         parent::__construct();
     }
 
-    public function index()
-    {
+    public function index() {
         $this->display('index');
     }
 
-    public function alacarte()
-    {
-        $this->display('alacarte');
-    }
-
-    public function subscribe()
-    {
-        $this->display('subscribe');
-    }
 }

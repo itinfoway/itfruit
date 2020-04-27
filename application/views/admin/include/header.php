@@ -146,6 +146,63 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas  fa-cart-plus"></i>
                                     <p>
+                                        <?=$this->lang->line("fn_blog") ?>
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item has-treeview">
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-luggage-cart nav-icon"></i>
+                                            <p>
+                                                  <?=$this->lang->line("fn_category") ?>
+                                                <i class="right fas fa-angle-left"></i>
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="<?= base_url("admin/blogs/category"); ?>" class="nav-link">
+                                                    <i class="far fa-eye nav-icon"></i>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="<?= base_url("admin/blogs/category/add"); ?>" class="nav-link">
+                                                    <i class="far fa-save nav-icon"></i>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item has-treeview">
+                                        <a href="#" class="nav-link">
+                                            <i class="fas fa-shopping-cart nav-icon"></i>
+                                            <p>
+                                               <?=$this->lang->line("fn_blog") ?> 
+                                                <i class="right fas fa-angle-left"></i>
+                                            </p>
+                                        </a>
+                                        <ul class="nav nav-treeview">
+                                            <li class="nav-item">
+                                                <a href="<?= base_url("admin/blogs/blog"); ?>" class="nav-link">
+                                                    <i class="far fa-eye nav-icon"></i>
+                                                    <p><?=$this->lang->line("fn_view") ?></p>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="<?= base_url("admin/blogs/blog/add"); ?>" class="nav-link">
+                                                    <i class="far fa-save nav-icon"></i>
+                                                    <p><?=$this->lang->line("fn_add") ?></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas  fa-cart-plus"></i>
+                                    <p>
                                         <?=$this->lang->line("fn_pro") ?>
                                         <i class="right fas fa-angle-left"></i>
                                     </p>

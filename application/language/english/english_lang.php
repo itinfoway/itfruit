@@ -184,6 +184,8 @@ $lang["blog_input_title_plac"] = 'Enter Title';
 $lang["blog_img"] = 'Image';
 $lang["blog_des_hed"] = 'Description';
 $lang["blog_input_des_plac"] = 'Enter Description';
+$lang["blog_short_description_plac"] = 'Enter Short Description';
+$lang["blog_short_description"] = 'Short Description';
 $lang["blog_date_hed"] = 'Date';
 $lang["blog_input_date_plac"] = 'Enter  Date';
 
@@ -336,3 +338,16 @@ $lang["fn_our_story_line"][] = 'Contrary to popular belief, Lorem Ipsum is not s
 $lang["fn_our_story_line"][] = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
 $lang["fn_trust_our_fruit_line"][] = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
 $lang["fn_trust_our_fruit_line"][] = 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.';
+
+//subsciption
+
+$lang["fn_error_type_of_plan"] = 'Select Type of plan';
+$lang["fn_error_select_days"] = 'Select days';
+$lang["fn_error_select_days_2"] = 'Select any 2 days';
+$lang["fn_error_select_days_1"] = 'Select any 1 day';
+$lang["fn_duration"] = 'duration';
+
+//blog
+$lang["fn_blog"] = 'blog';
+$lang["fn_recent_post"] = 'recent post';
+$lang["fn_category"] = 'category';

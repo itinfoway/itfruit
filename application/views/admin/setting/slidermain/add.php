@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Description of index
  * https://itinfoway.com
@@ -55,13 +54,13 @@ $fromLink = [
                     <label><?= $this->lang->line("Slidermain_img") ?></label>
                     <div class="input-group">
                         <div class="custom-file">
-                            <?= form_upload("img", null, ['class' => 'custom-file-input',  "data-validation" => "mime size", "data-validation-allowing" => "jpg, png", "data-validation-max-size" => "2000kb", "accept" => "image/x-png,image/jpg,image/jpeg", "id" => "upload"]); ?>
+                            <?= form_upload("img", null, ['class' => 'custom-file-input', "data-validation" => "mime size", "data-validation-allowing" => "jpg, png", "data-validation-max-size" => "2000kb", "accept" => "image/x-png,image/jpg,image/jpeg", "id" => "upload"]); ?>
                             <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10" style="padding-bottom: 39px;">
+                    <div class="col-lg-10" id="sliderdis" style="display: none">
                         <div class="upload-demo-wrap">
                             <div id="upload-demo"><img id="img" class="img-thumbnail img-responsive"></div>
                         </div>
@@ -96,110 +95,18 @@ $fromLink = [
         modules: 'file,security',
     });
 </script>
-
-
-
-<script>
-     
-
-    
-    var Demo = (function() {
-        function demoUpload() {
-            var $uploadCrop;
-
-            function popupResult(result) {
-                var html;
-                if (result.html) {
-                    html = result.html;
-                }
-                if (result.src) {
-                    console.log(result.src);
-                    $("#input_image").val(result.src);
-                }
-
-                setTimeout(function() {
-                    $('.sweet-alert').css('margin', function() {
-                        var top = -1 * ($(this).height() / 2),
-                            left = -1 * ($(this).width() / 2);
-                        return top + 'px 0 0 ' + left + 'px';
-                    });
-                }, 1);
-                $('form').submit();
-            }
-
-            function readFile(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-
-                    reader.onload = function(e) {
-                        $('.upload-demo').addClass('ready');
-                        $uploadCrop.croppie('bind', {
-                            url: e.target.result,
-                        }).then(function() {});
-
-                    };
-
-                    reader.readAsDataURL(input.files[0]);
-
-                } else {
-                    swal("Sorry - you're browser doesn't support the FileReader API");
-                }
-            }
-
-            $uploadCrop = $('#upload-demo').croppie({
-                viewport: {
-                    width: 100,
-                    height: 100,
-                    type: 'square'
-                },
-                boundary: {
-                    width: 110,
-                    height: 110
-                },
-                enableOrientation: true,
-                enableExif: true,
-                enforceBoundary: false
-            });
-            <?= isset($img) ? "\$uploadCrop.croppie('bind', '" . base_url("assertslidermain/" . $img) . "');" : "\$uploadCrop.croppie('bind', '" . base_url("assert/slidermain/user_demo.png") . "');"; ?>
-            $('#upload').on('change', function() {
-                readFile(this);
-
-            });
-            $('.upload-result').on('click', function(ev) {
-                $uploadCrop.croppie('result', {
-                    type: 'canvas',
-                    size: 'viewport'
-                }).then(function(resp) {
-                    popupResult({
-                        src: resp
-                    });
-                });
-            });
-        }
-
-        function init() {
-            demoUpload();
-        }
-
-        return {
-            init: init
-        };
-    })();
-    Demo.init();
-</script>
-
 <script>
     function readFile() {
         if (this.files && this.files[0]) {
             var FR = new FileReader();
-            FR.addEventListener("load", function(e) {
+            FR.addEventListener("load", function (e) {
                 document.getElementById("img").src = e.target.result;
                 document.getElementById("input_image").value = e.target.result;
             });
 
             FR.readAsDataURL(this.files[0]);
         }
-
+        $("#sliderdis").show();
     }
     document.getElementById("upload").addEventListener("change", readFile);
 </script>

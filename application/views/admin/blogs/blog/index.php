@@ -56,7 +56,7 @@
                 {"data": "name",                   
                 },
                 {"data": "title"},
-                {"data": "description"},
+                {"data": "short_description"},
                 {"data": "date_time"},
                 {"data": "id",
                     render: function (data, type, row) {
