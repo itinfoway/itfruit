@@ -683,3 +683,41 @@ body {
     background-position: center;
     background-size: 100% 100%;
 }
+.ordernow-bg-red{
+    background:url(../img/13.png);
+    background-size: 150% 100%;
+    color: #fff;
+}
+.ordernow-bg-r-red{
+    background:url(../img/10.png);
+    background-size: 150% 100%;
+    color: #fff;
+}
+.ordernow-bg-green{
+    background:url(../img/14.png);
+    background-size: 150% 100%;
+    color: #fff;
+    background-position-x: right;
+}
+.ordernow-bg-r-green{
+    background:url(../img/ala-bg.png);
+    background-position: center;
+    background-size: 100% 100%;
+    color: #fff;
+}
+@media (min-width: 768px){
+    .ordernow-bg-red{
+            background-size: 100% 125%;
+    }
+    .ordernow-bg-r-red{
+            background-size: 100% 125%;
+    }
+}
+@media (min-width: 992px){
+    .ordernow-bg-red{
+            background-size: 120% 100%;
+    }
+    .ordernow-bg-r-red{
+            background-size: 220% 100%;
+    }
+}
