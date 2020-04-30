@@ -1,30 +1,30 @@
 <section>
     <div class="container my-container">
         <div class="row">
-            <div class="col-lg-6 col-md-12 ordernow-bg-red py-5">
+            <div class="col-lg-6 col-md-12 col-sm-12 ordernow-bg-red py-lg-5">
                 <div class="row">
                     <div class="col-lg-7 col-md-12">
-                        <div class="row justify-content-md-around mx-md-5 mt-md-3">
-                            <div class="col-lg-7 col-md-4 offset-lg-5 my-3 mt-5">
+                        <div class="row text-lg-left text-center justify-content-lg-end justify-content-md-around justify-content-center mx-md-5 mt-md-3">
+                            <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-lg-5 mt-md-5">
                                 <h4>purchase between 2 - 50 credits</h4>
                             </div>
-                            <div class="col-lg-7 col-md-4 offset-lg-5 my-3">
+                            <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-md-5">
                                 <h4>credits will never expire</h4>
                             </div>
-                            <div class="col-lg-7 col-md-4 offset-lg-5 my-3">
+                            <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-md-5">
                                 <h4>choose your delivery date</h4>
                             </div>
-                            <div class="col-lg-7 col-md-4 offset-lg-5 my-3">
+                            <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-md-5">
                                 <h4>choose your own fruit box</h4>
                             </div>
-                            <div class="col-lg-7 col-md-4  offset-lg-5 my-3 mb-5">
+                            <div class="col-lg-8 col-md-4  offset-lg-5 col-12 my-lg-3 mb-lg-5 mt-md-5">
                                 <h4>order up to 5 advanced deliveries</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-12 ordernow-bg-r-red my-lg-5 py-lg-5 text-center">
+                    <div class="col-lg-5 col-md-8 col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-red my-lg-5 py-lg-5 text-center pointer">
                         <div class="my-lg-5 py-lg-5">
-                            <div class="my-lg-5 py-lg-3">
+                            <div class="my-lg-5 py-lg-3  pt-5">
                                 <p>LIFE IS JUST A FRUIT.</p> 
                                 <h1>ALA</h1> 
                                 <h3>CARTE</h3>
@@ -33,36 +33,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 ordernow-bg-green py-5">
+            <div class="col-lg-6 col-md-12 ordernow-bg-green py-lg-5">
                 <div class="row">
-                    <div class="col-lg-5 ordernow-bg-r-green my-5 py-5 text-center">
-                        <div class="my-5 py-5">
-                            <div class="my-5 py-3">
-                                <p>LIFE IS JUST A FRUIT.</p> 
-                                <h1>ALA</h1> 
-                                <h3>CARTE</h3>
+                    <div class="col-lg-5 col-md-8  col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-green my-lg-5 py-lg-5 text-center pointer">
+                        <div class="my-lg-5 py-lg-5">
+                            <div class="my-lg-5 py-lg-3  pb-lg-0 pb-5">
+                                <p>NATURE'S CANDY</p> 
+                                <h1>REGULAR</h1>
+                                <h3>SUBSCRIPTION</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="row">
-                            <div class="col-lg-7 my-3 mt-5">
-                                <h4>purchase between 2 - 50 credits</h4>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row text-lg-left text-center justify-content-lg-start justify-content-md-around justify-content-center mx-md-5 mt-md-3">
+                            <div class="col-lg-8 col-md-4  col-12 my-lg-3 mt-lg-5 mt-md-5">
+                                <h4>no credits required</h4>
                             </div>
-                            <div class="col-lg-7 my-3">
-                                <h4>credits will never expire</h4>
+                            <div class="col-lg-8 col-md-4 col-12  my-lg-3 mt-md-5">
+                                <h4>cancel / pause anytime</h4>
                             </div>
-                            <div class="col-lg-7 my-3">
-                                <h4>choose your delivery date</h4>
+                            <div class="col-lg-8 col-md-4  col-12 my-lg-3 mt-md-5">
+                                <h4>pay on a recurring basis</h4>
                             </div>
-                            <div class="col-lg-7 my-3">
-                                <h4>choose your own fruit box</h4>
+                            <div class="col-lg-8 col-md-4 col-12  my-lg-3 mt-md-5 mb-md-5">
+                                <h4>random fruit box delivered to you regularly</h4>
                             </div>
-                            <div class="col-lg-7 my-3 mb-5">
-                                <h4>order up to 5 advanced deliveries</h4>
-                            </div>
+                            
                         </div>
                     </div>
+
                 </div>
             </div>
 
