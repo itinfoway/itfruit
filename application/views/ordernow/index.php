@@ -1,7 +1,17 @@
 <section>
     <div class="container my-container">
         <div class="row">
+            <div class="col-md-12 my-3">
+                <h1 class="text-red">CART</h1>
+            </div>
+        </div>
+        <div class="row relative">
+
+            <img class="fruits top-center d-lg-block d-none" src="<?= base_url() ?>/assert/fontend/img/watermelon.svg">
+            <img class="fruits bottom-center d-lg-block d-none" src="<?= base_url() ?>/assert/fontend/img/banana.svg">
             <div class="col-lg-6 col-md-12 col-sm-12 ordernow-bg-red py-lg-5">
+                <img class="fruits top-left" src="<?= base_url() ?>/assert/fontend/img/pinapple.svg">
+                <img class="fruits bottom-left d-lg-block d-none" src="<?= base_url() ?>/assert/fontend/img/sitafal.svg">
                 <div class="row">
                     <div class="col-lg-7 col-md-12">
                         <div class="row text-lg-left text-center justify-content-lg-end justify-content-md-around justify-content-center mx-md-5 mt-md-3">
@@ -22,7 +32,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-8 col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-red my-lg-5 py-lg-5 text-center pointer">
+                    <div class="col-lg-5 col-md-8 col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-red my-lg-5 py-lg-5 text-center pointer" onclick="window.location.href ='<?=base_url()?>ala-cart-sliced'">
                         <div class="my-lg-5 py-lg-5">
                             <div class="my-lg-5 py-lg-3  pt-5">
                                 <p>LIFE IS JUST A FRUIT.</p> 
@@ -34,8 +44,11 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 ordernow-bg-green py-lg-5">
+
+                <img class="fruits bottom-right" src="<?= base_url() ?>/assert/fontend/img/grapes.svg">
+                <img class="fruits top-right d-lg-block d-none" src="<?= base_url() ?>/assert/fontend/img/strawberry.svg">
                 <div class="row">
-                    <div class="col-lg-5 col-md-8  col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-green my-lg-5 py-lg-5 text-center pointer">
+                    <div class="col-lg-5 col-md-8  col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-green my-lg-5 py-lg-5 text-center pointer" onclick="window.location.href ='<?=base_url()?>subscription'">
                         <div class="my-lg-5 py-lg-5">
                             <div class="my-lg-5 py-lg-3  pb-lg-0 pb-5">
                                 <p>NATURE'S CANDY</p> 
@@ -55,113 +68,13 @@
                             <div class="col-lg-8 col-md-4  col-12 my-lg-3 mt-md-5">
                                 <h4>pay on a recurring basis</h4>
                             </div>
-                            <div class="col-lg-8 col-md-4 col-12  my-lg-3 mt-md-5 mb-md-5">
+                            <div class="col-lg-8 col-md-4 col-12  my-lg-3 my-5">
                                 <h4>random fruit box delivered to you regularly</h4>
                             </div>
-                            
+
                         </div>
                     </div>
 
-                </div>
-            </div>
-
-        </div>
-        <div class="cart">
-            <h1>CART</h1>
-            <div class="cart-part">
-                <img class="fruits pinapple" src="<?= base_url("assert/fontend/"); ?>img/pinapple.svg">
-                <img class="fruits strawberry" src="<?= base_url("assert/fontend/"); ?>img/strawberry.svg">
-                <img class="fruits sitafal" src="<?= base_url("assert/fontend/"); ?>img/sitafal.svg">
-                <img class="fruits grapes" src="<?= base_url("assert/fontend/"); ?>img/grapes.svg">
-                <img class="fruits watermelon" src="<?= base_url("assert/fontend/"); ?>img/watermelon.svg">
-                <img class="fruits banana" src="<?= base_url("assert/fontend/"); ?>img/banana.svg">
-                <!-- <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <div class="row">
-                                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4">
-                                                <p>purchase between 2 - 50 credits</p>
-                                                <p>credits will never expire</p>
-                                                <p>choose your delivery date </p>
-                                                <p>choose your own fruit box</p>
-                                                <p>order up to 5 advanced deliveries</p>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4 col-lg-6 col-xl-8">
-                                                <div class="ala1">
-                                                        <a href="<?= base_url("ordernow/alacarte") ?>">
-                                                                <p>LIFE IS JUST A FRUIT.</p>
-                                                                <h1>ALA</h1>
-                                                                <h3>CARTE</h3>
-                                                        </a>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                <div class="row">
-                                        <div class="col-sm-12 col-md-4 col-lg-6 col-xl-8">
-                                                <div class="ala1">
-                                                        <a href="<?= base_url("ordernow/alacarte") ?>">
-                                                                <p>LIFE IS JUST A FRUIT.</p>
-                                                                <h1>ALA</h1>
-                                                                <h3>CARTE</h3>
-                                                        </a>
-                                                </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4">
-                                                <div class="cart-text">
-                                                        <p>no credits required</p>
-                                                        <p>cancel / pause anytime</p>
-                                                        <p>pay on a recurring basis</p>
-                                                        <p>random fruit box delivered to you regularly</p>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                </div> -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
-                        <div class="cart-text">
-                            <p>purchase between 2 - 50 credits</p>
-                            <p>credits will never expire</p>
-                            <p>choose your delivery date </p>
-                            <p>choose your own fruit box</p>
-                            <p>order up to 5 advanced deliveries</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-4 col-lg-6 col-xl-8">
-                        <div class="ala">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="ala-text1">
-                                        <a href="<?= base_url("ordernow/alacarte") ?>">
-                                            <p>LIFE IS JUST A FRUIT.</p>
-                                            <h1>ALA</h1>
-                                            <h3>CARTE</h3>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="ala-text2">
-                                        <a href="<?= base_url("ordernow/subscribe") ?>">
-                                            <p>NATURE'S CANDY</p>
-                                            <h1>REGULAR</h1>
-                                            <h3>SUBSCRIPTION</h3>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-2">
-                        <div class="cart-text cart-text-v2">
-                            <p>no credits required</p>
-                            <p>cancel / pause anytime</p>
-                            <p>pay on a recurring basis</p>
-                            <p>random fruit box delivered to you regularly</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

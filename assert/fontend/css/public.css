@@ -2820,6 +2820,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     h1 {
         font-size: 42px;
     }
+    
     .fruits {
         position: absolute;
         height: 105px;

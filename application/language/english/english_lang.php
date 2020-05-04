@@ -6,6 +6,7 @@
  * @author Admin
  */
 $lang["btn_add"] = 'Add';
+$lang["btn_added"] = 'added';
 $lang["btn_list"] = 'List';
 $lang["btn_save"] = 'Save';
 $lang["btn_edit"] = 'Edit';
@@ -13,6 +14,11 @@ $lang["btn_reset"] = 'Cancel';
 $lang["action"] = 'Action';
 $lang["sr_no"] = 'Sr.No.';
 $lang["status"] = 'Status';
+$lang["day"] = 'day';
+$lang["month"] = 'month';
+$lang["year"] = 'year';
+$lang["years"] = 'years';
+
 $lang["fn_error_order_carte_not_set"] = 'Firs set of order carte thin add product';
 
 //Faq
@@ -345,7 +351,10 @@ $lang["fn_error_type_of_plan"] = 'Select Type of plan';
 $lang["fn_error_select_days"] = 'Select days';
 $lang["fn_error_select_days_2"] = 'Select any 2 days';
 $lang["fn_error_select_days_1"] = 'Select any 1 day';
+$lang["fn_error_select_date"] = 'Select Duration';
+$lang["fn_error_add_product"] = 'Add any one plan';
 $lang["fn_duration"] = 'duration';
+
 
 //blog
 $lang["fn_blog"] = 'blog';

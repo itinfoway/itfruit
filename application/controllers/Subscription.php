@@ -17,7 +17,13 @@ class Subscription extends Controller {
     public function index() {
         $this->load->model("product_model");
         $data["products"] = $this->product_model->view(["type" => 2]);
-        $this->display('index',$data);
+        $this->display('index', $data);
+    }
+
+    public function checkout() {
+        $this->load->model("fruit_model");
+        $data["fruit"] = $this->fruit_model->view();
+        $this->display('checkout',$data);
     }
 
     public function manaage() {

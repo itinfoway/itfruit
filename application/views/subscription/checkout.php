@@ -1,3 +1,10 @@
+<?php
+/**
+ * Description of checkout
+ * https://itinfoway.com
+ * @author Admin
+ */
+?>
 <link href="<?= base_url(); ?>assert/fontend/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 <section>
     <div class="container my-container steps">
@@ -152,79 +159,62 @@
             </div>
         </div>
 </section>
-<section>
-    <div class="random-part">
-        <div class="container">
-            <h1>RANDOM A BOX FOR ME!</h1>
-            <?php
-            if (!empty($products)) {
-                $row = 0;
-                foreach ($products as $product) {
-                    if ($row == 0) {
-                        echo'<div class="row">';
-                    }
-                    $row++;
-                    ?>
-                    <div class="col-sm-6 mb-5 products" typeof="schema:Product">
-                        <center><h2 class="carte-title"><?= $product->name ?></h2></center>
-                        <img class="img-responsive" src="<?= base_url(); ?>assert/products/subscription/<?= $product->img; ?>" title="<?= $product->name ?>"  rel="schema:image" resource="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
-                        <center>
-                            <b class="product-credit"><span><?= $product->price ?></span> SGD</b>
-                            <br>
-                            <div class="text">
-                                <div class="row" property="schema:description" content="<?= implode(",", $product->fruit); ?>">
-                                    <?php
-                                    $fruit = $product->fruit;
-                                    $count = count($fruit);
-                                    $count_d = round($count / 2);
-                                    ?>
-                                    <div class="col-xs-6">
-                                        <ul class="left-part">
-                                            <?php
-                                            for ($cou = 0; $cou < $count_d; $cou++) {
-                                                ?>
-                                                <li><?= $fruit[$cou] ?></li>
-                                                <?php
-                                            }
-                                            ?>
-                                        </ul>
-                                    </div>
-
-                                    <div class="col-xs-6">
-                                        <ul class="right-part">
-                                            <?php
-                                            for ($cou = $count_d; $cou < $count; $cou++) {
-                                                ?>
-                                                <li><?= $fruit[$cou] ?></li>
-                                                <?php
-                                            }
-                                            ?>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </center>
-                        <div class="countr" data-value="<?= urlencode(base64_encode($product->id)) ?>"  property="schema:name" content="<?= $product->name ?>" data-price="<?= $product->price ?>">
-                            <img class="img-responsive minus pointer" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                            <span>0</span>
-                            <img class="img-responsive plus pointer" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+<?php
+if (!empty($fruit)) {
+    ?>
+    <section>
+        <div class="plan">
+            <div class="container plans">
+                <div class="row">
+                    <div data-set="1" class="col-xs-12 col-sm-6 col-md-3 fruit-set">
+                        <div class="box plan-1 pointer">
+                            <h3>premium</h3>
                         </div>
                     </div>
-                    <?php
-                    if ($row == 2) {
-                        echo'</div>';
-                        $row = 0;
-                    }
-                }
-                if (count($products) % 2 != 0) {
-                    echo'</div>';
-                }
-            }
-            ?>   
-
+                    <div data-set="2" class="col-xs-12 col-sm-6 col-md-3 fruit-set">
+                        <div class="box plan-2 pointer">
+                            <h3>regular</h3>
+                        </div>
+                    </div>
+                    <div data-set="3" class="col-xs-12 col-sm-6 col-md-3 fruit-set">
+                        <div class="box plan-3 pointer">
+                            <h3>slice</h3>
+                        </div>
+                    </div>
+                    <div data-set="4" class="col-xs-12 col-sm-6 col-md-3 fruit-set">
+                        <div class="box plan-4 pointer">
+                            <h3>dip</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plan-v2">
+                <div class="container my-container plans-v2">
+                    <div class="row">
+                        <?php
+                        $count = 1;
+                        foreach ($fruit as $f) {
+                            ?>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <div class="box <?= ($count % 4 == 0) ? "plan-green" : (($count % 3 == 0) ? "plan-yellow" : (($count % 2 == 0) ? "plan-red" : "plan-blue")); ?>">
+                                    <img class="top-right pointer fruit-remove" src="<?= base_url() ?>assert/fontend/img/redio-1.png">
+                                    <img class="img-responsive" src="<?= base_url("assert/fruit/" . $f->img); ?>">
+                                    <h2><?= $f->name; ?></h2>
+                                    <center><button class="fev-btn fruit-data" data-fruit="<?= $f->id ?>" data-type="1"><?= $this->lang->line("btn_add") ?></button></center>
+                                </div>
+                            </div>
+                            <?php
+                            $count++;
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    <?php
+}
+?>
 <section>
     <div class="check-out-btn">
         <img class="img-responsive" src="<?= base_url() ?>assert/fontend/img/sitafal.svg">
@@ -294,8 +284,54 @@
     var error_2stblock_1day = '<?= $this->lang->line("fn_error_select_days_1") ?>';
     var error_select_date = '<?= $this->lang->line("fn_error_select_date") ?>';
     var fn_error_add_product = '<?= $this->lang->line("fn_error_add_product") ?>';
-    var checkout_url = '<?=  base_url();?>subscription/checkout';
+    var checkout_url = '<?= base_url(); ?>subscription/checkout';
+    var btn_added = '<?= $this->lang->line("btn_added") ?>';
+    var btn_add = '<?= $this->lang->line("btn_add") ?>';
+</script>
+<script>
+    var fruitData = {};
+    function setFruit(type){
+        $(".fruit-data").text(btn_add);
+        for(i in fruitData[type]){
+            $(".fruit-data[data-fruit='"+fruitData[type][i]+"'][data-type='"+type+"']").text(btn_added);
+        }
+    }
+    $(document).on("click", ".fruit-remove", function () {
+        var fruitid = $(this).parent("div").find(".fruit-data").attr("data-fruit");
+        var fruittype = $(this).parent("div").find(".fruit-data").attr("data-type");
+        for(i in fruitData[fruittype]){
+            if(fruitid==fruitData[fruittype][i]){
+                delete fruitData[fruittype][i];
+            }
+        }
+        setFruit(fruittype);
+        $(this).parent("div").find(".fruit-data").text(btn_add);
+        setCookie("fruit", JSON.stringify(fruitData));
+    });
     
+    $(document).on("click", ".fruit-data", function () {
+        var fruitid = $(this).attr("data-fruit");
+        var fruittype = $(this).attr("data-type");
+        if (fruitData.hasOwnProperty(fruittype)) {
+            fruitData[fruittype][fruitData[fruittype].length] = fruitid;
+        } else {
+            fruitData[fruittype] = [];
+            fruitData[fruittype][0] = fruitid;
+        }
+        $(this).text(btn_added);
+        setCookie("fruit", JSON.stringify(fruitData));
+    });
+    $(document).on("click", ".fruit-set", function () {
+        $(".fruit-set").removeClass("active");
+        $(this).addClass("active");
+        $(".fev-btn").attr("data-type", $(this).data("set"));
+        setFruit($(this).data("set"));
+    });
+    $(document).ready(function () {
+        if (getCookie("fruit") != "") {
+            fruitData = JSON.parse(getCookie("fruit"));
+        }
+        setFruit(1);
+    })
 </script>
-<script src="<?=  base_url()?>assert/fontend/js/subsciption.js">
-</script>
+<script src="<?= base_url() ?>assert/fontend/js/subsciption.js"></script>
