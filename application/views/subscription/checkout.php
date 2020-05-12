@@ -197,7 +197,7 @@ if (!empty($fruit)) {
                             ?>
                             <div class="col-xs-12 col-sm-6 col-md-3">
                                 <div class="box <?= ($count % 4 == 0) ? "plan-green" : (($count % 3 == 0) ? "plan-yellow" : (($count % 2 == 0) ? "plan-red" : "plan-blue")); ?>">
-                                    <img class="top-right pointer fruit-remove" src="<?= base_url() ?>assert/fontend/img/redio-1.png">
+                                    <img class="top-right pointer fruit-remove" src="<?= base_url() ?>assert/fontend/img/close.png">
                                     <img class="img-responsive" src="<?= base_url("assert/fruit/" . $f->img); ?>">
                                     <h2><?= $f->name; ?></h2>
                                     <center><button class="fev-btn fruit-data" data-fruit="<?= $f->id ?>" data-type="1"><?= $this->lang->line("btn_add") ?></button></center>
@@ -332,6 +332,8 @@ if (!empty($fruit)) {
             fruitData = JSON.parse(getCookie("fruit"));
         }
         setFruit(1);
+        $(".fruit-set").first().addClass("active");
+        
     })
 </script>
 <script src="<?= base_url() ?>assert/fontend/js/subsciption.js"></script>

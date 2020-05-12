@@ -360,3 +360,6 @@ $lang["fn_duration"] = 'duration';
 $lang["fn_blog"] = 'blog';
 $lang["fn_recent_post"] = 'recent post';
 $lang["fn_category"] = 'category';
+
+//subscription/delivery-information
+$lang["fn_stripe"] = 'stripe';

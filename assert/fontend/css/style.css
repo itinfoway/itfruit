@@ -738,6 +738,61 @@ section .plan .plan-v2 .box .top-right{
 .ordernow-bg-r-green:hover{
     filter: drop-shadow(0px 2px 5px #222);
 }
+
+.castum-radio {
+    display: block;
+    padding-left: 15px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.castum-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.castum-radio .checkmark {
+    position: absolute;
+    top: -13px;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.castum-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.castum-radio input:checked ~ .checkmark {
+    background-color: #e08b03;
+}
+
+.castum-radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.castum-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.castum-radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
 @media (min-width: 768px){
     .ordernow-bg-red{
         background-size: 100% 125%;
