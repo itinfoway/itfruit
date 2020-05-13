@@ -141,21 +141,24 @@ body {
     margin-top: -25px;
 }
 
-.profile .form input {
+.form input {
     background: transparent;
     color: #ffffff;
 }
-
+.form input:focus {
+    background: transparent;
+    color: #ffffff;
+}
 .profile .form-group {
     margin-bottom: 0px;
 }
 
 .form-control:focus {
-    border-color: transparent;
+    border-color: transparent !important;
     box-shadow: none;
 }
 
-.profile .form input::placeholder {
+.form input::placeholder {
     color: #ffffff;
     opacity: 1;
 }

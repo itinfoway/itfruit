@@ -57,7 +57,7 @@
 						</div>	
 						<center><button class="btn btn2"> <?=$this->lang->line("fn_sign"); ?></button></center>
 						<div class="clearfix"></div>
-						<p><?=$this->lang->line("fn_account"); ?><span><a href="#"><?=$this->lang->line("fn_here"); ?></a></span></p>
+						<p><?=$this->lang->line("fn_account"); ?><span><a href="<?=base_url("login")?>"><?=$this->lang->line("fn_here"); ?></a></span></p>
 						<?= form_close() ?>
 					</div>
 				</div>

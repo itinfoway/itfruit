@@ -8,6 +8,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Login_model extends CI_Model
 {
 
+    
+    public function getuser($whare = array())
+    {
+        $this->db->trans_start();
+        $this->db->where("email", $whare["username"]);
+        $this->db->select("email");
+        $query = $this->db->get(USERS);
+        $this->db->trans_complete();
+        if ($query->num_rows() > 0) {
+            $data = $query->result();
+            return $data[0];
+        } else {
+            return TRUE;
+        }
+    }
     public function view($whare = array())
     {
         $this->db->trans_start();
@@ -24,6 +39,14 @@ class Login_model extends CI_Model
         } else {
             return TRUE;
         }
+    }
+    public function forgetPassword($data = array(), $whare = array())
+    {
+        $this->db->trans_start();
+        $this->db->set($data);
+        $this->db->where("email", $whare["email"]);
+        $data = $this->db->update(USERS);
+        $this->db->trans_complete();
     }
     public function attept($data = array(), $whare = array(), $string = null)
     {
@@ -49,6 +72,7 @@ class Login_model extends CI_Model
             $this->db->or_where("email", $whare["username"]);
             $this->db->or_where("mobile", $whare["username"]);
             $this->db->having("password", $whare["password"]);
+            $this->db->having("status", 1);
         }
         $this->db->select("username,fname,lname,email,img,id,strip_id,password");
         $query = $this->db->get(USERS);

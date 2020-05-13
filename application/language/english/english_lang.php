@@ -64,7 +64,11 @@ $lang["fruit_select_vitamin_plac"] = 'Select vitamins';
 $lang["success_login"] = 'successfuly login';
 $lang["error_login"] = 'your email and password is wrong';
 $lang["success_signup"] = 'successfuly signup';
+$lang["success_forget_password"] = 'successfuly forget Password';
+$lang["error_forget_password_link"] = 'successfuly send forget link in your email';
 $lang["error_signup"] = 'Oops, something went wrong!';
+$lang["error_forget_password"] = 'Oops, something went wrong!';
+$lang["fn_change_password"] = 'Change Password';
 
 //product/products
 $lang["ala_carte_head"] = 'Ala Carte';
@@ -223,6 +227,7 @@ $lang["fn_order_now"] = 'ORDER NOW';
 $lang["fn_faq"] = 'FAQ';
 $lang["fn_contact_us"] = 'CONTACT US';
 $lang["fn_blog"] = 'BLOG';
+$lang["fn_alacarte"] = 'Ala Carte Package';
 
 //welcome/index.php
 $lang["fn_previous"] = 'Previous';

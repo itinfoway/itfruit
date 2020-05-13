@@ -12,7 +12,7 @@ $fromPass = [
     // "data-validation-length"=>"1-5",
     // "data-validation-allowing"=>"float",
     'id' => "pass",
-    'readonly'=>'true',
+    
     "placeholder" => $this->lang->line("alacarte_input_pass_plac"),
     'value' => isset($pass) ? $pass : "",
 ];
@@ -23,7 +23,7 @@ $fromCredit = [
     // "data-validation"=>"length,number",
     // "data-validation-length"=>"1-5",
     // "data-validation-allowing"=>"float",
-    'readonly'=>'true',
+    
     'id' => "credit",
     "placeholder" => $this->lang->line("alacarte_input_credit_plac"),
     'value' => isset($credit) ? $credit : "",
@@ -33,7 +33,7 @@ $fromYoupay = [
     "name" => "youpay",
     // "data-validation"=>"length,number",
     // "data-validation-length"=>"min2",
-   'readonly'=>'true',
+   
     'class' => 'form-control',
     'id' => "youpay",
     "placeholder" => $this->lang->line("alacarte_input_youpay_plac"),
@@ -45,7 +45,7 @@ $fromValidity = [
     // "data-validation"=>"length,number",
     // "data-validation-length"=>"min2",
     // "data-validation-allowing"=>"float",
-    'readonly'=>'true',
+    
     'class' => 'form-control',
     'id' => "validity",
     "placeholder" => $this->lang->line("alacarte_input_val_plac"),
@@ -57,7 +57,7 @@ $fromSavings = [
     // "data-validation"=>"length,number",
     // "data-validation-length"=>"min3",
     // "data-validation-allowing"=>"float",
-    'readonly'=>'true',
+    
     'class' => 'form-control',
     'id' => "savings",
     "placeholder" => $this->lang->line("alacarte_input_saveing_plac"),

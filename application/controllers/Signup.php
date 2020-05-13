@@ -22,7 +22,7 @@ class Signup extends Controller
             $data = $this->input->post();
             unset($data["pri_pol"]);
             $data["email_v"] = $em = rand(10000, 99999);
-            $data["status"] = 2;
+            $data["status"] = 0;
             $em = urlencode(base64_encode($data["email"] . "|" . $em));
             $msg = "<a href='" . base_url() . "/signup/verify/" . $em . "'>Click</a><br>";
             $msg .= base_url() . "signup/verify/" . $em;

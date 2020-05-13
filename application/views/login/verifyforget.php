@@ -3,40 +3,25 @@
         <div class="profile new-signup new-login">
             <div class="row">
                 <div class="col-sm-6">
-                    <h1><?= $this->lang->line("fn_login"); ?></h1>
+                    <h1><?= $this->lang->line("fn_forgot"); ?></h1>
                     <div class="form">
                         <?= form_open() ?>
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" data-validation="length" data-validation-length="min5"  placeholder="username / email / mobile no." name="username">
+                                    <input type="password" class="form-control" data-validation="length"  data-validation-length="8-10" placeholder="password" name="password">
 
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <input type="password" class="form-control" data-validation="length" data-validation-length="min5" placeholder="password" name="password">
+                                    <input type="password" class="form-control" placeholder="CONFIRM password" data-validation="confirmation" data-validation-confirm="password">
 
                                 </div>
                             </div>
                         </div>
-                        <div class="bill-pay">
-                            <div class="billing">
-                                <div class="check">
-                                    <label class="checkboxcontainer">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <span class="text"><?= $this->lang->line("fn_remember"); ?></span>
-                                    <h6><a href="#" class="forgot"  data-toggle="modal" data-target="#forgetModal"> <?= $this->lang->line("fn_forgot"); ?></a>
 
-                                        <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <center><button type="submit" class="btn btn2"><?= $this->lang->line("fn_login"); ?> </button></center>
-                        <div class="clearfix"></div>
-                        <p><?= $this->lang->line("fn_don`t"); ?> <span><a href="<?= base_url("signup") ?>"><?= $this->lang->line("fn_crate"); ?></a></span></p>
+                        <center><button type="submit" class="btn btn2"><?= $this->lang->line("fn_change_password"); ?> </button></center>
                         <?= form_close() ?>
                     </div>
                 </div>
@@ -108,33 +93,7 @@
         </div>
     </div>
 </section>
-<!-- Modal -->
-<div class="modal fade" id="forgetModal" tabindex="-1" role="dialog" aria-labelledby="forgetModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="<?= base_url() ?>assert/fontend/img/date-close.png"/>
-                </button>
-            </div>
-            <?= form_open("login/forget",""); ?>
-            <div class="modal-body">
-                <div class="row form">
-                    <div class="col-10 offset-1">
-                        <div class="form-group">
-                            <input type="text" class="form-control" data-validation="length" data-validation-length="min5"  placeholder="email" name="username"
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary"><?= $this->lang->line("fn_forgot"); ?></button>
-            </div>
-            <?= form_close(); ?>
-        </div>
-    </div>
-</div>
-</div>
+
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <script>
     $.validate();

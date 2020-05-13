@@ -21,32 +21,29 @@ class Wallet extends Controller {
         $this->display('index', $data);
     }
 
-    public function add() {
-        $data["data"] = $this->alacarte_model->view();
-        $this->display('index', $data);
-    }
-
     public function add_to_cart() {
-        $this->load->model("local_setting_model");
-        $config = $this->local_setting_model->view("publishable_key,secret_key");
-        if ($this->session->userdata("user")->strip_id != "" || !is_null($this->session->userdata("user")->strip_id)) {
-            require_once APPPATH . "third_party/stripe/init.php";
-            $stripe = array(
-                "secret_key" => $config[0]->secret_key,
-                "publishable_key" => $config[0]->publishable_key
-            );
-            \Stripe\Stripe::setApiKey($stripe['secret_key']);
-            $card = \Stripe\Customer::allSources(
-                            $this->session->userdata("user")->strip_id
-            );
+        if ($this->session->has_userdata("user")) {
+            $this->load->model("local_setting_model");
+            $config = $this->local_setting_model->view("publishable_key,secret_key");
+            if ($this->session->userdata("user")->strip_id != "" || !is_null($this->session->userdata("user")->strip_id)) {
+                require_once APPPATH . "third_party/stripe/init.php";
+                $stripe = array(
+                    "secret_key" => $config[0]->secret_key,
+                    "publishable_key" => $config[0]->publishable_key
+                );
+                \Stripe\Stripe::setApiKey($stripe['secret_key']);
+                $card = \Stripe\Customer::allSources(
+                                $this->session->userdata("user")->strip_id
+                );
 //            print_r($card);exit;
-            $data["card"] = $card;
-        }
+                $data["card"] = $card;
+            }
 
-        $this->load->helper('form');
-        $config = $this->local_setting_model->view("publishable_key");
-        if (!empty($config)) {
-            $data["pubkey"] = $config[0]->publishable_key;
+            $this->load->helper('form');
+            $config = $this->local_setting_model->view("publishable_key");
+            if (!empty($config)) {
+                $data["pubkey"] = $config[0]->publishable_key;
+            }
         }
         $data["data"] = $this->alacarte_model->view();
         $this->display('add_to_cart', $data);

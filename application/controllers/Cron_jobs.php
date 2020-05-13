@@ -112,6 +112,7 @@ class Cron_jobs extends Controller {
                             );
                             $this->ledger_model->add($ledger);
                         }
+                        $data = $this->subscription_model->edit(["last_order_date"=>date("Y-m-d", strtotime("+1 day")),"next_order_date"=>date("Y-m-d", strtotime("+2 day"))],$d->id);
                     } else {
                         
                     }

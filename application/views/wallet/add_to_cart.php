@@ -1,39 +1,44 @@
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>  
-<script type="text/javascript">
-    //set your publishable key
-    Stripe.setPublishableKey('<?= $pubkey ?>');
+<?php
+if (isset($pubkey)) {
+    ?>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>  
+    <script type="text/javascript">
+        //set your publishable key
+        Stripe.setPublishableKey('<?= $pubkey ?>');
 
-    //callback to handle the response from stripe
-    function stripeResponseHandler(status, response) {
-        if (response.error) {
-            $('#payBtn').removeAttr("disabled");
-            $('#payment-errors').addClass('alert alert-danger');
-            $("#payment-errors").html(response.error.message);
-        } else {
-            var form$ = $("#paymentFrm");
-            console.log(response);
-            var token = response['id'];
-            var brand = response["card"]['brand'];
-            form$.find(".pay-carte-lab").text(brand);
-            form$.find(".pay-carte-lab").show();
-            form$.append("<input type='hidden' name='stripeToken' value='" + token + "' />");
-            form$.get(0).submit();
+        //callback to handle the response from stripe
+        function stripeResponseHandler(status, response) {
+            if (response.error) {
+                $('#payBtn').removeAttr("disabled");
+                $('#payment-errors').addClass('alert alert-danger');
+                $("#payment-errors").html(response.error.message);
+            } else {
+                var form$ = $("#paymentFrm");
+                console.log(response);
+                var token = response['id'];
+                var brand = response["card"]['brand'];
+                form$.find(".pay-carte-lab").text(brand);
+                form$.find(".pay-carte-lab").show();
+                form$.append("<input type='hidden' name='stripeToken' value='" + token + "' />");
+                form$.get(0).submit();
+            }
         }
-    }
-    $(document).ready(function () {
-        $("#paymentFrm").submit(function (event) {
-            $('#payBtn').attr("disabled", "disabled");
-            Stripe.createToken({
-                number: $('#card_num').val(),
-                cvc: $('#card-cvc').val(),
-                exp_month: $('#card-expiry-month').val(),
-                exp_year: $('#card-expiry-year').val()
-            }, stripeResponseHandler);
-            return false;
+        $(document).ready(function () {
+            $("#paymentFrm").submit(function (event) {
+                $('#payBtn').attr("disabled", "disabled");
+                Stripe.createToken({
+                    number: $('#card_num').val(),
+                    cvc: $('#card-cvc').val(),
+                    exp_month: $('#card-expiry-month').val(),
+                    exp_year: $('#card-expiry-year').val()
+                }, stripeResponseHandler);
+                return false;
+            });
         });
-    });
-</script>
-
+    </script>
+    <?php
+}
+?>
 <section>
     <div class="container my-container">
         <div class="ala-carte">
@@ -107,7 +112,7 @@
                                     <?= $t->savings ?>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn <?= ($t->status == 1) ? "disabled" : "" ?> paymod" data-toggle="modal" data-target="#addToCarte" data-value="<?= $t->id; ?>">add to cart</a>
+                                    <a href="<?=(!isset($pubkey))?  base_url("login"):"" ?>" class="btn <?= ($t->status == 1) ? "disabled" : "" ?> paymod" <?php if(isset($pubkey)){ ?> data-toggle="modal" data-target="#addToCarte" data-value="<?= $t->id; ?>" <?php } ?>>add to cart</a>
                                 </li>
                             </ul>
                         </div>
@@ -125,99 +130,105 @@
     </div>
 </section>
 <!-- Modal -->
-<div class="modal fade" id="addToCarte" tabindex="-1" role="dialog" aria-labelledby="addToCarteLabel" aria-hidden="true">
-    <div class="modal-dialog modal-md" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <img src="<?= base_url() ?>assert/fontend/img/date-close.png"/>
-                </button>
-            </div>
+<?php
+if (isset($pubkey)) {
+    ?>
+    <div class="modal fade" id="addToCarte" tabindex="-1" role="dialog" aria-labelledby="addToCarteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="<?= base_url() ?>assert/fontend/img/date-close.png"/>
+                    </button>
+                </div>
 
-            <div class="modal-body">
-                <?php
-                if (isset($card)) {
-                    ?>
-                    <div class="row">
-                        <div class="col-8 offset-1">
-                            <div class="form-control-pay">
-                                Add New Card
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <label class="castum-radio">
-                                <input type="checkbox" id="newCard">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <?= form_open("wallet/check", ["class" => "mycard"]) ?>
-                    <input type="hidden" class="datapaymod" name="paymod">
+                <div class="modal-body">
                     <?php
-                    $count_card = count($card);
-                    $tempC = 0;
-                    foreach ($card as $c) {
-                        $tempC++;
+                    if (isset($card)) {
                         ?>
                         <div class="row">
                             <div class="col-8 offset-1">
                                 <div class="form-control-pay">
-                                    <?= $c->exp_month ?>/<?= $c->exp_year ?> : xxx xxx <?= $c->last4 ?> 
-                                </div>
-                                <div class="pay-carte-lab ml-5" >
-                                    <?= $c->brand ?>
+                                    Add New Card
                                 </div>
                             </div>
                             <div class="col-2">
                                 <label class="castum-radio">
-                                    <input type="radio" name="stecard" value="<?= $c->id ?>"<?= ($tempC == $count_card) ? "checked" : "" ?> >
+                                    <input type="checkbox" id="newCard">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                         </div>
+                        <?= form_open("wallet/check", ["class" => "mycard"]) ?>
+                        <input type="hidden" class="datapaymod" name="paymod">
+                        <?php
+                        $count_card = count($card);
+                        $tempC = 0;
+                        foreach ($card as $c) {
+                            $tempC++;
+                            ?>
+                            <div class="row">
+                                <div class="col-8 offset-1">
+                                    <div class="form-control-pay">
+                                        <?= $c->exp_month ?>/<?= $c->exp_year ?> : xxx xxx <?= $c->last4 ?> 
+                                    </div>
+                                    <div class="pay-carte-lab ml-5" >
+                                        <?= $c->brand ?>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <label class="castum-radio">
+                                        <input type="radio" name="stecard" value="<?= $c->id ?>"<?= ($tempC == $count_card) ? "checked" : "" ?> >
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                        <div class="col-10 offset-1">
+                            <button type="submit" id="payBtn" class="btn btn-primary btn-block">Submit Payment</button>
+                        </div>
+                        <?= form_close() ?>
                         <?php
                     }
                     ?>
-                    <div class="col-10 offset-1">
-                        <button type="submit" id="payBtn" class="btn btn-primary btn-block">Submit Payment</button>
-                    </div>
-                    <?= form_close() ?>
-                    <?php
-                }
-                ?>
-                <?= form_open("wallet/check", ["id" => "paymentFrm"]) ?>
-                <input type="hidden" class="datapaymod" name="paymod">
-                <div class="row" <?= (isset($card)) ? 'style="display:none"' : "" ?>>
-                    <div class="col-10 offset-1">
-                        <div id="payment-errors"></div>
-                        <div class="row">
-                            <div class="form-group col-12 mb-3">
-                                <input type="number" name="card_num" data-validation="number,length" data-validation-length="max16" id="card_num" class="form-control form-control-pay" placeholder="Card Number" autocomplete="off" value="" required>
-                                <div class="pay-carte-lab" style="display: none">
+                    <?= form_open("wallet/check", ["id" => "paymentFrm"]) ?>
+                    <input type="hidden" class="datapaymod" name="paymod">
+                    <div class="row" <?= (isset($card)) ? 'style="display:none"' : "" ?>>
+                        <div class="col-10 offset-1">
+                            <div id="payment-errors"></div>
+                            <div class="row">
+                                <div class="form-group col-12 mb-3">
+                                    <input type="number" name="card_num" data-validation="number,length" data-validation-length="max16" id="card_num" class="form-control form-control-pay" placeholder="Card Number" autocomplete="off" value="" required>
+                                    <div class="pay-carte-lab" style="display: none">
+                                    </div>
+                                </div>
+                                <div class="form-group col-4">
+                                    <input type="text"  data-validation="number,length" data-validation-length="max2" maxlength="2" class="form-control form-control-pay" id="card-expiry-month" placeholder="MM" value="" required>
+                                </div>
+                                <div class="form-group col-4">
+                                    <input type="text"  data-validation="number,length" data-validation-length="max4" class="form-control form-control-pay" maxlength="4" id="card-expiry-year" placeholder="YYYY" required="" value="">
+                                </div>
+
+                                <div class="form-group col-4">
+                                    <input type="text" data-validation="number,length" data-validation-length="max3" id="card-cvc" maxlength="3" class="form-control form-control-pay" autocomplete="off" placeholder="CVC" value="" required>
                                 </div>
                             </div>
-                            <div class="form-group col-4">
-                                <input type="text"  data-validation="number,length" data-validation-length="max2" maxlength="2" class="form-control form-control-pay" id="card-expiry-month" placeholder="MM" value="" required>
-                            </div>
-                            <div class="form-group col-4">
-                                <input type="text"  data-validation="number,length" data-validation-length="max4" class="form-control form-control-pay" maxlength="4" id="card-expiry-year" placeholder="YYYY" required="" value="">
-                            </div>
-
-                            <div class="form-group col-4">
-                                <input type="text" data-validation="number,length" data-validation-length="max3" id="card-cvc" maxlength="3" class="form-control form-control-pay" autocomplete="off" placeholder="CVC" value="" required>
-                            </div>
+                        </div>
+                        <div class="col-10 offset-1">
+                            <button type="submit" id="payBtn" class="btn btn-primary btn-block">Submit Payment</button>
                         </div>
                     </div>
-                    <div class="col-10 offset-1">
-                        <button type="submit" id="payBtn" class="btn btn-primary btn-block">Submit Payment</button>
-                    </div>
                 </div>
+                <?= form_close() ?> 
             </div>
-            <?= form_close() ?> 
-        </div>
 
+        </div>
     </div>
-</div>
+    <?php
+}
+?>
 </div>
 
 

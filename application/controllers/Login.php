@@ -16,6 +16,46 @@ class Login extends Controller {
         $this->load->model("login_model");
     }
 
+    public function verifyforget($data) {
+        if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            $this->load->model("user_model");
+            $this->user_model->edit(["password" => $this->input->post("password"), "email_v" => rand(10000, 99999), "status" => 1], $this->session->userdata("user_id"));
+            $this->session->set_userdata("success", $this->lang->line("success_forget_password"));
+            redirect("login");
+        } else {
+            $data = base64_decode(urldecode($data));
+            $data = explode("|", $data);
+            $this->load->model("user_model");
+            $v = $this->user_model->view_where(["email" => $data[0], "email_v" => $data[1]]);
+            if (!empty($v)) {
+                $this->session->set_userdata("user_id", $v[0]->id);
+                $this->display('verifyforget');
+            }
+        }
+    }
+
+    public function forget() {
+        if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            $loginWhere["username"] = $this->input->post("username");
+            $users = $this->login_model->getuser($loginWhere);
+            if (!empty($users)) {
+                $data["email_v"] = $em = rand(10000, 99999);
+                $data["status"] = 3;
+                echo $em = urlencode(base64_encode($users->email . "|" . $em));
+                $msg = "<a href='" . base_url() . "/login/verifyforget/" . $em . "'>Click</a><br>";
+                $msg .= base_url() . "signup/verifyforget/" . $em;
+                if ($this->maileSend("FORGET PASSWORD", $msg, $users->email)) {
+                    $this->login_model->forgetPassword($data, ["email" => $users->email]);
+                    $this->session->set_userdata("success", $this->lang->line("success_forget_password"));
+                    redirect("login");
+                }
+            } else {
+                $this->session->set_userdata("error", $this->lang->line("error_forget_password_link"));
+                redirect("login");
+            }
+        }
+    }
+
     public function index() {
 
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
