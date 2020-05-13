@@ -375,7 +375,7 @@
                             </label>
                         </div>
                     </div>
-                    <?= form_open("wallet/check", ["class" => "mycard"]) ?>
+                    <?= form_open(null, ["class" => "mycard"]) ?>
                     <input type="hidden" name="comment" class="commentInput">
                     <input type="hidden" name="address" class="addresInput">
                     <?php
@@ -410,7 +410,7 @@
                     <?php
                 }
                 ?>
-                <?= form_open("wallet/check", ["id" => "paymentFrm"]) ?>
+                <?= form_open(null, ["id" => "paymentFrm"]) ?>
                 <input type="hidden" name="address" class="addresInput">
                 <input type="hidden" name="comment" class="commentInput">
                 <div class="row" <?= (isset($card)) ? 'style="display:none"' : "" ?>>

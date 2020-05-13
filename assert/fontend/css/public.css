@@ -724,7 +724,6 @@ section .order-history .manage .text .week ul {
     text-align: center;
     padding: 0px;
     margin: 0px;
-    display: grid;
 }
 
 section .order-history .manage .text .week ul li {
@@ -749,32 +748,45 @@ section .order-history .manage .text .week ul li .circ {
     width: 50px;
 }
 
-section .order-history .manage .text .week ul li .mon {
+section .order-history .manage .text .week ul li .mon.active {
     background-image: url("../img/mon.png");
+}
+section .order-history .manage .text .week ul li .mon {
+
     background-size: 100% 100%;
     color: #9A2B39 !important;
 }
 
-section .order-history .manage .text .week ul li .tue {
+section .order-history .manage .text .week ul li .tue.active {
     background-image: url("../img/tue.png");
+}
+section .order-history .manage .text .week ul li .tue {
+
     background-size: 100% 100%;
     color: #D1222A;
 }
 
-section .order-history .manage .text .week ul li .wed {
+section .order-history .manage .text .week ul li .wed.active {
     background-image: url("../img/wed.png");
+}
+section .order-history .manage .text .week ul li .wed {
+
     background-size: 100% 100%;
     color: #F35F20;
 }
 
+section .order-history .manage .text .week ul li .thu.active {
+        background-image: url("../img/thu.png");
+}
 section .order-history .manage .text .week ul li .thu {
-    background-image: url("../img/thu.png");
     background-size: 100% 100%;
     color: #F69420;
 }
 
+section .order-history .manage .text .week ul li .fri.active {
+        background-image: url("../img/fri.png");
+}
 section .order-history .manage .text .week ul li .fri {
-    background-image: url("../img/fri.png");
     background-size: 100% 100%;
     color: #F9AE33;
 }
@@ -2820,7 +2832,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     h1 {
         font-size: 42px;
     }
-    
+
     .fruits {
         position: absolute;
         height: 105px;
@@ -3802,7 +3814,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
         padding: 58px 130px;
     }
     section .week {
-        width: 60%;
+        width: 100%;
     }
     section .steps .arrow img {
         height: 54px;

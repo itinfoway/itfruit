@@ -86,7 +86,55 @@ class Subscription extends Controller {
                 $stecard = $post["stecard"];
                 $customerID = $this->session->userdata("user")->strip_id;
             }
-            
+            $cards = \Stripe\Customer::retrieveSource(
+                            $customerID, $stecard
+            );
+            $this->load->helper('cookie');
+            $carte = get_cookie("carte");
+            $carte = json_decode($carte, true);
+            $this->load->model("product_model");
+
+            $address = $this->address_model->view_where(["a.id" => base64_decode(urldecode($this->input->post("address"))), "a.user_id" => $this->session->userdata("user")->id]);
+
+            $product = array();
+            $amount = 0;
+            foreach ($carte["p"] as $key => $val) {
+                $pro = $this->product_model->view(["type" => 2, "id" => base64_decode(urldecode($key))]);
+                if (!empty($pro)) {
+                    $pro[0]->item = $val["c"];
+                    $pro[0]->total_amount = ($pro[0]->price * $val["c"]);
+                    $product[] = $pro[0];
+                    $amount +=($pro[0]->price * $val["c"]);
+                }
+            }
+            $this->load->model("subscription_model");
+            $data = [
+                "user_id" => $this->session->userdata("user")->id,
+                "from_date" => $carte["f"],
+                "to_date" => $carte["t"],
+                "products_ids" => json_encode($carte["p"]),
+                "products" => json_encode($product),
+                "day_of_week" => $carte["df"],
+                "total_amount" => $amount,
+                "address_type" => $address[0]->type,
+                "address" => $address[0]->address,
+                "latitude" => $address[0]->latitude,
+                "longitude" => $address[0]->longitude,
+                "city" => $address[0]->city,
+                "postalcode" => $address[0]->postalcode,
+                "state" => $address[0]->state,
+                "country" => $address[0]->country,
+                "stripe_card_id" => $stecard,
+                "days" => json_encode($carte["d"]),
+                "fruit" => get_cookie("fruit"),
+                "card" => $cards->last4,
+                "card_type" => $cards->brand,
+            ];
+
+            $this->subscription_model->add($data);
+            delete_cookie("carte");
+            $this->session->set_userdata("success", "subscription added successfully");
+            redirect("subscription/manaage");
         } else {
             $data["address"] = $this->address_model->view_where(["a.user_id" => $this->session->userdata("user")->id]);
             $this->session->set_userdata('previous_url', current_url());
@@ -121,7 +169,9 @@ class Subscription extends Controller {
     }
 
     public function manaage() {
-        $this->display('manaage');
+        $this->load->model("subscription_model");
+        $data["subscription"] = $this->subscription_model->view(["user_id" => $this->session->userdata("user")->id]);
+        $this->display('manaage', $data);
     }
 
 }

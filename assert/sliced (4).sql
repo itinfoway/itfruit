@@ -120,7 +120,7 @@ CREATE TABLE `blog` (
   `title` varchar(255) NOT NULL,
   `img` text NOT NULL,
   `description` longtext NOT NULL,
-  `date_time` datetime NOT NULL DEFAULT current_timestamp()
+  `date_time` datetime NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -397,7 +397,7 @@ INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `data`) VALUES
 
 CREATE TABLE `contactus` (
   `id` int(11) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp(),
+  `date` date NOT NULL ,
   `ip_address` varchar(45) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -482,7 +482,7 @@ CREATE TABLE `ledger` (
   `type` tinyint(1) NOT NULL,
   `orderid` varchar(55) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `date_time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `date_time` timestamp NOT NULL  ON UPDATE current_timestamp(),
   `amount` decimal(8,2) DEFAULT NULL,
   `credit` int(11) NOT NULL,
   `exp_date_time` timestamp NULL DEFAULT NULL,
@@ -781,7 +781,7 @@ CREATE TABLE `users` (
   `mobile` varchar(13) NOT NULL,
   `password` text NOT NULL,
   `img` text NOT NULL,
-  `lastattempt` bigint(20) NOT NULL DEFAULT current_timestamp(),
+  `lastattempt` bigint(20) NOT NULL ,
   `attempt` tinyint(1) NOT NULL DEFAULT 0,
   `ip_attempt` varchar(64) DEFAULT NULL,
   `email_v` varchar(255) NOT NULL,
@@ -836,7 +836,7 @@ INSERT INTO `vitamin` (`id`, `name`) VALUES
 --
 DROP TABLE IF EXISTS `today_order`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `today_order`  AS  select `order_details`.`delivered_on_date` AS `delivered_on_date`,`order_details`.`delivered_on_day` AS `delivered_on_day`,`order_details`.`order_loading_id` AS `order_loading_id`,sum(`order_details`.`total_item`) AS `total_item_sum`,`order_details`.`type` AS `type` from `order_details` group by `order_details`.`delivered_on_date`,`order_details`.`order_loading_id`,`order_details`.`type` ;
+CREATE VIEW `today_order`  AS  select `order_details`.`delivered_on_date` AS `delivered_on_date`,`order_details`.`delivered_on_day` AS `delivered_on_day`,`order_details`.`order_loading_id` AS `order_loading_id`,sum(`order_details`.`total_item`) AS `total_item_sum`,`order_details`.`type` AS `type` from `order_details` group by `order_details`.`delivered_on_date`,`order_details`.`order_loading_id`,`order_details`.`type` ;
 
 --
 -- Indexes for dumped tables

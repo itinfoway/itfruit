@@ -110,3 +110,4 @@ defined('PRODUCTS_NAME')      or define('PRODUCTS_NAME', "products"); // highest
 defined('ORDER_LOADING')      or define('ORDER_LOADING', "order_loading"); // highest automatically-assigned error
 defined('LOCAL_SETTING')      or define('LOCAL_SETTING', "local_setting"); // highest automatically-assigned error
 defined('TODAY_ORDER')      or define('TODAY_ORDER', "today_order"); // highest automatically-assigned error
+defined('SUBSCRIPTION')      or define('SUBSCRIPTION', "subscription"); // highest automatically-assigned error

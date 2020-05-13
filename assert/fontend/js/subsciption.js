@@ -132,7 +132,7 @@ var products = {};
             return returnValue;
         },
                 toDate = toDate ? toDate : new Date(),
-                diff = fromDate - toDate,
+                diff = (fromDate - toDate),
                 diff = diff < 0 ? diff * -1 : diff,
                 date = new Date(new Date(1970, 0, 1, 0).getTime() + diff),
                 returnString = '',
@@ -186,7 +186,7 @@ var products = {};
                 $("#thisto_datetime").val(j.toISOString().split('T')[0]);
                 products["t"] = $("#thisto_datetime").val();
             }
-            $("#SetDate").text(getNiceTime(new Date($("#thisto_datetime").val()), new Date($("#thisfrom_datetime").val()), 4, true));
+            $("#SetDate").text(getNiceTime(new Date($("#thisfrom_datetime").val()),new Date($("#thisto_datetime").val()), 4, true));
             
         } else {
             toastr.error(error_select_date);

@@ -31,7 +31,7 @@ class Ala_cart_sliced extends Controller {
             $this->load->model("order_details_model");
             $this->load->model("order_item_model");
             $address = $this->address_model->view_where(["a.id" => base64_decode(urldecode($this->input->post("address"))), "a.user_id" => $this->session->userdata("user")->id]);
-            $cookcat = get_cookie("cat");
+           
             $cook = json_decode(get_cookie("carte"), TRUE);
             if (empty($address)) {
                 $this->session->set_userdata('previous_url', current_url());
@@ -91,6 +91,7 @@ class Ala_cart_sliced extends Controller {
                         $this->order_item_model->add($prodata);
                     }
                     $this->ledger_model->add($ledger);
+                    delete_cookie("carte");
                 } else {
                     
                 }

@@ -284,7 +284,7 @@ if (!empty($fruit)) {
     var error_2stblock_1day = '<?= $this->lang->line("fn_error_select_days_1") ?>';
     var error_select_date = '<?= $this->lang->line("fn_error_select_date") ?>';
     var fn_error_add_product = '<?= $this->lang->line("fn_error_add_product") ?>';
-    var checkout_url = '<?= base_url(); ?>subscription/checkout';
+    var checkout_url = '<?= base_url(); ?>subscription/delivery-information';
     var btn_added = '<?= $this->lang->line("btn_added") ?>';
     var btn_add = '<?= $this->lang->line("btn_add") ?>';
 </script>

@@ -29,7 +29,7 @@ class Controller extends CI_Controller {
                 if ($class == "login") {
                     redirect("welcome");
                 }
-            } else if ($class == "profile" || $class == "wallet" || ($class=="ala_cart_sliced" && $method=="checkout")) {
+            } else if ($class == "profile" || $class == "wallet" || ($class=="ala_cart_sliced" && $method=="checkout") || $class=="address") {
                 $this->session->set_userdata('previous_url', current_url());
                 redirect("login");
             }

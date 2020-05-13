@@ -18,6 +18,13 @@ $lang["day"] = 'day';
 $lang["month"] = 'month';
 $lang["year"] = 'year';
 $lang["years"] = 'years';
+$lang["days_name"][1] = 'MON';
+$lang["days_name"][2] = 'TUE';
+$lang["days_name"][3] = 'WED';
+$lang["days_name"][4] = 'THU';
+$lang["days_name"][5] = 'FRI';
+$lang["days_name"][6] = 'SAT';
+$lang["days_name"][7] = 'SUN';
 
 $lang["fn_error_order_carte_not_set"] = 'Firs set of order carte thin add product';
 
