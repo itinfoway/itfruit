@@ -173,7 +173,12 @@ function initAutocomplete() {
     });
     mark(centerMap);
     infoWindow = new google.maps.InfoWindow;
-    geolocate();
+    if (dataLat == "" && dataLon == "") {
+        geolocate();
+    } else {
+        var geolocation = {lat: dataLat, lng: dataLon};
+        mark(geolocation);
+    }
     autocomplete.addListener('place_changed', fillInAddress);
 }
 function mark(pos) {

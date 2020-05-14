@@ -48,4 +48,35 @@ class Address extends Controller {
         $this->display('add');
     }
 
+    public function edit($ids) {
+        $ids = base64_decode(urldecode($ids));
+
+        if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            $capArray = $this->input->post();
+            $capArray["user_id"] = $this->session->userdata("user")->id;
+            $data = $this->address_model->edit($capArray,$ids);
+
+            if (!empty($data)) {
+                $this->session->set_userdata("success", "address added successfully");
+                if ($this->session->has_userdata("previous_url")) {
+                    redirect($this->session->userdata('previous_url'));
+                    $this->session->unset_userdata('previous_url');
+                } else {
+                    redirect("address");
+                }
+            } else {
+                $this->session->set_userdata("error", "address not added try again");
+                if ($this->session->has_userdata("previous_url")) {
+                    redirect($this->session->userdata('previous_url'));
+                    $this->session->unset_userdata('previous_url');
+                } else {
+                    redirect("address");
+                }
+            }
+        }
+        $data = $this->address_model->view($ids);
+//        print_r($data);
+        $this->display('add', $data[0]);
+    }
+
 }
