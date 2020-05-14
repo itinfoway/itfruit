@@ -198,7 +198,7 @@ foreach ($subscription as $sub) {
                             <div class="text">
                                 <h3>NEXT BILLING DATE</h3>
                                 <h6><?= date("D, M/d/Y", strtotime((is_null($sub->next_order_date)) ? $sub->from_date : $sub->next_order_date)) ?> </h6>
-                                <button>VIEW PAYMENT HISTORY</button>
+                                <button onclick="window.location.href='<?=  base_url("wallet/subscription/")?>'">VIEW PAYMENT HISTORY</button>
                                 <h3>PAYMENT MODE</h3>
                                 <button class="saved-btn"><P>SAVED PAYMENT <span><?= $sub->card; ?></span><span class="visa text-uppercase"><?= $sub->card_type; ?></span></P></button>
                                 <?php
