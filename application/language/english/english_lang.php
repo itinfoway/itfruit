@@ -206,6 +206,26 @@ $lang["blog_short_description"] = 'Short Description';
 $lang["blog_date_hed"] = 'Date';
 $lang["blog_input_date_plac"] = 'Enter  Date';
 
+//admin/alacarte/orders
+$lang["order_date"] = 'Order Date';
+$lang["delivered_on_day"] = 'Delivered On Day';
+$lang["products"] = 'Products';
+$lang["delivered_on_date"] = 'Delivered On Date';
+$lang["delivered_on_time"] = 'Delivered On Time';
+$lang["total_item"] = 'Total item';
+$lang["total_credit"] = 'Total Credit';
+$lang["address_type"] = 'Address Type';
+$lang["address"] = 'Address';
+$lang["city"] = 'City';
+$lang["postalcode"] = 'Postal Code';
+$lang["state"] = 'State';
+$lang["country"] = 'Country';
+$lang["ala_carte_orders"] = 'Ala Carte Orders';
+
+//admin/subscription/orders
+$lang["subscription_carte_orders"] = 'Subscription Carte Orders';
+$lang["total_price"] = 'Total Price';
+
 //include/header.php
 $lang["fn_profile"] = 'profile';
 $lang["fn_chnage_password"] = 'chnage password';
@@ -228,6 +248,9 @@ $lang["fn_faq"] = 'FAQ';
 $lang["fn_contact_us"] = 'CONTACT US';
 $lang["fn_blog"] = 'BLOG';
 $lang["fn_alacarte"] = 'Ala Carte Package';
+$lang["fn_ala_carte"] = 'Ala Carte';
+$lang["fn_subscription_carte"] = 'Subscription Carte';
+$lang["fn_orders"] = 'orders';
 
 //welcome/index.php
 $lang["fn_previous"] = 'Previous';

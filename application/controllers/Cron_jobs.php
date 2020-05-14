@@ -68,7 +68,7 @@ class Cron_jobs extends Controller {
                         $order_details["delivered_on_date"] = date("Y-m-d", strtotime("+1 day"));
                         $order_details["delivered_on_time"] = "";
                         $order_details["total_item"] = $totalItem;
-                        $order_details["total_item"] = $d->total_amount;
+                        $order_details["total_price"] = $d->total_amount;
                         $order_details["address_type"] = $d->address_type;
                         $order_details["lat_lng"] = $d->latitude . "," . $d->longitude;
                         $order_details["address"] = $d->address;
@@ -100,7 +100,7 @@ class Cron_jobs extends Controller {
                                 'user_id' => $user[0]->id,
                                 'type' => "3",
                                 'orderid' => $orderID,
-                                'date_time' => time(),
+                                'date_time' =>date("Y-m-d H:i:s"),
                                 'item_name' => $itemName,
                                 'item_number' => $itemNumber,
                                 'item_price' => $d->total_amount,

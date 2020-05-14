@@ -74,7 +74,7 @@ class Login_model extends CI_Model
             $this->db->having("password", $whare["password"]);
             $this->db->having("status", 1);
         }
-        $this->db->select("username,fname,lname,email,img,id,strip_id,password");
+        $this->db->select("username,fname,lname,email,img,id,strip_id,password,status");
         $query = $this->db->get(USERS);
         $this->db->trans_complete();
         if ($query->num_rows() > 0) {

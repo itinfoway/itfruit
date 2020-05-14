@@ -9,8 +9,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
  */
 class Ledger_model extends CI_Model {
 
-    public function view_where($where = null, $select = "*") {
+    public function view_where($where = null, $select = "*",$wherein=null) {
         $this->db->trans_start();
+        if (!is_null($wherein)) {
+            $this->db->where_in("type",$wherein);
+        }
         if (!is_null($where)) {
             $this->db->where($where);
         }

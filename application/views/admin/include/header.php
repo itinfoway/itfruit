@@ -119,6 +119,42 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-shopping-bag"></i>
+                                    <p>
+                                        <?= $this->lang->line("fn_ala_carte") ?>
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview" style="display: none;">
+                                    <li class="nav-item">
+                                        <a href="<?= base_url("admin/alacarte/orders"); ?>" class="nav-link">
+                                            <i class="far fa-eye nav-icon"></i>
+                                            <p><?= $this->lang->line("fn_orders") ?></p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon fas fa-shopping-bag"></i>
+                                    <p>
+                                        <?= $this->lang->line("fn_subscription_carte") ?>
+                                        <i class="right fas fa-angle-left"></i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview" style="display: none;">
+                                    <li class="nav-item">
+                                        <a href="<?= base_url("admin/subscription/orders"); ?>" class="nav-link">
+                                            <i class="far fa-eye nav-icon"></i>
+                                            <p><?= $this->lang->line("fn_orders") ?></p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
                             <!--                            <li class="nav-item has-treeview">
                                                             <a href="#" class="nav-link">
                                                                 <i class="nav-icon fas fa-address-book"></i>

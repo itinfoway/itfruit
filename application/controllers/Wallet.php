@@ -17,7 +17,13 @@ class Wallet extends Controller {
 
     public function index() {
         $this->load->model("ledger_model");
-        $data["data"] = $this->ledger_model->view_where(["user_id" => $this->session->userdata("user")->id]);
+        $data["data"] = $this->ledger_model->view_where(["user_id" => $this->session->userdata("user")->id], "*", [1, 2]);
+        $this->display('index', $data);
+    }
+
+    public function subscription() {
+        $this->load->model("ledger_model");
+        $data["data"] = $this->ledger_model->view_where(["user_id" => $this->session->userdata("user")->id], "*", [3]);
         $this->display('index', $data);
     }
 
@@ -166,7 +172,7 @@ class Wallet extends Controller {
                         'user_id' => $this->session->userdata("user")->id,
                         'type' => "1",
                         'orderid' => $orderID,
-                        'date_time' => time(),
+                        'date_time' => date("Y-m-d H:i:s"),
                         'item_name' => $itemName,
                         'item_number' => $itemNumber,
                         'item_price' => $itemPrice / 100,
