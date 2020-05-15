@@ -38,10 +38,11 @@ class Login extends Controller {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             $loginWhere["username"] = $this->input->post("username");
             $users = $this->login_model->getuser($loginWhere);
-            if (!empty($users)) {
+            
+            if (isset($users->email)) {
                 $data["email_v"] = $em = rand(10000, 99999);
                 $data["status"] = 3;
-                echo $em = urlencode(base64_encode($users->email . "|" . $em));
+                $em = urlencode(base64_encode($users->email . "|" . $em));
                 $msg = "<a href='" . base_url() . "/login/verifyforget/" . $em . "'>Click</a><br>";
                 $msg .= base_url() . "signup/verifyforget/" . $em;
                 if ($this->maileSend("FORGET PASSWORD", $msg, $users->email)) {
