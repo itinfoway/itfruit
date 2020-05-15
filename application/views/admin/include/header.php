@@ -44,10 +44,10 @@
                         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="index3.html" class="nav-link"><?= $this->lang->line("fn_home") ?></a>
+                        <a href="<?= base_url() ?>" class="nav-link"><?= $this->lang->line("fn_home") ?></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="#" class="nav-link"><?= $this->lang->line("fn_con") ?></a>
+                        <a href="<?= base_url("admin/contacts") ?>" class="nav-link"><?= $this->lang->line("fn_con") ?></a>
                     </li>
                 </ul>
 
@@ -134,7 +134,7 @@
                                             <p><?= $this->lang->line("fn_orders") ?></p>
                                         </a>
                                     </li>
-                                    
+
                                 </ul>
                             </li>
                             <li class="nav-item has-treeview">
@@ -152,7 +152,7 @@
                                             <p><?= $this->lang->line("fn_orders") ?></p>
                                         </a>
                                     </li>
-                                    
+
                                 </ul>
                             </li>
                             <!--                            <li class="nav-item has-treeview">
@@ -480,7 +480,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    
+
                                 </ul>
                             </li>
 
