@@ -1796,7 +1796,7 @@ section .week ul {
     text-align: center;
     padding: 0px;
     margin: 0px;
-    display: flex;
+    display: inline-flex;
 }
 
 section .week ul li {
