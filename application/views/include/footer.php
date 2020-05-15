@@ -10,26 +10,9 @@
         <h1><?= $this->lang->line("fn_find_us"); ?></h1>
         <div class="container">
                 <!--<img class="img-responsive f-pinapple" src="assert/fontend/img/pinapple.svg">-->
-            <div class="row ftr-row">
-                <div class="col-sm-4">
-                    <div class="add-part">
-                        <div class="add-img">
-                            <img class="img-responsive" src="<?= base_url("assert/fontend/img/location.svg"); ?>">
-                        </div>
-                        <div class="add-text">
-                            <?= $this->lang->line("fn_find_us_address"); ?>
-                        </div>
-                    </div>
-                    <div class="add-part">
-                        <div class="add-img">
-                            <img class="img-responsive" src="<?= base_url("assert/fontend/img/mail-01.svg"); ?>">
-                        </div>
-                        <div class="add-text">
-                            <p style="padding-top: 20px"><?= $this->lang->line("fn_find_us_email"); ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
+            <div class="row ftr-row pb-5">
+                <div class="col-sm-4 text-center">
+                    <h2 class="text-green">LOCATES US</h2>
                     <div class="map-part">
                         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10293.845965464005!2d70.77197305875166!3d22.2643210388045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca4359ed4969%3A0xd760019c830b310d!2sBITNET%20Infotech!5e0!3m2!1sen!2sin!4v1569503715486!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
@@ -43,10 +26,39 @@
                             <p style="padding-top: 20px"><?= $this->lang->line("fn_find_us_mno"); ?></p>
                         </div>
                     </div>
+                    <div class="add-part">
+                        <div class="add-img">
+                            <img class="img-responsive" src="<?= base_url("assert/fontend/img/mail-01.svg"); ?>">
+                        </div>
+                        <div class="add-text">
+                            <p style="padding-top: 20px"><?= $this->lang->line("fn_find_us_email"); ?></p>
+                        </div>
+                    </div>
+                    <div class="add-part">
+                        <div class="add-img">
+                            <img class="img-responsive" src="<?= base_url("assert/fontend/img/location.svg"); ?>">
+                        </div>
+                        <div class="add-text">
+                            <?= $this->lang->line("fn_find_us_address"); ?>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 text-center">
+                    <h2 class="text-green">CONNECT US</h2>
                     <div class="social">
-                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/fb-01.svg"); ?>">
-                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/twitter-01.svg"); ?>">
-                        <img class="img-responsive" src="<?= base_url("assert/fontend/img/insta-01.svg"); ?>">
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <img class="img-responsive" src="<?= base_url("assert/fontend/img/fb-01.svg"); ?>">
+                            </div>
+                            <div class="col-12">
+                                <img class="img-responsive" src="<?= base_url("assert/fontend/img/twitter-01.svg"); ?>">
+                            </div>
+                            <div class="col-12">
+                                <img class="img-responsive" src="<?= base_url("assert/fontend/img/insta-01.svg"); ?>">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

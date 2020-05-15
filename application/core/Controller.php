@@ -69,7 +69,7 @@ class Controller extends CI_Controller {
     public function maileSend($subject = 'This is a test', $message = "test", $to = "parth.p.ajudiya@gmail.com", $attach = null) {
         $this->load->model("local_setting_model");
         $config = $this->local_setting_model->view("smtp_user,smtp_pass,smtp_port");
-        $this->load->library('email', ["smtp_user" => $config[0]->smtp_user, "smtp_pass" => $config[0]->smtp_pass, "smtp_port" => $config[0]->smtp_port]);
+        $this->load->library('email', ["smtp_user" => $config[0]->smtp_user, "smtp_pass" => $config[0]->smtp_pass, "smtp_port" => $config[0]->smtp_port,"mailtype"=>"html"]);
 
         // Get full html:
         $body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

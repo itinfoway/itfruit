@@ -403,7 +403,7 @@ body {
 
 .ftr .map {
     text-align: center;
-    border-radius: 50%;
+    
 }
 
 .ftr .map-part {
@@ -583,8 +583,8 @@ body {
         width: 250px;
     }
     .ftr .map {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
 
