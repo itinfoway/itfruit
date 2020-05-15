@@ -11,7 +11,7 @@ var products = {};
         $(".countr").find("span").text(0);
     });
     $(document).on("click", "#checkout", function () {
-        var data = JSON.parse(getCookie("carte"));
+        var data = JSON.parse(getCookie("subscri"));
         var flag = 0;
         console.log(data["d"]);
         if (data["d"] == "" || data["d"] == undefined) {
@@ -94,8 +94,8 @@ var products = {};
         return false;
     }
     function productGet() {
-        if (getCookie("carte") != "") {
-            var data = JSON.parse(getCookie("carte"));
+        if (getCookie("subscri") != "") {
+            var data = JSON.parse(getCookie("subscri"));
             $('.box[data-daysof="' + data["df"] + '"]').click();
             for (i in data["d"]) {
                 $('.week-days[data-day="' + data["d"][i] + '"]').click();
@@ -217,7 +217,7 @@ var products = {};
         products["d"] = day;
         products["df"] = dayof;
         products["p"] = pro;
-        setCookie("carte", JSON.stringify(products));
+        setCookie("subscri", JSON.stringify(products));
     }
     $(document).on("click", ".plus", function () {
         if (conCheck()) {
