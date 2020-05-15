@@ -153,7 +153,7 @@
 <section>
     <div class="container">
         <div class="row justify-content-center text-center">
-            <div class="col-md-3 pointer" data-toggle="modal" data-target="#dateAndTime1">
+            <div class="col-md-3 pointer">
                 <button class="btn btn-success btn-block"><h5><img src="<?= base_url(); ?>assert/fontend/img/date.png" /> <?= $this->lang->line("fn_duration"); ?></h5></button>         
                 <h5 id="SetDate" class="text-red"></h5>
             </div>
@@ -222,7 +222,7 @@ if (!empty($fruit)) {
         <img class="img-responsive" src="<?= base_url() ?>assert/fontend/img/banana.svg">
     </div>
 </section>
-<div class="modal fade" id="dateAndTime1" tabindex="-1" role="dialog" aria-labelledby="dateAndTime1Label" aria-hidden="true">
+<div class="modal fade" >
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
