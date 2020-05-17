@@ -246,7 +246,8 @@ $lang["fn_learn"] = 'LEARN';
 $lang["fn_order_now"] = 'ORDER NOW';
 $lang["fn_faq"] = 'FAQ';
 $lang["fn_contact_us"] = 'CONTACT US';
-$lang["fn_blog"] = 'BLOG';
+$lang["fn_manage_blog"] = 'Manage Blog';
+$lang["fn_blog"] = 'Blog';
 $lang["fn_alacarte"] = 'Ala Carte Package';
 $lang["fn_ala_carte"] = 'Ala Carte';
 $lang["fn_subscription_carte"] = 'Subscription Carte';
@@ -392,7 +393,6 @@ $lang["fn_duration"] = 'duration';
 
 
 //blog
-$lang["fn_blog"] = 'blog';
 $lang["fn_recent_post"] = 'recent post';
 $lang["fn_category"] = 'category';
 

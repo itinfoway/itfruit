@@ -183,7 +183,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fas  fa-cart-plus"></i>
                                     <p>
-                                        <?= $this->lang->line("fn_blog") ?>
+                                        <?= $this->lang->line("fn_manage_blog") ?>
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
