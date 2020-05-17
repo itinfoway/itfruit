@@ -29,8 +29,10 @@ class Contacts extends Controller
             $data = $this->contact_model->add($capArray);
 
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/contacts/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/contacts/add");
             }
         }
@@ -43,8 +45,10 @@ class Contacts extends Controller
             $capArray = $this->input->post();
             $data = $this->contact_model->edit($capArray, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/contacts/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/contacts/add");
             }
         } else {
@@ -57,8 +61,10 @@ class Contacts extends Controller
     {
         $data = $this->contact_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/contacts/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/contacts/index");
         }
     }

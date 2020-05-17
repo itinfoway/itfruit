@@ -42,8 +42,10 @@ class People extends Controller
             }
             $data = $this->People_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/people/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/people/add");
             }
         }
@@ -85,8 +87,10 @@ class People extends Controller
             }
             $data = $this->People_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/people/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/people/add");
             }
         }
@@ -97,8 +101,10 @@ class People extends Controller
     {
         $data = $this->People_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/people/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/people/index");
         }
     }

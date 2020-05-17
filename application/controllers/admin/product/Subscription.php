@@ -41,8 +41,10 @@ class Subscription extends Controller {
             $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             $data = $this->product_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/product/subscription/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/product/subscription/add");
             }
         }
@@ -87,8 +89,10 @@ class Subscription extends Controller {
             $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             $data = $this->product_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/product/subscription/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/product/subscription/add");
             }
         }
@@ -104,8 +108,10 @@ class Subscription extends Controller {
     public function delete($id) {
         $data = $this->product_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/product/subscription/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/product/subscription/index");
         }
     }

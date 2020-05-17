@@ -25,8 +25,10 @@ class Order_loading extends Controller {
             $data = $this->order_loading_model->add($capArray);
             
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/order_loading/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/order_loading/add");
             }
         }
@@ -38,8 +40,10 @@ class Order_loading extends Controller {
             $capArray = $this->input->post();
             $data = $this->order_loading_model->edit($capArray, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/order_loading/index");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/order_loading/index");
             }
         } else {
@@ -51,8 +55,10 @@ class Order_loading extends Controller {
     public function delete($id) {
         $data = $this->order_loading_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/order_loading/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/order_loading/index");
         }
     }

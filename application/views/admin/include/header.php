@@ -18,7 +18,8 @@
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="<?= base_url(); ?>assert/admin/plugins/fontawesome-free/css/all.min.css">
-
+        <link rel="stylesheet" href="<?= base_url(); ?>assert/admin/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+        <link rel="stylesheet" href="<?= base_url(); ?>assert/admin/plugins/toastr/toastr.min.css">
         <link rel="stylesheet" href="<?= base_url(); ?>assert/admin/plugins/select2/css/select2.min.css">
         <link rel="stylesheet" href="<?= base_url(); ?>assert/admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 

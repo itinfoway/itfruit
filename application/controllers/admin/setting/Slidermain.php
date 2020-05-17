@@ -42,8 +42,10 @@ class Slidermain extends Controller
             }
             $data = $this->slidermain_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/slidermain/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/slidermain/add");
             }
         }
@@ -85,8 +87,10 @@ class Slidermain extends Controller
             }
             $data = $this->slidermain_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/slidermain/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/slidermain/add");
             }
         } else {
@@ -101,8 +105,10 @@ class Slidermain extends Controller
     {
         $data = $this->slidermain_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/slidermain/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/slidermain/index");
         }
     }

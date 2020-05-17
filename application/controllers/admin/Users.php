@@ -43,8 +43,10 @@ class Users extends Controller
             unset($array["password_confirmation"]);
             $data = $this->user_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/users/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/users/add");
             }
         }
@@ -94,8 +96,10 @@ class Users extends Controller
             unset($array["password_confirmation"]);
             $data = $this->user_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/users/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/users/add");
             }
         }
@@ -106,8 +110,10 @@ class Users extends Controller
     {
         $data = $this->user_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/users/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/users/index");
         }
     }

@@ -25,8 +25,10 @@ class Vitamin extends Controller {
             $data = $this->Vitamin_model->add($capArray);
             
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/vitamin/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/vitamin/add");
             }
         }
@@ -38,8 +40,10 @@ class Vitamin extends Controller {
             $capArray = $this->input->post();
             $data = $this->Vitamin_model->edit($capArray, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/vitamin/index");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/vitamin/index");
             }
         } else {
@@ -51,8 +55,10 @@ class Vitamin extends Controller {
     public function delete($id) {
         $data = $this->Vitamin_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/vitamin/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/vitamin/index");
         }
     }

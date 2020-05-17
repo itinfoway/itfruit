@@ -25,8 +25,10 @@ class Faq extends Controller {
             $data = $this->faq_model->add($capArray);
             
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/faq/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/faq/add");
             }
         }
@@ -38,8 +40,10 @@ class Faq extends Controller {
             $capArray = $this->input->post();
             $data = $this->faq_model->edit($capArray, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/faq/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/faq/add");
             }
         } else {
@@ -51,8 +55,10 @@ class Faq extends Controller {
     public function delete($id) {
         $data = $this->faq_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/faq/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/faq/index");
         }
     }

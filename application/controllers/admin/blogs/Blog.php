@@ -40,8 +40,10 @@ class Blog extends Controller {
             //$array["blog_category_id"] = json_encode($this->input->post("blog_category_id"));
             $data = $this->blogs_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/blogs/blog/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/blogs/blog/add");
             }
         }
@@ -84,8 +86,10 @@ class Blog extends Controller {
             }            
             $data = $this->blogs_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/blogs/blog/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/blogs/blog/add");
             }
         }
@@ -102,8 +106,10 @@ class Blog extends Controller {
     {
         $data = $this->blogs_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/blogs/blog/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/blogs/blog/index");
         }
     }

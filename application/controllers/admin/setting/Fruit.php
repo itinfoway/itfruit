@@ -44,8 +44,10 @@ class Fruit extends Controller
             $array["vitamin_ids"] = json_encode($this->input->post("vitamin_ids"));
             $data = $this->fruit_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/fruit/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/fruit/add");
             }
         }
@@ -94,8 +96,10 @@ class Fruit extends Controller
             
             $data = $this->fruit_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/fruit/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/fruit/add");
             }
         }
@@ -113,8 +117,10 @@ class Fruit extends Controller
     {
         $data = $this->fruit_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/fruit/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/fruit/index");
         }
     }

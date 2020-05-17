@@ -25,8 +25,10 @@ class Alacarte extends Controller {
             $data = $this->alacarte_model->add($capArray);
             
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/alacarte/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/alacarte/add");
             }
         }
@@ -38,8 +40,10 @@ class Alacarte extends Controller {
             $capArray = $this->input->post();
             $data = $this->alacarte_model->edit($capArray, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/alacarte/index");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/alacarte/index");
             }
         } else {
@@ -51,8 +55,10 @@ class Alacarte extends Controller {
     public function delete($id) {
         $data = $this->alacarte_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/alacarte/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/alacarte/index");
         }
     }

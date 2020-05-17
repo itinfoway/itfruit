@@ -27,6 +27,7 @@ class Login extends Controller
             $whear["paspsas"] = $this->input->post("password");
             $data = $this->login_model->view($whear);
             if ($data) {
+                $this->session->set_userdata("success","successfully Login");
                 $this->session->set_userdata("admin", $data);
                 $this->session->set_userdata("admin_login", TRUE);
             } else {

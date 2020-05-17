@@ -35,8 +35,10 @@ class Address extends Controller
           $data = $this->address_model->add($capArray);
 
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/address/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/address/add");
             }
         }$users = $this->user_model->view();
@@ -54,8 +56,10 @@ class Address extends Controller
             $capArray = $this->input->post();
             $data = $this->address_model->edit($capArray, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/address/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/address/add");
             }
         } else {
@@ -73,8 +77,10 @@ class Address extends Controller
     {
         $data = $this->address_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/address/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/address/index");
         }
     }

@@ -38,8 +38,10 @@ class Slider extends Controller {
             }
             $data = $this->Slider_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/slider/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/slider/add");
             }
         }
@@ -78,8 +80,10 @@ class Slider extends Controller {
             }
             $data = $this->Slider_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/slider/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/slider/add");
             }
         }
@@ -89,8 +93,10 @@ class Slider extends Controller {
     public function delete($id) {
         $data = $this->Slider_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/slider/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/slider/index");
         }
     }

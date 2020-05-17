@@ -42,8 +42,10 @@ class Partner extends Controller
             }
             $data = $this->Partner_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/setting/partner/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/partner/add");
             }
         }
@@ -84,8 +86,10 @@ class Partner extends Controller
             }
             $data = $this->Partner_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/setting/partner/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/setting/partner/add");
             }
         }
@@ -96,8 +100,10 @@ class Partner extends Controller
     {
         $data = $this->Partner_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/setting/partner/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/setting/partner/index");
         }
     }

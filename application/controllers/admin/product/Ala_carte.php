@@ -41,8 +41,10 @@ class ala_carte extends Controller {
             $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             $data = $this->product_model->add($array);
             if (!empty($data)) {
+                $this->session->set_userdata("success","successfully added");
                 redirect("admin/product/ala_carte/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/product/ala_carte/add");
             }
         }
@@ -87,8 +89,10 @@ class ala_carte extends Controller {
             $array["fruit_ids"] = json_encode($this->input->post("fruit_ids"));
             $data = $this->product_model->edit($array, $id);
             if (!empty($data)) {
+                $this->session->set_userdata("success","updated successfully");
                 redirect("admin/product/ala_carte/add");
             } else {
+                $this->session->set_userdata("error","oops something went wrong");
                 redirect("admin/product/ala_carte/add");
             }
         }
@@ -103,8 +107,10 @@ class ala_carte extends Controller {
     public function delete($id) {
         $data = $this->product_model->delete($id);
         if (!empty($data)) {
+            $this->session->set_userdata("success","successfully deleted");
             redirect("admin/product/ala_carte/index");
         } else {
+            $this->session->set_userdata("error","oops something went wrong");
             redirect("admin/product/ala_carte/index");
         }
     }
