@@ -20,7 +20,7 @@ class Order_item_model extends CI_Model {
     public function view($where = null, $select = "*") {
         $this->db->trans_start();
         if (!is_null($where)) {
-            $this->db->where("id", $where);
+            $this->db->where($where);
         }
         $this->db->select($select);
         $this->db->order_by("id", "asc");
