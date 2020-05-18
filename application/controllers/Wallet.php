@@ -18,12 +18,16 @@ class Wallet extends Controller {
     public function index() {
         $this->load->model("ledger_model");
         $data["data"] = $this->ledger_model->view_where(["user_id" => $this->session->userdata("user")->id], "*", [1, 2]);
+        $data["title"]=$this->lang->line("fn_wallet_history");
+        $data["type"]=1;
         $this->display('index', $data);
     }
 
     public function subscription() {
         $this->load->model("ledger_model");
         $data["data"] = $this->ledger_model->view_where(["user_id" => $this->session->userdata("user")->id], "*", [3]);
+        $data["type"]=2;
+        $data["title"]="Subscription";
         $this->display('index', $data);
     }
 
