@@ -16,7 +16,7 @@ class Orderhistory extends Controller {
     }
 
     public function index() {
-        $data["order"]=$this->order_details_model->view(["user_id" => $this->session->userdata("user")->id]);
+        $data["order"]=$this->order_details_model->view(["user_id" => $this->session->userdata("user")->id,"type"=>1]);
         $this->display('index',$data);
     }
 

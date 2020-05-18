@@ -31,7 +31,7 @@ class Ala_cart_sliced extends Controller {
             $this->load->model("order_details_model");
             $this->load->model("order_item_model");
             $address = $this->address_model->view_where(["a.id" => base64_decode(urldecode($this->input->post("address"))), "a.user_id" => $this->session->userdata("user")->id]);
-           
+
             $cook = json_decode(get_cookie("carte"), TRUE);
             if (empty($address)) {
                 $this->session->set_userdata('previous_url', current_url());
@@ -92,11 +92,12 @@ class Ala_cart_sliced extends Controller {
                     }
                     $this->ledger_model->add($ledger);
                     delete_cookie("carte");
+                    delete_cookie("crt");
                 } else {
                     
                 }
             }
-           redirect("orderhistory");
+            redirect("orderhistory");
         } else {
 
             if (get_cookie("crt") == "") {
@@ -106,7 +107,7 @@ class Ala_cart_sliced extends Controller {
             $data["address"] = $this->address_model->view_where(["a.user_id" => $this->session->userdata("user")->id]);
             $this->session->set_userdata('previous_url', current_url());
             if (empty($data["address"])) {
-                
+
                 redirect("address/add");
             }
             $this->load->helper('form');
@@ -122,9 +123,9 @@ class Ala_cart_sliced extends Controller {
         $date = date("Y-m-d", strtotime($date));
         $time = $this->order_loading_model->viewwhere(["week_day" => $day]);
         $today = $this->today_order_model->viewwhere(["delivered_on_date" => $date]);
-        $data=array();
+        $data = array();
         foreach ($time as $t) {
-            
+
             if (!empty($today)) {
                 foreach ($today as $d) {
                     if ($t->ala_carte_loading > $d->total_item_sum && $t->id == $d->order_loading_id) {

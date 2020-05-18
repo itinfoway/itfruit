@@ -52,7 +52,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="form-group">
-									<input type="text" class="form-control" data-validation="length custom" data-validation-regexp="^([a-z]+)$" data-validation-length="min3" placeholder="insert your name" name="name">
+									<input type="text" class="form-control" data-validation="length custom" data-validation-regexp="^([a-zA-Z\s]+)$" data-validation-length="min3" placeholder="insert your name" name="name">
 									
 								</div>
 							</div>
@@ -94,7 +94,7 @@
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="insert your name" data-validation="length custom" data-validation-regexp="^([a-z]+)$" data-validation-length="min3" name="name">
+									<input type="text" class="form-control" placeholder="insert your name" data-validation="length custom" data-validation-regexp="^([a-zA-Z\s]+)$" data-validation-length="min3" name="name">
 									
 								</div>
 							</div>

@@ -90,15 +90,15 @@ class Subscription extends Controller {
                             $customerID, $stecard
             );
             $this->load->helper('cookie');
-            $carte = get_cookie("carte");
-            $carte = json_decode($carte, true);
+            $subscri = get_cookie("subscri");
+            $subscri = json_decode($subscri, true);
             $this->load->model("product_model");
 
             $address = $this->address_model->view_where(["a.id" => base64_decode(urldecode($this->input->post("address"))), "a.user_id" => $this->session->userdata("user")->id]);
 
             $product = array();
             $amount = 0;
-            foreach ($carte["p"] as $key => $val) {
+            foreach ($subscri["p"] as $key => $val) {
                 $pro = $this->product_model->view(["type" => 2, "id" => base64_decode(urldecode($key))]);
                 if (!empty($pro)) {
                     $pro[0]->item = $val["c"];
@@ -110,11 +110,11 @@ class Subscription extends Controller {
             $this->load->model("subscription_model");
             $data = [
                 "user_id" => $this->session->userdata("user")->id,
-                "from_date" => $carte["f"],
-                "to_date" => $carte["t"],
-                "products_ids" => json_encode($carte["p"]),
+                "from_date" => $subscri["f"],
+                "to_date" => $subscri["t"],
+                "products_ids" => json_encode($subscri["p"]),
                 "products" => json_encode($product),
-                "day_of_week" => $carte["df"],
+                "day_of_week" => $subscri["df"],
                 "total_amount" => $amount,
                 "address_type" => $address[0]->type,
                 "address" => $address[0]->address,
@@ -125,14 +125,15 @@ class Subscription extends Controller {
                 "state" => $address[0]->state,
                 "country" => $address[0]->country,
                 "stripe_card_id" => $stecard,
-                "days" => json_encode($carte["d"]),
+                "days" => json_encode($subscri["d"]),
                 "fruit" => get_cookie("fruit"),
                 "card" => $cards->last4,
                 "card_type" => $cards->brand,
             ];
 
             $this->subscription_model->add($data);
-            delete_cookie("carte");
+            delete_cookie("subscri");
+            delete_cookie("fruit");
             $this->session->set_userdata("success", "subscription added successfully");
             redirect("subscription/manaage");
         } else {

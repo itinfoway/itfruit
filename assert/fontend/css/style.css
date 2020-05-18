@@ -803,6 +803,12 @@ section .plan .plan-v2 .box .top-right{
     border-radius: 50%;
     background: white;
 }
+.modal-bg-yellow{
+    background-image: url(../img/box-bg-2.png) !important;
+}
+.learn-bg-w{
+    background-image: url(../img/learn-w.png) !important;
+}
 @media (min-width: 768px){
     .ordernow-bg-red{
         background-size: 100% 125%;

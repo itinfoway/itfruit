@@ -15,6 +15,16 @@ $fromName = [
     "placeholder" => $this->lang->line("fruit_input_name_plac"),
     'value' => isset($data->name) ? $data->name : "",
 ];
+$fromDescription = [
+    'type' => 'text',
+    "name" => "description",
+    'class' => 'form-control',
+    "data-validation" => "length",
+    "data-validation-length" => "min10",
+    'id' => "description",
+    "placeholder" => $this->lang->line("fruit_input_description_plac"),
+    'value' => isset($data->description) ? $data->description : "",
+];
 ?>
 <script src="<?= base_url("assert/admin/croppie/croppie.js") ?>"></script>
 <link rel="Stylesheet" type="text/css" href="<?= base_url("assert/admin/croppie/croppie.css") ?>" />
@@ -34,6 +44,10 @@ $fromName = [
                 <div class="form-group">
                     <label><?= $this->lang->line("fruit_name_hed") ?></label>
                     <?= form_input($fromName); ?>
+                </div>
+                <div class="form-group">
+                    <label><?= $this->lang->line("fruit_description_hed") ?></label>
+                    <?= form_textarea($fromDescription); ?>
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("fruit_vitamin_hed") ?></label>

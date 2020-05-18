@@ -57,7 +57,9 @@ $lang["contact_input_msg_plac"] = 'Enter  Message';
 //fruit
 $lang["fruit_head"] = 'Fruit';
 $lang["fruit_input_name_plac"] = 'Enter Fruit name';
+$lang["fruit_input_description_plac"] = 'Enter Description name';
 $lang["fruit_name_hed"] = 'Fruit Name';
+$lang["fruit_description_hed"] = 'Fruit Description';
 $lang["fruit_vitamin_hed"] = 'Fruit Vitamins';
 $lang["fruit_img_hed"] = 'Fruit Image';
 $lang["fruit_select_vitamin_plac"] = 'Select vitamins';
