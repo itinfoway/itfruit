@@ -812,6 +812,13 @@ section .plan .plan-v2 .box .top-right{
 .ordernow h4{
     font-family: 'Dreamwalker Regular';
 }
+.form-control:disabled, .form-control[readonly] {
+    background-color: transparent;
+}
+.cr-slider::-webkit-slider-runnable-track,.cr-slider::-moz-range-track,.cr-slider::-ms-track {
+    background: #fff !important;
+}
+
 @media (min-width: 768px){
     .ordernow-bg-red{
         background-size: 100% 125%;
