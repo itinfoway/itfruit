@@ -46,7 +46,7 @@
         <div class="how-work-sec">
             <img class="fruits strawberry" src="<?= base_url("assert/fontend/img/strawberry.svg"); ?>">
             <img class="fruits grapes" src="<?= base_url("assert/fontend/img/grapes.svg"); ?>">
-            <h1><?=$this->lang->line("fn_work"); ?></h1>
+            <h1><?=$this->lang->line("fn_home_work"); ?></h1>
             <div class="row">
                 <div class="col-sm-3">
                     <img class="home-icon" src="<?= base_url("assert/fontend/img/icon-b.png"); ?>">
@@ -79,7 +79,7 @@
 <section>
     <div class="about">
         <div class="container my-container">
-            <img class="fruits berry" src="<?= base_url("assert/fontend/img/berry.svg"); ?>">
+            <img class="fruits top-left" src="<?= base_url("assert/fontend/img/berry.svg"); ?>">
             <img class="fruits avocado" src="<?= base_url("assert/fontend/img/avocado.svg"); ?>">
             <h2><?=$this->lang->line("fn_about"); ?></h2>
             <div class="row">
@@ -106,10 +106,10 @@
                             </li>
                             <li>
                                 <div class="what-text">
-                                    <h3><?=$this->lang->line("fn_what"); ?></h3>
-                                    <h3><?=$this->lang->line("fn_are"); ?></h3>
-                                    <h3><?=$this->lang->line("fn_we"); ?></h3>
-                                    <h3><?=$this->lang->line("fn_about1"); ?></h3>
+                                    <h3><?=$this->lang->line("fn_home_what"); ?></h3>
+                                    <h3><?=$this->lang->line("fn_home_are"); ?></h3>
+                                    <h3><?=$this->lang->line("fn_home_we"); ?></h3>
+                                    <h3><?=$this->lang->line("fn_home_about1"); ?></h3>
                                 </div>
                             </li>
                             <li>

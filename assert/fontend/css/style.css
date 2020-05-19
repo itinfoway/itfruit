@@ -809,6 +809,9 @@ section .plan .plan-v2 .box .top-right{
 .learn-bg-w{
     background-image: url(../img/learn-w.png) !important;
 }
+.ordernow h4{
+    font-family: 'Dreamwalker Regular';
+}
 @media (min-width: 768px){
     .ordernow-bg-red{
         background-size: 100% 125%;

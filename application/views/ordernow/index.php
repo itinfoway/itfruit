@@ -1,5 +1,5 @@
 <section>
-    <div class="container my-container">
+    <div class="container my-container ordernow">
         <div class="row">
             <div class="col-md-12 my-3">
                 <h1 class="text-red">CART</h1>
