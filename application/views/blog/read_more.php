@@ -69,7 +69,7 @@
                 <div class="row border-left-orange my-5">
                     <div class="col-md-12">
                         <h2  class="text-green"><?= $this->lang->line("fn_category"); ?></h2>
-                        <hr class="green">
+                        <hr class="green mb-0">
                         <ul class="list-group">
                             <?php
                             foreach ($category as $cat) {
