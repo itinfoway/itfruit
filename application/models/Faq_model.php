@@ -15,7 +15,7 @@ class Faq_model extends CI_Model {
             $this->db->where("id", $where);
         }
         $this->db->select($select);
-        $this->db->order_by("id", "asc");
+        $this->db->order_by("position", "asc");
         $query = $this->db->get(FAQ_NAME);
         $this->db->trans_complete();
         return $query->result();
@@ -37,7 +37,7 @@ class Faq_model extends CI_Model {
         if (!is_null($old)) {
             $this->db->where("qus !=", $old);
         }
-        $this->db->order_by("id", "asc");
+        $this->db->order_by("position", "asc");
         $query = $this->db->get(FAQ_NAME);
         $this->db->trans_complete();
         return $query->num_rows();

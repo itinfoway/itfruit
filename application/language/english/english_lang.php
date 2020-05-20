@@ -30,8 +30,10 @@ $lang["fn_error_order_carte_not_set"] = 'Firs set of order carte thin add produc
 
 //Faq
 $lang["faq_head"] = 'FAQ';
+$lang["faq_input_qus_plac"] = 'Enter Position';
 $lang["faq_input_qus_plac"] = 'Enter Questions';
 $lang["faq_input_ans_plac"] = 'Enter Answers';
+$lang["faq_position_hed"] = 'Position';
 $lang["faq_qus_hed"] = 'Questions';
 $lang["faq_ans_hed"] = 'Answers';
 

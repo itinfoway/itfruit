@@ -4,6 +4,15 @@
  * https://itinfoway.com
  * @author Admin
  */
+$fromPosition = [
+    'type' => 'text',
+    "name" => "position",
+    'class' => 'form-control',
+    "data-validation"=>"number",
+    'id' => "qus",
+    "placeholder" => $this->lang->line("faq_input_position_plac"),
+    'value' => isset($position) ? $position : "",
+];
 $fromQus = [
     'type' => 'text',
     "name" => "qus",
@@ -38,6 +47,10 @@ $fromAns = [
             <!-- /.card-header -->
             <?= form_open(); ?>
             <div class="card-body">
+                <div class="form-group">
+                    <label><?=$this->lang->line("faq_position_hed") ?></label>
+                    <?= form_input($fromPosition); ?>
+                </div>
                 <div class="form-group">
                     <label><?=$this->lang->line("faq_qus_hed") ?></label>
                     <?= form_input($fromQus); ?>
