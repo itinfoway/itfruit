@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-md-12">
                             <h1 class="text-right text-green">share this 
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?= urldecode(base_url("blog/read-more/").$b->id);?>&t=<?= urldecode($b->title."\n");?>"><img class="img-responsive" width="50px" src="<?= base_url("assert/fontend/") ?>img/fb-blue.svg"></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?= urldecode(base_url("blog/read-more/").$b->id);?>&t=<?= urldecode($b->title."\n");?>" target="_blank"><img class="img-responsive" width="50px" src="<?= base_url("assert/fontend/") ?>img/fb-blue.svg"></a>
                                 <a href="http://twitter.com/share?text=<?= urldecode($b->title."\n");?>&url=<?= urldecode(base_url("blog/read-more/").$b->id);?>" target="_blank"><img class="img-responsive" width="50px" src="<?= base_url("assert/fontend/") ?>img/twtter.svg"></a>
                             </h1>
                         </div>
