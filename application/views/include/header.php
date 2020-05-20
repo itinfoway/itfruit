@@ -113,12 +113,13 @@
                         <div class="dd-text">
                             <ul>
                                 <li><a class="menu-link" href="<?= base_url("address"); ?>"><?= $this->lang->line("fn_manage_add"); ?></a></li>
-                                <li><a class="menu-link" href="<?= base_url("subscription"); ?>"><?= $this->lang->line("fn_sub"); ?></a></li>
+                                <li><a class="menu-link" href="<?= base_url("subscription/manaage"); ?>"><?= $this->lang->line("fn_subscription_manaage"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?= $this->lang->line("fn_manage_order"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?= $this->lang->line("fn_com_order"); ?></a></li>
-                                <li><a class="menu-link" href="<?= base_url("payments"); ?>"><?= $this->lang->line("fn_payment"); ?></a></li>
+                                <li><a class="menu-link" href="<?= base_url("wallet/subscription"); ?>"><?= $this->lang->line("fn_payment"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("wallet/add-to-cart"); ?>"><?= $this->lang->line("fn_add_credit"); ?></a></li>
                             </ul>
+                            
                         </div>
                         <?php
                     } else {
@@ -128,6 +129,7 @@
                             <ul>
                                 <li><a class="menu-link" href="<?= base_url("login"); ?>"><?= $this->lang->line("fn_login"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("signup"); ?>"><?= $this->lang->line("fn_sign"); ?></a></li>
+                                <li><a class="menu-link" href="<?= base_url("wallet/add-to-cart"); ?>"><?= $this->lang->line("fn_add_credit"); ?></a></li>
                             </ul>
                         </div>
                         <?php

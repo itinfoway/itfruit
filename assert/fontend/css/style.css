@@ -818,6 +818,13 @@ section .plan .plan-v2 .box .top-right{
 .cr-slider::-webkit-slider-runnable-track,.cr-slider::-moz-range-track,.cr-slider::-ms-track {
     background: #fff !important;
 }
+.dataTables_filter input[type="search"],.dataTables_filter input[type="search"]:focus,.dataTables_filter input[type="search"]:active {
+    border: 3px solid transparent !important;
+    border-image: url(../img/line-green.png) 30 stretch !important;
+    border-image-width: 0px 0px 3px !important;
+    outline-color: transparent;
+    margin: 5px 0;
+}
 
 @media (min-width: 768px){
     .ordernow-bg-red{

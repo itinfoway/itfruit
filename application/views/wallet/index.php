@@ -1,9 +1,11 @@
+<script src="<?= base_url("assert/fontend/") ?>js/jquery.dataTables.min.js"></script>
+<link href="<?= base_url("assert/fontend/") ?>css/jquery.dataTables.min.css" rel="stylesheet"  type="text/css"/>
 <section>
     <div class="address">
         <div class="container my-container">
             <div class="add-address">
-                <img class="fruits pinapple" src="http://localhost/sliced1/assert/fontend/img/pinapple.svg">
-                <img class="fruits strawberry" src="http://localhost/sliced1/assert/fontend/img/strawberry.svg">
+                <img class="fruits pinapple" src="<?= base_url("assert/fontend/") ?>img/pinapple.svg">
+                <img class="fruits strawberry" src="<?= base_url("assert/fontend/") ?>img/strawberry.svg">
                 <center>
                     <h1><?= $title; ?></h1>
                 </center>
@@ -14,8 +16,8 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <table class="table table-bordered table-wallet">
+            <div class="col-12 py-3">
+                <table class="table table-bordered table-wallet" id="walet">
                     <thead>
                         <tr>
                             <th><?= $this->lang->line("fn_tranction_id"); ?></th>
@@ -71,3 +73,9 @@
         </div>
     </div>
 </section>
+<script>
+    $('#walet').DataTable();
+    $(document).ready(function () {
+
+    });
+</script>

@@ -234,6 +234,7 @@ $lang["fn_chnage_password"] = 'chnage password';
 $lang["fn_welcome"] = 'WELCOME';
 $lang["fn_manage_add"] = 'MANAGE ADDRESS';
 $lang["fn_sub"] = 'SUBSCRIPTION';
+$lang["fn_subscription_manaage"] = 'MANAAGE SUBSCRIPTION';
 $lang["fn_manage_order"] = 'MANAGE ORDER';
 $lang["fn_com_order"] = 'COMPLATE ORDER';
 $lang["fn_payment"] = 'PAYMENTS';
@@ -254,6 +255,7 @@ $lang["fn_alacarte"] = 'Ala Carte Package';
 $lang["fn_ala_carte"] = 'Ala Carte';
 $lang["fn_subscription_carte"] = 'Subscription Carte';
 $lang["fn_orders"] = 'orders';
+$lang["fn_all_carte"] = 'all carte';
 
 //welcome/index.php
 $lang["fn_previous"] = 'Previous';

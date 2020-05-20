@@ -40,13 +40,13 @@
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input name="address1" type="text" data-validation="length" data-validation-length="min2" class="form-control" id="street_number" placeholder="Street Number (Address 1)" disabled="true" value="<?= isset($address1) ? $address1 : "" ?>">
+                                                    <input name="address1" type="text"  class="form-control" id="street_number" placeholder="Street Number (Address 1)" disabled="true" value="<?= isset($address1) ? $address1 : "" ?>">
 
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input name="address2" type="text" data-validation="length" data-validation-length="min3" class="form-control" placeholder="Address 2" id="route" disabled="true" value="<?= isset($address2) ? $address2 : "" ?>">
+                                                    <input name="address2" type="text"  class="form-control" placeholder="Address 2" id="route" disabled="true" value="<?= isset($address2) ? $address2 : "" ?>">
                                                 </div>
                                             </div>
                                         </div>

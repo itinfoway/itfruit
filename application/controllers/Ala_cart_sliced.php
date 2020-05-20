@@ -33,6 +33,9 @@ class Ala_cart_sliced extends Controller {
             $address = $this->address_model->view_where(["a.id" => base64_decode(urldecode($this->input->post("address"))), "a.user_id" => $this->session->userdata("user")->id]);
 
             $cook = json_decode(get_cookie("carte"), TRUE);
+            if(get_cookie("crt")=="" || get_cookie("crt")<=0){
+                redirect("ala-cart-sliced");
+            }
             if (empty($address)) {
                 $this->session->set_userdata('previous_url', current_url());
                 $this->session->set_userdata('error', "not find address add agen");
