@@ -35,7 +35,7 @@
                             <div class="col-md-4 text-center">
                                 <div style="background-image: url(<?= base_url() ?>assert/blog/<?=$b->img; ?>);" class="blog-img"></div>
                                 <b><?=date('F d, Y',  strtotime($b->date_time))?></b>
-                                <h2 class="text-green"><?=$b->title; ?></h2>
+                                <h2 class="text-green frut-h-tag"><?=$b->title; ?></h2>
                                 <hr class="orange">
                                 <p><?=$b->short_description; ?> </p>
                                 <a href="<?=base_url()?>blog/read-more/<?=$b->id?>" class="btn btn-success">Read More</a>
@@ -53,7 +53,7 @@
                     ?>
                     <div class="row border-left-orange">
                         <div class="col-md-12">
-                            <h2 class="text-green"><?= $this->lang->line("fn_recent_post"); ?></h2>
+                            <h2 class="text-green frut-h-tag"><?= $this->lang->line("fn_recent_post"); ?></h2>
                             <hr class="green">
                             <?php
                             $cout = 0;
@@ -81,7 +81,7 @@
                     ?>
                     <div class="row border-left-orange my-5">
                         <div class="col-md-12">
-                            <h2  class="text-green"><?= $this->lang->line("fn_category"); ?></h2>
+                            <h2  class="text-green frut-h-tag"><?= $this->lang->line("fn_category"); ?></h2>
                             <hr class="green mb-0">
                             <ul class="list-group">
                                 <?php

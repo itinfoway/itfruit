@@ -812,6 +812,9 @@ section .plan .plan-v2 .box .top-right{
 .ordernow h4{
     font-family: 'Dreamwalker Regular';
 }
+.frut-h-tag{
+   font-family: 'Dreamwalker Regular'; 
+}
 .form-control:disabled, .form-control[readonly] {
     background-color: transparent;
 }

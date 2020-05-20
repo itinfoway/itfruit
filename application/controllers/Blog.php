@@ -23,6 +23,7 @@ class Blog extends Controller {
     }
 
     public function read_more($id) {
+        $data["category"] = $this->blogs_category_model->view();
         $data["blog"] = $this->blogs_model->view($id);
         $this->display('read_more', $data);
     }
