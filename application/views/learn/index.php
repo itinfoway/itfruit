@@ -55,10 +55,12 @@
                                     <div class="row justify-content-lg-center">
                                         <div class="col-10 mb-5 text-md-left text-center">
                                             <?php
-                                            foreach ($f->vitamin as $ve) {
-                                                ?>
-                                                <button class="btn btn-success m-1 d-table-cell"><?=$ve?></button>
-                                                <?php
+                                            if(isset($f->vitamin)) {
+                                                foreach ($f->vitamin as $ve) {
+                                                    ?>
+                                                    <button class="btn btn-success m-1 d-table-cell"><?= $ve ?></button>
+                                                    <?php
+                                                }
                                             }
                                             ?>
                                         </div>

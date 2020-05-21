@@ -255,7 +255,7 @@ $lang["fn_manage_blog"] = 'Manage Blog';
 $lang["fn_blog"] = 'blog';
 $lang["fn_alacarte"] = 'Ala Carte Package';
 $lang["fn_ala_carte"] = 'Ala Carte';
-$lang["fn_subscription_carte"] = 'Subscription Carte';
+$lang["fn_subscription"] = 'Subscription';
 $lang["fn_orders"] = 'orders';
 $lang["fn_all_carte"] = 'all carte';
 
