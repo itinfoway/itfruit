@@ -475,7 +475,7 @@ section .send-msg .form-part .send-form .form {
 }
 
 section .send-msg .form-part .send-form textarea {
-    padding: 15px 28px;
+    padding: 15px 100px;
     background-image: url("../img/textarea.png");
     background-size: 100% 100%;
     width: 100%;
@@ -776,7 +776,7 @@ section .order-history .manage .text .week ul li .wed {
 }
 
 section .order-history .manage .text .week ul li .thu.active {
-        background-image: url("../img/thu.png");
+    background-image: url("../img/thu.png");
 }
 section .order-history .manage .text .week ul li .thu {
     background-size: 100% 100%;
@@ -784,7 +784,7 @@ section .order-history .manage .text .week ul li .thu {
 }
 
 section .order-history .manage .text .week ul li .fri.active {
-        background-image: url("../img/fri.png");
+    background-image: url("../img/fri.png");
 }
 section .order-history .manage .text .week ul li .fri {
     background-size: 100% 100%;
@@ -2379,6 +2379,9 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     }
     .cart-table .design img {
         height: 324px;
+    }
+    section .send-msg .form-part .send-form textarea {
+        padding: 15px 40px;
     }
 }
 

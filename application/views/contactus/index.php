@@ -64,7 +64,7 @@
 							</div>
 							<div class="col-sm-12">
 								<p>insert your message</p>
-								<textarea name="msg" id="msg1" data-validation="length" data-validation-length="min50"></textarea>
+                                                                <textarea name="msg" id="msg1" data-validation="length" data-validation-length="min50" placeholder="insert your message"></textarea>
 								<p style="text-align:right"><small><span id="max-length-element1">200</span> chars left</small></p>
 							</div>
 							<div class="col-sm-12">
@@ -112,7 +112,7 @@
 							</div>
 							<div class="col-sm-12">
 								<p>insert your message</p>
-								<textarea name="msg" id="msg2" data-validation="length" data-validation-length="min50"></textarea>
+                                                                <textarea name="msg" id="msg2" data-validation="length" data-validation-length="min50" placeholder="insert your message"></textarea>
 								<p style="text-align:right"><small><span id="max-length-element2">200</span> chars left</small></p>
 							</div>
 							<div class="col-sm-12">
