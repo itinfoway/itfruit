@@ -242,13 +242,13 @@
             </div>
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
-                    <label>Select Date</label>
-                    <input class="form-control" id="from_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="thisfrom_datetime" readonly>
+                    <label>Select Date To</label>
+                    <input class="form-control" id="from_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="thisfrom_datetime" placeholder="ex. <?= date("d M Y") ?>" readonly>
                     <input  type="hidden" id="thisfrom_datetime" name="orderbox" >
                 </div>
                 <div class="form-group col-8 offset-2">
-                    <label>Select Date</label>
-                    <input class="form-control" id="to_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="thisto_datetime" readonly>
+                    <label>Select Date From</label>
+                    <input class="form-control" id="to_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="thisto_datetime" placeholder="ex. <?= date("d M Y") ?>" readonly>
                     <input  type="hidden" id="thisto_datetime" name="orderbox" >
                 </div>
 

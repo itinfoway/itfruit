@@ -208,7 +208,7 @@
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
                     <label>Select Date</label>
-                    <input class="form-control form_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="orderbox" readonly>
+                    <input class="form-control form_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="orderbox" placeholder="ex. <?= date("d M Y") ?>" readonly>
                     <input  type="hidden" id="orderbox" name="orderbox" >
                 </div>
                 <div class="form-group col-8 offset-2" style="display:none">
@@ -302,12 +302,13 @@
     $('.form_datetime').datetimepicker({
         daysOfWeekDisabled: "6,0",
         weekStart: 1,
-        todayBtn: 1,
+        todayBtn: 0,
         autoclose: 1,
         startDate: '<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>',
         todayHighlight: 1,
         startView: 2,
         minView: 2,
+        rightArrow: 'far fa-arrow-alt-circle-right'
     });
     function getTime() {
         var date = $("#orderbox").val();
