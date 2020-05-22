@@ -26,7 +26,7 @@ $lang["days_name"][5] = 'FRI';
 $lang["days_name"][6] = 'SAT';
 $lang["days_name"][7] = 'SUN';
 
-$lang["fn_error_order_carte_not_set"] = 'Firs set of order carte thin add product';
+$lang["fn_error_order_carte_not_set"] = 'Please add first order before proceed for next order.';
 
 //Faq
 $lang["faq_head"] = 'FAQ';
