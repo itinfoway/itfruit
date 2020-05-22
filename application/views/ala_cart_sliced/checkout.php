@@ -348,15 +348,10 @@
                         <h4>PAYMENT METHOD</h4>
                         <center><img class="img-responsive" src="<?= base_url() ?>assert/fontend/img/line.png" width="50%" height="3px"></center>
                         <h1>PLEASE SELECT THE PREFERRED PAYMENT METHOD TO USE ON THIS ORDER.</h1>
-                        <p><img src="<?= base_url() ?>assert/fontend/img/wallet-white.svg" width="10%"> <?= $this->lang->line("fn_wallet") ?> : <?= $wallet[0]->cr ?> <?= $this->lang->line("fn_credit") ?></p>
+                        <p><img src="<?= base_url() ?>assert/fontend/img/wallet-white.svg" width="10%"> <?= $this->lang->line("fn_cu_credit") ?> : <?= $wallet[0]->cr ?> <?= $this->lang->line("fn_credit") ?></p>
 
-                        <div class="rdo-btn">
-                            <div class="rdo">
-                                <input type="radio" >
-                                <label for="Radio2"></label>
-                                <p><?= $this->lang->line("fn_price") ?> : <font class="text-danger"> <spam id="debitTotal"></spam> <?= $this->lang->line("fn_debit") ?></font></p>
-                            </div>
-                        </div>
+                        <p><img src="<?= base_url() ?>assert/fontend/img/credit-card.svg" width="10%" class="px-2"> <?= $this->lang->line("fn_re_credit") ?> : <font class="text-danger"> <spam id="debitTotal"></spam> <?= $this->lang->line("fn_debit") ?></font></p>
+
                         <div class="comment">
                             <p>ADD COMMENTS ABOUS YOUR ORDER</p>
                             <p>( FOR COMMENTS ABOUT FOOD OR PAID MVP DELIVERY TIMING SLOTS ONLY )</p>
@@ -385,7 +380,7 @@ $this->session->set_userdata('previous_url', current_url());
             return true;
         } else {
             toastr.error('<?= $this->lang->line("fn_error_credit_debit") ?>');
-            window.location.href ='<?=base_url("wallet/add-to-cart");?>';
+            window.location.href = '<?= base_url("wallet/add-to-cart"); ?>';
             return false;
         }
     });

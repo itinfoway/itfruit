@@ -350,6 +350,8 @@ $lang["fn_other"] = 'other';
 //ala-cart-sliced/checkout
 
 $lang["fn_price"] = 'price';
+$lang["fn_re_credit"] = 'Required Credit';
+$lang["fn_cu_credit"] = 'Current Credit';
 $lang["fn_error_credit_debit"] = 'credit point getting or equal debit point';
 $lang["fn_error_today_order_stock"] = 'this day outoff order select ather date';
 
