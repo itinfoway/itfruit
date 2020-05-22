@@ -60,4 +60,18 @@ class Profile extends Controller
         }
         $this->display('index', $data[0]);
     }
+    public function changepasswor(){
+        if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            $pass = $this->input->post();
+            $data = $this->user_model->view($this->session->userdata("user")->id);
+            if($data[0]->password==$pass["oldpassword"]){
+                $this->user_model->edit(["password"=>$pass["new_password"]],$this->session->userdata("user")->id);
+                $this->session->set_userdata("success", "successfully password change");
+                redirect("logout");
+            }else{
+               $this->session->set_userdata("error", "old password is incorrect"); 
+            }
+        }
+        $this->display('changepasswor');
+    }
 }

@@ -5,6 +5,11 @@
  * @author Admin
  */
 ?>
+<style>
+    table td .form-control{
+        width:150px !important;
+    }
+</style>
 <link href="<?= base_url("assert/admin/plugins/datatable/dataTables.bootstrap4.min.css") ?>" rel="stylesheet">
 <div class="row">
     <div class="col-md-12">
@@ -12,7 +17,7 @@
         <div class="card card-success card-outline">
             <div class="card-header">
                 <h3 class="card-title"><?= $this->lang->line("subscription_carte_orders") ?></h3>
-                
+
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive">
@@ -45,6 +50,12 @@
 <script src="<?= base_url("assert/admin/plugins/datatable/jquery.dataTables.min.js") ?>"></script>
 <script src="<?= base_url("assert/admin/plugins/datatable/dataTables.bootstrap4.min.js") ?>"></script>
 <script>
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2)
+            return parts.pop().split(";").shift();
+    }
     $(document).ready(function () {
         var table = $('#blog_table').DataTable({
             ajax: "<?= base_url("admin/subscription/orders/json/") ?>",
@@ -59,17 +70,17 @@
                         if (data == 1) {
                             view = "<?= $this->lang->line("days_name")[1] ?>";
                         } else if (data == 2) {
-                             view = "<?= $this->lang->line("days_name")[2] ?>";
-                        } else if (data == 3){
-                             view = "<?= $this->lang->line("days_name")[3] ?>";
-                        } else if (data == 4){
-                             view = "<?= $this->lang->line("days_name")[4] ?>";
-                        }else if (data == 5){
-                             view = "<?= $this->lang->line("days_name")[5] ?>";
-                        }else if (data == 6){
-                             view = "<?= $this->lang->line("days_name")[6] ?>";
-                        }else if (data == 7){
-                             view = "<?= $this->lang->line("days_name")[7] ?>";
+                            view = "<?= $this->lang->line("days_name")[2] ?>";
+                        } else if (data == 3) {
+                            view = "<?= $this->lang->line("days_name")[3] ?>";
+                        } else if (data == 4) {
+                            view = "<?= $this->lang->line("days_name")[4] ?>";
+                        } else if (data == 5) {
+                            view = "<?= $this->lang->line("days_name")[5] ?>";
+                        } else if (data == 6) {
+                            view = "<?= $this->lang->line("days_name")[6] ?>";
+                        } else if (data == 7) {
+                            view = "<?= $this->lang->line("days_name")[7] ?>";
                         }
                         return view;
                     }
@@ -96,7 +107,18 @@
                 {"data": "postalcode"},
                 {"data": "state"},
                 {"data": "country"},
-                {"data": "status"},
+                {"data": "status",
+                    render: function (data, type, row) {
+                        var view = '<select class="form-control status-changes" data-id="' + row.id + '">';
+                        var view = view + "<option value='1' " + ((data == 1) ? "selected" : "") + ">Padding order</option>";
+                        var view = view + "<option value='2' " + ((data == 2) ? "selected" : "") + ">Order processing</option>";
+                        var view = view + "<option value='3' " + ((data == 3) ? "selected" : "") + ">On delivery order</option>";
+                        var view = view + "<option value='4' " + ((data == 4) ? "selected" : "") + ">Completed order</option>";
+                        var view = view + "</select>";
+                        return view;
+                    },
+                    width: "120px"
+                },
                 {"data": "id",
                     render: function (data, type, row) {
                         var view = '<a href="<?= base_url("admin/orders/view/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-eye"></i></a> ';
@@ -110,5 +132,19 @@
                 cell.innerHTML = i + 1;
             });
         }).draw();
+        $(document).on("change", ".status-changes", function () {
+            var id = $(this).attr("data-id");
+            var val = $(this).val();
+            $.ajax({
+                url: '<?= base_url("admin/subscription/orders/edit/"); ?>' + id,
+                type: 'POST',
+                data: {'status': val, '<?= $this->security->get_csrf_token_name(); ?>': getCookie('csrf_itinfoway_com')},
+                success: function (res) {
+                    if (res == "ok") {
+
+                    }
+                }
+            });
+        });
     });
 </script>

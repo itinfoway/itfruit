@@ -19,8 +19,22 @@ class Orders extends Controller {
         $this->display("index");
     }
 
+    public function edit($id = null) {
+        if ($this->input->server('REQUEST_METHOD') == 'POST') {
+            $capArray = $this->input->post();
+            $data = $this->order_details_model->edit($capArray, $id);
+            if ($data) {
+                echo 'ok';
+                return TRUE;
+            } else {
+                echo "error";
+                return FALSE;
+            }
+        }
+    }
+
     public function json($name = null) {
-        $where["type"]=2;
+        $where["type"] = 2;
         if (is_null($name)) {
             $select = !empty($this->input->get("select")) ? $this->input->get("select") : "*";
             $data["orders"]["data"] = $this->order_details_model->view($where, $select);

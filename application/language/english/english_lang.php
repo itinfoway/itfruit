@@ -337,7 +337,7 @@ $lang["fn_wallet"] = 'wallet';
 $lang["fn_sgd"] = 'SGD';
 $lang["fn_debit"] = 'debit';
 $lang["fn_credit"] = 'credit';
-$lang["fn_points"] = 'points';
+$lang["fn_points"] = 'credits';
 
 //address/index
 
