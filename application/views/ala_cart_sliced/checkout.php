@@ -372,7 +372,9 @@
     </div>
 </section>
 <?= form_close() ?>
-
+<?php
+$this->session->set_userdata('previous_url', current_url());
+?>
 <script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
     $("form").submit(function (event) {
@@ -383,6 +385,7 @@
             return true;
         } else {
             toastr.error('<?= $this->lang->line("fn_error_credit_debit") ?>');
+            window.location.href ='<?=base_url("wallet/add-to-cart");?>';
             return false;
         }
     });

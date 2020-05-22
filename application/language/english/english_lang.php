@@ -27,6 +27,8 @@ $lang["days_name"][6] = 'SAT';
 $lang["days_name"][7] = 'SUN';
 
 $lang["fn_error_order_carte_not_set"] = 'Please add first order before proceed for next order.';
+$lang["fn_error_date_time_allredyset"] = 'this date and time already set';
+$lang["fn_error_today_only_for_max_itme"] = 'sorry, this day and time maximum oder set';
 
 //Faq
 $lang["faq_head"] = 'FAQ';

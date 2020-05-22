@@ -299,6 +299,8 @@
 <script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
     var error_order_carte_not_set = "<?= $this->lang->line("fn_error_order_carte_not_set"); ?>";
+    var error_date_time_allredyset = "<?= $this->lang->line("fn_error_date_time_allredyset"); ?>";
+    var error_today_only_for_max_itme = "<?= $this->lang->line("fn_error_today_only_for_max_itme"); ?>";
     $('.form_datetime').datetimepicker({
         daysOfWeekDisabled: "6,0",
         weekStart: 1,

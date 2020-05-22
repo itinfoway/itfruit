@@ -29,16 +29,23 @@ $("#savedate").click(function () {
     var time = $("#gettime").find("option:selected").text();
     var item = $("#gettime").find("option:selected").attr("data-item");
     var id = $("#gettime").val();
-    if (time!=""){
-        $("#orderbox" + inputDate).find(".order-date").text(date[0] + " " + date[1]);
-        $("#orderbox" + inputDate).find(".order-year").text(date[2]);
+    if (time != "") {
+
         id = date[0] + "_" + date[1] + "_" + date[2] + "_" + id;
-        $(".first-date-part").attr("data-itme-value", id);
-        min_item[id] = parseInt(item);
-        all_item[id] = parseInt(0);
-        products[id] = {};
-        $("#orderbox" + inputDate).find(".order-time").text(time);
+        if (!products.hasOwnProperty(id)) {
+            $("#orderbox" + inputDate).find(".order-date").text(date[0] + " " + date[1]);
+            $("#orderbox" + inputDate).find(".order-year").text(date[2]);
+            $(".first-date-part").attr("data-itme-value", id);
+            min_item[id] = parseInt(item);
+            all_item[id] = parseInt(0);
+            products[id] = {};
+            $("#orderbox" + inputDate).find(".order-time").text(time);
+        } else {
+            toastr.error(error_date_time_allredyset);
+        }
     }
+    $(".form_datetime").val("");
+    $("#gettime").parent("div").hide();
 });
 function setOrder() {
     var count = 1;
@@ -76,6 +83,8 @@ function setOrder() {
         });
     }
     credit();
+    $(".form_datetime").val("");
+    $("#gettime").parent("div").hide();
 }
 function productItem() {
     var inputDate = $(".first-date-part").attr("data-itme-value");
@@ -134,6 +143,7 @@ $(document).on("click", ".plus", function () {
     var value = $(this).parent(".countr").data("value");
     var name = $(this).parent(".countr").attr("content");
     var cre = $(this).parent(".countr").data("credit");
+
     if (all_item[inputDate] < min_item[inputDate]) {
         var plus = parseInt($(this).parent(".countr").find("span").text());
         $(this).parent(".countr").find("span").text(plus + 1);
@@ -161,7 +171,11 @@ $(document).on("click", ".plus", function () {
         orderItem();
         credit();
     } else {
-        toastr.error(error_order_carte_not_set);
+        if (min_item[inputDate] == undefined) {
+            toastr.error(error_order_carte_not_set);
+        } else {
+            toastr.error(error_today_only_for_max_itme);
+        }
     }
 
 });
@@ -171,6 +185,7 @@ $(document).on("click", ".date-close", function () {
         delete products[id];
         setCookie("carte", JSON.stringify(products));
         setOrder();
+        $(".countr").find("span").text(0)
     }
 });
 $(document).on("click", ".minus", function () {

@@ -618,7 +618,7 @@ body {
 }
 .dropdown-menu {
     background-color: transparent;
-    background-image: url(../img/dd_bg.png);
+    background-image: url(../img/datepicker.png);
     background-size: 100% 100%;
     border:0;
 }
