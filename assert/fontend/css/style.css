@@ -820,7 +820,7 @@ section .plan .plan-v2 .box .top-right{
     font-family: 'Dreamwalker Regular';
 }
 .frut-h-tag{
-   font-family: 'Dreamwalker Regular'; 
+    font-family: 'Dreamwalker Regular'; 
 }
 .form-control:disabled, .form-control[readonly] {
     background-color: transparent;
@@ -834,6 +834,18 @@ section .plan .plan-v2 .box .top-right{
     border-image-width: 0px 0px 3px !important;
     outline-color: transparent;
     margin: 5px 0;
+}
+.bootbox-confirm .close{
+    top: -21px;
+    right: -6px;
+    opacity: 0.8;
+    position: absolute;
+}
+.bootbox-confirm .modal-content{
+    background-image: url(../img/box-bg-c.png);
+} 
+.bootbox-confirm .btn-success{
+    margin: 0;
 }
 
 @media (min-width: 768px){

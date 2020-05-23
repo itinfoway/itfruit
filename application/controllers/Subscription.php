@@ -101,10 +101,20 @@ class Subscription extends Controller {
             foreach ($subscri["p"] as $key => $val) {
                 $pro = $this->product_model->view(["type" => 2, "id" => base64_decode(urldecode($key))]);
                 if (!empty($pro)) {
+                    $price = 0;
+                    if ($subscri["df"] == "5d") {
+                        $price = $pro[0]->price;
+                    } else if ($subscri["df"] == "2d") {
+                        $price = $pro[0]->price1;
+                    } else if ($subscri["df"] == "1d") {
+                        $price = $pro[0]->price2;
+                    } else {
+                        $price = $pro[0]->price3;
+                    }
                     $pro[0]->item = $val["c"];
-                    $pro[0]->total_amount = ($pro[0]->price * $val["c"]);
+                    $pro[0]->total_amount = ($price * $val["c"]);
                     $product[] = $pro[0];
-                    $amount +=($pro[0]->price * $val["c"]);
+                    $amount +=($price * $val["c"]);
                 }
             }
             $this->load->model("subscription_model");

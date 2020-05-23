@@ -48,6 +48,8 @@
         <link rel="stylesheet" href="<?= base_url(); ?>assert/fontend/toastr/toastr.min.css">
         <!-- Toastr -->
         <script src="<?= base_url(); ?>assert/fontend/toastr/toastr.min.js"></script>
+        <script type="text/javascript" src="<?= base_url("assert/fontend/js/bootstrap.js"); ?>"></script>
+        <script src="<?= base_url(); ?>assert/fontend/js/bootbox.all.min.js"></script>
 
         <!-- stylesheet ends -->
     </head>

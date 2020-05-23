@@ -190,7 +190,7 @@ foreach ($subscription as $sub) {
                                         <?php
                                     }
                                     ?>
-                                    <div class="col-sm-12 col-md-6"> <button>HELP</button> </div>
+                                        <div class="col-sm-12 col-md-6"> <button onclick="window.location = '<?=base_url("faq")?>'">HELP</button> </div>
                                 </div>
                             </div>
                         </div>

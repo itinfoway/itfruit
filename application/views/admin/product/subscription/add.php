@@ -25,11 +25,44 @@ $fromPrice = [
     "name" => "price",
     'class' => 'form-control',
     "data-validation" => "length,number",
-    "data-validation-length" => "1-5",
+    "data-validation-length" => "1-6",
     "data-validation-allowing" => "float",
     'id' => "price",
     "placeholder" => $this->lang->line("products_price_plac"),
     'value' => isset($product->price) ? $product->price : "",
+];
+$fromPrice1 = [
+    'type' => 'number',
+    "name" => "price1",
+    'class' => 'form-control',
+    "data-validation" => "length,number",
+    "data-validation-length" => "1-6",
+    "data-validation-allowing" => "float",
+    'id' => "price",
+    "placeholder" => $this->lang->line("products_price_plac1"),
+    'value' => isset($product->price1) ? $product->price1 : "",
+];
+$fromPrice2 = [
+    'type' => 'number',
+    "name" => "price2",
+    'class' => 'form-control',
+    "data-validation" => "length,number",
+    "data-validation-length" => "1-6",
+    "data-validation-allowing" => "float",
+    'id' => "price",
+    "placeholder" => $this->lang->line("products_price_plac2"),
+    'value' => isset($product->price2) ? $product->price2 : "",
+];
+$fromPrice3 = [
+    'type' => 'number',
+    "name" => "price3",
+    'class' => 'form-control',
+    "data-validation" => "length,number",
+    "data-validation-length" => "1-6",
+    "data-validation-allowing" => "float",
+    'id' => "price",
+    "placeholder" => $this->lang->line("products_price_plac3"),
+    'value' => isset($product->price3) ? $product->price3 : "",
 ];
 ?>
 <script src="<?= base_url("assert/admin/croppie/croppie.js") ?>"></script>
@@ -56,9 +89,31 @@ $fromPrice = [
                     <label><?= $this->lang->line("fruit_hed") ?></label>
                     <?= form_multiselect("fruit_ids[]", $fruit, isset($product->fruit_ids) ? json_decode($product->fruit_ids) : null, ["class" => "select2", "multiple" => "multiple", "style" => "width: 100%;", "data-placeholder" => $this->lang->line("products_select_fruit_plac")]); ?>
                 </div>
-                <div class="form-group">
-                    <label><?= $this->lang->line("products_price") ?></label>
-                    <?= form_input($fromPrice); ?>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><?= $this->lang->line("products_price") ?></label>
+                            <?= form_input($fromPrice); ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><?= $this->lang->line("products_price1") ?></label>
+                            <?= form_input($fromPrice1); ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><?= $this->lang->line("products_price2") ?></label>
+                            <?= form_input($fromPrice2); ?>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label><?= $this->lang->line("products_price3") ?></label>
+                            <?= form_input($fromPrice3); ?>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label><?= $this->lang->line("products_img") ?></label>

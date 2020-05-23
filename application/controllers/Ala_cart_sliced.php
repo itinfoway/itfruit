@@ -100,6 +100,7 @@ class Ala_cart_sliced extends Controller {
                     
                 }
             }
+            $this->session->set_userdata("success", "Ala card order added  successfully");
             redirect("orderhistory");
         } else {
 

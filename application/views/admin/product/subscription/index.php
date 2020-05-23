@@ -26,6 +26,9 @@
                             <th><?= $this->lang->line("products_name") ?></th>
                             <th><?= $this->lang->line("fruit_hed") ?></th>
                             <th><?= $this->lang->line("products_price") ?></th>
+                            <th><?= $this->lang->line("products_price1") ?></th>
+                            <th><?= $this->lang->line("products_price2") ?></th>
+                            <th><?= $this->lang->line("products_price3") ?></th>
                             <th><?= $this->lang->line("action") ?></th>
                         </tr>
                     </thead>
@@ -59,6 +62,9 @@
                     }
                 },
                 {"data": "price"},
+                {"data": "price1"},
+                {"data": "price2"},
+                {"data": "price3"},
                 {"data": "id",
                     render: function (data, type, row) {
                         var view = '<a href="<?= base_url("admin/product/subscription/edit/") ?>' + data + '" class="btn btn-success btn-sm"><i class="fas fa-edit"></i></a> ';

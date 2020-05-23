@@ -91,7 +91,7 @@
                 <div class="col-sm-4">
                     <div class="box">
                         <h2>1</h2>
-                        <h2>SIDE</h2>
+                        <h2>premium</h2>
                         <div class="box-1">
                             <img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/box.png">
                         </div>
@@ -100,7 +100,7 @@
                 <div class="col-sm-4">
                     <div class="box">
                         <h2>2</h2>
-                        <h2>SIDE</h2>
+                        <h2>side</h2>
                         <div class="box-2">
                             <img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/box.png">
                         </div>
@@ -109,7 +109,7 @@
                 <div class="col-sm-4">
                     <div class="box">
                         <h2>3</h2>
-                        <h2>SIDE</h2>
+                        <h2>dip</h2>
                         <div class="box-3">
                             <img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/box.png">
                         </div>

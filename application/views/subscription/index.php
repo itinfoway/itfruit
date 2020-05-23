@@ -169,7 +169,10 @@
                         <center><h2 class="carte-title"><?= $product->name ?></h2></center>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/products/subscription/<?= $product->img; ?>" title="<?= $product->name ?>"  rel="schema:image" resource="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
                         <center>
-                            <b class="product-credit"><span><?= $product->price ?></span> SGD</b>
+                            <b class="set5d set-display"><span><?= $product->price ?></span> SGD</b>
+                            <b class="set2d set-display"><span><?= $product->price1 ?></span> SGD</b>
+                            <b class="set1d set-display"><span><?= $product->price2 ?></span> SGD</b>
+                            <b class="set1d2w set-display"><span><?= $product->price3 ?></span> SGD</b>
                             <br>
                             <div class="text">
                                 <div class="row" property="schema:description" content="<?= implode(",", $product->fruit); ?>">
@@ -204,7 +207,7 @@
                                 </div>
                             </div>
                         </center>
-                        <div class="countr" data-value="<?= urlencode(base64_encode($product->id)) ?>"  property="schema:name" content="<?= $product->name ?>" data-price="<?= $product->price ?>">
+                        <div class="countr" data-value="<?= urlencode(base64_encode($product->id)) ?>"  property="schema:name" content="<?= $product->name ?>" data-price5d="<?= $product->price ?>" data-price2d="<?= $product->price1 ?>" data-price1d="<?= $product->price2 ?>" data-price1d2w="<?= $product->price3 ?>">
                             <img class="img-responsive minus pointer" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
                             <span>0</span>
                             <img class="img-responsive plus pointer" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
@@ -282,7 +285,13 @@
     $('#from_datetime').on("change", function () {
         var d = new Date($("#thisfrom_datetime").val());
         var j = new Date();
-        j.setDate(d.getDate() + 7);
+        if ($(".box-4").hasClass("active")) {
+            j.setDate(d.getDate() + 28);
+            console.log("hi");
+        } else {
+            console.log("else");
+            j.setDate(d.getDate() + 7);
+        }
         $("#thisto_datetime").val(j.toISOString().split('T')[0]);
         todate.datetimepicker("setStartDate", j.toISOString().split('T')[0]);
     });
@@ -294,8 +303,8 @@
     var error_2stblock_1day = '<?= $this->lang->line("fn_error_select_days_1") ?>';
     var error_select_date = '<?= $this->lang->line("fn_error_select_date") ?>';
     var fn_error_add_product = '<?= $this->lang->line("fn_error_add_product") ?>';
-    var checkout_url = '<?=  base_url();?>subscription/checkout';
-    
+    var checkout_url = '<?= base_url(); ?>subscription/checkout';
+
 </script>
-<script src="<?=  base_url()?>assert/fontend/js/subsciption.js">
+<script src="<?= base_url() ?>assert/fontend/js/subsciption.js">
 </script>

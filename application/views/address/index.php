@@ -4,7 +4,7 @@
             <div class="add-address">
                 <img class="fruits pinapple" src="<?= base_url(); ?>assert/fontend/img/pinapple.svg">
                 <img class="fruits strawberry" src="<?= base_url(); ?>assert/fontend/img/strawberry.svg">
-                <a href="<?=base_url("address/add");?>">
+                <a href="<?= base_url("address/add"); ?>">
                     <center>
                         <h1>Add New Address</h1>
                     </center>
@@ -81,7 +81,7 @@ if (!empty($data)) {
                                                 <a href="<?= base_url("address/edit/" . urlencode(base64_encode($d->id))); ?>"><button class="edit-btn">EDIT</button></a>
                                             </div>
                                             <div class="col-xs-6">
-                                                <a href="<?= base_url("address/delete/" . urlencode(base64_encode($d->id))); ?>"><button class="remove-btn">REMOVE</button></a>
+                                                <button class="remove-btn" data-id="<?= urlencode(base64_encode($d->id)) ?>">REMOVE</button>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
@@ -99,3 +99,28 @@ if (!empty($data)) {
     <?php
 }
 ?>
+<script>
+    $(document).on("click", ".remove-btn", function () {
+        var id=$(this).data("id");
+        
+        bootbox.confirm({
+            message: "<?= $this->lang->line("fn_delete_confirm_msg"); ?>",
+            buttons: {
+                confirm: {
+                    label: 'Yes',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'No',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if (result) {
+                    window.location.href = '<?= base_url("address/delete/"); ?>'+id;
+                }
+            }
+        });
+    });
+
+</script>

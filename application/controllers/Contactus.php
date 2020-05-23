@@ -26,6 +26,7 @@ class Contactus extends Controller
                 $data = $this->contact_model->add($capArray);
 
                 if (!empty($data)) {
+                    $this->session->set_userdata("success", "contactus msg send successfully");
                     redirect("contactus");
                 } else {
                     redirect("contactus");

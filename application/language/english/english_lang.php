@@ -29,6 +29,7 @@ $lang["days_name"][7] = 'SUN';
 $lang["fn_error_order_carte_not_set"] = 'Please add first order before proceed for next order.';
 $lang["fn_error_date_time_allredyset"] = 'this date and time already set';
 $lang["fn_error_today_only_for_max_itme"] = 'sorry, this day and time maximum oder set';
+$lang["fn_delete_confirm_msg"] = 'Are you sure remove this';
 
 //Faq
 $lang["faq_head"] = 'FAQ';
@@ -87,8 +88,14 @@ $lang["fruit_hed"] = 'Fruit Products';
 $lang["products_select_fruit_plac"] = 'Select Fruit';
 $lang["products_credit"] = 'Credit';
 $lang["products_credit_plac"] = 'Enter Credit';
-$lang["products_price"] = 'Price';
-$lang["products_price_plac"] = 'Enter price';
+$lang["products_price"] = 'Price for Everyday';
+$lang["products_price_plac"] = 'Enter price for everyday';
+$lang["products_price1"] = 'Price for twice a day';
+$lang["products_price_plac1"] = 'Enter price for twice a day';
+$lang["products_price2"] = 'Price for once a week';
+$lang["products_price_plac2"] = 'Enter price for once a week';
+$lang["products_price3"] = 'Price for once a every 2 week';
+$lang["products_price_plac3"] = 'Enter price for once a every 2 week';
 
 //order loading
 $lang["order_loading"] = 'Order Loading';

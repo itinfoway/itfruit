@@ -197,7 +197,7 @@ if (!empty($fruit)) {
                             ?>
                             <div class="col-xs-12 col-sm-6 col-md-3">
                                 <div class="box <?= ($count % 4 == 0) ? "plan-green" : (($count % 3 == 0) ? "plan-yellow" : (($count % 2 == 0) ? "plan-red" : "plan-blue")); ?>">
-                                    <img class="top-right pointer fruit-remove" src="<?= base_url() ?>assert/fontend/img/close.png">
+                                    <img class="top-right pointer fruit-remove" style="display: none" src="<?= base_url() ?>assert/fontend/img/close.png">
                                     <img class="img-responsive" src="<?= base_url("assert/fruit/" . $f->img); ?>">
                                     <h2><?= $f->name; ?></h2>
                                     <center><button class="fev-btn fruit-data" data-fruit="<?= $f->id ?>" data-type="1"><?= $this->lang->line("btn_add") ?></button></center>
@@ -292,7 +292,9 @@ if (!empty($fruit)) {
     var fruitData = {};
     function setFruit(type){
         $(".fruit-data").text(btn_add);
+        $(".fruit-remove").hide();
         for(i in fruitData[type]){
+            $(".fruit-data[data-fruit='"+fruitData[type][i]+"'][data-type='"+type+"']").parent().parent().find(".fruit-remove").show();
             $(".fruit-data[data-fruit='"+fruitData[type][i]+"'][data-type='"+type+"']").text(btn_added);
         }
     }
@@ -305,6 +307,7 @@ if (!empty($fruit)) {
             }
         }
         setFruit(fruittype);
+        $(this).parent("div").find(".fruit-remove").hide();
         $(this).parent("div").find(".fruit-data").text(btn_add);
         setCookie("fruit", JSON.stringify(fruitData));
     });
@@ -320,11 +323,13 @@ if (!empty($fruit)) {
         }
         $(this).text(btn_added);
         setCookie("fruit", JSON.stringify(fruitData));
+        $(this).parent().parent().find(".fruit-remove").show();
     });
     $(document).on("click", ".fruit-set", function () {
         $(".fruit-set").removeClass("active");
         $(this).addClass("active");
         $(".fev-btn").attr("data-type", $(this).data("set"));
+        
         setFruit($(this).data("set"));
     });
     $(document).ready(function () {

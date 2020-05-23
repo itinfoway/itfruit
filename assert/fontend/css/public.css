@@ -842,7 +842,6 @@ section .saved-add {
 h1 {
     font-family: 'Dreamwalker Regular';
     font-size: 23px;
-    text-align: center;
     padding: 16px 0px;
     color: #ffffff;
 }
@@ -1900,8 +1899,11 @@ section .days .box img {
     right: 0;
     left: 0;
     margin: 0 auto;
+    display: none;
 }
-
+section .days .box:hover img,section .days .box.active img {
+    display: block;
+}
 section .days .box span {
     font-family: 'Multicolore Regular';
 }
@@ -4169,6 +4171,13 @@ button:focus {
     background-size: 100% 100%;
     margin: 0 auto;
     color: #101f51 !important;
+}
+.btn-danger{
+    background: transparent;
+    border: none;
+    display: block;
+    background-image: url(../img/add-denger.png);
+    background-size: 100% 100%;
 }
 .btn-default.active,.btn-default:focus,.btn-default:active,.btn-default:hover{
     background-image: url(../img/add-btn-a.png);

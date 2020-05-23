@@ -1,4 +1,5 @@
 var products = {};
+$(".set-display").hide();
 $(document).on("click", ".box", function () {
     $(".box").removeClass("active");
     $(this).addClass("active");
@@ -8,6 +9,10 @@ $(document).on("click", ".box", function () {
     } else {
         $(".week-days").removeClass("active");
     }
+    $(".set-display").removeClass("product-credit");
+    $(".set"+data).addClass("product-credit");
+    $(".set-display").hide();
+    $(".set"+data).show();
     $(".countr").find("span").text(0);
 });
 $(document).on("click", "#checkout", function () {
@@ -31,7 +36,7 @@ $(document).on("click", "#checkout", function () {
             toastr.error(error_select_date);
         }
         if (flag == 0) {
-            //window.location.href = checkout_url;
+            window.location.href = checkout_url;
         }
     }else{
         toastr.error(fn_error_add_product);
@@ -211,7 +216,7 @@ function productSet() {
     $(".countr").each(function (index) {
         var c = parseInt($(this).find("span").text());
         if (c != 0) {
-            var price = $(this).data("price");
+            var price = $(this).data("price"+dayof);
             pro[$(this).data("value")] = {};
             pro[$(this).data("value")]["c"] = c;
             pro[$(this).data("value")]["p"] = price;
