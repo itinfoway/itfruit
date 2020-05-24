@@ -9,7 +9,7 @@
 
         <table  width="100%" cellspacing="0">
             <tr align="center" >
-                <td style="padding:15px;"><img src="<?=base_url("fontend/fonts/"); ?>images/logo.png" /></td>
+                <td style="padding:15px;"><img src="<?=base_url("assert/fontend/"); ?>images/logo.png" /></td>
             </tr>
             <tr>
                 <td>
@@ -37,10 +37,10 @@
             <tr align="center">
                 <td style="color:#000;">
                     <p><spam style="background-color:pink">PLEASE EMAIL US:MAIL@EMAIL.COM</spam></p>
-                    <a href=""><img src="<?=base_url("fontend/fonts/"); ?>images/mail.png" /></a>	
-                    <a href=""><img src="<?=base_url("fontend/fonts/"); ?>images/earth.png" /></a>	
-                    <a href=""><img src="<?=base_url("fontend/fonts/"); ?>images/insta.png" /></a>	
-                    <a href=""><img src="<?=base_url("fontend/fonts/"); ?>images/fb.png" /></a>	
+                    <a href=""><img src="<?=base_url("assert/fontend/"); ?>images/mail.png" /></a>	
+                    <a href=""><img src="<?=base_url("assert/fontend/"); ?>images/earth.png" /></a>	
+                    <a href=""><img src="<?=base_url("assert/fontend/"); ?>images/insta.png" /></a>	
+                    <a href=""><img src="<?=base_url("assert/fontend/"); ?>images/fb.png" /></a>	
                 </td>
             </tr>
             <tr align="center">
@@ -51,7 +51,7 @@
                 </td>
             </tr>
             <tr>
-                <td><img src="<?=base_url("fontend/fonts/"); ?>images/footer.png" width="100%"/></td>
+                <td><img src="<?=base_url("assert/fontend/"); ?>images/footer.png" width="100%"/></td>
             </tr>
         </table>
     </body>
