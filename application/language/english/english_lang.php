@@ -459,3 +459,8 @@ $lang["fn_ala_cart_sliced_order_select_date"] = 'Select Date';
 $lang["fn_ala_cart_sliced_order_select_time"] = 'Select time';
 $lang["fn_ala_cart_sliced_order_save"] = 'save';
 $lang["fn_ala_cart_sliced_order_box"] = 'RANDOM A BOX FOR ME!';
+
+
+//address/index
+$lang["fn_address_head"] = 'Add New Address';
+$lang["fn_address_save"] = 'Saved Address';

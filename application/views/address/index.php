@@ -6,7 +6,7 @@
                 <img class="fruits strawberry" src="<?= base_url(); ?>assert/fontend/img/strawberry.svg">
                 <a href="<?= base_url("address/add"); ?>">
                     <center>
-                        <h1>Add New Address</h1>
+                        <h1><?= $this->lang->line("fn_address_head"); ?></h1>
                     </center>
                 </a>
             </div>
@@ -24,7 +24,7 @@ if (!empty($data)) {
             <img class="fruits avocado" src="<?= base_url(); ?>assert/fontend/img/avocado.svg">
             <img class="fruits berry" src="<?= base_url(); ?>assert/fontend/img/berry.svg">
             <div class="container my-container">
-                <h1>Saved Address</h1>
+                <h1><?= $this->lang->line("fn_address_save"); ?></h1>
                 <div class="add-part">
                     <div class="row">
                         <?php
