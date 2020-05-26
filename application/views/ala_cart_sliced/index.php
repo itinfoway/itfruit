@@ -17,8 +17,8 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="ala">
                         <div class="ala-text">
-                            <h1>ALA</h1>
-                            <h2>CARTE</h2>
+                            <h1><?= $this->lang->line("fn_ala_cart_sliced_head1"); ?></h1>
+                            <h2><?= $this->lang->line("fn_ala_cart_sliced_head2"); ?></h2>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,8 @@
                             <div>
                                 <div class="order">
                                     <div class="text">
-                                        <p>order</p>
-                                        <p>1</p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order"); ?></p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order_1"); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                         <div class="data-items">
                         </div>
                     </div>
-                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
+                    <h5 class="pl-3 text-center credit" style="display: none"><span><?= $this->lang->line("fn_ala_cart_sliced_order_total_0"); ?></span> <?= $this->lang->line("fn_ala_cart_sliced_order_credit"); ?></h5>
                 </div>
 
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox2">
@@ -78,8 +78,8 @@
                             <div>
                                 <div class="order">
                                     <div class="text">
-                                        <p>order</p>
-                                        <p>2</p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order"); ?></p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order_2"); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                         <div class="data-items">
                         </div>
                     </div>
-                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
+                    <h5 class="pl-3 text-center credit" style="display: none"><span><?= $this->lang->line("fn_ala_cart_sliced_order_total_0"); ?></span> <?= $this->lang->line("fn_ala_cart_sliced_order_credit"); ?></h5>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox3">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/berry.svg"></center>
@@ -107,8 +107,8 @@
                             <div>
                                 <div class="order">
                                     <div class="text">
-                                        <p>order</p>
-                                        <p>3</p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order"); ?></p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order_3"); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                         <div class="data-items">
                         </div>
                     </div>
-                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
+                    <h5 class="pl-3 text-center credit" style="display: none"><span><?= $this->lang->line("fn_ala_cart_sliced_order_total_0"); ?></span> <?= $this->lang->line("fn_ala_cart_sliced_order_credit"); ?></h5>
                 </div>
                 <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox4">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/orange.svg"></center>
@@ -136,8 +136,8 @@
                             <div>
                                 <div class="order">
                                     <div class="text">
-                                        <p>order</p>
-                                        <p>4</p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order"); ?></p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order_4"); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +150,7 @@
                         <div class="data-items">
                         </div>
                     </div>
-                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
+                    <h5 class="pl-3 text-center credit" style="display: none"><span><?= $this->lang->line("fn_ala_cart_sliced_order_total_0"); ?></span> <?= $this->lang->line("fn_ala_cart_sliced_order_credit"); ?></h5>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2" id="orderbox5">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/sitafal.svg"></center>
@@ -165,8 +165,8 @@
                             <div>
                                 <div class="order">
                                     <div class="text">
-                                        <p>order</p>
-                                        <p>5</p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order"); ?></p>
+                                        <p><?= $this->lang->line("fn_ala_cart_sliced_order_5"); ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -179,16 +179,16 @@
                         <div class="data-items">
                         </div>
                     </div>
-                    <h5 class="pl-3 text-center credit" style="display: none"><span>0</span> CREDIT</h5>
+                    <h5 class="pl-3 text-center credit" style="display: none"><span><?= $this->lang->line("fn_ala_cart_sliced_order_total_0"); ?> </span> <?= $this->lang->line("fn_ala_cart_sliced_order_credit"); ?></h5>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-2">
                     <center><img style="height: 80px;" src="<?= base_url(); ?>assert/fontend/img/banana.svg"></center>
                     <div class="totel">
-                        <p>total: <span id="creditTotal">0</span> credit</p>
+                        <p><?= $this->lang->line("fn_ala_cart_sliced_order_total"); ?> <span id="creditTotal"><?= $this->lang->line("fn_ala_cart_sliced_order_total_0"); ?></span> <?= $this->lang->line("fn_ala_cart_sliced_order_credit"); ?></p>
                     </div>
                     <a href="<?= base_url("ala-cart-sliced/checkout"); ?>" id="checkoutBtn" class="btn disabled" style="display: block;">
                         <div class="totel">
-                            <p>checkout</p>
+                            <p><?= $this->lang->line("fn_ala_cart_sliced_order_checkout"); ?></p>
                         </div>
                     </a>
                 </div>
@@ -207,18 +207,18 @@
             </div>
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
-                    <label>Select Date</label>
+                    <label><?= $this->lang->line("fn_ala_cart_sliced_order_select_date"); ?></label>
                     <input class="form-control form_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="orderbox" placeholder="ex. <?= date("d M Y") ?>" readonly>
                     <input  type="hidden" id="orderbox" name="orderbox" >
                 </div>
                 <div class="form-group col-8 offset-2" style="display:none">
-                    <label>Select Time</label>
+                    <label><?= $this->lang->line("fn_ala_cart_sliced_order_select_time"); ?></label>
                     <select class="form-control" id="gettime">
                     </select>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" id="savedate" class="btn btn-primary"  data-dismiss="modal" aria-label="Close">Save</button>
+                <button type="button" id="savedate" class="btn btn-primary"  data-dismiss="modal" aria-label="Close"><?= $this->lang->line("fn_ala_cart_sliced_order_save"); ?></button>
             </div>
         </div>
     </div>
@@ -228,7 +228,7 @@
 <section>
     <div class="random-part">
         <div class="container">
-            <h1>RANDOM A BOX FOR ME!</h1>
+            <h1><?= $this->lang->line("fn_ala_cart_sliced_order_box"); ?></h1>
             <?php
             if (!empty($products)) {
                 $row = 0;
@@ -242,7 +242,7 @@
                         <center><h2 class="carte-title"><?= $product->name ?></h2></center>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img; ?>" title="<?= $product->name ?>"  rel="schema:image" resource="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
                         <center>
-                            <b class="product-credit"><span><?= $product->min_credit ?></span> CREDIT</b><br>
+                            <b class="product-credit"><span><?= $product->min_credit ?></span> <?= $this->lang->line("fn_ala_cart_sliced_order_credit"); ?></b><br>
                             <div class="text">
                                 <div class="row" property="schema:description" content="<?= implode(",", $product->fruit); ?>">
                                     <?php

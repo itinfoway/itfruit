@@ -415,3 +415,47 @@ $lang["fn_category"] = 'category';
 
 //subscription/delivery-information
 $lang["fn_stripe"] = 'stripe';
+
+//ordernow/index
+$lang["fn_ordernow_head"] = 'CART';
+$lang["fn_ordernow_red_head1"] = 'LIFE IS JUST A FRUIT.';
+$lang["fn_ordernow_red_head2"] = 'ALA';
+$lang["fn_ordernow_red_head3"] = 'CARTE';
+$lang["fn_ordernow_red_line1"] = 'purchase between 2 - 50 credits';
+$lang["fn_ordernow_red_line2"] = 'credits will never expire';
+$lang["fn_ordernow_red_line3"] = 'choose your delivery date';
+$lang["fn_ordernow_red_line4"] = 'choose your own fruit box';
+$lang["fn_ordernow_red_line5"] = 'order up to 5 advanced deliveries';
+$lang["fn_ordernow_green_head1"] = 'NATURE`S CANDY';
+$lang["fn_ordernow_green_head2"] = 'REGULAR';
+$lang["fn_ordernow_green_head3"] = 'SUBSCRIPTION';
+$lang["fn_ordernow_green_line1"] = 'no credits required';
+$lang["fn_ordernow_green_line2"] = 'cancel / pause anytime';
+$lang["fn_ordernow_green_line3"] = 'pay on a recurring basis';
+$lang["fn_ordernow_green_line4"] = 'random fruit box delivered to you regularly';
+$lang["fn_ordernow_contain_head1"] = 'WHAT DOES 1 FRUIT CONTAIN';
+$lang["fn_ordernow_contain_head2"] = 'CAREFULLY CURATED 3 TYPES OF FRUIT';
+$lang["fn_ordernow_contain_no_1"] = '1';
+$lang["fn_ordernow_contain_no_1_name"] = 'premium';
+$lang["fn_ordernow_contain_no_2"] = '2';
+$lang["fn_ordernow_contain_no_2_name"] = 'side';
+$lang["fn_ordernow_contain_no_3"] = '3';
+$lang["fn_ordernow_contain_no_3_name"] = 'dip';
+
+//ala-cart-sliced/index
+$lang["fn_ala_cart_sliced_head1"] = 'ALA';
+$lang["fn_ala_cart_sliced_head2"] = 'CARTE';
+$lang["fn_ala_cart_sliced_order"] = 'order';
+$lang["fn_ala_cart_sliced_order_total"] = 'total:';
+$lang["fn_ala_cart_sliced_order_total_0"] = '0';
+$lang["fn_ala_cart_sliced_order_credit"] = 'credit';
+$lang["fn_ala_cart_sliced_order_checkout"] = 'checkout';
+$lang["fn_ala_cart_sliced_order_1"] = '1';
+$lang["fn_ala_cart_sliced_order_2"] = '2';
+$lang["fn_ala_cart_sliced_order_3"] = '3';
+$lang["fn_ala_cart_sliced_order_4"] = '4';
+$lang["fn_ala_cart_sliced_order_5"] = '5';
+$lang["fn_ala_cart_sliced_order_select_date"] = 'Select Date';
+$lang["fn_ala_cart_sliced_order_select_time"] = 'Select time';
+$lang["fn_ala_cart_sliced_order_save"] = 'save';
+$lang["fn_ala_cart_sliced_order_box"] = 'RANDOM A BOX FOR ME!';
