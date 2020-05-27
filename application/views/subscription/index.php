@@ -75,7 +75,7 @@
                     <div class="box box-1 pointer" data-daysof="5d">
                         <img src="<?= base_url() ?>assert/fontend/img/grapes.svg" >
                         <h6><?= $this->lang->line("fn_subscription_day"); ?></h6>
-                        <h6><span>(</span><?= $this->lang->line("fn_subscription_day_mon"); ?> <span> -</span> <?= $this->lang->line("fn_subscription_day_fri"); ?><span>)</span></h6>
+                        <h6><span>(</span><?= $this->lang->line("days_name")[1]; ?> <span> -</span><?= $this->lang->line("days_name")[5]; ?><span>)</span></h6>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
@@ -107,37 +107,37 @@
             <ul>
                 <li class="pointer">
                     <div class="week-days circ mon" data-day="1">
-                        <p><?= $this->lang->line("fn_subscription_day_mon"); ?></p>
+                        <p><?= $this->lang->line("days_name")[1]; ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ tue" data-day="2">
-                        <p><?= $this->lang->line("fn_subscription_day_tue"); ?></p>
+                        <p><?= $this->lang->line("days_name")[2]; ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ wed" data-day="3">
-                        <p><?= $this->lang->line("fn_subscription_day_wed"); ?></p>
+                        <p><?= $this->lang->line("days_name")[3]; ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ thu" data-day="4">
-                        <p><?= $this->lang->line("fn_subscription_day_thu"); ?></p>
+                        <p><?= $this->lang->line("days_name")[4]; ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ fri" data-day="5">
-                        <p><?= $this->lang->line("fn_subscription_day_fri"); ?></p>
+                        <p><?= $this->lang->line("days_name")[5]; ?></p>
                     </div>
                 </li>
                 <li>
                     <div class="circ sat">
-                        <p><?= $this->lang->line("fn_subscription_day_sat"); ?></p>
+                        <p><?= $this->lang->line("days_name")[6]; ?></p>
                     </div>
                 </li>
                 <li>
                     <div class="circ sun">
-                        <p><?= $this->lang->line("fn_subscription_day_sun"); ?></p>
+                        <p><?= $this->lang->line("days_name")[7]; ?></p>
                     </div>
                 </li>
                 <div class="clearfix"></div>

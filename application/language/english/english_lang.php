@@ -481,13 +481,6 @@ $lang["fn_subscription_des_line1"] = '*short discription of subscription.';
 $lang["fn_subscription_des_line2"] = '- fruit boxes will be  selected at random for the customer at designation date and time.';
 $lang["fn_subscription_des_line3"] = '- please find our current fruit boxes. kindly note these will change with the season as well.';
 $lang["fn_subscription_day"] = 'everyday';
-$lang["fn_subscription_day_mon"] = 'Mon';
-$lang["fn_subscription_day_tue"] = 'tue';
-$lang["fn_subscription_day_wed"] = 'wed';
-$lang["fn_subscription_day_thu"] = 'thu';
-$lang["fn_subscription_day_fri"] = 'Fri ';
-$lang["fn_subscription_day_sat"] = 'sat';
-$lang["fn_subscription_day_sun"] = 'sun';
 $lang["fn_subscription_twice_day"] = 'twice a day ';
 $lang["fn_subscription_once_week"] = 'once a week';
 $lang["fn_subscription_once_every"] = 'once a every';
@@ -506,3 +499,39 @@ $lang["fn_orderhistory_head"] = 'ORDER HISTORY';
 $lang["fn_orderhistory_no"] = 'order no. :';
 $lang["fn_orderhistory_deli_no"] = 'delivered on :';
 $lang["fn_orderhistory_time_no"] = 'time :';
+
+//subscription/manaage.php
+$lang["fn_sub_manaage_head"] = 'MANAGE SUBSCRIPTION';
+$lang["fn_sub_manaage_pack"] = 'SUBCRIPTION PACK';
+$lang["fn_sub_manaage_order"] = 'ORDER MODE';
+$lang["fn_sub_manaage_order_period"] = 'PERIOD:';
+$lang["fn_sub_manaage_order_once"] = 'once a week';
+$lang["fn_sub_manaage_order_once_every"] = 'once a every 2 week';
+$lang["fn_sub_manaage_next_date"] = 'NEXT BILLING DATE';
+$lang["fn_sub_manaage_cancel"] = 'CANCEL SUBSCRIPTION';
+$lang["fn_sub_manaage_complete"] = 'COMPLETE SUBSCRIPTION';
+$lang["fn_sub_manaage_cancled_sub"] = 'CANCELED SUBSCRIPTION';
+$lang["fn_sub_manaage_cancled_sub"] = 'CANCELED SUBSCRIPTION';
+$lang["fn_sub_manaage_load"] = 'Load More';
+
+//learn/index.php
+$lang["fn_learn_head"] = 'learn';
+$lang["fn_learn_amount"] = 'Amount per : 100 grams';
+
+//contactus/index.php
+$lang["fn_contactus_email"] = 'EMAIL US / FEED BACK';
+$lang["fn_contactus_email_id"] = 'slicedsg@gmail.com';
+$lang["fn_contactus_leonard"] = 'LEONARD : 92267669';
+$lang["fn_contactus_david"] = 'DAVID : 92267669';
+$lang["fn_contactus_office"] = 'OFFICE NUMBER (DIVERTED)';
+$lang["fn_contactus_contact_us"] = 'CONTACT WITH US';
+$lang["fn_contactus_contacts_msg"] = 'SEND US A MESSAGE';
+$lang["fn_contactus_insert"] = 'insert your message';
+$lang["fn_contactus_200"] = '200';
+$lang["fn_contactus_chars"] = 'chars left';
+$lang["fn_contactus_send"] = 'send';
+$lang["fn_contactus_event"] = 'event / corporate';
+$lang["fn_contactus_event_line1"] = '***PROVIDING EMPLOYEES WITH FRESH FRUIT IS GREAT WAY FOR BUSINESSES TO PROMOTE WELLNESS AND HEALTHY LIVING AS A COMPANY! THE NATURAL SUGAR IN FRUITS WILL HELP YOUR EMPLOYEES STAY ACTIVE THROUGHOUT THE DAY. IN ADDITION TO ENERGIZING THEM PHYSICALLY, EATING FRUITS LIKE ORANGES AND MELON HAVE BEEN KNOWN TO HELP PEOPLE FOCUS MENTALLY!***';
+$lang["fn_contactus_event_line2"] = '***WHAT BETTER WAY TO KEEP YOUR EMPLOYEES GOING FRESH THROUGH THE DAY WITH SOME CHILLED SLICED FRUITS?***';
+$lang["fn_contactus_event_order"] = 'ORDER WITH US NOW!';
+$lang["fn_contactus_event_order_insert"] = 'insert your message';
