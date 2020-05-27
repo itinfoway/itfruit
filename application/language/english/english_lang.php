@@ -499,3 +499,10 @@ $lang["fn_subscription_save"] = 'Save';
 $lang["fn_subscription_sgd"] = 'SGD';
 $lang["fn_subscription_0"] = '0';
 $lang["fn_subscription_check_out"] = 'check out';
+
+
+//orderhistory/index.php
+$lang["fn_orderhistory_head"] = 'ORDER HISTORY';
+$lang["fn_orderhistory_no"] = 'order no. :';
+$lang["fn_orderhistory_deli_no"] = 'delivered on :';
+$lang["fn_orderhistory_time_no"] = 'time :';
