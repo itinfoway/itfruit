@@ -2,7 +2,7 @@
     <div class="container my-container ordernow">
         <div class="row">
             <div class="col-md-12 my-3">
-                <h1 class="text-red">CART</h1>
+                <h1 class="text-red"><?= $this->lang->line("fn_ordernow_head"); ?></h1>
             </div>
         </div>
         <div class="row relative">
@@ -16,28 +16,28 @@
                     <div class="col-lg-7 col-md-12">
                         <div class="row text-lg-left text-center justify-content-lg-end justify-content-md-around justify-content-center mx-md-5 mt-md-3">
                             <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-lg-5 mt-md-5">
-                                <h4>purchase between 2 - 50 credits</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_red_line1"); ?></h4>
                             </div>
                             <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-md-5">
-                                <h4>credits will never expire</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_red_line2"); ?></h4>
                             </div>
                             <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-md-5">
-                                <h4>choose your delivery date</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_red_line3"); ?></h4>
                             </div>
                             <div class="col-lg-8 col-md-4 offset-lg-5 col-12 my-lg-3 mt-md-5">
-                                <h4>choose your own fruit box</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_red_line4"); ?></h4>
                             </div>
                             <div class="col-lg-8 col-md-4  offset-lg-5 col-12 my-lg-3 mb-lg-5 mt-md-5">
-                                <h4>order up to 5 advanced deliveries</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_red_line5"); ?></h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-8 col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-red my-lg-5 py-lg-5 text-center pointer" onclick="window.location.href ='<?=base_url()?>ala-cart-sliced'">
                         <div class="my-lg-5 py-lg-5">
                             <div class="my-lg-5 py-lg-3  pt-5">
-                                <p>LIFE IS JUST A FRUIT.</p> 
-                                <h1>ALA</h1> 
-                                <h3>CARTE</h3>
+                                <p><?= $this->lang->line("fn_ordernow_red_head1"); ?></p> 
+                                <h1><?= $this->lang->line("fn_ordernow_red_head2"); ?></h1> 
+                                <h3><?= $this->lang->line("fn_ordernow_red_head3"); ?></h3>
                             </div>
                         </div>
                     </div>
@@ -51,25 +51,25 @@
                     <div class="col-lg-5 col-md-8  col-10 offset-lg-0 offset-md-2 offset-1 ordernow-bg-r-green my-lg-5 py-lg-5 text-center pointer" onclick="window.location.href ='<?=base_url()?>subscription'">
                         <div class="my-lg-5 py-lg-5">
                             <div class="my-lg-5 py-lg-3  pb-lg-0 pb-5">
-                                <p>NATURE'S CANDY</p> 
-                                <h1>REGULAR</h1>
-                                <h3>SUBSCRIPTION</h3>
+                                <p><?= $this->lang->line("fn_ordernow_green_head1"); ?></p> 
+                                <h1><?= $this->lang->line("fn_ordernow_green_head2"); ?></h1>
+                                <h3><?= $this->lang->line("fn_ordernow_green_head3"); ?></h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-12">
                         <div class="row text-lg-left text-center justify-content-lg-start justify-content-md-around justify-content-center mx-md-5 mt-md-3">
                             <div class="col-lg-8 col-md-4  col-12 my-lg-3 mt-lg-5 mt-md-5">
-                                <h4>no credits required</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_green_line1"); ?></h4>
                             </div>
                             <div class="col-lg-8 col-md-4 col-12  my-lg-3 mt-md-5">
-                                <h4>cancel / pause anytime</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_green_line2"); ?></h4>
                             </div>
                             <div class="col-lg-8 col-md-4  col-12 my-lg-3 mt-md-5">
-                                <h4>pay on a recurring basis</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_green_line3"); ?></h4>
                             </div>
                             <div class="col-lg-8 col-md-4 col-12  my-lg-3 my-5">
-                                <h4>random fruit box delivered to you regularly</h4>
+                                <h4><?= $this->lang->line("fn_ordernow_green_line4"); ?></h4>
                             </div>
 
                         </div>
@@ -85,13 +85,13 @@
 <section>
     <div class="container my-container">
         <div class="what-does-part">
-            <h1>WHAT DOES 1 FRUIT CONTAIN</h1>
-            <h3>CAREFULLY CURATED 3 TYPES OF FRUIT</h3>
+            <h1><?= $this->lang->line("fn_ordernow_contain_head1"); ?></h1>
+            <h3><?= $this->lang->line("fn_ordernow_contain_head2"); ?></h3>
             <div class="row box-part">
                 <div class="col-sm-4">
                     <div class="box">
-                        <h2>1</h2>
-                        <h2>premium</h2>
+                        <h2><?= $this->lang->line("fn_ordernow_contain_no_1"); ?></h2>
+                        <h2><?= $this->lang->line("fn_ordernow_contain_no_1_name"); ?></h2>
                         <div class="box-1">
                             <img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/box.png">
                         </div>
@@ -99,8 +99,8 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <h2>2</h2>
-                        <h2>side</h2>
+                        <h2><?= $this->lang->line("fn_ordernow_contain_no_2"); ?></h2>
+                        <h2><?= $this->lang->line("fn_ordernow_contain_no_2_name"); ?></h2>
                         <div class="box-2">
                             <img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/box.png">
                         </div>
@@ -108,8 +108,8 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="box">
-                        <h2>3</h2>
-                        <h2>dip</h2>
+                        <h2><?= $this->lang->line("fn_ordernow_contain_no_3"); ?></h2>
+                        <h2><?= $this->lang->line("fn_ordernow_contain_no_3_name"); ?></h2>
                         <div class="box-3">
                             <img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/box.png">
                         </div>

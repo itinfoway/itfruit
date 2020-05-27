@@ -415,3 +415,123 @@ $lang["fn_category"] = 'category';
 
 //subscription/delivery-information
 $lang["fn_stripe"] = 'stripe';
+
+//ordernow/index.php
+$lang["fn_ordernow_head"] = 'CART';
+$lang["fn_ordernow_red_head1"] = 'LIFE IS JUST A FRUIT.';
+$lang["fn_ordernow_red_head2"] = 'ALA';
+$lang["fn_ordernow_red_head3"] = 'CARTE';
+$lang["fn_ordernow_red_line1"] = 'purchase between 2 - 50 credits';
+$lang["fn_ordernow_red_line2"] = 'credits will never expire';
+$lang["fn_ordernow_red_line3"] = 'choose your delivery date';
+$lang["fn_ordernow_red_line4"] = 'choose your own fruit box';
+$lang["fn_ordernow_red_line5"] = 'order up to 5 advanced deliveries';
+$lang["fn_ordernow_green_head1"] = 'NATURE`S CANDY';
+$lang["fn_ordernow_green_head2"] = 'REGULAR';
+$lang["fn_ordernow_green_head3"] = 'SUBSCRIPTION';
+$lang["fn_ordernow_green_line1"] = 'no credits required';
+$lang["fn_ordernow_green_line2"] = 'cancel / pause anytime';
+$lang["fn_ordernow_green_line3"] = 'pay on a recurring basis';
+$lang["fn_ordernow_green_line4"] = 'random fruit box delivered to you regularly';
+$lang["fn_ordernow_contain_head1"] = 'WHAT DOES 1 FRUIT CONTAIN';
+$lang["fn_ordernow_contain_head2"] = 'CAREFULLY CURATED 3 TYPES OF FRUIT';
+$lang["fn_ordernow_contain_no_1"] = '1';
+$lang["fn_ordernow_contain_no_1_name"] = 'premium';
+$lang["fn_ordernow_contain_no_2"] = '2';
+$lang["fn_ordernow_contain_no_2_name"] = 'side';
+$lang["fn_ordernow_contain_no_3"] = '3';
+$lang["fn_ordernow_contain_no_3_name"] = 'dip';
+
+//ala-cart-sliced/index.php
+$lang["fn_ala_cart_sliced_head1"] = 'ALA';
+$lang["fn_ala_cart_sliced_head2"] = 'CARTE';
+$lang["fn_ala_cart_sliced_order"] = 'order';
+$lang["fn_ala_cart_sliced_order_total"] = 'total:';
+$lang["fn_ala_cart_sliced_order_total_0"] = '0';
+$lang["fn_ala_cart_sliced_order_credit"] = 'credit';
+$lang["fn_ala_cart_sliced_order_checkout"] = 'checkout';
+$lang["fn_ala_cart_sliced_order_1"] = '1';
+$lang["fn_ala_cart_sliced_order_2"] = '2';
+$lang["fn_ala_cart_sliced_order_3"] = '3';
+$lang["fn_ala_cart_sliced_order_4"] = '4';
+$lang["fn_ala_cart_sliced_order_5"] = '5';
+$lang["fn_ala_cart_sliced_order_select_date"] = 'Select Date';
+$lang["fn_ala_cart_sliced_order_select_time"] = 'Select time';
+$lang["fn_ala_cart_sliced_order_save"] = 'save';
+$lang["fn_ala_cart_sliced_order_box"] = 'RANDOM A BOX FOR ME!';
+
+
+//address/index.php
+$lang["fn_address_head"] = 'Add New Address';
+$lang["fn_address_save"] = 'Saved Address';
+
+//subscription/index.php
+$lang["fn_subscription_no1"] = '1';
+$lang["fn_subscription_no1_line_1"] = 'NUTRITICON';
+$lang["fn_subscription_no1_line_2"] = 'PACKS';
+$lang["fn_subscription_no2"] = '2';
+$lang["fn_subscription_no2_line_1"] = 'YOUR';
+$lang["fn_subscription_no2_line_2"] = 'ORDER';
+$lang["fn_subscription_no3"] = '3';
+$lang["fn_subscription_no3_line_1"] = 'DELIVERY';
+$lang["fn_subscription_no3_line_2"] = 'INFORMATION';
+$lang["fn_subscription_no4"] = '4';
+$lang["fn_subscription_no4_line_1"] = 'CHECKOUT';
+$lang["fn_subscription_des_line1"] = '*short discription of subscription.';
+$lang["fn_subscription_des_line2"] = '- fruit boxes will be  selected at random for the customer at designation date and time.';
+$lang["fn_subscription_des_line3"] = '- please find our current fruit boxes. kindly note these will change with the season as well.';
+$lang["fn_subscription_day"] = 'everyday';
+$lang["fn_subscription_twice_day"] = 'twice a day ';
+$lang["fn_subscription_once_week"] = 'once a week';
+$lang["fn_subscription_once_every"] = 'once a every';
+$lang["fn_subscription_once_every_line"] = '2 week';
+$lang["fn_subscription_random"] = 'RANDOM A BOX FOR ME!';
+$lang["fn_subscription_date"] = 'Select Date To';
+$lang["fn_subscription_date_form"] = 'Select Date From';
+$lang["fn_subscription_save"] = 'Save';
+$lang["fn_subscription_sgd"] = 'SGD';
+$lang["fn_subscription_0"] = '0';
+$lang["fn_subscription_check_out"] = 'check out';
+
+
+//orderhistory/index.php
+$lang["fn_orderhistory_head"] = 'ORDER HISTORY';
+$lang["fn_orderhistory_no"] = 'order no. :';
+$lang["fn_orderhistory_deli_no"] = 'delivered on :';
+$lang["fn_orderhistory_time_no"] = 'time :';
+
+//subscription/manaage.php
+$lang["fn_sub_manaage_head"] = 'MANAGE SUBSCRIPTION';
+$lang["fn_sub_manaage_pack"] = 'SUBCRIPTION PACK';
+$lang["fn_sub_manaage_order"] = 'ORDER MODE';
+$lang["fn_sub_manaage_order_period"] = 'PERIOD:';
+$lang["fn_sub_manaage_order_once"] = 'once a week';
+$lang["fn_sub_manaage_order_once_every"] = 'once a every 2 week';
+$lang["fn_sub_manaage_next_date"] = 'NEXT BILLING DATE';
+$lang["fn_sub_manaage_cancel"] = 'CANCEL SUBSCRIPTION';
+$lang["fn_sub_manaage_complete"] = 'COMPLETE SUBSCRIPTION';
+$lang["fn_sub_manaage_cancled_sub"] = 'CANCELED SUBSCRIPTION';
+$lang["fn_sub_manaage_cancled_sub"] = 'CANCELED SUBSCRIPTION';
+$lang["fn_sub_manaage_load"] = 'Load More';
+
+//learn/index.php
+$lang["fn_learn_head"] = 'learn';
+$lang["fn_learn_amount"] = 'Amount per : 100 grams';
+
+//contactus/index.php
+$lang["fn_contactus_email"] = 'EMAIL US / FEED BACK';
+$lang["fn_contactus_email_id"] = 'slicedsg@gmail.com';
+$lang["fn_contactus_leonard"] = 'LEONARD : 92267669';
+$lang["fn_contactus_david"] = 'DAVID : 92267669';
+$lang["fn_contactus_office"] = 'OFFICE NUMBER (DIVERTED)';
+$lang["fn_contactus_contact_us"] = 'CONTACT WITH US';
+$lang["fn_contactus_contacts_msg"] = 'SEND US A MESSAGE';
+$lang["fn_contactus_insert"] = 'insert your message';
+$lang["fn_contactus_200"] = '200';
+$lang["fn_contactus_chars"] = 'chars left';
+$lang["fn_contactus_send"] = 'send';
+$lang["fn_contactus_event"] = 'event / corporate';
+$lang["fn_contactus_event_line1"] = '***PROVIDING EMPLOYEES WITH FRESH FRUIT IS GREAT WAY FOR BUSINESSES TO PROMOTE WELLNESS AND HEALTHY LIVING AS A COMPANY! THE NATURAL SUGAR IN FRUITS WILL HELP YOUR EMPLOYEES STAY ACTIVE THROUGHOUT THE DAY. IN ADDITION TO ENERGIZING THEM PHYSICALLY, EATING FRUITS LIKE ORANGES AND MELON HAVE BEEN KNOWN TO HELP PEOPLE FOCUS MENTALLY!***';
+$lang["fn_contactus_event_line2"] = '***WHAT BETTER WAY TO KEEP YOUR EMPLOYEES GOING FRESH THROUGH THE DAY WITH SOME CHILLED SLICED FRUITS?***';
+$lang["fn_contactus_event_order"] = 'ORDER WITH US NOW!';
+$lang["fn_contactus_event_order_insert"] = 'insert your message';

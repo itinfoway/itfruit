@@ -1,7 +1,7 @@
 <section class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-center h1-bg">learn</h1>
+            <h1 class="text-center h1-bg"><?= $this->lang->line("fn_learn_head"); ?></h1>
         </div>
     </div>
 </section>
@@ -49,7 +49,7 @@
                                     <div class="row justify-content-center">
                                         <div class="col-10 text-center pt-5">
                                             <?= $f->description; ?>
-                                            <button class="btn btn-primary p-3 my-2">Amount per : 100 grams</button>
+                                            <button class="btn btn-primary p-3 my-2"><?= $this->lang->line("fn_learn_amount"); ?></button>
                                         </div>
                                     </div>
                                     <div class="row justify-content-lg-center">

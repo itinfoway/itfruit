@@ -1,7 +1,7 @@
 <section>
     <div class="order-history">
         <div class="container my-container">
-            <h1>MANAGE SUBSCRIPTION </h1>
+            <h1><?= $this->lang->line("fn_sub_manaage_head"); ?> </h1>
         </div>
     </div>
 </section>
@@ -50,7 +50,7 @@ foreach ($subscription as $sub) {
                     <div class="row">
                         <div class="col-sm-12 col-md-4">
                             <div class="text">
-                                <h3>SUBCRIPTION PACK</h3>
+                                <h3><?= $this->lang->line("fn_sub_pack"); ?></h3>
                                 <?php
                                 $products = json_decode($sub->products);
                                 foreach ($products as $pro) {
@@ -74,17 +74,17 @@ foreach ($subscription as $sub) {
                                     if ($sub->address_type == 1) {
                                         ?>
                                         <img class="img-responsive loca icon" src="<?= base_url("assert/fontend/"); ?>img/home.png">
-                                        <h6>Home</h6>
+                                        <h6><?= $this->lang->line("fn_home"); ?></h6>
                                         <?php
                                     } else if ($sub->address_type == 2) {
                                         ?>
                                         <img class="img-responsive loca icon" src="<?= base_url("assert/fontend/"); ?>img/office.png">
-                                        <h6>work</h6>
+                                        <h6><?= $this->lang->line("fn_work"); ?></h6>
                                         <?php
                                     } else if ($sub->address_type == 3) {
                                         ?>
                                         <img class="img-responsive loca icon" src="<?= base_url("assert/fontend/"); ?>img/other.png">
-                                        <h6>other</h6>
+                                        <h6><?= $this->lang->line("fn_other"); ?></h6>
                                         <?php
                                     }
                                     ?>
@@ -93,9 +93,9 @@ foreach ($subscription as $sub) {
                         </div>
                         <div class="col-sm-12 col-md-4 col-12">
                             <div class="text">
-                                <h3>ORDER MODE</h3>
+                                <h3><?= $this->lang->line("fn_sub_manaage_order"); ?></h3>
                                 <button class="credi-btn">
-                                    <p>PERIOD: <?= getDeffDate($sub->from_date, $sub->to_date) ?> </p>
+                                    <p><?= $this->lang->line("fn_sub_manaage_order_period"); ?> <?= getDeffDate($sub->from_date, $sub->to_date) ?> </p>
                                 </button>
                                 <?php
                                 if ($sub->day_of_week == "5d") {
@@ -116,7 +116,7 @@ foreach ($subscription as $sub) {
                                     <?php
                                 } else if (json_decode($sub->days) == "1d") {
                                     ?>
-                                    <h2>once a week</h2>
+                                    <h2><?= $this->lang->line("fn_sub_manaage_order_once"); ?></h2>
                                     <h3>( 
                                         <?php
                                         foreach (json_decode($sub->days) as $da) {
@@ -127,7 +127,7 @@ foreach ($subscription as $sub) {
                                     <?php
                                 } else if (json_decode($sub->days) == "1d2w") {
                                     ?>
-                                    <h2>once a every 2 week</h2>
+                                    <h2><?= $this->lang->line("fn_sub_manaage_order_once_every"); ?></h2>
                                     <h3>( 
                                         <?php
                                         foreach (json_decode($sub->days) as $da) {
@@ -143,37 +143,37 @@ foreach ($subscription as $sub) {
                                         <ul>
                                             <li>
                                                 <div class="circ mon <?= (in_array(1, json_decode($sub->days))) ? "active" : "" ?>">
-                                                    <p>mon</p>
+                                                    <p><?= $this->lang->line("days_name")[1]; ?></p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="circ tue <?= (in_array(2, json_decode($sub->days))) ? "active" : "" ?>">
-                                                    <p>tue</p>
+                                                    <p><?= $this->lang->line("days_name")[2]; ?></p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="circ wed <?= (in_array(3, json_decode($sub->days))) ? "active" : "" ?>">
-                                                    <p>wed</p>
+                                                    <p><?= $this->lang->line("days_name")[3]; ?></p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="circ thu <?= (in_array(4, json_decode($sub->days))) ? "active" : "" ?>">
-                                                    <p>thu</p>
+                                                    <p><?= $this->lang->line("days_name")[4]; ?></p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="circ fri <?= (in_array(5, json_decode($sub->days))) ? "active" : "" ?>">
-                                                    <p>fri</p>
+                                                    <p><?= $this->lang->line("days_name")[5]; ?></p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="circ sat <?= (in_array(6, json_decode($sub->days))) ? "active" : "" ?>">
-                                                    <p>sat</p>
+                                                    <p><?= $this->lang->line("days_name")[6]; ?></p>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="circ sun <?= (in_array(7, json_decode($sub->days))) ? "active" : "" ?>">
-                                                    <p>sun</p>
+                                                    <p><?= $this->lang->line("days_name")[7]; ?></p>
                                                 </div>
                                             </li>
                                             <div class="clearfix"></div>
@@ -186,7 +186,7 @@ foreach ($subscription as $sub) {
                                     <?php
                                     if ($sub->status == 0) {
                                         ?>
-                                        <div class="col-sm-12 col-md-6"> <button>EDIT</button> </div>
+                                        <div class="col-sm-12 col-md-6"> <button><?= $this->lang->line("btn_edit"); ?></button> </div>
                                         <?php
                                     }
                                     ?>
@@ -196,7 +196,7 @@ foreach ($subscription as $sub) {
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="text">
-                                <h3>NEXT BILLING DATE</h3>
+                                <h3><?= $this->lang->line("fn_sub_manaage_next_date"); ?></h3>
                                 <h6><?= date("D, M/d/Y", strtotime((is_null($sub->next_order_date)) ? $sub->from_date : $sub->next_order_date)) ?> </h6>
                                 <button onclick="window.location.href='<?=  base_url("wallet/subscription/")?>'">VIEW PAYMENT HISTORY</button>
                                 <h3>PAYMENT MODE</h3>
@@ -204,15 +204,15 @@ foreach ($subscription as $sub) {
                                 <?php
                                 if ($sub->status == 0) {
                                     ?>
-                                    <button class="cancel">CANCEL SUBSCRIPTION</button>
+                                    <button class="cancel"><?= $this->lang->line("fn_sub_manaage_cancel"); ?></button>
                                     <?php
                                 } else if ($sub->status == 1) {
                                     ?>
-                                    <button class="cancel">COMPLETE SUBSCRIPTION</button>
+                                    <button class="cancel"><?= $this->lang->line("fn_sub_manaage_complete"); ?></button>
                                     <?php
                                 } else if ($sub->status == 2) {
                                     ?>
-                                    <button class="cancel">CANCELED SUBSCRIPTION</button>
+                                    <button class="cancel"><?= $this->lang->line("fn_sub_manaage_cancled_sub"); ?></button>
                                     <?php
                                 }
                                 ?>
@@ -228,7 +228,7 @@ foreach ($subscription as $sub) {
 <section>
     <div class="load-more">
         <button>
-            Load More
+            <?= $this->lang->line("fn_sub_manaage_load"); ?> 
         </button>
     </div>
 </section>

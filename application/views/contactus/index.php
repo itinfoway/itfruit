@@ -19,17 +19,17 @@
 			<div class="col-sm-12 col-md-6">
 				<div class="icon-part">
 					<img class="img-responsive contact-icon" src="<?= base_url("assert/fontend/"); ?>img/con-email.svg">
-					<h4>EMAIL US / FEED BACK</h4>
-					<P>slicedsg@gmail.com</P>
+					<h4><?= $this->lang->line("fn_contactus_email"); ?></h4>
+					<P><?= $this->lang->line("fn_contactus_email_id"); ?></P>
 				</div>
 				<div class="icon-part">
 					<img class="img-responsive contact-icon" src="<?= base_url("assert/fontend/"); ?>img/con-call.svg">
-					<h4>LEONARD : 92267669</h4>
-					<h4>DAVID : 92267669</h4>
-					<h4>OFFICE NUMBER (DIVERTED)</h4>
+					<h4><?= $this->lang->line("fn_contactus_leonard"); ?></h4>
+					<h4><?= $this->lang->line("fn_contactus_david"); ?></h4>
+					<h4><?= $this->lang->line("fn_contactus_office"); ?></h4>
 				</div>
 				<div class="social">
-					<h4>CONTACT WITH US</h4>
+					<h4><?= $this->lang->line("fn_contactus_contact_us"); ?></h4>
 					<div class="img-part">
 						<img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/con-insta.svg">
 						<img class="img-responsive" src="<?= base_url("assert/fontend/"); ?>img/con-fb.svg">
@@ -42,7 +42,7 @@
 <section>
 	<div class="container my-container">
 		<div class="send-msg">
-			<h1>SEND US A MESSAGE</h1>
+			<h1><?= $this->lang->line("fn_contactus_contacts_msg"); ?></h1>
 			<div class="form-part">
 				<img class="fruits watermelon" src="<?= base_url("assert/fontend/"); ?>img/watermelon.svg">
 				<img class="fruits orange" src="<?= base_url("assert/fontend/"); ?>img/orange.svg">
@@ -63,12 +63,12 @@
 								</div>
 							</div>
 							<div class="col-sm-12">
-								<p>insert your message</p>
+								<p><?= $this->lang->line("fn_contactus_insert"); ?></p>
                                                                 <textarea name="msg" id="msg1" data-validation="length" data-validation-length="min50" placeholder="insert your message"></textarea>
-								<p style="text-align:right"><small><span id="max-length-element1">200</span> chars left</small></p>
+								<p style="text-align:right"><small><span id="max-length-element1"><?= $this->lang->line("fn_contactus_200"); ?></span> <?= $this->lang->line("fn_contactus_insert"); ?> <?= $this->lang->line("fn_contactus_chars"); ?></small></p>
 							</div>
 							<div class="col-sm-12">
-								<button type="submit">send</button>
+								<button type="submit"><?= $this->lang->line("fn_contactus_send"); ?></button>
 							</div>
 						</div>
 						<?= form_close(); ?>
@@ -81,14 +81,14 @@
 <section>
 	<div class="container my-container">
 		<div class="send-msg event-msg">
-			<h1>event / corporate</h1>
+			<h1><?= $this->lang->line("fn_contactus_event"); ?></h1>
 			<div class="form-part">
-				<p>***PROVIDING EMPLOYEES WITH FRESH FRUIT IS GREAT WAY FOR BUSINESSES TO PROMOTE WELLNESS AND HEALTHY LIVING AS A COMPANY! THE NATURAL SUGAR IN FRUITS WILL HELP YOUR EMPLOYEES STAY ACTIVE THROUGHOUT THE DAY. IN ADDITION TO ENERGIZING THEM PHYSICALLY, EATING FRUITS LIKE ORANGES AND MELON HAVE BEEN KNOWN TO HELP PEOPLE FOCUS MENTALLY!***</p>
-				<p>***WHAT BETTER WAY TO KEEP YOUR EMPLOYEES GOING FRESH THROUGH THE DAY WITH SOME CHILLED SLICED FRUITS?***</p>
+				<p><?= $this->lang->line("fn_contactus_event_line1"); ?></p>
+				<p><?= $this->lang->line("fn_contactus_event_line2"); ?></p>
 				<img class="fruits watermelon" src="<?= base_url("assert/fontend/"); ?>img/grapes.svg">
 				<img class="fruits orange" src="<?= base_url("assert/fontend/"); ?>img/sitafal.svg">
 				<div class="profile send-form">
-					<h3>ORDER WITH US NOW! </h3>
+					<h3><?= $this->lang->line("fn_contactus_event_order"); ?> </h3>
 					<div class="form bill-form">
 						<?= form_open(); ?>
 						<div class="row">
@@ -111,12 +111,12 @@
 								</div>
 							</div>
 							<div class="col-sm-12">
-								<p>insert your message</p>
+								<p><?= $this->lang->line("fn_contactus_event_order_insert"); ?></p>
                                                                 <textarea name="msg" id="msg2" data-validation="length" data-validation-length="min50" placeholder="insert your message"></textarea>
-								<p style="text-align:right"><small><span id="max-length-element2">200</span> chars left</small></p>
+								<p style="text-align:right"><small><span id="max-length-element2"><?= $this->lang->line("fn_contactus_200"); ?></span> <?= $this->lang->line("fn_contactus_chars"); ?></small></p>
 							</div>
 							<div class="col-sm-12">
-								<button type="submit">send</button>
+								<button type="submit"><?= $this->lang->line("fn_contactus_send"); ?></button>
 							</div>
 						</div>
 						<?= form_close(); ?>
