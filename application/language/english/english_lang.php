@@ -416,7 +416,7 @@ $lang["fn_category"] = 'category';
 //subscription/delivery-information
 $lang["fn_stripe"] = 'stripe';
 
-//ordernow/index
+//ordernow/index.php
 $lang["fn_ordernow_head"] = 'CART';
 $lang["fn_ordernow_red_head1"] = 'LIFE IS JUST A FRUIT.';
 $lang["fn_ordernow_red_head2"] = 'ALA';
@@ -442,7 +442,7 @@ $lang["fn_ordernow_contain_no_2_name"] = 'side';
 $lang["fn_ordernow_contain_no_3"] = '3';
 $lang["fn_ordernow_contain_no_3_name"] = 'dip';
 
-//ala-cart-sliced/index
+//ala-cart-sliced/index.php
 $lang["fn_ala_cart_sliced_head1"] = 'ALA';
 $lang["fn_ala_cart_sliced_head2"] = 'CARTE';
 $lang["fn_ala_cart_sliced_order"] = 'order';
@@ -461,6 +461,41 @@ $lang["fn_ala_cart_sliced_order_save"] = 'save';
 $lang["fn_ala_cart_sliced_order_box"] = 'RANDOM A BOX FOR ME!';
 
 
-//address/index
+//address/index.php
 $lang["fn_address_head"] = 'Add New Address';
 $lang["fn_address_save"] = 'Saved Address';
+
+//subscription/index.php
+$lang["fn_subscription_no1"] = '1';
+$lang["fn_subscription_no1_line_1"] = 'NUTRITICON';
+$lang["fn_subscription_no1_line_2"] = 'PACKS';
+$lang["fn_subscription_no2"] = '2';
+$lang["fn_subscription_no2_line_1"] = 'YOUR';
+$lang["fn_subscription_no2_line_2"] = 'ORDER';
+$lang["fn_subscription_no3"] = '3';
+$lang["fn_subscription_no3_line_1"] = 'DELIVERY';
+$lang["fn_subscription_no3_line_2"] = 'INFORMATION';
+$lang["fn_subscription_no4"] = '4';
+$lang["fn_subscription_no4_line_1"] = 'CHECKOUT';
+$lang["fn_subscription_des_line1"] = '*short discription of subscription.';
+$lang["fn_subscription_des_line2"] = '- fruit boxes will be  selected at random for the customer at designation date and time.';
+$lang["fn_subscription_des_line3"] = '- please find our current fruit boxes. kindly note these will change with the season as well.';
+$lang["fn_subscription_day"] = 'everyday';
+$lang["fn_subscription_day_mon"] = 'Mon';
+$lang["fn_subscription_day_tue"] = 'tue';
+$lang["fn_subscription_day_wed"] = 'wed';
+$lang["fn_subscription_day_thu"] = 'thu';
+$lang["fn_subscription_day_fri"] = 'Fri ';
+$lang["fn_subscription_day_sat"] = 'sat';
+$lang["fn_subscription_day_sun"] = 'sun';
+$lang["fn_subscription_twice_day"] = 'twice a day ';
+$lang["fn_subscription_once_week"] = 'once a week';
+$lang["fn_subscription_once_every"] = 'once a every';
+$lang["fn_subscription_once_every_line"] = '2 week';
+$lang["fn_subscription_random"] = 'RANDOM A BOX FOR ME!';
+$lang["fn_subscription_date"] = 'Select Date To';
+$lang["fn_subscription_date_form"] = 'Select Date From';
+$lang["fn_subscription_save"] = 'Save';
+$lang["fn_subscription_sgd"] = 'SGD';
+$lang["fn_subscription_0"] = '0';
+$lang["fn_subscription_check_out"] = 'check out';

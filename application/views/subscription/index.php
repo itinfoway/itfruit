@@ -5,9 +5,9 @@
             <div class="col-sm-12 col-md-3">
                 <div class="step step-1">
                     <div class="step-text">
-                        <h6>1</h6>
-                        <h6>NUTRITICON</h6>
-                        <h6>PACKS</h6>
+                        <h6><?= $this->lang->line("fn_subscription_no1"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_no1_line_1"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_no1_line_2"); ?></h6>
                     </div>
                 </div>
             </div>
@@ -17,9 +17,9 @@
             <div class="col-sm-12 col-md-3">
                 <div class="step step-2">
                     <div class="step-text">
-                        <h6>2</h6>
-                        <h6>YOUR</h6>
-                        <h6>ORDER</h6>
+                        <h6><?= $this->lang->line("fn_subscription_no2"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_no2_line_1"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_no2_line_2"); ?></h6>
                     </div>
                 </div>
             </div>
@@ -29,9 +29,9 @@
             <div class="col-sm-12 col-md-3">
                 <div class="step step-3">
                     <div class="step-text">
-                        <h6>3</h6>
-                        <h6>DELIVERY</h6>
-                        <h6>INFORMATION</h6>
+                        <h6><?= $this->lang->line("fn_subscription_no3"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_no3_line_1"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_no3_line_2"); ?></h6>
                     </div>
                 </div>
             </div>
@@ -41,8 +41,10 @@
             <div class="col-sm-12 col-md-3">
                 <div class="step step-4">
                     <div class="step-text">
-                        <h6>4</h6>
-                        <h6>CHECKOUT</h6>
+                        <h6><?= $this->lang->line("fn_subscription_no4"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_no4_line_1"); ?></h6>
+                        
+                        <h6></h6>
                     </div>
                 </div>
             </div>
@@ -54,9 +56,9 @@
         <div class="container my-container">
             <div class="row">
                 <div class="col-sm-12 col-md-10">
-                    <p>*short discription of subscription.</p>
-                    <p> - fruit boxes will be  selected at random for the customer at designation date and time.</p>
-                    <p> - please find our current fruit boxes. kindly note these will change with the season as well.</p>
+                    <p><?= $this->lang->line("fn_subscription_des_line1"); ?></p>
+                    <p> <?= $this->lang->line("fn_subscription_des_line2"); ?></p>
+                    <p><?= $this->lang->line("fn_subscription_des_line3"); ?> </p>
                 </div>
                 <div class="col-sm-12 col-md-2">
                     <img class="img-responsive" src="<?= base_url() ?>assert/fontend/img/strawberry.svg">
@@ -72,27 +74,27 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="box box-1 pointer" data-daysof="5d">
                         <img src="<?= base_url() ?>assert/fontend/img/grapes.svg" >
-                        <h6>everyday</h6>
-                        <h6><span>(</span> Mon<span> -</span> Fri <span>)</span></h6>
+                        <h6><?= $this->lang->line("fn_subscription_day"); ?></h6>
+                        <h6><span>(</span><?= $this->lang->line("fn_subscription_day_mon"); ?> <span> -</span> <?= $this->lang->line("fn_subscription_day_fri"); ?><span>)</span></h6>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="box box-2 pointer" data-daysof="2d">
                         <img src="<?= base_url() ?>assert/fontend/img/berry.svg" >
-                        <h6>twice a day</h6>
+                        <h6><?= $this->lang->line("fn_subscription_twice_day"); ?></h6>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="box box-3 pointer" data-daysof="1d">
                         <img src="<?= base_url() ?>assert/fontend/img/pinapple.svg" >
-                        <h6>once a week</h6>
+                        <h6><?= $this->lang->line("fn_subscription_once_week"); ?></h6>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="box box-4 pointer" data-daysof="1d2w">
                         <img src="<?= base_url() ?>assert/fontend/img/orange.svg" >
-                        <h6>once a every</h6>
-                        <h6>2 week</h6>
+                        <h6><?= $this->lang->line("fn_subscription_once_every"); ?></h6>
+                        <h6><?= $this->lang->line("fn_subscription_once_every_line"); ?></h6>
                     </div>
                 </div>
             </div>
@@ -105,37 +107,37 @@
             <ul>
                 <li class="pointer">
                     <div class="week-days circ mon" data-day="1">
-                        <p>mon</p>
+                        <p><?= $this->lang->line("fn_subscription_day_mon"); ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ tue" data-day="2">
-                        <p>tue</p>
+                        <p><?= $this->lang->line("fn_subscription_day_tue"); ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ wed" data-day="3">
-                        <p>wed</p>
+                        <p><?= $this->lang->line("fn_subscription_day_wed"); ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ thu" data-day="4">
-                        <p>thu</p>
+                        <p><?= $this->lang->line("fn_subscription_day_thu"); ?></p>
                     </div>
                 </li>
                 <li class="pointer">
                     <div class="week-days circ fri" data-day="5">
-                        <p>fri</p>
+                        <p><?= $this->lang->line("fn_subscription_day_fri"); ?></p>
                     </div>
                 </li>
                 <li>
                     <div class="circ sat">
-                        <p>sat</p>
+                        <p><?= $this->lang->line("fn_subscription_day_sat"); ?></p>
                     </div>
                 </li>
                 <li>
                     <div class="circ sun">
-                        <p>sun</p>
+                        <p><?= $this->lang->line("fn_subscription_day_sun"); ?></p>
                     </div>
                 </li>
                 <div class="clearfix"></div>
@@ -155,7 +157,7 @@
 <section>
     <div class="random-part">
         <div class="container">
-            <h1>RANDOM A BOX FOR ME!</h1>
+            <h1><?= $this->lang->line("fn_subscription_random"); ?></h1>
             <?php
             if (!empty($products)) {
                 $row = 0;
@@ -169,10 +171,10 @@
                         <center><h2 class="carte-title"><?= $product->name ?></h2></center>
                         <img class="img-responsive" src="<?= base_url(); ?>assert/products/subscription/<?= $product->img; ?>" title="<?= $product->name ?>"  rel="schema:image" resource="<?= base_url(); ?>assert/products/ala_carte/<?= $product->img ?>">
                         <center>
-                            <b class="set5d set-display"><span><?= $product->price ?></span> SGD</b>
-                            <b class="set2d set-display"><span><?= $product->price1 ?></span> SGD</b>
-                            <b class="set1d set-display"><span><?= $product->price2 ?></span> SGD</b>
-                            <b class="set1d2w set-display"><span><?= $product->price3 ?></span> SGD</b>
+                            <b class="set5d set-display"><span><?= $product->price ?></span><?= $this->lang->line("fn_subscription_sgd"); ?></b>
+                            <b class="set2d set-display"><span><?= $product->price1 ?></span><?= $this->lang->line("fn_subscription_sgd"); ?></b>
+                            <b class="set1d set-display"><span><?= $product->price2 ?></span><?= $this->lang->line("fn_subscription_sgd"); ?></b>
+                            <b class="set1d2w set-display"><span><?= $product->price3 ?></span><?= $this->lang->line("fn_subscription_sgd"); ?></b>
                             <br>
                             <div class="text">
                                 <div class="row" property="schema:description" content="<?= implode(",", $product->fruit); ?>">
@@ -209,7 +211,7 @@
                         </center>
                         <div class="countr" data-value="<?= urlencode(base64_encode($product->id)) ?>"  property="schema:name" content="<?= $product->name ?>" data-price5d="<?= $product->price ?>" data-price2d="<?= $product->price1 ?>" data-price1d="<?= $product->price2 ?>" data-price1d2w="<?= $product->price3 ?>">
                             <img class="img-responsive minus pointer" src="<?= base_url(); ?>assert/fontend/img/random-minus.png">
-                            <span>0</span>
+                            <span><?= $this->lang->line("fn_subscription_0"); ?></span>
                             <img class="img-responsive plus pointer" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                         </div>
                     </div>
@@ -231,7 +233,7 @@
 <section>
     <div class="check-out-btn">
         <img class="img-responsive" src="<?= base_url() ?>assert/fontend/img/sitafal.svg">
-        <button id="checkout">check out</button>
+        <button id="checkout"><?= $this->lang->line("fn_subscription_check_out"); ?></button>
         <img class="img-responsive" src="<?= base_url() ?>assert/fontend/img/banana.svg">
     </div>
 </section>
@@ -245,19 +247,19 @@
             </div>
             <div class="modal-body">
                 <div class="form-group col-8 offset-2">
-                    <label>Select Date To</label>
+                    <label><?= $this->lang->line("fn_subscription_date"); ?></label>
                     <input class="form-control" id="from_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="thisfrom_datetime" placeholder="ex. <?= date("d M Y") ?>" readonly>
                     <input  type="hidden" id="thisfrom_datetime" name="orderbox" >
                 </div>
                 <div class="form-group col-8 offset-2">
-                    <label>Select Date From</label>
+                    <label><?= $this->lang->line("fn_subscription_date_form"); ?></label>
                     <input class="form-control" id="to_datetime" data-date-format="dd M yyyy" data-date="<?= date('Y-m-d', strtotime(date('Y-m-d') . " +1 days")); ?>" size="16" type="text" value="" data-link-field="thisto_datetime" placeholder="ex. <?= date("d M Y") ?>" readonly>
                     <input  type="hidden" id="thisto_datetime" name="orderbox" >
                 </div>
 
             </div>
             <div class="modal-footer">
-                <button type="button" id="savedate" class="btn btn-primary"  data-dismiss="modal" aria-label="Close">Save</button>
+                <button type="button" id="savedate" class="btn btn-primary"  data-dismiss="modal" aria-label="Close"><?= $this->lang->line("fn_subscription_save"); ?></button>
             </div>
         </div>
     </div>
