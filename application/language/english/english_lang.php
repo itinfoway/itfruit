@@ -271,7 +271,7 @@ $lang["fn_all_carte"] = 'all carte';
 //welcome/index.php
 $lang["fn_previous"] = 'Previous';
 $lang["fn_next"] = 'Next';
-$lang["fn_home_work"] = 'HOW IT`S WORK?';
+$lang["fn_home_work"] = 'HOW IT`S WORK ?';
 $lang["fn_work_line1"] = 'Get sliced credits or regular subscription';
 $lang["fn_work_line2"] = 'Choose from our 10 handcrafted curated fruit boxes, date and time';
 $lang["fn_work_line3"] = 'Our partners at work! We will craft out the best chosen fruit to you';
@@ -312,6 +312,7 @@ $lang["fn_find_us"] = 'HOW FIND US';
 $lang["fn_find_us_address"] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
 $lang["fn_find_us_email"] = 'example@gmail.com';
 $lang["fn_find_us_mno"] = '+01 123456789';
+$lang["fn_find_us_con"] = 'CONNECT US';
 
 //faq/index.php
 $lang["fn_frequently"] = 'Frequently';
@@ -378,7 +379,7 @@ $lang["fn_setting"] = 'Setting';
 $lang["fn_faq"] = 'FAQ';
 $lang["fn_vitamin"] = 'Vitamin';
 $lang["fn_fruit"] = 'Fruit';
-$lang["fn_partner"] = 'Partner';
+$lang["fn_partner"] = 'our Partner';
 $lang["fn_what"] = 'What people say';
 $lang["fn_sliders"] = 'Sliders';
 $lang["fn_day"] = ' Day of loading';

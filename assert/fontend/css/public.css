@@ -828,7 +828,7 @@ section .saved-add {
 
 .avocado {
     bottom: 0px;
-    left: 0px;
+    /*left: 0px;*/
 }
 
 .berry {
@@ -836,15 +836,22 @@ section .saved-add {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    margin: auto;
+    margin: 0px;
 }
 
 h1 {
     font-family: 'Dreamwalker Regular';
-    font-size: 23px;
+   font-size: 23px;
     padding: 16px 0px;
     color: #ffffff;
 }
+
+section h1 {
+     font-family: 'Multicolore Regular';
+    padding: 16px 0px;
+    color: #ffffff;
+}
+
 
 .add-part {
     position: relative;
@@ -4264,3 +4271,4 @@ hr.green {
     text-decoration: none;
     color: #ffa500;
 }
+

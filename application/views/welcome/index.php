@@ -43,10 +43,10 @@
 </section>
 <section>
     <div class="container my-container">
-        <div class="how-work-sec">
+        <div class="how-work-sec section">
             <img class="fruits strawberry" src="<?= base_url("assert/fontend/img/strawberry.svg"); ?>">
             <img class="fruits grapes" src="<?= base_url("assert/fontend/img/grapes.svg"); ?>">
-            <h1><?=$this->lang->line("fn_home_work"); ?></h1>
+            <h1 ><?=$this->lang->line("fn_home_work"); ?></h1>
             <div class="row">
                 <div class="col-sm-3">
                     <img class="home-icon" src="<?= base_url("assert/fontend/img/icon-b.png"); ?>">
@@ -191,7 +191,7 @@
 <?php if (!empty($people)) {
 ?>
     <section>
-        <div class="what-people-say">
+        <div class="what-people-say section">
             <div class="container my-container">
                 <h1><?=$this->lang->line("fn_people"); ?></h1>
                 <div class="loop-carousel-people owl-carousel owl-theme">

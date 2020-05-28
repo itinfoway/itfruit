@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="col-sm-4 text-center">
-                    <h2 class="text-green">CONNECT US</h2>
+                    <h2 class="text-green"><?= $this->lang->line("fn_find_us_con"); ?></h2>
                     <div class="social">
                         <div class="row text-center">
                             <div class="col-12">
