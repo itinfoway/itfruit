@@ -55,7 +55,7 @@
     </head>
 
 
-    <body>
+    <body style="zoom: 85%;">
         <div id="sliced-loading">
             <div class="loading">
                 <img src="<?= base_url("assert/fontend/img/logo.png") ?>">
