@@ -1,7 +1,7 @@
 <section>
     <div class="container my-container ordernow">
         <div class="row">
-            <div class="col-md-12 my-3">
+            <div class="col-md-12 my-3 cart">
                 <h1 class="text-red"><?= $this->lang->line("fn_ordernow_head"); ?></h1>
             </div>
         </div>
