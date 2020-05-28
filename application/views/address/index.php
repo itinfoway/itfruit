@@ -23,7 +23,7 @@ if (!empty($data)) {
             <img class="fruits orange" src="<?= base_url(); ?>assert/fontend/img/orange.svg">
             <img class="fruits avocado" src="<?= base_url(); ?>assert/fontend/img/avocado.svg">
             <!-- <img class="fruits berry" src="<?= base_url(); ?>assert/fontend/img/berry.svg"> -->
-            <div class="container my-container">
+            <div class="container my-containe ">
                 <center>
                      <h1><?= $this->lang->line("fn_address_save"); ?></h1>
                 </center>
