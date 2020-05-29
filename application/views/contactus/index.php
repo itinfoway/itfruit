@@ -81,7 +81,7 @@
 <section>
 	<div class="container my-container">
 		<div class="send-msg event-msg">
-			<h1><?= $this->lang->line("fn_contactus_event"); ?></h1>
+			<h1 class="add-faq"><?= $this->lang->line("fn_contactus_event"); ?></h1>
 			<div class="form-part">
 				<p><?= $this->lang->line("fn_contactus_event_line1"); ?></p>
 				<p><?= $this->lang->line("fn_contactus_event_line2"); ?></p>

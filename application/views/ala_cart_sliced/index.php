@@ -17,7 +17,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="ala">
                         <div class="ala-text">
-                            <h1><?= $this->lang->line("fn_ala_cart_sliced_head1"); ?></h1>
+                            <h1 ><?= $this->lang->line("fn_ala_cart_sliced_head1"); ?></h1>
                             <h2><?= $this->lang->line("fn_ala_cart_sliced_head2"); ?></h2>
                         </div>
                     </div>

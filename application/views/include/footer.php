@@ -7,7 +7,7 @@
 ?>
 <footer>
     <div class="ftr">
-        <h1><?= $this->lang->line("fn_find_us"); ?></h1>
+        <h1 class="add-faq"><?= $this->lang->line("fn_find_us"); ?></h1>
         <div class="container">
                 <!--<img class="img-responsive f-pinapple" src="assert/fontend/img/pinapple.svg">-->
             <div class="row ftr-row pb-5">
@@ -50,13 +50,13 @@
                     <div class="social">
                         <div class="row text-center">
                             <div class="col-12">
+                                 <img class="img-responsive" src="<?= base_url("assert/fontend/img/insta-01.svg"); ?>">
+                            </div>
+                            <div class="col-12">
                                 <img class="img-responsive" src="<?= base_url("assert/fontend/img/fb-01.svg"); ?>">
                             </div>
                             <div class="col-12">
-                                <img class="img-responsive" src="<?= base_url("assert/fontend/img/twitter-01.svg"); ?>">
-                            </div>
-                            <div class="col-12">
-                                <img class="img-responsive" src="<?= base_url("assert/fontend/img/insta-01.svg"); ?>">
+                                  <img class="img-responsive" src="<?= base_url("assert/fontend/img/twitter-01.svg"); ?>">
                             </div>
                         </div>
                     </div>

@@ -235,7 +235,7 @@ if (isset($pubkey)) {
 <section>
     <div class="container my-container">
         <div class="what-dose">
-            <h1>AHHMAHGAWD! I’VE GOT QUESTION!</h1>
+            <h1 class="add-faq">AHHMAHGAWD! I’VE GOT QUESTION!</h1>
             <div class="row">
                 <div class="col-sm-4"> 
                     <div class="text-part red-part pina">
