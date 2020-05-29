@@ -841,7 +841,7 @@ section .saved-add {
 
 h1 {
     font-family: 'Dreamwalker Regular';
-   font-size: 23px;
+    font-size: 23px;
     padding: 16px 0px;
     text-align: center;
     color: #ffffff;
@@ -851,6 +851,11 @@ h1 {
      font-family: 'Multicolore Regular';
     padding: 16px 0px;
     color: #ffffff;
+}
+
+.add-faq  {
+    font-family: 'Multicolore Regular';
+     text-align: left;
 }
 
 
@@ -1664,12 +1669,14 @@ section .faq .faq-bg .faq-text h1 {
     color: #ffffff;
     font-size: 15px;
     line-height: 12px;
+    margin: 5px;
+    padding: 0px;
 }
 
 section .faq .faq-bg .faq-text p {
     color: #BEABFF;
     font-size: 13px;
-    margin: 0px;
+    margin: 4px;
     padding: 0px;
     line-height: 9px;
 }

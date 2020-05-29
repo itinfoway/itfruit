@@ -10,8 +10,8 @@
     <div class="faq">
         <div class="faq-bg">
             <div class="faq-text">
-                <h1><?=$this->lang->line("fn_frequently"); ?></h1>
-                <h1><?=$this->lang->line("fn_asked"); ?></h1>
+                <h1 class="add-faq"><?=$this->lang->line("fn_frequently"); ?></h1>
+                <h1 class="add-faq"><?=$this->lang->line("fn_asked"); ?></h1>
                 <p><?=$this->lang->line("fn_need"); ?></p>
             </div>
         </div>
