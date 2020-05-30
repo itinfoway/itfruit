@@ -336,8 +336,8 @@ $lang["fn_policy"] = 'PRIVACY POLICY';
 
 
 //wallet/index.php
-
 $lang["fn_wallet_history"] = 'Wallet History';
+$lang["fn_sr_no"] = 'sr.no';
 $lang["fn_tranction_id"] = 'tranction id';
 $lang["fn_description"] = 'description';
 $lang["fn_tranction_type"] = 'tranction type';

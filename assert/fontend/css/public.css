@@ -857,6 +857,20 @@ h1 {
     font-family: 'Multicolore Regular';
      text-align: left;
 }
+.add-address  {
+    font-family: 'Multicolore Regular';
+    padding: 16px 0px;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.img-plus{
+    text-align: center;
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
 
 
 .add-part {

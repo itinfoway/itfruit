@@ -16,10 +16,12 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-12 py-3">
+            <div class="col-12 py-3 ">
+              <div class="table-responsive">
                 <table class="table table-bordered table-wallet" id="walet">
                     <thead>
                         <tr>
+                            <th><?= $this->lang->line("fn_sr_no"); ?></th>
                             <th><?= $this->lang->line("fn_tranction_id"); ?></th>
                             <th><?= $this->lang->line("fn_description"); ?></th>
                             <th><?= $this->lang->line("fn_tranction_type"); ?></th>
@@ -37,11 +39,13 @@
                     <tbody>
                         <?php
                         if (!empty($data)) {
+                             $i=1;
                             foreach ($data as $t) {
                                 ?>
                                 <tr>
+                                    <td><?= $i ?></td>
                                     <td><?= $t->orderid ?></td>
-                                    <td><?= $t->type ?></td>
+                                    <td><?= ($t->type == 1) ? "Add Credit" : (($t->type == 2) ?"Ala Carte Payments":"Subscription")  ?></td>
                                     <?php
                                     if ($type == 2) {
                                         ?>
@@ -64,11 +68,14 @@
                                     ?>
                                 </tr>
                                 <?php
+                                   $i++;
+
                             }
                         }
                         ?>
                     </tbody>
                 </table>
+              </div>
             </div>
         </div>
     </div>

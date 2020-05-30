@@ -88,6 +88,14 @@ if (!empty($data)) {
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-sm-6">
+                                <div class="text-part ">
+                                   <img class="img-plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                                    <h1 class="add-address">Add New Address</h1>                                
+                                </div>
+                            </div>
+                         
+                    </div>
                             <?php
                         }
                         ?>
