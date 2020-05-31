@@ -1,4 +1,4 @@
-<section>
+<!--section>
     <div class="address">
         <div class="container my-container">
             <div class="add-address">
@@ -12,101 +12,95 @@
             </div>
         </div>
     </div>
-</section>
-<?php
-if (!empty($data)) {
-    ?>
-    <section>
-        <div class="saved-add">
-            <img class="fruits watermelon" src="<?= base_url(); ?>assert/fontend/img/watermelon.svg">
-            <img class="fruits grapes" src="<?= base_url(); ?>assert/fontend/img/grapes.svg">
-            <img class="fruits orange" src="<?= base_url(); ?>assert/fontend/img/orange.svg">
-            <img class="fruits avocado" src="<?= base_url(); ?>assert/fontend/img/avocado.svg">
-            <img class="fruits berry" src="<?= base_url(); ?>assert/fontend/img/berry.svg">
-            <div class="container my-container">
-                <h1><?= $this->lang->line("fn_address_save"); ?></h1>
-                <div class="add-part">
-                    <div class="row">
-                        <?php
-                        foreach ($data as $d) {
-                            ?>
-                            <div class="col-sm-6">
-                                <div class="text-part">
-                                    <div class="row">
-
-                                        <?php
-                                        if ($d->type == 1) {
-                                            ?>
-                                            <div class="col-xs-3">
-                                                <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/home.png">
-                                            </div>
-                                            <div class="col-xs-9">
-                                                <p>Home</p>
-                                            </div>
-                                            <?php
-                                        } else if ($d->type == 2) {
-                                            ?>
-                                            <div class="col-xs-3">
-                                                <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/office.png">
-                                            </div>
-                                            <div class="col-xs-9">
-                                                <p>Work</p>
-                                            </div>
-                                            <?php
-                                        } else if ($d->type == 3) {
-                                            ?>
-                                            <div class="col-xs-3">
-                                                <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/location.svg">
-                                            </div>
-                                            <div class="col-xs-9">
-                                                <p>Other</p>
-                                            </div>
-                                            <?php
-                                        }
+</section-->
+<section>
+    <div class="saved-add">
+        <img class="fruits watermelon" src="<?= base_url(); ?>assert/fontend/img/watermelon.svg">
+        <img class="fruits grapes" src="<?= base_url(); ?>assert/fontend/img/grapes.svg">
+        <img class="fruits orange" src="<?= base_url(); ?>assert/fontend/img/orange.svg">
+        <img class="fruits avocado" src="<?= base_url(); ?>assert/fontend/img/avocado.svg">
+        <img class="fruits berry" src="<?= base_url(); ?>assert/fontend/img/berry.svg">
+        <div class="container my-container">
+            <h1><?= $this->lang->line("fn_address_save"); ?></h1>
+            <div class="add-part">
+                <div class="row">
+                    <?php
+                    $c =0;
+                    $data_count = count($data);
+                    $t = 4 - $data_count;
+                    foreach ($data as $d) { ?>
+                        <div class="col-sm-6">
+                            <div class="text-part">
+                                <div class="row">
+                                    <?php
+                                    if ($d->type == 1) {
                                         ?>
+                                        <div class="col-xs-3">
+                                            <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/home.png">
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p>Home</p>
+                                        </div>
+                                        <?php
+                                    } else if ($d->type == 2) {
+                                        ?>
+                                        <div class="col-xs-3">
+                                            <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/office.png">
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p>Work</p>
+                                        </div>
+                                        <?php
+                                    } else if ($d->type == 3) {
+                                        ?>
+                                        <div class="col-xs-3">
+                                            <img class="img-responsive" src="<?= base_url(); ?>assert/fontend/img/location.svg">
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <p>Other</p>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
 
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="location">
-                                                <p><?= $d->address1 ?></p>
-                                                <p><?= $d->address2 ?></p>
-                                                <p><?= $d->city ?>-<?= $d->postalcode ?>, <?= $d->state ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons">
-                                            <div class="col-xs-6">
-                                                <a href="<?= base_url("address/edit/" . urlencode(base64_encode($d->id))); ?>"><button class="edit-btn">EDIT</button></a>
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <button class="remove-btn" data-id="<?= urlencode(base64_encode($d->id)) ?>">REMOVE</button>
-                                            </div>
-                                            <div class="clearfix"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="location">
+                                            <p><?= $d->address ?></p>
+                                            <p><?= $d->address1 ?></p>
+                                            <p><?= $d->address2 ?></p>
+                                            <p><?= $d->city ?>-<?= $d->postalcode ?>, <?= $d->state ?></p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="text-part ">
-                                   <img class="img-plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
-                                    <h1 class="add-address">Add New Address</h1>                                
+                                <div class="row">
+                                    <div class="buttons">
+                                        <div class="col-xs-6">
+                                            <a href="<?= base_url("address/edit/" . urlencode(base64_encode($d->id))); ?>"><button class="edit-btn">EDIT</button></a>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button class="remove-btn" data-id="<?= urlencode(base64_encode($d->id)) ?>">REMOVE</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
                             </div>
-                         
-                    </div>
-                            <?php
-                        }
-                        ?>
-                    </div>
+                        </div>                        
+                    <?php }
+                    for ($i=0; $i < $t; $i++) { ?>                         
+                       <div class="col-sm-6">
+                            <div class="text-part add-box">
+                               <img class="img-plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
+                                <a href="<?= base_url("address/add"); ?>"><h1 class="add-address">Add New Address</h1></a>
+                            </div>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
-    </section>
-    <?php
-}
-?>
+    </div>
+</section>
 <script>
     $(document).on("click", ".remove-btn", function () {
         var id=$(this).data("id");

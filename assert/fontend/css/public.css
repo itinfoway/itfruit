@@ -857,6 +857,9 @@ h1 {
     font-family: 'Multicolore Regular';
      text-align: left;
 }
+.add-box  {
+    height: 88%;
+}
 .add-address  {
     font-family: 'Multicolore Regular';
     padding: 16px 0px;
