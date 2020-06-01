@@ -68,10 +68,7 @@
                                     <div class="col-xs-12">
                                         <div class="location">
                                             <p><?= $d->address ?></p>
-                                            <p><?= $d->address1 ?></p>
-                                            <p><?= $d->address2 ?></p>
-                                            <p><?= $d->city ?>-<?= $d->postalcode ?>, <?= $d->state ?></p>
-                                        </div>
+                                      </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -90,7 +87,7 @@
                     <?php }
                     for ($i=0; $i < $t; $i++) { ?>                         
                        <div class="col-sm-6">
-                            <div class="text-part add-box">
+                            <div class="add-box text-part ">
                                <img class="img-plus" src="<?= base_url(); ?>assert/fontend/img/random-add.png">
                                 <a href="<?= base_url("address/add"); ?>"><h1 class="add-address">Add New Address</h1></a>
                             </div>

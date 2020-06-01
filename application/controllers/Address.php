@@ -69,20 +69,20 @@ class Address extends Controller {
             $data = $this->address_model->edit($capArray, $ids);
 
             if (!empty($data)) {
-                $this->session->set_userdata("success", "address added successfully");
+                $this->session->set_userdata("success", "address update successfully");
                 if ($this->session->has_userdata("previous_url")) {
-                    redirect($this->session->userdata('previous_url'));
+                    redirect("address/");
                     $this->session->unset_userdata('previous_url');
                 } else {
-                    redirect("address");
+                    redirect("address/");
                 }
             } else {
                 $this->session->set_userdata("error", "address not added try again");
                 if ($this->session->has_userdata("previous_url")) {
-                    redirect($this->session->userdata('previous_url'));
+                    redirect("address/");
                     $this->session->unset_userdata('previous_url');
                 } else {
-                    redirect("address");
+                    redirect("address/");
                 }
             }
         }

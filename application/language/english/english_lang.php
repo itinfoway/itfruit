@@ -500,6 +500,7 @@ $lang["fn_orderhistory_head"] = 'ORDER HISTORY';
 $lang["fn_orderhistory_no"] = 'order no. :';
 $lang["fn_orderhistory_deli_no"] = 'delivered on :';
 $lang["fn_orderhistory_time_no"] = 'time :';
+$lang["fn_orderhistory_address"] = 'address :';
 
 //subscription/manaage.php
 $lang["fn_sub_manaage_head"] = 'MANAGE SUBSCRIPTION';

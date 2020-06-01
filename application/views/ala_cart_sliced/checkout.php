@@ -260,14 +260,14 @@
                     <div class="billing">
                         <img class="fruits strawberry" src="<?= base_url() ?>assert/fontend/img/strawberry.svg">
                         <img class="fruits sitafal" src="<?= base_url() ?>assert/fontend/img/sitafal.svg">
-                        <h4>Select Address</h4>
-                        <div class="add-address">
+                        <h4 class="add-address-select">Select Address</h4>
+                       <!--  <div class="add-address">
                             <a href="<?= base_url("address/add"); ?>">
                                 <center>
                                     <h1>Add New Address</h1>
                                 </center>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="add-part">
                             <div class="row">
                                 <?php
