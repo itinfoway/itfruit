@@ -16,7 +16,7 @@ class Login extends Controller {
         $this->load->model("login_model");
     }
 
-    public function verifyforget() {
+    public function verifyforget($data) {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             $this->load->model("user_model");
             $this->user_model->edit(["password" => $this->input->post("password"), "email_v" => rand(10000, 99999), "status" => 1], $this->session->userdata("user_id"));
@@ -44,7 +44,7 @@ class Login extends Controller {
                 $data["status"] = 3;
                 $em = urlencode(base64_encode($users->email . "|" . $em));
                 $msg = "<a href='" . base_url() . "/login/verifyforget/" . $em . "'>Click</a><br>";
-                $msg .= base_url() . "signup/verifyforget/" . $em;
+                $msg .= base_url() . "login/verifyforget/" . $em;
                 if ($this->maileSend("FORGET PASSWORD", $msg, $users->email)) {
                     $this->login_model->forgetPassword($data, ["email" => $users->email]);
                     $this->session->set_userdata("success", $this->lang->line("success_forget_password"));

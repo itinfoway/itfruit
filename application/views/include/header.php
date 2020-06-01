@@ -48,6 +48,7 @@
         <link rel="stylesheet" href="<?= base_url(); ?>assert/fontend/toastr/toastr.min.css">
         <!-- Toastr -->
         <script src="<?= base_url(); ?>assert/fontend/toastr/toastr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script type="text/javascript" src="<?= base_url("assert/fontend/js/bootstrap.js"); ?>"></script>
         <script src="<?= base_url(); ?>assert/fontend/js/bootbox.all.min.js"></script>
 

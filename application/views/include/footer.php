@@ -95,8 +95,6 @@ if ($this->session->has_userdata("error")) {
     $this->session->unset_userdata('error');
 }
 ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script type="text/javascript" src="<?= base_url("assert/fontend/js/bootstrap.js"); ?>"></script>
 <script type="text/javascript" src="<?= base_url("assert/fontend/js/library.js"); ?>"></script>
 <script type="text/javascript" src="<?= base_url("assert/fontend/js/public.js"); ?>"></script>
 <script>
