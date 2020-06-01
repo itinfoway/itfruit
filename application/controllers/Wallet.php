@@ -35,7 +35,7 @@ class Wallet extends Controller {
         if ($this->session->has_userdata("user")) {
             $this->load->model("local_setting_model");
             $config = $this->local_setting_model->view("publishable_key,secret_key");
-            if ($this->session->userdata("user")->strip_id != "" || !is_null($this->session->userdata("user")->strip_id)) {
+            if ($this->session->userdata("user")->strip_id != "" && !is_null($this->session->userdata("user")->strip_id)) {
                 require_once APPPATH . "third_party/stripe/init.php";
                 $stripe = array(
                     "secret_key" => $config[0]->secret_key,
@@ -45,7 +45,6 @@ class Wallet extends Controller {
                 $card = \Stripe\Customer::allSources(
                                 $this->session->userdata("user")->strip_id
                 );
-//            print_r($card);exit;
                 $data["card"] = $card;
             }
 

@@ -289,11 +289,12 @@
         var j = new Date();
         if ($(".box-4").hasClass("active")) {
             j.setDate(d.getDate() + 28);
-            console.log("hi");
         } else {
-            console.log("else");
-            j.setDate(d.getDate() + 7);
+            console.log(d.getFullYear());
+            j.setDate(d.getFullYear(),d.getMonth(),d.getDate() + 7);
         }
+        
+            console.log(j.toISOString().split('T')[0]);
         $("#thisto_datetime").val(j.toISOString().split('T')[0]);
         todate.datetimepicker("setStartDate", j.toISOString().split('T')[0]);
     });
