@@ -2,7 +2,7 @@
     <div class="order-history">
         <div class="container my-container">
             <h1><?= $this->lang->line("fn_orderhistory_head"); ?></h1>
-
+            
             <?php
             if (!empty($order)) {
                 foreach ($order as $t) {
@@ -16,7 +16,9 @@
                                 <div class="text">
                                     <p><span><?= $this->lang->line("fn_orderhistory_no"); ?> </span> # <?= "ALACARTE" . str_replace("-", "", $t->order_date) . str_pad($t->id, 4, '0', STR_PAD_LEFT) ?></p>
                                     <p><span><?= $this->lang->line("fn_orderhistory_deli_no"); ?>  </span><?= date("D,  M/d/Y", strtotime($t->delivered_on_date)) ?></p>
+                                     <p><span><?= $this->lang->line("fn_orderhistory_address"); ?>  </span> <?= $t->address ?></p>
                                     <p><span><?= $this->lang->line("fn_orderhistory_time_no"); ?>  </span> <?= $t->delivered_on_time ?></p>
+
                                     <div class="location">
                                         <img class="img-responsive loca" src="<?= base_url("assert/fontend/"); ?>img/hi-location.png">
                                         <img class="img-responsive dot" src="<?= base_url("assert/fontend/"); ?>img/hi-g-dot.png">
@@ -47,6 +49,7 @@
                                         }
                                         ?>
                                     </div>
+
                                     <div class="list">
                                         <div class="f-list">
                                             <div>
@@ -62,12 +65,17 @@
                             </div>
                         </div>
                     </div>
+
                     <?php
                 }
             }
             ?>
+            <!--  <p><?php echo $links; ?></p> -->
+
         </div>
+
 </section>
+
 <!--
 <section>
     <div class="load-more">

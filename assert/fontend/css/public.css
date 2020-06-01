@@ -857,6 +857,23 @@ h1 {
     font-family: 'Multicolore Regular';
      text-align: left;
 }
+.add-box  {
+    height: 88%;
+}
+.add-address  {
+    font-family: 'Multicolore Regular';
+    padding: 16px 0px;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.img-plus{
+    text-align: center;
+    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
 
 
 .add-part {
@@ -3811,7 +3828,7 @@ section .new-login .bill-pay .billing .check .checkboxcontainer input:checked+.c
     .berry {
         height: 229px;
     }
-    .add-part .text-part {
+    .text-part {
         width: 78%;
     }
     section .address .add-address .pinapple {
@@ -4247,6 +4264,7 @@ h1,h2,h3,h4,h5,h6 {
     -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    margin:10% 
 }
 hr.orange {
     border: 1px solid orange;
@@ -4279,4 +4297,7 @@ hr.green {
     text-decoration: none;
     color: #ffa500;
 }
-
+ .add-address-select{
+   margin: 46px;
+   padding-bottom: 11px;
+}

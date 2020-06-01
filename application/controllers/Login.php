@@ -16,7 +16,7 @@ class Login extends Controller {
         $this->load->model("login_model");
     }
 
-    public function verifyforget($data) {
+    public function verifyforget() {
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             $this->load->model("user_model");
             $this->user_model->edit(["password" => $this->input->post("password"), "email_v" => rand(10000, 99999), "status" => 1], $this->session->userdata("user_id"));

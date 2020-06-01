@@ -336,8 +336,8 @@ $lang["fn_policy"] = 'PRIVACY POLICY';
 
 
 //wallet/index.php
-
 $lang["fn_wallet_history"] = 'Wallet History';
+$lang["fn_sr_no"] = 'sr.no';
 $lang["fn_tranction_id"] = 'tranction id';
 $lang["fn_description"] = 'description';
 $lang["fn_tranction_type"] = 'tranction type';
@@ -500,6 +500,7 @@ $lang["fn_orderhistory_head"] = 'ORDER HISTORY';
 $lang["fn_orderhistory_no"] = 'order no. :';
 $lang["fn_orderhistory_deli_no"] = 'delivered on :';
 $lang["fn_orderhistory_time_no"] = 'time :';
+$lang["fn_orderhistory_address"] = 'address :';
 
 //subscription/manaage.php
 $lang["fn_sub_manaage_head"] = 'MANAGE SUBSCRIPTION';

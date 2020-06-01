@@ -40,7 +40,9 @@ class Product_model extends CI_Model {
             while ($data) {
                 $fitarray=array();
                 foreach(json_decode($data[$count]->fruit_ids) as $id){
-                    $fitarray[]=$fit[$id];
+                    if(isset($fit[$id])){
+                        $fitarray[]=$fit[$id];
+                    }
                 }
                 $data[$count]->fruit = $fitarray;
                 $count++;
