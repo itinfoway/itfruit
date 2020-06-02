@@ -133,3 +133,8 @@
 	$('#msg1').restrictLength($('#max-length-element1'));
 	$('#msg2').restrictLength($('#max-length-element2'));
 </script>
+<script>
+setTimeout(function(){
+       location.reload();
+   },40000);
+</script>
