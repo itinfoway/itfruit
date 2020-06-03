@@ -60,7 +60,7 @@ class Profile extends Controller
         }
         $this->display('index', $data[0]);
     }
-    public function changepasswor(){
+    public function changepassword(){
         if ($this->input->server('REQUEST_METHOD') == 'POST') {
             $pass = $this->input->post();
             $data = $this->user_model->view($this->session->userdata("user")->id);

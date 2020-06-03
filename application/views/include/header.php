@@ -108,7 +108,7 @@
                             <div class="dropdown-menu dropdown-menu-right dd-bg">
                                 <h6 class="dropdown-header"><?= ($this->session->has_userdata("user_login")) ? $this->session->userdata("user")->username : ""; ?></h6>
                                 <a class="dropdown-item" href="<?= base_url("profile") ?>"><?= $this->lang->line("fn_profile"); ?></a>
-                                <a class="dropdown-item" href="<?= base_url("profile") ?>"><?= $this->lang->line("fn_chnage_password"); ?></a>
+                                <a class="dropdown-item" href="<?= base_url("profile/changepassword") ?>"><?= $this->lang->line("fn_chnage_password"); ?></a>
                                 <a class="dropdown-item" href="<?= base_url("logout"); ?>"><?= $this->lang->line("fn_logout"); ?></a>
                             </div>
                         </div>

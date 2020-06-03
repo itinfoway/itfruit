@@ -904,6 +904,7 @@ h1 {
 
 .add-part .text-part .location {
     padding: 10px 0px;
+    height: 108px !important;  
 }
 
 .add-part .text-part .location p {

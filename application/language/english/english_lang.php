@@ -466,6 +466,22 @@ $lang["fn_ala_cart_sliced_order_box"] = 'RANDOM A BOX FOR ME!';
 $lang["fn_address_head"] = 'Add New Address';
 $lang["fn_address_save"] = 'Saved Address';
 
+
+//subscription/view.php
+$lang["fn_subscription_list"] = 'subscription order history list';
+$lang["fn_subscription_sr_no"] = 'sr No';
+$lang["fn_subscription_tranction_id"] = 'tranction id';
+$lang["fn_subscription_or_date"] = 'order date';
+$lang["fn_subscription_type"] = 'Type';
+$lang["fn_subscription_dr_date"] = 'delivered date';
+$lang["fn_subscription_products"] = 'products';
+$lang["fn_subscription_total"] = 'total item';
+$lang["fn_subscription_amounts"] = 'price';
+$lang["fn_subscription_sr_add_type"] = 'address type';
+$lang["fn_subscription_sr_add"] = 'address';
+$lang["fn_subscription_sr_status"] = 'status';
+
+
 //subscription/index.php
 $lang["fn_subscription_no1"] = '1';
 $lang["fn_subscription_no1_line_1"] = 'NUTRITICON';

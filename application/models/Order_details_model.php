@@ -22,11 +22,28 @@ class Order_details_model extends CI_Model {
         if (!is_null($where)) {
             $this->db->where($where);
         }
-        $this->db->select($select);
+        $this->db->select('*');
         $this->db->order_by("id", "asc");
         $query = $this->db->get(ORDER_DETAILS);
         $this->db->trans_complete();
         return $query->result();
+    }
+    public function view_where($where = null, $select = "pu.*,m.fname as f_name",$wherein=null) {
+        $this->db->trans_start();
+        if (!is_null($wherein)) {
+            $this->db->where_in("type",$wherein);
+        }
+        if (!is_null($where)) {
+            $this->db->where($where);
+        }
+        $this->db->select($select);
+        $this->db->join("users as m","m.id =pu.user_id");
+        $this->db->order_by("pu.id", "DESC");
+        $this->db->where('type','2');
+        $query = $this->db->get('order_details as pu');
+        $this->db->trans_complete();
+        $data = $query->result();
+        return $data;
     }
 
     public function add($array) {

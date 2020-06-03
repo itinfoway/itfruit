@@ -70,8 +70,8 @@
                 }
             }
             ?>
-            <!--  <p><?php echo $links; ?></p> -->
-
+          <!--    <p><?php echo $create_links; ?></p>  -->
+             
         </div>
 
 </section>
