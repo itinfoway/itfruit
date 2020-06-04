@@ -90,7 +90,7 @@
     </div>
 </section>
 <script>
-    $('#order_details').DataTable();
+    $('#loadmore').DataTable();
     $(document).ready(function () {
 
     });

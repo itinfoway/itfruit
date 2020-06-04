@@ -18,7 +18,7 @@ class Orderhistory extends Controller {
     }
 
     public function index() {
-       $data["order"]=$this->order_details_model->view(["user_id" => $this->session->userdata("user")->id,"type"=>1]);
+       $data["order"]=$this->order_details_model->getdata(["user_id" => $this->session->userdata("user")->id,"type"=>1],"*",0,10);
         $this->display('index',$data);
     }
 
@@ -29,6 +29,13 @@ class Orderhistory extends Controller {
         $data["type"] = 1;
        //this->display('index', $data);
         $this->display('view',$data);
+    }
+    public function loadmore(){
+      $offset = $this->input->get('offset');
+      $this->load->model('order_details_model');
+      $data["order"]  = $this->order_details_model->getdata(["user_id" => $this->session->userdata("user")->id,"type"=>1],"*",$offset,10);
+     
+      return $this->load->view('orderhistory/ajax',$data);
     }
 
 }

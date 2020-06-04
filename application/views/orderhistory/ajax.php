@@ -1,10 +1,4 @@
-<script src="<?= base_url("assert/fontend/") ?>js/ala-carte.js"></script>
-<link href="<?= base_url("assert/fontend/") ?>css/jquery.dataTables.min.css" rel="stylesheet"  type="text/css"/>
-<section>
-    <div class="order-history">
-        <div class="container my-container">
-            <h1><?= $this->lang->line("fn_orderhistory_head"); ?></h1>
-            
+
             <?php
             if (!empty($order)) {
                 foreach ($order as $t) {
@@ -74,27 +68,6 @@
 
             ?>
                     
-        </div>
-
-    <div class="load-more">
-        <button type="button" onclick="loadmore()" value="loadmore" >Load More</button>
-    </div>
-</section>
-<script>
-var count=0;
-function loadmore(){
-    count=count+10;
-    $.ajax({
-        url:"<?=base_url('orderhistory/loadmore');?>",
-        data:{
-          offset :count
-        },
-        success :function(data){
-            $(".my-container").append(data);
-        }
-    });
-}
-</script>
-
+       
 
 

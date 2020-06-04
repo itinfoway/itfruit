@@ -118,7 +118,7 @@
                                 <li><a class="menu-link" href="<?= base_url("address"); ?>"><?= $this->lang->line("fn_manage_add"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("subscription/manaage"); ?>"><?= $this->lang->line("fn_subscription_manaage"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?= $this->lang->line("fn_manage_order"); ?></a></li>
-                                <li><a class="menu-link" href="<?= base_url("orderhistory"); ?>"><?= $this->lang->line("fn_com_order"); ?></a></li>
+                                <li><a class="menu-link" href="<?= base_url("orderhistory/view"); ?>"><?= $this->lang->line("fn_com_order"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("wallet/subscription"); ?>"><?= $this->lang->line("fn_payment"); ?></a></li>
                                 <li><a class="menu-link" href="<?= base_url("wallet/add-to-cart"); ?>"><?= $this->lang->line("fn_add_credit"); ?></a></li>
                             </ul>

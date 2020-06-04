@@ -16,14 +16,27 @@ class Order_details_model extends CI_Model {
         $query = $this->db->get(ORDER_DETAILS);
         return $query->num_rows();
     }
-
-    public function view($where = null, $select = "*") {
+    public function getdata($where = null, $select = "*",$offset=0,$limit=10) {
         $this->db->trans_start();
         if (!is_null($where)) {
             $this->db->where($where);
         }
         $this->db->select('*');
         $this->db->order_by("id", "asc");
+        $this->db->limit($limit,$offset);
+        $query = $this->db->get(ORDER_DETAILS);
+        $this->db->trans_complete();
+        return $query->result();
+    }
+    
+    public function view($where = null, $select = "*",$offset=0,$limit=10) {
+        $this->db->trans_start();
+        if (!is_null($where)) {
+            $this->db->where($where);
+        }
+        $this->db->select('*');
+        $this->db->order_by("id", "asc");
+        $this->db->limit($limit,$offset);
         $query = $this->db->get(ORDER_DETAILS);
         $this->db->trans_complete();
         return $query->result();
