@@ -139,6 +139,7 @@ class Subscription extends Controller {
                 "fruit" => get_cookie("fruit"),
                 "card" => $cards->last4,
                 "card_type" => $cards->brand,
+                "comment" => $post["comment"],
             ];
 
             $this->subscription_model->add($data);

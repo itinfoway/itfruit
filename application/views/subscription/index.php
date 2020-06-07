@@ -43,7 +43,7 @@
                     <div class="step-text">
                         <h6><?= $this->lang->line("fn_subscription_no4"); ?></h6>
                         <h6><?= $this->lang->line("fn_subscription_no4_line_1"); ?></h6>
-                        
+
                         <h6></h6>
                     </div>
                 </div>
@@ -286,15 +286,13 @@
     });
     $('#from_datetime').on("change", function () {
         var d = new Date($("#thisfrom_datetime").val());
-        var j = new Date();
+        var j;
         if ($(".box-4").hasClass("active")) {
-            j.setDate(d.getDate() + 28);
+            j = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 28);
         } else {
-            console.log(d.getFullYear());
-            j.setDate(d.getFullYear(),d.getMonth(),d.getDate() + 7);
+            j = new Date(d.getFullYear(), d.getMonth(), d.getDate() + 7);
         }
-        
-            console.log(j.toISOString().split('T')[0]);
+
         $("#thisto_datetime").val(j.toISOString().split('T')[0]);
         todate.datetimepicker("setStartDate", j.toISOString().split('T')[0]);
     });

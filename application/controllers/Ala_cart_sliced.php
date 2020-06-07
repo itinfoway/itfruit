@@ -78,6 +78,8 @@ class Ala_cart_sliced extends Controller {
                 $order_details["postalcode"] = $address[0]->postalcode;
                 $order_details["state"] = $address[0]->state;
                 $order_details["country"] = $address[0]->country;
+                $order_details["remark"] = $this->input->post("remark");
+                $order_details["comment"] = $this->input->post("comment");
                 $order_details["lat_lng"] = $address[0]->latitude . "," . $address[0]->longitude;
                 $order_details["address"] = $address[0]->address1 . ", " . $address[0]->address2;
                 $oId = $this->order_details_model->add($order_details);

@@ -261,13 +261,13 @@
                         <img class="fruits strawberry" src="<?= base_url() ?>assert/fontend/img/strawberry.svg">
                         <img class="fruits sitafal" src="<?= base_url() ?>assert/fontend/img/sitafal.svg">
                         <h4 class="add-address-select">Select Address</h4>
-                       <!--  <div class="add-address">
-                            <a href="<?= base_url("address/add"); ?>">
-                                <center>
-                                    <h1>Add New Address</h1>
-                                </center>
-                            </a>
-                        </div> -->
+                        <!--  <div class="add-address">
+                             <a href="<?= base_url("address/add"); ?>">
+                                 <center>
+                                     <h1>Add New Address</h1>
+                                 </center>
+                             </a>
+                         </div> -->
                         <div class="add-part">
                             <div class="row">
                                 <?php
@@ -324,10 +324,10 @@
                                             <div class="row">
                                                 <div class="buttons">
                                                     <div class="col-xs-6">
-                                                        <a href="<?= base_url("address/edit/" . urlencode(base64_encode($d->id))); ?>"><button class="edit-btn">EDIT</button></a>
+                                                        <a href="<?= base_url("address/edit/" . urlencode(base64_encode($d->id))); ?>"><button class="edit-btn" type="button">EDIT</button></a>
                                                     </div>
                                                     <div class="col-xs-6">
-                                                        <a href="<?= base_url("address/delete/" . urlencode(base64_encode($d->id))); ?>"><button class="remove-btn">REMOVE</button></a>
+                                                        <button class="remove-btn" type="button">REMOVE</button>
                                                     </div>
                                                     <div class="clearfix"></div>
                                                 </div>
@@ -372,6 +372,13 @@ $this->session->set_userdata('previous_url', current_url());
 ?>
 <script src="<?= base_url(); ?>assert/fontend/js/bootstrap-datetimepicker.min.js"></script>
 <script>
+    $(document).on("keyup", "textarea[name='remark']", function () {
+        setCookie("remark", $(this).val());
+    });
+    $(document).on("keyup", "textarea[name='comment']", function () {
+        setCookie("comment", $(this).val());
+    });
+
     $("form").submit(function (event) {
         var debit = parseInt($("#debitTotal").text());
         var credit = parseInt("<?= $wallet[0]->cr ?>");
@@ -422,6 +429,12 @@ $this->session->set_userdata('previous_url', current_url());
     }
     $(document).ready(function () {
         $(".billing").find(".select:first").click();
+        if (getCookie("remark") != "") {
+            $("textarea[name='remark']").text(getCookie("remark"));
+        }
+        if (getCookie("comment") != "") {
+            $("textarea[name='comment']").text(getCookie("comment"));
+        }
     });
 
     $(document).on("click", ".select", function () {
@@ -429,6 +442,31 @@ $this->session->set_userdata('previous_url', current_url());
         $(".billing").find(".select").removeClass("active");
         $(this).addClass("active");
         $("#addresInput").val(data);
+    });
+
+</script>
+<script>
+    $(document).on("click", ".remove-btn", function () {
+        var id=$(this).data("id");
+        
+        bootbox.confirm({
+            message: "<?= $this->lang->line("fn_delete_confirm_msg"); ?>",
+            buttons: {
+                confirm: {
+                    label: 'Yes',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'No',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if (result) {
+                    window.location.href = '<?= base_url("address/delete/"); ?>'+id;
+                }
+            }
+        });
     });
 
 </script>
