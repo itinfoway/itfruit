@@ -435,6 +435,11 @@ $this->session->set_userdata('previous_url', current_url());
         if (getCookie("comment") != "") {
             $("textarea[name='comment']").text(getCookie("comment"));
         }
+        if (getCookie("address") != "") {
+            $("#addresInput").val(getCookie("address"));
+            $(".billing").find(".select").removeClass("active");
+            $(".select[data-value='" + getCookie("address") + "']").addClass("active");
+        }
     });
 
     $(document).on("click", ".select", function () {
@@ -442,13 +447,14 @@ $this->session->set_userdata('previous_url', current_url());
         $(".billing").find(".select").removeClass("active");
         $(this).addClass("active");
         $("#addresInput").val(data);
+        setCookie("address", data);
     });
 
 </script>
 <script>
     $(document).on("click", ".remove-btn", function () {
-        var id=$(this).data("id");
-        
+        var id = $(this).data("id");
+
         bootbox.confirm({
             message: "<?= $this->lang->line("fn_delete_confirm_msg"); ?>",
             buttons: {
@@ -463,7 +469,7 @@ $this->session->set_userdata('previous_url', current_url());
             },
             callback: function (result) {
                 if (result) {
-                    window.location.href = '<?= base_url("address/delete/"); ?>'+id;
+                    window.location.href = '<?= base_url("address/delete/"); ?>' + id;
                 }
             }
         });

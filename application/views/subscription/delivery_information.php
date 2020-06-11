@@ -342,7 +342,7 @@
                         </div>
                     </div>
                     <div class="c-out">
-                        <button type="button" data-toggle="modal" data-target="#addToCarte">CHECKOUT</button>
+                        <button type="button" id="chakeout" >CHECKOUT</button>
                     </div>
                 </div>
             </div>
@@ -553,6 +553,31 @@
             $(".mycard").show();
             $("#paymentFrm").find(".row").hide();
         }
-    })
+    });
+
+    $(document).on("click", "#chakeout", function () {
+        bootbox.confirm({
+            message: "<?= $this->lang->line("fn_subscription_confirm"); ?>",
+            buttons: {
+                confirm: {
+                    label: 'Yes',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'No',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if (result) {
+                    setTimeout(function () {
+                        $("#addToCarte").modal("show");
+                        $("#addToCarte").addClass("show");
+                        $(".modal-backdrop").addClass("show");
+                    }, 2000);
+                }
+            }
+        });
+    });
 </script>
 <script src="<?= base_url() ?>assert/fontend/js/ala-carte.js"></script> 

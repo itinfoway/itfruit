@@ -30,6 +30,7 @@ $lang["fn_error_order_carte_not_set"] = 'Please add first order before proceed f
 $lang["fn_error_date_time_allredyset"] = 'this date and time already set';
 $lang["fn_error_today_only_for_max_itme"] = 'sorry, this day and time maximum oder set';
 $lang["fn_delete_confirm_msg"] = 'Are you sure remove this';
+$lang["fn_subscription_confirm"] = 'Are you sure subscription this order';
 
 //Faq
 $lang["faq_head"] = 'FAQ';
