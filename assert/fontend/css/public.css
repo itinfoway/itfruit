@@ -60,7 +60,7 @@
 section .about {
     padding: 95px 0px;
     position: relative;
-    background-image: url("../img/about-bg.png");
+    background-image: url("../img/about-bg.svg");
     background-size: 100% 100%;
 }
 
