@@ -34,19 +34,39 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input name="address" data-validation="length" data-validation-length="min3" type="text" class="form-control" id="autocomplete" placeholder="Enter your address"  type="text" name="full_address" value="<?= isset($address) ? $address : "" ?>">
+                                                    <label><img src="<?=  base_url()?>assert/fontend/img/search.svg" width="35px" class="map-form-image"></label>
+                                                    <input  data-validation="length" data-validation-length="min3" type="text" class="map-input form-control" id="autocomplete" placeholder="Enter your address"  type="text" name="full_address" value="<?= isset($address) ? $address : "" ?>" autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label><img src="<?=  base_url()?>assert/fontend/img/location_icon.svg" width="35px" class="map-form-image"></label>
+                                                    <input name="address1" type="text"  class="map-input form-control" id="street_number" placeholder="Street Number (Address 1)" disabled="true" value="<?= isset($address1) ? $address1 : "" ?>">
 
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input name="address1" type="text"  class="form-control" id="street_number" placeholder="Street Number (Address 1)" disabled="true" value="<?= isset($address1) ? $address1 : "" ?>">
-
+                                                    <label><img src="<?=  base_url()?>assert/fontend/img/location_icon.svg" width="35px" class="map-form-image"></label>
+                                                    <input name="address2" type="text"  class="map-input form-control" placeholder="Address 2" id="route" disabled="true" value="<?= isset($address2) ? $address2 : "" ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <div class="form-group">
+                                                    <label><img src="<?=  base_url()?>assert/fontend/img/flag.svg" width="35px" class="map-form-image"></label>
+                                                    <input name="city" type="text"  class="map-input form-control"  data-validation="length" data-validation-length="min2" placeholder="CITY" id="locality" disabled="true" value="<?= isset($city) ? $city : "" ?>">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5 offset-2">
+                                                <div class="form-group">
+                                                    <label><img src="<?=  base_url()?>assert/fontend/img/pin.svg" width="35px" class="map-form-image"></label>
+                                                    <input name="postalcode" type="text"  class="map-input form-control" data-validation="length" data-validation-length="min2" placeholder="POST CODE" id="postal_code" disabled="true" value="<?= isset($postalcode) ? $postalcode : "" ?>">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input name="address2" type="text"  class="form-control" placeholder="Address 2" id="route" disabled="true" value="<?= isset($address2) ? $address2 : "" ?>">
+                                                    <label><img src="<?=  base_url()?>assert/fontend/img/map.svg" width="35px" class="map-form-image"></label>
+                                                    <input type="text"  class="map-input form-control"  name="state" value="<?= isset($state) ? $state : "" ?>" data-validation="length" data-validation-length="min2" placeholder="REGION / STATE"  id="administrative_area_level_1" disabled="true">
                                                 </div>
                                             </div>
                                         </div>
@@ -57,12 +77,7 @@
                                         <div class="col-sm-12 col-md-6">
                                             <input type="hidden" id="lat" name="latitude" value="<?= isset($latitude) ? $latitude : "" ?>">
                                             <input type="hidden" id="lng" name="longitude" value="<?= isset($longitude) ? $longitude : "" ?>">
-                                            <input name="city" data-validation="length" data-validation-length="min2" placeholder="CITY" class="button" id="locality" disabled="true" value="<?= isset($city) ? $city : "" ?>">
-                                            <input name="country" data-validation="length" data-validation-length="min2" placeholder="COUNTRY" class="button" id="country" disabled="true" value="<?= isset($country) ? $country : "" ?>">
-                                        </div>
-                                        <div class="col-sm-12 col-md-6">
-                                            <input name="postalcode" value="<?= isset($postalcode) ? $postalcode : "" ?>" data-validation="length" data-validation-length="min2" placeholder="POST CODE" class="button" id="postal_code" disabled="true">
-                                            <input name="state" value="<?= isset($state) ? $state : "" ?>" data-validation="length" data-validation-length="min2" placeholder="REGION / STATE" class="button" id="administrative_area_level_1" disabled="true">
+                                            <input type="hidden" name="country" data-validation="length" data-validation-length="min2" placeholder="COUNTRY" id="country" disabled="true" value="<?= isset($country) ? $country : "" ?>">
                                         </div>
                                     </div>
                                 </div>

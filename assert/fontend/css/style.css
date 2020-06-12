@@ -847,7 +847,13 @@ section .plan .plan-v2 .box .top-right{
 .bootbox-confirm .btn-success{
     margin: 0;
 }
-
+.map-form-image {
+    position: absolute;
+    bottom: 9px;
+}
+.map-input{
+    padding-left: 47px;
+}
 @media (min-width: 768px){
     .ordernow-bg-red{
         background-size: 100% 125%;
