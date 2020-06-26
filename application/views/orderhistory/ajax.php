@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-2">
-                                <button>Reorder</button>
+                                <button onclick="window.location = '<?= base_url("ala-cart-sliced") ?>'">Reorder</button>
                                 <button onclick="window.location = '<?= base_url("faq") ?>'">Help</button>
                             </div>
                         </div>

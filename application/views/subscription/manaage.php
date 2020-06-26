@@ -204,7 +204,7 @@ foreach ($subscription as $sub) {
                                 <?php
                                 if ($sub->status == 0) {
                                     ?>
-                                    <button class="cancel"><?= $this->lang->line("fn_sub_manaage_cancel"); ?></button>
+                                <button class="cancel remove-btn" data-id="<?=  urlencode(base64_encode($sub->id));?>"><?= $this->lang->line("fn_sub_manaage_cancel"); ?></button>
                                     <?php
                                 } else if ($sub->status == 1) {
                                     ?>
@@ -232,3 +232,28 @@ foreach ($subscription as $sub) {
         </button>
     </div>
 </section>
+<script>
+    $(document).on("click", ".remove-btn", function () {
+        var id = $(this).data("id");
+
+        bootbox.confirm({
+            message: "<?= $this->lang->line("fn_subscription_cancel_msg"); ?>",
+            buttons: {
+                confirm: {
+                    label: 'Yes',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'No',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if (result) {
+                    window.location.href = '<?= base_url("subscription/cancel/"); ?>' + id;
+                }
+            }
+        });
+    });
+
+</script>

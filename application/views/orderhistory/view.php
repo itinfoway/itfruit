@@ -1,4 +1,3 @@
-
 <script src="<?= base_url("assert/fontend/") ?>js/jquery.dataTables.min.js"></script>
 <link href="<?= base_url("assert/fontend/") ?>css/jquery.dataTables.min.css" rel="stylesheet"  type="text/css"/>
 <section>
@@ -90,8 +89,5 @@
     </div>
 </section>
 <script>
-    $('#loadmore').DataTable();
-    $(document).ready(function () {
-
-    });
+    $('#order_details').DataTable();
 </script>
