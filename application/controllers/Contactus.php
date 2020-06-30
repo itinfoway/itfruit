@@ -23,6 +23,7 @@ class Contactus extends Controller
             if ($this->input->server('REQUEST_METHOD') == 'POST') {
                 $capArray = $this->input->post();
                 $capArray["ip_address"] = $this->input->ip_address();
+                $capArray["date"]=date("Y-m-d");
                 $data = $this->contact_model->add($capArray);
 
                 if (!empty($data)) {
