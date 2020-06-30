@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <table id="address_table" class="table table-striped table-bordered" style="width:100%">
+                <table id="address_table" class="table table-striped table-bordered table-responsive" style="width:100%">
                     <thead>
                         <tr>
                             <th><?=$this->lang->line("sr_no") ?></th>
