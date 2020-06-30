@@ -21,7 +21,7 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive">
-                <table id="blog_table" class="table table-striped table-bordered" >
+                <table id="blog_table" class="table table-striped table-bordered table-responsive" >
                     <thead>
                         <tr>
                             <th><?= $this->lang->line("sr_no") ?></th>
