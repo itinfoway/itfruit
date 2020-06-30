@@ -98,3 +98,28 @@
         </div>
     </div>
 </section>
+<script>
+    $(document).on("click", ".remove-btn", function () {
+        var id = $(this).data("id");
+
+        bootbox.confirm({
+            message: "<?= $this->lang->line("fn_delete_confirm_msg"); ?>",
+            buttons: {
+                confirm: {
+                    label: 'Yes',
+                    className: 'btn-success'
+                },
+                cancel: {
+                    label: 'No',
+                    className: 'btn-danger'
+                }
+            },
+            callback: function (result) {
+                if (result) {
+                    window.location.href = '<?= base_url("address/delete/"); ?>' + id;
+                }
+            }
+        });
+    });
+
+</script>

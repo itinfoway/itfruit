@@ -174,9 +174,18 @@ class Subscription extends Controller {
             $config = $this->local_setting_model->view("publishable_key");
             if (!empty($config)) {
                 $data["pubkey"] = $config[0]->publishable_key;
-            } $this->load->
-                    helper('form');
+            }
+            $this->load->helper('form');
             $this->display('delivery_information', $data);
+        }
+    }
+
+    public function cancel($id = null) {
+        if (!is_null($id)) {
+            $id=base64_decode(urldecode($id));
+            $this->load->model("subscription_model");
+            $this->subscription_model->edit(["status"=>2],$id);
+            redirect("subscription/manaage");
         }
     }
 
