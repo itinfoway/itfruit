@@ -854,6 +854,12 @@ section .plan .plan-v2 .box .top-right{
 .map-input{
     padding-left: 47px;
 }
+.green_ordernow{
+    background-image: url(../img/green_ordernow.png);
+}
+.orange_ordernow{
+    background-image: url(../img/orange_ordernow.png);
+}
 @media (min-width: 768px){
     .ordernow-bg-red{
         background-size: 100% 125%;

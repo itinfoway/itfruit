@@ -5,6 +5,16 @@
                 <h1 class="text-red"><?= $this->lang->line("fn_ordernow_head"); ?></h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
         <div class="row relative">
 
             <img class="fruits top-center d-lg-block d-none" src="<?= base_url() ?>/assert/fontend/img/watermelon.svg">
