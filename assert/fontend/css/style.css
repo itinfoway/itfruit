@@ -854,11 +854,78 @@ section .plan .plan-v2 .box .top-right{
 .map-input{
     padding-left: 47px;
 }
+
 .green_ordernow{
     background-image: url(../img/green_ordernow.png);
+    background-size:100% 100%
 }
 .orange_ordernow{
     background-image: url(../img/orange_ordernow.png);
+    background-size:100% 100%
+}
+.orange_ordernow-round-padding{
+    padding-top: 75px;
+}
+.orange_ordernow-round{
+    background-image: url(../img/round2.png);
+    background-size: 100% 100%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 65px;
+}
+.green_ordernow-round{
+    background-image: url(../img/round1.png);
+    background-size: 100% 100%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 65px;
+}
+.ordernow-discrib-frut h4:before{
+    content: "•  "; 
+    color: #fff;
+    font-size: 25px;
+    font-family: serif;
+}
+.orange_ordernow-round h1{
+    font-size: 3.5em;
+}
+.my-text-font{
+    font-family: 'Dreamwalker Regular';
+}
+.text-white{
+    color: #fff;
+}
+.text-xs h4{
+    font-size: 20px;
+}
+.bg-orderh3{
+    background-image: url(../img/blueh3.png);
+    background-size: 100% 100%;
+    color: #fff;
+
+}
+.aerrowleft-ordernow {
+    position: absolute;
+    right: 10%;
+    top: -65px;
+}
+.aerrowright-ordernow {
+    position: absolute;
+    top: -65px;
+    left: 10%;
+}
+.top-5x {
+    top: -129px;
 }
 @media (min-width: 768px){
     .ordernow-bg-red{

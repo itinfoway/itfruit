@@ -4213,7 +4213,8 @@ button:focus {
     background-size: 100% 100%;
 }
 .btn-default.active,.btn-default:focus,.btn-default:active,.btn-default:hover{
-    background-image: url(../img/add-btn-a.png);
+    /*background-image: url(../img/add-btn-a.png);*/
+    filter: drop-shadow(5px 5px 5px #222);
 }
 .add-part .select{
     position: absolute;

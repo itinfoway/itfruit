@@ -8,7 +8,7 @@
                     <div class="row">
                         <div class="col-md-12 my-5">
                             <h1 class="text-red" style="font-size: 10.5vw;"><?= $this->lang->line("fn_about_us"); ?></h1>
-                            <img src="<?= base_url() ?>assert/fontend/img/about-us.png" class="w-100">
+                            <img src="<?= base_url() ?>assert/fontend/img/about-us.svg" class="w-100">
                         </div>
                     </div>
                 </div>
